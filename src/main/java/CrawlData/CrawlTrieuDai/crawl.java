@@ -1,8 +1,5 @@
-package CrawlData.CrawTrieuDai;
+package CrawlData.CrawlTrieuDai;
 
-import CrawlData.CrawTrieuDai.King;
-import CrawlData.CrawTrieuDai.KinhDo;
-import CrawlData.CrawTrieuDai.trieuDai;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -17,10 +14,9 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
-    static ArrayList<trieuDai> listTrieuDai = new ArrayList<>();
+public class crawl {
+    static ArrayList<TrieuDai> listTrieuDai = new ArrayList<>();
     static ArrayList<KinhDo> listKinhDo = new ArrayList<>();
-
     public static void main(String[] args) throws UnsupportedEncodingException {
         crawlTrieuDai();
         addKinhDo();
@@ -48,14 +44,14 @@ public class Main {
                 cells.add(text);
             }
             if(cells.size() == 5) {
-                trieuDai trieudai = new trieuDai(cells.get(0),cells.get(1));
+                TrieuDai trieudai = new TrieuDai(cells.get(0),cells.get(1));
                 King newKing = new King(cells.get(2), cells.get(3));
                 trieudai.addKing(newKing);
                 listTrieuDai.add(trieudai);
                 index++;
             }
             if(cells.size() == 4) {
-                trieuDai trieudai = new trieuDai(cells.get(0));
+                TrieuDai trieudai = new TrieuDai(cells.get(0));
                 trieudai.setThoiKy(listTrieuDai.get(index-1).getThoiKy());
                 King newKing = new King(cells.get(1), cells.get(2));
                 trieudai.addKing(newKing);
@@ -67,7 +63,7 @@ public class Main {
                 listTrieuDai.get(index - 1).addKing(newKing);
             }
         }
-        for(trieuDai a: listTrieuDai) {
+        for(TrieuDai a: listTrieuDai) {
             if(a.getTen().contains("Triều Hậu Lê")) {
                 a.cleanTen(a.getTen(), true);
             } else {
@@ -99,7 +95,7 @@ public class Main {
     }
     static void writeToJSON() {
         JSONArray jsonArray = new JSONArray();
-        for (trieuDai t : listTrieuDai) {
+        for (TrieuDai t : listTrieuDai) {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("ten", t.getTen());
             if(t.getKinhDo() == null) {
@@ -118,7 +114,7 @@ public class Main {
 
         try {
             // Write JSONArray to JSON file
-            FileWriter file = new FileWriter("trieuDai.json");
+            FileWriter file = new FileWriter("src/JSON_Data/trieuDai.json");
             file.write(jsonArray.toString(2));
             file.flush();
             file.close();
@@ -128,7 +124,7 @@ public class Main {
     }
     static void addKinhDoToTrieuDai() {
         System.out.println("Add");
-        for(trieuDai t: listTrieuDai) {
+        for(TrieuDai t: listTrieuDai) {
             if(t.getNamBatDau().equals("Không rõ")) {
                 t.setKinhDo("Không rõ");
                 continue;

@@ -1,4 +1,5 @@
-package CrawlData.CrawTrieuDai;
+package CrawlData.CrawlTrieuDai;
+
 
 public class KinhDo {
     public String ten;
@@ -58,3 +59,4 @@ public class KinhDo {
     }
 
 }
+

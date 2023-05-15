@@ -1,9 +1,8 @@
-package CrawlData.CrawTrieuDai;
+package CrawlData.CrawlTrieuDai;
 
-import CrawlData.CrawTrieuDai.King;
 
 import java.util.ArrayList;
-public class trieuDai {
+public class TrieuDai {
     String kinhDo;
     public String ten;
     public String namBatDau;
@@ -34,11 +33,11 @@ public class trieuDai {
     public void setThoiKy(String thoiKy) {
         this.thoiKy = thoiKy;
     }
-    public trieuDai( String thoiKy, String ten) {
+    public TrieuDai( String thoiKy, String ten) {
         this.ten = ten;
         this.thoiKy = thoiKy;
     }
-    public trieuDai(  String ten) {
+    public TrieuDai( String ten) {
         this.ten = ten;
     }
     public String getTen() {

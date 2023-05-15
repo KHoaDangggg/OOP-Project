@@ -1,7 +1,7 @@
 [
   {
     "nam_ket_thuc": "258TCN",
-    "vua": "[scapperWeb.King@ce655b9]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@3c09a350]",
     "kinh_do": "Phong Châu (Phú Thọ)",
     "thoi_ky": "Việt Nam thời kỳ dựng nước",
     "nam_bat_dau": "2879",
@@ -9,7 +9,7 @@
   },
   {
     "nam_ket_thuc": "Không rõ",
-    "vua": "[scapperWeb.King@4b85edeb]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@592a1882]",
     "kinh_do": "Không rõ",
     "thoi_ky": "Việt Nam thời kỳ dựng nước",
     "nam_bat_dau": "Không rõ",
@@ -17,7 +17,7 @@
   },
   {
     "nam_ket_thuc": "207TCN",
-    "vua": "[scapperWeb.King@5731caaf]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@48368a08]",
     "kinh_do": "Cổ Loa",
     "thoi_ky": "Việt Nam thời kỳ dựng nước",
     "nam_bat_dau": "257",
@@ -25,7 +25,7 @@
   },
   {
     "nam_ket_thuc": "111TCN",
-    "vua": "[scapperWeb.King@59933644, scapperWeb.King@67e6eb52, scapperWeb.King@3e8b8f0, scapperWeb.King@5ad57e90]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@41a23470, CrawlData.CrawlTrieuDai.King@30c01c37, CrawlData.CrawlTrieuDai.King@39a7eca5, CrawlData.CrawlTrieuDai.King@45bd4753]",
     "kinh_do": "Không rõ",
     "thoi_ky": "Việt Nam thời kỳ dựng nước",
     "nam_bat_dau": "207",
@@ -33,7 +33,7 @@
   },
   {
     "nam_ket_thuc": "39",
-    "vua": "[scapperWeb.King@1a345298]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@156cfa20]",
     "kinh_do": "Phong Châu (Phú Thọ)",
     "thoi_ky": "Thời kỳ Bắc thuộc lần thứ nhất và thứ hai",
     "nam_bat_dau": "111TCN",
@@ -41,7 +41,7 @@
   },
   {
     "nam_ket_thuc": "220",
-    "vua": "[scapperWeb.King@4ad896f7]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@25fd6d1e]",
     "kinh_do": "Mê Linh (Vĩnh Phúc)",
     "thoi_ky": "Thời kỳ Bắc thuộc lần thứ nhất và thứ hai",
     "nam_bat_dau": "25",
@@ -49,7 +49,7 @@
   },
   {
     "nam_ket_thuc": "43",
-    "vua": "[scapperWeb.King@c318864]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@23396fc0]",
     "kinh_do": "Mê Linh (Vĩnh Phúc)",
     "thoi_ky": "Thời kỳ Bắc thuộc lần thứ nhất và thứ hai",
     "nam_bat_dau": "40",
@@ -57,7 +57,7 @@
   },
   {
     "nam_ket_thuc": "280",
-    "vua": "[scapperWeb.King@7d61468c]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@c11332b]",
     "kinh_do": "Không rõ",
     "thoi_ky": "Thời kỳ Bắc thuộc lần thứ nhất và thứ hai",
     "nam_bat_dau": "222",
@@ -65,7 +65,7 @@
   },
   {
     "nam_ket_thuc": "248",
-    "vua": "[scapperWeb.King@45796b2a]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@7e5e6573]",
     "kinh_do": "Không rõ",
     "thoi_ky": "Thời kỳ Bắc thuộc lần thứ nhất và thứ hai",
     "nam_bat_dau": "248",
@@ -73,7 +73,7 @@
   },
   {
     "nam_ket_thuc": "602",
-    "vua": "[scapperWeb.King@4b98225c, scapperWeb.King@4beae1e3, scapperWeb.King@3c488b34]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@3005623b, CrawlData.CrawlTrieuDai.King@58aa5c94, CrawlData.CrawlTrieuDai.King@5d27b4c1]",
     "kinh_do": "Long Biên",
     "thoi_ky": "Nước Vạn Xuân độc lập",
     "nam_bat_dau": "544",
@@ -81,7 +81,7 @@
   },
   {
     "nam_ket_thuc": "939",
-    "vua": "[scapperWeb.King@32e697ac, scapperWeb.King@3866c96e, scapperWeb.King@241fc278, scapperWeb.King@5c76fce4, scapperWeb.King@5aab5b31, scapperWeb.King@5408d4b3, scapperWeb.King@eded048]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@50df37eb, CrawlData.CrawlTrieuDai.King@4b508371, CrawlData.CrawlTrieuDai.King@41143873, CrawlData.CrawlTrieuDai.King@21f50d2c, CrawlData.CrawlTrieuDai.King@8bc0696, CrawlData.CrawlTrieuDai.King@473847fb, CrawlData.CrawlTrieuDai.King@270f28cf]",
     "kinh_do": "Đại La",
     "thoi_ky": "Nhà Tùy - Đường và các cuộc khởi nghĩa (Bắc thuộc lần thứ ba)",
     "nam_bat_dau": "603",
@@ -89,7 +89,7 @@
   },
   {
     "nam_ket_thuc": "965",
-    "vua": "[scapperWeb.King@65a48cab]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@2e1add6f]",
     "kinh_do": "Loa Thành",
     "thoi_ky": "Nhà Tùy - Đường và các cuộc khởi nghĩa (Bắc thuộc lần thứ ba)",
     "nam_bat_dau": "939",
@@ -97,7 +97,7 @@
   },
   {
     "nam_ket_thuc": "Không rõ",
-    "vua": "[scapperWeb.King@655621fd]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@467af68c]",
     "kinh_do": "Không rõ",
     "thoi_ky": "Nhà Tùy - Đường và các cuộc khởi nghĩa (Bắc thuộc lần thứ ba)",
     "nam_bat_dau": "Không rõ",
@@ -105,7 +105,7 @@
   },
   {
     "nam_ket_thuc": "965",
-    "vua": "[scapperWeb.King@77e9dca8]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@43786627]",
     "kinh_do": "Loa Thành",
     "thoi_ky": "Nhà Tùy - Đường và các cuộc khởi nghĩa (Bắc thuộc lần thứ ba)",
     "nam_bat_dau": "950",
@@ -113,7 +113,7 @@
   },
   {
     "nam_ket_thuc": "980",
-    "vua": "[scapperWeb.King@fcd0e8d, scapperWeb.King@4e4d0a0b]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@1d6f77d7, CrawlData.CrawlTrieuDai.King@65e620b0]",
     "kinh_do": "Hoa Lư (Ninh Bình)",
     "thoi_ky": "Sự nghiệp thống nhất nước nhà (cuối thế kỷ X)",
     "nam_bat_dau": "968",
@@ -121,7 +121,7 @@
   },
   {
     "nam_ket_thuc": "1009",
-    "vua": "[scapperWeb.King@1a4083f6, scapperWeb.King@23f5008a, scapperWeb.King@44abdb1f]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@74b97416, CrawlData.CrawlTrieuDai.King@74707df8, CrawlData.CrawlTrieuDai.King@12c76d6e]",
     "kinh_do": "Hoa Lư (Ninh Bình)",
     "thoi_ky": "Sự nghiệp thống nhất nước nhà (cuối thế kỷ X)",
     "nam_bat_dau": "980",
@@ -129,7 +129,7 @@
   },
   {
     "nam_ket_thuc": "1225",
-    "vua": "[scapperWeb.King@62108cd3, scapperWeb.King@7cd1ec54, scapperWeb.King@77ab5214, scapperWeb.King@6d420cdd, scapperWeb.King@bd273b2, scapperWeb.King@78128dd0, scapperWeb.King@55044b34, scapperWeb.King@28dd81ad, scapperWeb.King@300a38e7]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@46702c26, CrawlData.CrawlTrieuDai.King@7956f93a, CrawlData.CrawlTrieuDai.King@e3ed455, CrawlData.CrawlTrieuDai.King@27bb74e1, CrawlData.CrawlTrieuDai.King@606d6d2c, CrawlData.CrawlTrieuDai.King@2e3cd732, CrawlData.CrawlTrieuDai.King@56d822dc, CrawlData.CrawlTrieuDai.King@2ab8589a, CrawlData.CrawlTrieuDai.King@21b744ec]",
     "kinh_do": "Thăng Long",
     "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
     "nam_bat_dau": "1010",
@@ -137,7 +137,7 @@
   },
   {
     "nam_ket_thuc": "1400",
-    "vua": "[scapperWeb.King@5c9a4f3b, scapperWeb.King@2bb0e277, scapperWeb.King@6f24ce45, scapperWeb.King@e881e46, scapperWeb.King@657b3b, scapperWeb.King@2cea921a, scapperWeb.King@65753724, scapperWeb.King@2bc16fe2, scapperWeb.King@d66502, scapperWeb.King@78545d40, scapperWeb.King@34549979, scapperWeb.King@144a5e6e]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@697a92af, CrawlData.CrawlTrieuDai.King@7ea3839e, CrawlData.CrawlTrieuDai.King@16b76858, CrawlData.CrawlTrieuDai.King@d3cce46, CrawlData.CrawlTrieuDai.King@30eedaa4, CrawlData.CrawlTrieuDai.King@52b30054, CrawlData.CrawlTrieuDai.King@7f6b57f2, CrawlData.CrawlTrieuDai.King@144ee8a7, CrawlData.CrawlTrieuDai.King@52b32b70, CrawlData.CrawlTrieuDai.King@18c820d2, CrawlData.CrawlTrieuDai.King@3d3930fe, CrawlData.CrawlTrieuDai.King@5e51ec2e]",
     "kinh_do": "Thăng Long",
     "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
     "nam_bat_dau": "1225",
@@ -145,7 +145,7 @@
   },
   {
     "nam_ket_thuc": "1407",
-    "vua": "[scapperWeb.King@2707c790, scapperWeb.King@7de3206d]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@15f2a43f, CrawlData.CrawlTrieuDai.King@4c65d8e3]",
     "kinh_do": "Thăng Long",
     "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
     "nam_bat_dau": "1400",
@@ -153,7 +153,7 @@
   },
   {
     "nam_ket_thuc": "1413",
-    "vua": "[scapperWeb.King@6dece1f9, scapperWeb.King@2b936b04]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@382faf51, CrawlData.CrawlTrieuDai.King@69ce14e6]",
     "kinh_do": "Tây Đô (Thanh Hóa)",
     "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
     "nam_bat_dau": "1407",
@@ -161,7 +161,7 @@
   },
   {
     "nam_ket_thuc": "1417",
-    "vua": "[scapperWeb.King@32b112a1]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@699d96bc]",
     "kinh_do": "Không rõ",
     "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
     "nam_bat_dau": "1414",
@@ -169,7 +169,7 @@
   },
   {
     "nam_ket_thuc": "1527",
-    "vua": "[scapperWeb.King@5635bcd2, scapperWeb.King@5c5c7cc4, scapperWeb.King@6c27e700, scapperWeb.King@56b9d43f, scapperWeb.King@2d913116, scapperWeb.King@1214d23c, scapperWeb.King@41582899, scapperWeb.King@595814a1, scapperWeb.King@7de5871d, scapperWeb.King@49d42faf]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@b5de9ac, CrawlData.CrawlTrieuDai.King@4ecd8ab1, CrawlData.CrawlTrieuDai.King@57bdceaa, CrawlData.CrawlTrieuDai.King@52909a97, CrawlData.CrawlTrieuDai.King@36e409e0, CrawlData.CrawlTrieuDai.King@145e958f, CrawlData.CrawlTrieuDai.King@2d2fc130, CrawlData.CrawlTrieuDai.King@7bbdb220, CrawlData.CrawlTrieuDai.King@6d001fbe, CrawlData.CrawlTrieuDai.King@d120d7c]",
     "kinh_do": "Đông Đô / Thăng Long",
     "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
     "nam_bat_dau": "1428",
@@ -177,7 +177,7 @@
   },
   {
     "nam_ket_thuc": "1592",
-    "vua": "[scapperWeb.King@4948daec, scapperWeb.King@502c2278, scapperWeb.King@1209a0f, scapperWeb.King@696174d3, scapperWeb.King@66715ca9]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@5ee77baf, CrawlData.CrawlTrieuDai.King@485deee1, CrawlData.CrawlTrieuDai.King@25cde5bb, CrawlData.CrawlTrieuDai.King@38a96593, CrawlData.CrawlTrieuDai.King@5df64b2a]",
     "kinh_do": "Đông Đô / Thăng Long",
     "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
     "nam_bat_dau": "1527",
@@ -185,7 +185,7 @@
   },
   {
     "nam_ket_thuc": "1789",
-    "vua": "[scapperWeb.King@577f9dfd, scapperWeb.King@520a95ff, scapperWeb.King@30afb481, scapperWeb.King@5c573229, scapperWeb.King@77ecdc2b, scapperWeb.King@714f1a44, scapperWeb.King@3c09a350, scapperWeb.King@592a1882, scapperWeb.King@48368a08, scapperWeb.King@41a23470, scapperWeb.King@30c01c37, scapperWeb.King@39a7eca5, scapperWeb.King@45bd4753, scapperWeb.King@156cfa20, scapperWeb.King@25fd6d1e, scapperWeb.King@23396fc0, scapperWeb.King@c11332b]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@7afb9c93, CrawlData.CrawlTrieuDai.King@30d15e4a, CrawlData.CrawlTrieuDai.King@43a7203e, CrawlData.CrawlTrieuDai.King@2c678c7b, CrawlData.CrawlTrieuDai.King@a5e8260, CrawlData.CrawlTrieuDai.King@30c7be6f, CrawlData.CrawlTrieuDai.King@4a9bce99, CrawlData.CrawlTrieuDai.King@5a0f87e5, CrawlData.CrawlTrieuDai.King@243c4346, CrawlData.CrawlTrieuDai.King@2905b568, CrawlData.CrawlTrieuDai.King@3dfe59d7, CrawlData.CrawlTrieuDai.King@1be8c122, CrawlData.CrawlTrieuDai.King@5d08976a, CrawlData.CrawlTrieuDai.King@59a2d756, CrawlData.CrawlTrieuDai.King@165d1d54, CrawlData.CrawlTrieuDai.King@4be12f6c, CrawlData.CrawlTrieuDai.King@52cb52bd]",
     "kinh_do": "Đông Đô / Thăng Long",
     "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
     "nam_bat_dau": "1533",
@@ -193,7 +193,7 @@
   },
   {
     "nam_ket_thuc": "1802",
-    "vua": "[scapperWeb.King@7e5e6573, scapperWeb.King@3005623b, scapperWeb.King@58aa5c94]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@1d1c37d5, CrawlData.CrawlTrieuDai.King@63553e9f, CrawlData.CrawlTrieuDai.King@218df7d6]",
     "kinh_do": "Đông Đô / Thăng Long",
     "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
     "nam_bat_dau": "1778",
@@ -201,7 +201,7 @@
   },
   {
     "nam_ket_thuc": "1786",
-    "vua": "[scapperWeb.King@5d27b4c1, scapperWeb.King@50df37eb, scapperWeb.King@4b508371, scapperWeb.King@41143873, scapperWeb.King@21f50d2c, scapperWeb.King@8bc0696, scapperWeb.King@473847fb, scapperWeb.King@270f28cf, scapperWeb.King@2e1add6f, scapperWeb.King@467af68c, scapperWeb.King@43786627]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@295b07e0, CrawlData.CrawlTrieuDai.King@55053f81, CrawlData.CrawlTrieuDai.King@1fee4278, CrawlData.CrawlTrieuDai.King@51132514, CrawlData.CrawlTrieuDai.King@20864cd1, CrawlData.CrawlTrieuDai.King@5c839677, CrawlData.CrawlTrieuDai.King@3193e21d, CrawlData.CrawlTrieuDai.King@79604abe, CrawlData.CrawlTrieuDai.King@6b126187, CrawlData.CrawlTrieuDai.King@2b6262bc, CrawlData.CrawlTrieuDai.King@5cffec7]",
     "kinh_do": "Đông Đô / Thăng Long",
     "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
     "nam_bat_dau": "1545",
@@ -209,7 +209,7 @@
   },
   {
     "nam_ket_thuc": "1802",
-    "vua": "[scapperWeb.King@1d6f77d7, scapperWeb.King@65e620b0, scapperWeb.King@74b97416, scapperWeb.King@74707df8, scapperWeb.King@12c76d6e, scapperWeb.King@46702c26, scapperWeb.King@7956f93a, scapperWeb.King@e3ed455, scapperWeb.King@27bb74e1, scapperWeb.King@606d6d2c]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@7e81617a, CrawlData.CrawlTrieuDai.King@6e73974, CrawlData.CrawlTrieuDai.King@3e28dc96, CrawlData.CrawlTrieuDai.King@44eb2452, CrawlData.CrawlTrieuDai.King@31940704, CrawlData.CrawlTrieuDai.King@e07b4db, CrawlData.CrawlTrieuDai.King@76b305e1, CrawlData.CrawlTrieuDai.King@6be766d1, CrawlData.CrawlTrieuDai.King@7adae08e, CrawlData.CrawlTrieuDai.King@49c83262]",
     "kinh_do": "Đông Đô / Thăng Long",
     "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
     "nam_bat_dau": "1600",
@@ -217,7 +217,7 @@
   },
   {
     "nam_ket_thuc": "1883",
-    "vua": "[scapperWeb.King@2e3cd732, scapperWeb.King@56d822dc, scapperWeb.King@2ab8589a, scapperWeb.King@21b744ec]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@273aaab7, CrawlData.CrawlTrieuDai.King@77bb916f, CrawlData.CrawlTrieuDai.King@5a48d186, CrawlData.CrawlTrieuDai.King@521ba38f]",
     "kinh_do": "Phú Xuân",
     "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
     "nam_bat_dau": "1802",
@@ -225,7 +225,7 @@
   },
   {
     "nam_ket_thuc": "1945",
-    "vua": "[scapperWeb.King@697a92af, scapperWeb.King@7ea3839e, scapperWeb.King@16b76858, scapperWeb.King@d3cce46, scapperWeb.King@30eedaa4, scapperWeb.King@52b30054, scapperWeb.King@7f6b57f2, scapperWeb.King@144ee8a7, scapperWeb.King@52b32b70]",
+    "vua": "[CrawlData.CrawlTrieuDai.King@2086d469, CrawlData.CrawlTrieuDai.King@b1d19ff, CrawlData.CrawlTrieuDai.King@17c53dfb, CrawlData.CrawlTrieuDai.King@184de357, CrawlData.CrawlTrieuDai.King@efe49ab, CrawlData.CrawlTrieuDai.King@6dcf7b6a, CrawlData.CrawlTrieuDai.King@53dba9cd, CrawlData.CrawlTrieuDai.King@247bbfba, CrawlData.CrawlTrieuDai.King@5834198f]",
     "kinh_do": "Huế",
     "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
     "nam_bat_dau": "1883",

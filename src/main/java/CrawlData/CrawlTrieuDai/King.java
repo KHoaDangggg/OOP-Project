@@ -1,4 +1,4 @@
-package CrawlData.CrawTrieuDai;
+package CrawlData.CrawlTrieuDai;
 
 public class King {
     public String name;
