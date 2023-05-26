@@ -1,4 +1,5 @@
-package CrawlData.CrawTrieuDai;
+package CrawlData.CrawlTrieuDai;
+
 
 public class KinhDo {
     public String ten;
@@ -9,9 +10,6 @@ public class KinhDo {
         return ten;
     }
 
-    public String getTrieuDai() {
-        return trieuDai;
-    }
 
     public String getNamBatDau() {
         return namBatDau;
@@ -21,9 +19,6 @@ public class KinhDo {
         return namKetThuc;
     }
 
-    public void setTen(String ten) {
-        this.ten = ten;
-    }
 
     public void setNamBatDau(String namBatDau) {
         this.namBatDau = namBatDau;
@@ -58,3 +53,4 @@ public class KinhDo {
     }
 
 }
+
