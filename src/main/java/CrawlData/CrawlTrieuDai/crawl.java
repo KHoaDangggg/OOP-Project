@@ -12,68 +12,116 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class crawl {
     static ArrayList<TrieuDai> listTrieuDai = new ArrayList<>();
     static ArrayList<KinhDo> listKinhDo = new ArrayList<>();
+    static ArrayList<QuocHieu> listQuocHieu = new ArrayList<>();
+
     public static void main(String[] args) throws UnsupportedEncodingException {
         crawlTrieuDai();
-        addKinhDo();
-        addKinhDoToTrieuDai();
+        crawlKinhDo();
+        crawlQuocHieu();
+        addPropertiesToTrieuDai();
         writeToJSON();
     }
-    static void crawlTrieuDai() throws UnsupportedEncodingException {
-        WebElement table = crawlHTML("http://vietycotruyen.com.vn/cac-trieu-dai-viet-nam-qua-tung-thoi-ky-lich-su", 5, "tbody");;
-        String tableHtml = table.getAttribute("innerHTML");
-        List<WebElement> rows = table.findElements(By.tagName("tr"));
-        rows.remove(0);
-        int index = 0;
-        for (int j=0; j<rows.size(); j++) {
-            List<WebElement> ps = rows.get(j).findElements(By.tagName("p"));
-            if(ps.size() > 5 || j == 72) {
-                for(int i= ps.size()-1; i >= 0; i--) {
-                    if(ps.get(i).getAttribute("innerHTML").equals("&nbsp;")) {
-                        ps.remove(i);
+    static void crawlTrieuDai() {
+        WebElement div = crawl.crawlHTML("https://baoduongmaynenkhi.vn/tom-tat-lich-su-viet-nam/", 1, "section.post_content.clearfix");
+        List<WebElement> titles = div.findElements(By.cssSelector("p, h3"));
+        Iterator<WebElement> iterator1 = titles.iterator();
+        while (iterator1.hasNext()) {
+            WebElement element = iterator1.next();
+            Boolean btag = element.getAttribute("innerHTML").contains("<b>");
+            if(!btag) {
+                iterator1.remove();
+                continue;
+            }
+            if (!element.getText().contains("(") && !element.getText().contains("từ")) {
+                iterator1.remove();
+            }
+        }
+        Iterator<WebElement> iterator = titles.iterator();
+        while (iterator.hasNext()) {
+            WebElement element = iterator.next();
+            WebElement nextSibling = element.findElement(By.xpath("following-sibling::*[1]"));
+            try {
+                WebElement bTag = nextSibling.findElement(By.tagName("b"));
+                if (bTag.getText().contains("(")) {
+                    iterator.remove();
+                }
+            } catch (NoSuchElementException e) {
+            }
+        }
+        titles.remove(0);
+        int count = 2;
+        for(int i=0; i<titles.size(); i++) {
+            //Set ten,nam
+            WebElement title = titles.get(i);
+            String text = title.getText()
+                    .replaceAll("đến | – |\\u2013", "-")
+                    .replaceAll("khoảng", "")
+                    .replaceAll("từ", "(")
+                    .replaceAll("nay", "2023");
+            int start = text.lastIndexOf('(');
+            int mid = text.lastIndexOf("-");
+            int end = text.indexOf(")") ;
+            if(!text.contains(")")) {
+                end = text.length();
+            }
+            String namBatDau = text.substring(start+1, mid).replaceAll(" ","");
+            String namKetThuc = text.substring(mid+1, end).replaceAll(" ","");
+            if(text.substring(0, start).contains("(")) {
+                start--;
+            }
+            String ten = text.substring(0, start).trim();
+            //Set mota
+            WebElement nextElement = title.findElement(By.xpath("following-sibling::p[1]"));
+            StringBuffer result = new StringBuffer();
+            ArrayList<String> kings = new ArrayList<>();
+            while(true) {
+                if(titles.contains(nextElement) || nextElement == null) {
+                    break;
+                }
+                // Set king
+                if(nextElement.getTagName().equals("ul")) {
+                    List<WebElement> lis = nextElement.findElements(By.cssSelector("li"));
+                    for(WebElement li: lis) {
+                        kings.add(li.getText());
                     }
+                } else {
+                    // Set mota
+                    List<WebElement> boldElements = nextElement.findElements(By.cssSelector("b"));
+                    if (boldElements.size() > 0 ) {
+                        if(count == 0) {
+                            break;
+                        } else {
+                            count--;
+                        }
+                    }
+                    result.append(nextElement.getText()).append('\n');
+                }
+                try {
+                    nextElement = nextElement.findElement(By.xpath("following-sibling::p[1] | following-sibling::h3[1] | following-sibling::ul[1]"));
+                } catch (NoSuchElementException e) {
+                    break;
                 }
             }
-            ArrayList<String> cells = new ArrayList<>();
-            for(WebElement p: ps) {
-                String text = p.getAttribute("innerHTML");
-                cells.add(text);
+            if(result.charAt(result.length()-1) == ':') {
+                result.setCharAt(result.length()-1, '.');
             }
-            if(cells.size() == 5) {
-                TrieuDai trieudai = new TrieuDai(cells.get(0),cells.get(1));
-                King newKing = new King(cells.get(2), cells.get(3));
-                trieudai.addKing(newKing);
-                listTrieuDai.add(trieudai);
-                index++;
+            String mota = result.toString().replaceAll("bao gồm:| gồm:| là:", ".").replaceAll("\\u2013| \\u201c| \\u201d", " ").trim();
+            TrieuDai newTrieuDai = new TrieuDai(ten, namBatDau, namKetThuc, mota, kings);
+            if(i == 0) {
+                newTrieuDai = new TrieuDai(ten, namBatDau, namKetThuc, "Gồm hai nhà nước nhỏ bao gồm: \n" + mota, kings);
             }
-            if(cells.size() == 4) {
-                TrieuDai trieudai = new TrieuDai(cells.get(0));
-                trieudai.setThoiKy(listTrieuDai.get(index-1).getThoiKy());
-                King newKing = new King(cells.get(1), cells.get(2));
-                trieudai.addKing(newKing);
-                listTrieuDai.add(trieudai);
-                index++;
-            }
-            if(cells.size() == 3) {
-                King newKing = new King(cells.get(0), cells.get(1));
-                listTrieuDai.get(index - 1).addKing(newKing);
-            }
+            listTrieuDai.add(newTrieuDai);
         }
-        for(TrieuDai a: listTrieuDai) {
-            if(a.getTen().contains("Triều Hậu Lê")) {
-                a.cleanTen(a.getTen(), true);
-            } else {
-                a.cleanTen(a.getTen(), false);
-            }
-            a.cleanThoiKy(a.getThoiKy());
-            a.cleanKing(a.getKings());
-        }
+        writeToJSON();
     }
-    static void addKinhDo() throws UnsupportedEncodingException {
+
+    static void crawlKinhDo() throws UnsupportedEncodingException {
         WebElement div = crawlHTML("https://quynhluu2.edu.vn/Giao-vien/DANH-SACH-CAC-KINH-DO-THU-DO-CUA-VIET-NAM-765.html", 5, "tbody");
         List<WebElement> rows = div.findElements(By.tagName("tr"));
         rows.remove(0);
@@ -93,11 +141,86 @@ public class crawl {
             }
         }
     }
+
+    static void crawlQuocHieu() {
+        WebElement div = crawlHTML("https://vi.wikipedia.org/wiki/T%C3%AAn_g%E1%BB%8Di_Vi%E1%BB%87t_Nam", 1,
+                "table.collapsible.autocollapse.mw-collapsible.mw-made-collapsible tbody");
+        List<WebElement> rows = div.findElements(By.tagName("tr"));
+        rows.remove(0);
+        QuocHieu newQuocHieu;
+        for(int i=0; i<23; i++) {
+            WebElement row = rows.get(i);
+            List<WebElement> tds =row.findElements(By.cssSelector("td"));
+            String ten = tds.get(1).getText().replaceAll(" ", "");
+            String cleanTen = null;
+            for (int j = 0; j < ten.length(); j++) {
+                if (Character.isUpperCase(ten.charAt(j)) && j>0) {
+                    cleanTen = ten.substring(0,j) + " " + ten.substring(j);
+                }
+            }
+            if(tds.get(0).getText().contains("từ")) {
+                newQuocHieu = new QuocHieu(cleanTen.replaceAll("\n",""), tds.get(0).getText().replaceAll("từ", ""), "2023");
+            }
+            else {
+                String[] nam = tds.get(0).getText().replaceAll(" ", "").split("\u2013");
+                newQuocHieu = new QuocHieu(cleanTen.replaceAll("\n",""), nam[0], nam[1]);
+            }
+            if(newQuocHieu.getNamKetThuc().contains("CN") && !newQuocHieu.getNamKetThuc().contains("TCN")) {
+                newQuocHieu.setNamKetThuc(newQuocHieu.getNamKetThuc().replaceAll("CN",""));
+            }
+            listQuocHieu.add(newQuocHieu);
+        }
+
+    }
+
+    static void addPropertiesToTrieuDai(){
+        for(TrieuDai t: listTrieuDai) {
+            if(t.getNamBatDau().contains("?")) {
+                t.setKinhDo("Không rõ");
+                t.setQuocHieu("Không rõ");
+                continue;
+            }
+            for(KinhDo k: listKinhDo) {
+                if(isMatch(t.getNamBatDau(), t.getNamKetThuc(), k.getNamBatDau(), k.getNamKetThuc())) {
+                    t.setKinhDo(k.getTen());
+                    break;
+                }
+            }
+            for(QuocHieu q: listQuocHieu) {
+                if(isMatch(t.getNamBatDau(), t.getNamKetThuc(), q.getNamBatDau(), q.getNamKetThuc())) {
+                    t.setQuocHieu(q.getTen());
+                }
+            }
+        }
+    }
+
+    static  boolean isMatch(String ...years) {
+        int[] nam =  new int[4];
+        for(int i=0; i<4; i++) {
+            String year = years[i];
+            if(year.contains("TCN")) {
+                nam[i] = - Integer.parseInt(year.replaceAll("TCN","").trim());
+            } else {
+                nam[i] = Integer.parseInt(year.trim());
+            }
+        }
+        if(nam[1] < 0 && nam[0] > 0) {
+            nam[0] = -nam[0];
+        }
+        if(nam[3] < 0 && nam[2] > 0) {
+            nam[2] = -nam[2];
+        }
+        if(nam[0] > nam[3] || nam[1] < nam[2]) {
+            return false;
+        }
+        return true;
+    }
+
     static void writeToJSON() {
         JSONArray jsonArray = new JSONArray();
         for (TrieuDai t : listTrieuDai) {
             JSONObject jsonObject = new JSONObject();
-            jsonObject.put("ten", t.getTen());
+            jsonObject.put("ten", t.getTen().replaceAll("[\t\n]", ""));
             if(t.getKinhDo() == null) {
                 jsonObject.put("kinh_do", "Không rõ");
 
@@ -106,63 +229,22 @@ public class crawl {
             }
             jsonObject.put("nam_bat_dau", t.getNamBatDau());
             jsonObject.put("nam_ket_thuc", t.getNamKetThuc());
-
-            jsonObject.put("thoi_ky", t.getThoiKy());
-            jsonObject.put("vua", t.getKings().toString());
+            jsonObject.put("tom_tat", t.getMoTa());
+            jsonObject.put("vua", t.getKings());
+            jsonObject.put("quoc_hieu", t.getQuocHieu());
             jsonArray.put(jsonObject);
         }
 
         try {
-            // Write JSONArray to JSON file
             FileWriter file = new FileWriter("src/JSON_Data/trieuDai.json");
-            file.write(jsonArray.toString(2));
+            file.write(jsonArray.toString(1));
             file.flush();
             file.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    static void addKinhDoToTrieuDai() {
-        System.out.println("Add");
-        for(TrieuDai t: listTrieuDai) {
-            if(t.getNamBatDau().equals("Không rõ")) {
-                t.setKinhDo("Không rõ");
-                continue;
-            }
-            if(t.getNamBatDau().contains("TCN") || t.getNamKetThuc().contains("TCN") ) {
-                for(KinhDo k: listKinhDo) {
-                    if(!k.getNamBatDau().contains("TCN")) {
-                        break;
-                    }
-                    int ts = Integer.parseInt(t.getNamBatDau().replaceAll("TCN", ""));
-                    int ks = Integer.parseInt(k.getNamKetThuc().replaceAll("TCN", ""));
-                    int te = Integer.parseInt(t.getNamKetThuc().replaceAll("TCN", ""));
-                    int ke = Integer.parseInt(k.getNamBatDau().replaceAll("TCN", ""));
-                    boolean correct = !(ts < ke || te > ks);
-                    if(correct) {
-                        t.setKinhDo(k.getTen());
-                        break;
-                    }
-                    if(k.getNamKetThuc().contains("TCN") && !t.getNamKetThuc().contains("TCN")) {
-                        t.setKinhDo(k.getTen());
-                        break;
-                    }
-                }
-            } else {
-                for(KinhDo k: listKinhDo) {
-                    if(k.getNamBatDau().contains("TCN")) continue;
-                    if(!(Integer.parseInt(k.getNamBatDau()) > Integer.parseInt(t.getNamKetThuc()))
-                            && !(Integer.parseInt(k.getNamKetThuc()) < Integer.parseInt(t.getNamBatDau()))) {
-                        t.setKinhDo(k.getTen());
-                        break;
-                    }
-                    else if(Integer.parseInt(k.getNamBatDau()) > Integer.parseInt(t.getNamKetThuc())) {
-                        break;
-                    }
-                }
-            }
-        }
-    }
+
     static WebElement crawlHTML(String url, Integer waitSecond, String waitElement) {
         System.setProperty("file.encoding", "UTF-8");
         System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\webDriver\\chromedriver.exe");

@@ -1,234 +1,343 @@
 [
-  {
-    "nam_ket_thuc": "258TCN",
-    "vua": "[CrawlData.CrawlTrieuDai.King@3c09a350]",
-    "kinh_do": "Phong Châu (Phú Thọ)",
-    "thoi_ky": "Việt Nam thời kỳ dựng nước",
-    "nam_bat_dau": "2879",
-    "ten": "Truyền thuyết Kinh Dương Vương và Hồng Bàng Thị"
-  },
-  {
-    "nam_ket_thuc": "Không rõ",
-    "vua": "[CrawlData.CrawlTrieuDai.King@592a1882]",
-    "kinh_do": "Không rõ",
-    "thoi_ky": "Việt Nam thời kỳ dựng nước",
-    "nam_bat_dau": "Không rõ",
-    "ten": "Nước Văn Lang và các vua Hùng"
-  },
-  {
-    "nam_ket_thuc": "207TCN",
-    "vua": "[CrawlData.CrawlTrieuDai.King@48368a08]",
-    "kinh_do": "Cổ Loa",
-    "thoi_ky": "Việt Nam thời kỳ dựng nước",
-    "nam_bat_dau": "257",
-    "ten": "Nhà Thục và nước Âu Lạc"
-  },
-  {
-    "nam_ket_thuc": "111TCN",
-    "vua": "[CrawlData.CrawlTrieuDai.King@41a23470, CrawlData.CrawlTrieuDai.King@30c01c37, CrawlData.CrawlTrieuDai.King@39a7eca5, CrawlData.CrawlTrieuDai.King@45bd4753]",
-    "kinh_do": "Không rõ",
-    "thoi_ky": "Việt Nam thời kỳ dựng nước",
-    "nam_bat_dau": "207",
-    "ten": "Nhà Triệu và nước Nam Việt"
-  },
-  {
-    "nam_ket_thuc": "39",
-    "vua": "[CrawlData.CrawlTrieuDai.King@156cfa20]",
-    "kinh_do": "Phong Châu (Phú Thọ)",
-    "thoi_ky": "Thời kỳ Bắc thuộc lần thứ nhất và thứ hai",
-    "nam_bat_dau": "111TCN",
-    "ten": "Giao Chỉ và nhà Tây Hán"
-  },
-  {
-    "nam_ket_thuc": "220",
-    "vua": "[CrawlData.CrawlTrieuDai.King@25fd6d1e]",
-    "kinh_do": "Mê Linh (Vĩnh Phúc)",
-    "thoi_ky": "Thời kỳ Bắc thuộc lần thứ nhất và thứ hai",
-    "nam_bat_dau": "25",
-    "ten": "Nhà Đông Hán"
-  },
-  {
-    "nam_ket_thuc": "43",
-    "vua": "[CrawlData.CrawlTrieuDai.King@23396fc0]",
-    "kinh_do": "Mê Linh (Vĩnh Phúc)",
-    "thoi_ky": "Thời kỳ Bắc thuộc lần thứ nhất và thứ hai",
-    "nam_bat_dau": "40",
-    "ten": "Hai Bà Trưng"
-  },
-  {
-    "nam_ket_thuc": "280",
-    "vua": "[CrawlData.CrawlTrieuDai.King@c11332b]",
-    "kinh_do": "Không rõ",
-    "thoi_ky": "Thời kỳ Bắc thuộc lần thứ nhất và thứ hai",
-    "nam_bat_dau": "222",
-    "ten": "Nhà Đông Ngô"
-  },
-  {
-    "nam_ket_thuc": "248",
-    "vua": "[CrawlData.CrawlTrieuDai.King@7e5e6573]",
-    "kinh_do": "Không rõ",
-    "thoi_ky": "Thời kỳ Bắc thuộc lần thứ nhất và thứ hai",
-    "nam_bat_dau": "248",
-    "ten": "Bà Triệu"
-  },
-  {
-    "nam_ket_thuc": "602",
-    "vua": "[CrawlData.CrawlTrieuDai.King@3005623b, CrawlData.CrawlTrieuDai.King@58aa5c94, CrawlData.CrawlTrieuDai.King@5d27b4c1]",
-    "kinh_do": "Long Biên",
-    "thoi_ky": "Nước Vạn Xuân độc lập",
-    "nam_bat_dau": "544",
-    "ten": "Nhà Tiền Lý"
-  },
-  {
-    "nam_ket_thuc": "939",
-    "vua": "[CrawlData.CrawlTrieuDai.King@50df37eb, CrawlData.CrawlTrieuDai.King@4b508371, CrawlData.CrawlTrieuDai.King@41143873, CrawlData.CrawlTrieuDai.King@21f50d2c, CrawlData.CrawlTrieuDai.King@8bc0696, CrawlData.CrawlTrieuDai.King@473847fb, CrawlData.CrawlTrieuDai.King@270f28cf]",
-    "kinh_do": "Đại La",
-    "thoi_ky": "Nhà Tùy - Đường và các cuộc khởi nghĩa (Bắc thuộc lần thứ ba)",
-    "nam_bat_dau": "603",
-    "ten": "Nhà Tùy Đường"
-  },
-  {
-    "nam_ket_thuc": "965",
-    "vua": "[CrawlData.CrawlTrieuDai.King@2e1add6f]",
-    "kinh_do": "Loa Thành",
-    "thoi_ky": "Nhà Tùy - Đường và các cuộc khởi nghĩa (Bắc thuộc lần thứ ba)",
-    "nam_bat_dau": "939",
-    "ten": "Triều Ngô"
-  },
-  {
-    "nam_ket_thuc": "Không rõ",
-    "vua": "[CrawlData.CrawlTrieuDai.King@467af68c]",
-    "kinh_do": "Không rõ",
-    "thoi_ky": "Nhà Tùy - Đường và các cuộc khởi nghĩa (Bắc thuộc lần thứ ba)",
-    "nam_bat_dau": "Không rõ",
-    "ten": "Không rõ"
-  },
-  {
-    "nam_ket_thuc": "965",
-    "vua": "[CrawlData.CrawlTrieuDai.King@43786627]",
-    "kinh_do": "Loa Thành",
-    "thoi_ky": "Nhà Tùy - Đường và các cuộc khởi nghĩa (Bắc thuộc lần thứ ba)",
-    "nam_bat_dau": "950",
-    "ten": "Hậu Ngô Vương"
-  },
-  {
-    "nam_ket_thuc": "980",
-    "vua": "[CrawlData.CrawlTrieuDai.King@1d6f77d7, CrawlData.CrawlTrieuDai.King@65e620b0]",
-    "kinh_do": "Hoa Lư (Ninh Bình)",
-    "thoi_ky": "Sự nghiệp thống nhất nước nhà (cuối thế kỷ X)",
-    "nam_bat_dau": "968",
-    "ten": "Nhà Đinh"
-  },
-  {
-    "nam_ket_thuc": "1009",
-    "vua": "[CrawlData.CrawlTrieuDai.King@74b97416, CrawlData.CrawlTrieuDai.King@74707df8, CrawlData.CrawlTrieuDai.King@12c76d6e]",
-    "kinh_do": "Hoa Lư (Ninh Bình)",
-    "thoi_ky": "Sự nghiệp thống nhất nước nhà (cuối thế kỷ X)",
-    "nam_bat_dau": "980",
-    "ten": "Nhà Tiền Lê"
-  },
-  {
-    "nam_ket_thuc": "1225",
-    "vua": "[CrawlData.CrawlTrieuDai.King@46702c26, CrawlData.CrawlTrieuDai.King@7956f93a, CrawlData.CrawlTrieuDai.King@e3ed455, CrawlData.CrawlTrieuDai.King@27bb74e1, CrawlData.CrawlTrieuDai.King@606d6d2c, CrawlData.CrawlTrieuDai.King@2e3cd732, CrawlData.CrawlTrieuDai.King@56d822dc, CrawlData.CrawlTrieuDai.King@2ab8589a, CrawlData.CrawlTrieuDai.King@21b744ec]",
-    "kinh_do": "Thăng Long",
-    "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
-    "nam_bat_dau": "1010",
-    "ten": "Triều Lý"
-  },
-  {
-    "nam_ket_thuc": "1400",
-    "vua": "[CrawlData.CrawlTrieuDai.King@697a92af, CrawlData.CrawlTrieuDai.King@7ea3839e, CrawlData.CrawlTrieuDai.King@16b76858, CrawlData.CrawlTrieuDai.King@d3cce46, CrawlData.CrawlTrieuDai.King@30eedaa4, CrawlData.CrawlTrieuDai.King@52b30054, CrawlData.CrawlTrieuDai.King@7f6b57f2, CrawlData.CrawlTrieuDai.King@144ee8a7, CrawlData.CrawlTrieuDai.King@52b32b70, CrawlData.CrawlTrieuDai.King@18c820d2, CrawlData.CrawlTrieuDai.King@3d3930fe, CrawlData.CrawlTrieuDai.King@5e51ec2e]",
-    "kinh_do": "Thăng Long",
-    "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
-    "nam_bat_dau": "1225",
-    "ten": "Triều Trần"
-  },
-  {
-    "nam_ket_thuc": "1407",
-    "vua": "[CrawlData.CrawlTrieuDai.King@15f2a43f, CrawlData.CrawlTrieuDai.King@4c65d8e3]",
-    "kinh_do": "Thăng Long",
-    "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
-    "nam_bat_dau": "1400",
-    "ten": "Triều Hồ"
-  },
-  {
-    "nam_ket_thuc": "1413",
-    "vua": "[CrawlData.CrawlTrieuDai.King@382faf51, CrawlData.CrawlTrieuDai.King@69ce14e6]",
-    "kinh_do": "Tây Đô (Thanh Hóa)",
-    "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
-    "nam_bat_dau": "1407",
-    "ten": "Triều Hậu Trần"
-  },
-  {
-    "nam_ket_thuc": "1417",
-    "vua": "[CrawlData.CrawlTrieuDai.King@699d96bc]",
-    "kinh_do": "Không rõ",
-    "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
-    "nam_bat_dau": "1414",
-    "ten": "Kỷ Thuộc Minh"
-  },
-  {
-    "nam_ket_thuc": "1527",
-    "vua": "[CrawlData.CrawlTrieuDai.King@b5de9ac, CrawlData.CrawlTrieuDai.King@4ecd8ab1, CrawlData.CrawlTrieuDai.King@57bdceaa, CrawlData.CrawlTrieuDai.King@52909a97, CrawlData.CrawlTrieuDai.King@36e409e0, CrawlData.CrawlTrieuDai.King@145e958f, CrawlData.CrawlTrieuDai.King@2d2fc130, CrawlData.CrawlTrieuDai.King@7bbdb220, CrawlData.CrawlTrieuDai.King@6d001fbe, CrawlData.CrawlTrieuDai.King@d120d7c]",
-    "kinh_do": "Đông Đô / Thăng Long",
-    "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
-    "nam_bat_dau": "1428",
-    "ten": "Triều Lê Sơ"
-  },
-  {
-    "nam_ket_thuc": "1592",
-    "vua": "[CrawlData.CrawlTrieuDai.King@5ee77baf, CrawlData.CrawlTrieuDai.King@485deee1, CrawlData.CrawlTrieuDai.King@25cde5bb, CrawlData.CrawlTrieuDai.King@38a96593, CrawlData.CrawlTrieuDai.King@5df64b2a]",
-    "kinh_do": "Đông Đô / Thăng Long",
-    "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
-    "nam_bat_dau": "1527",
-    "ten": "Triều Mạc"
-  },
-  {
-    "nam_ket_thuc": "1789",
-    "vua": "[CrawlData.CrawlTrieuDai.King@7afb9c93, CrawlData.CrawlTrieuDai.King@30d15e4a, CrawlData.CrawlTrieuDai.King@43a7203e, CrawlData.CrawlTrieuDai.King@2c678c7b, CrawlData.CrawlTrieuDai.King@a5e8260, CrawlData.CrawlTrieuDai.King@30c7be6f, CrawlData.CrawlTrieuDai.King@4a9bce99, CrawlData.CrawlTrieuDai.King@5a0f87e5, CrawlData.CrawlTrieuDai.King@243c4346, CrawlData.CrawlTrieuDai.King@2905b568, CrawlData.CrawlTrieuDai.King@3dfe59d7, CrawlData.CrawlTrieuDai.King@1be8c122, CrawlData.CrawlTrieuDai.King@5d08976a, CrawlData.CrawlTrieuDai.King@59a2d756, CrawlData.CrawlTrieuDai.King@165d1d54, CrawlData.CrawlTrieuDai.King@4be12f6c, CrawlData.CrawlTrieuDai.King@52cb52bd]",
-    "kinh_do": "Đông Đô / Thăng Long",
-    "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
-    "nam_bat_dau": "1533",
-    "ten": "Triều Hậu Lê\n\t\t\t(Lê Trung Hưng)\n\t\t\tNam - Bắc Triều"
-  },
-  {
-    "nam_ket_thuc": "1802",
-    "vua": "[CrawlData.CrawlTrieuDai.King@1d1c37d5, CrawlData.CrawlTrieuDai.King@63553e9f, CrawlData.CrawlTrieuDai.King@218df7d6]",
-    "kinh_do": "Đông Đô / Thăng Long",
-    "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
-    "nam_bat_dau": "1778",
-    "ten": "Triều Tây Sơn"
-  },
-  {
-    "nam_ket_thuc": "1786",
-    "vua": "[CrawlData.CrawlTrieuDai.King@295b07e0, CrawlData.CrawlTrieuDai.King@55053f81, CrawlData.CrawlTrieuDai.King@1fee4278, CrawlData.CrawlTrieuDai.King@51132514, CrawlData.CrawlTrieuDai.King@20864cd1, CrawlData.CrawlTrieuDai.King@5c839677, CrawlData.CrawlTrieuDai.King@3193e21d, CrawlData.CrawlTrieuDai.King@79604abe, CrawlData.CrawlTrieuDai.King@6b126187, CrawlData.CrawlTrieuDai.King@2b6262bc, CrawlData.CrawlTrieuDai.King@5cffec7]",
-    "kinh_do": "Đông Đô / Thăng Long",
-    "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
-    "nam_bat_dau": "1545",
-    "ten": "Chúa Trịnh"
-  },
-  {
-    "nam_ket_thuc": "1802",
-    "vua": "[CrawlData.CrawlTrieuDai.King@7e81617a, CrawlData.CrawlTrieuDai.King@6e73974, CrawlData.CrawlTrieuDai.King@3e28dc96, CrawlData.CrawlTrieuDai.King@44eb2452, CrawlData.CrawlTrieuDai.King@31940704, CrawlData.CrawlTrieuDai.King@e07b4db, CrawlData.CrawlTrieuDai.King@76b305e1, CrawlData.CrawlTrieuDai.King@6be766d1, CrawlData.CrawlTrieuDai.King@7adae08e, CrawlData.CrawlTrieuDai.King@49c83262]",
-    "kinh_do": "Đông Đô / Thăng Long",
-    "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
-    "nam_bat_dau": "1600",
-    "ten": "Chúa Nguyễn"
-  },
-  {
-    "nam_ket_thuc": "1883",
-    "vua": "[CrawlData.CrawlTrieuDai.King@273aaab7, CrawlData.CrawlTrieuDai.King@77bb916f, CrawlData.CrawlTrieuDai.King@5a48d186, CrawlData.CrawlTrieuDai.King@521ba38f]",
-    "kinh_do": "Phú Xuân",
-    "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
-    "nam_bat_dau": "1802",
-    "ten": "Triều Nguyễn thời kỳ độc lập"
-  },
-  {
-    "nam_ket_thuc": "1945",
-    "vua": "[CrawlData.CrawlTrieuDai.King@2086d469, CrawlData.CrawlTrieuDai.King@b1d19ff, CrawlData.CrawlTrieuDai.King@17c53dfb, CrawlData.CrawlTrieuDai.King@184de357, CrawlData.CrawlTrieuDai.King@efe49ab, CrawlData.CrawlTrieuDai.King@6dcf7b6a, CrawlData.CrawlTrieuDai.King@53dba9cd, CrawlData.CrawlTrieuDai.King@247bbfba, CrawlData.CrawlTrieuDai.King@5834198f]",
-    "kinh_do": "Huế",
-    "thoi_ky": "Từ thế kỷ XI đến thời kỳ thuộc Pháp",
-    "nam_bat_dau": "1883",
-    "ten": "Thời kỳ bắt đầu thuộc Pháp"
-  }
+ {
+  "nam_ket_thuc": "258TCN",
+  "tom_tat": "Gồm hai nhà nước nhỏ bao gồm: \nNước Xích Quỷ: Là 1 nhà nước liên bang\u201d, lỏng lẻo của các bộ tộc người Việt cổ ở vùng Lĩnh Nam. Theo tương truyền, Kinh Dương Vương là Thủy tổ của dân tộc Việt Nam có con là Lạc Long Quân đã lấy Âu Cơ và sinh ra một bọc trăm trứng nở ra một trăm người con trai. Đây được xem là tổ tiên của người Bách Việt, có con trưởng là Hùng Vương nối ngôi.\nNhà nước Văn Lang (Thế kỷ VII 258 TCN hoặc 218 TCN): Sau khi nhà nước liên bang tan rã thì vào khoảng thế kỷ thứ 7 TCN, người Lạc Việt ở miền Bắc lúc bấy giờ đã xây dựng một nhà nước lấy tên là Văn Lang, do vua Hùng cai trị và đóng đô ở Phong Châu (Phú Thọ).",
+  "vua": [],
+  "kinh_do": "Không rõ",
+  "quoc_hieu": "Không rõ",
+  "nam_bat_dau": "?",
+  "ten": "Kỷ Hồng Bàng"
+ },
+ {
+  "nam_ket_thuc": "208TCN",
+  "tom_tat": "Vào khoảng thế kỷ thứ 3 TCN, Thục Phán của bộ Âu Lạc đã hợp lực cùng vua Hùng thứ 18 đánh bại quân xâm lược nhà Tần. Sau đó, sáp nhập Âu Việt và Lạc Việt thành Âu Lạc. Thục Phán lên ngôi, lấy hiệu là An Dương Vương lập lên nhà Thục và đóng đô ở Cổ Loa.",
+  "vua": [],
+  "kinh_do": "Cổ Loa",
+  "quoc_hieu": "Âu Lạc",
+  "nam_bat_dau": "257TCN",
+  "ten": "Nhà Thục"
+ },
+ {
+  "nam_ket_thuc": "39",
+  "tom_tat": "Trong thời kỳ phong kiến phương Bắc đô hộ lần thứ nhất, Triệu Đà là quận ủy quận Nam Hải nhân lúc nhà Tần suy yếu đã giết Trưởng lại nhà Tần, chiếm giữ Lĩnh Nam rồi đem quân đi thôn tính lãnh thổ Âu Lạc, Mân Việt, Quế Lâm thành lập lên nhà Triệu, lấy tên nước là Nam Việt và kinh đô là Phiên Ngưng. Nhà Triệu tồn tại 5 đời vua.\nNăm 111 TCN, Hán Vũ Đế đem 10 vạn quân đi thôn tính Nam Việt. Nhà Hán chia Nam Việt thành 9 quận bao gồm Đạm Nhĩ, Nam Hải, Hợp Phố, Uất Lâm, Thương Ngô, Giao Chỉ (Bắc Bộ nước ta), Cửu Chân (Thanh Hóa-Nghệ Tĩnh), Nhật Nam (Quảng Bình-Quảng Nam). Chúng thực hiện các chính sách cai trị tàn bạo và vô cùng khắc nghiệt.",
+  "vua": [
+   "Triệu Vũ Đế (Triệu Đà, 207-136 TCN)",
+   "Triệu Văn Đế (Triệu Hồ, 136-124 TCN)",
+   "Triệu Minh Vương (Triệu Anh Tề, 124-112 TCN)",
+   "Triệu Ai Vương (Triệu Hưng, 112-112 TCN)",
+   "Triệu Dương Vương (tức là Triệu Kiến Đức, 112-111 TCN)"
+  ],
+  "kinh_do": "Cổ Loa",
+  "quoc_hieu": "Giao Chỉ",
+  "nam_bat_dau": "208TCN",
+  "ten": "Thời Bắc thuộc lần thứ I"
+ },
+ {
+  "nam_ket_thuc": "43",
+  "tom_tat": "Cuộc khởi nghĩa của hai chị em Trưng Trắc Trưng Nhị diễn ra trong vòng 3  năm đã giúp quân ta đã chiếm được 65 thành trì ở các quận Giao Chỉ, Cửu Chân, Nhật Nam và Hợp Phố. \nSau đó, do bị cô lập và quân đội còn sơ khai đã khiến 2 bà không chống cự nổi quân của Mã Viện. Cuối cùng, để giữ vẹn khí tiết thì 2 bà đã tuẫn tiết tại sông Hát.",
+  "vua": [],
+  "kinh_do": "Mê Linh (Vĩnh Phúc)",
+  "quoc_hieu": "Giao Chỉ",
+  "nam_bat_dau": "40",
+  "ten": "Trưng Nữ Vương"
+ },
+ {
+  "nam_ket_thuc": "543",
+  "tom_tat": "Sau nhà Hán, các triều đại phong kiến phương Bắc gồm Đông Ngô, nhà Tấn, Lưu Tống, Nam Tề và nhà Lương đã thay nhau đô hộ nước ta. Có rất nhiều cuộc khởi nghĩa đã nổi dậy nhưng tất cả đều không thành công.\nMột số cuộc khởi nghĩa tiêu biểu ở thời kỳ này có thể kể đến là khởi nghĩa anh em Triệu Quốc Đạt và Triệu Thị Trinh thời Đông Ngô, khởi nghĩa anh em Lý Trường Nhân và Lý Thúc Hiến thời Lưu Tống   Nam Tề.",
+  "vua": [],
+  "kinh_do": "Mê Linh (Vĩnh Phúc)",
+  "quoc_hieu": "Giao Châu",
+  "nam_bat_dau": "43",
+  "ten": "Thời kỳ Bắc thuộc lần thứ II"
+ },
+ {
+  "nam_ket_thuc": "602",
+  "tom_tat": "Trong thời kỳ bị đô hộ bởi nhà Lương, Lý Bôn hay còn gọi là Lý Bí đã đánh đuổi thành công quân Lương để thành lập nên nhà Tiền Lý hay gọi là nhà nước Vạn Xuân, đóng đô ở Long Biên. \nNhà Tiền Lý trải qua 3 đời vua trước khi sụp đổ.",
+  "vua": [
+   "Lý Nam Đế (544-548)",
+   "Triệu Việt Vương (548-571)",
+   "Lý Phật Tử (571-602)"
+  ],
+  "kinh_do": "Long Biên",
+  "quoc_hieu": "Giao Châu",
+  "nam_bat_dau": "544",
+  "ten": "Nhà Tiền Lý"
+ },
+ {
+  "nam_ket_thuc": "905",
+  "tom_tat": "Đến năm 581, Trung Quốc lập ra nhà Tùy và đến năm 602, vua Tùy đem quân sang đánh nước ta. Lý Phật Tử xin hàng và nước ta lại rơi vào tay giặc ngoại bang phương Bắc. Sau khi nhà Tùy sụp đổ, nhà Đường đã cai trị nước ta.\nMột số cuộc khởi nghĩa tiêu biểu vào giai đoạn này phải kể đến: Khởi nghĩa Mai Thúc Loan (722), khởi nghĩa Phùng Hưng (766-791), khởi nghĩa Dương Thanh (819-820).",
+  "vua": [],
+  "kinh_do": "Long Biên",
+  "quoc_hieu": "Tĩnh Hảiquân",
+  "nam_bat_dau": "602",
+  "ten": "Thời kỳ Bắc thuộc lần thứ III"
+ },
+ {
+  "nam_ket_thuc": "938",
+  "tom_tat": "Vào năm 905, nhân lúc nhà Đường suy yếu Khúc Thừa Dụ đánh đuổi giặc Đường và tự xưng là Tiết độ sứ. Ông được Nhà Đường công nhận là người đứng đầu đất Việt và họ Khúc đã đặt nền móng cho nền độc lập của nước ta.\nỞ thời kỳ này, nhà Khúc trải qua 4 đời vua cai trị.",
+  "vua": [
+   "Khúc Thừa Dụ (905-907)",
+   "Khúc Hạo (907-917)",
+   "Khúc Thừa Mỹ (917-930)",
+   "Dương Đình Nghệ (931-938, tướng của vua Khúc Hạo)"
+  ],
+  "kinh_do": "Đại La",
+  "quoc_hieu": "Tĩnh Hảiquân",
+  "nam_bat_dau": "905",
+  "ten": "Thời kỳ tự chủ"
+ },
+ {
+  "nam_ket_thuc": "965",
+  "tom_tat": "Năm 938, Dương Đình Nghệ bị Kiều Công Tiễn giết chết và để trả thù cho bố vợ thì Ngô Quyền đã giết chết Kiều Công Tiễn. Sau đó, ông đánh thắng quân Nam Hán trên sông Bạch Đằng để lập lên nhà Ngô và đóng đô ở Cổ Loa. \nNăm 944, Ngô Quyền mất và em vợ Dương Tam Kha cướp nhà Ngô làm các nơi không chịu thuần phục khiến các thủ lĩnh nổi lên cát cứ một vùng gọi là Loạn 12 sứ quân\u201d. Các đời cai trị của nhà Ngô.",
+  "vua": [
+   "Ngô Vương (939-944)",
+   "Dương Bình Vương (944-950)",
+   "Hậu Ngô Vương (944-965)"
+  ],
+  "kinh_do": "Loa Thành",
+  "quoc_hieu": "Tĩnh Hảiquân",
+  "nam_bat_dau": "939",
+  "ten": "Nhà Ngô"
+ },
+ {
+  "nam_ket_thuc": "980",
+  "tom_tat": "Sau thời Hậu Ngô Vương, đất nước rơi vào tình trạng loạn lạc và hình thành lên 12 sứ quân. Giai đoạn loạn 12 sứ quân kéo dài hơn 20 năm từ 944   968.\nĐến năm 968, Đinh Bộ Lĩnh dẹp loạn 12 sứ quân để lên ngôi hoàng đế, lấy niên hiệu là Tiên Hoàng Đế, quốc hiệu là Đại Cồ Việt   Nhà nước tập quyền đầu tiên ở nước ta đóng đô ở Hoa Lư. Năm 979, Đinh Tiên Hoàng và con trai Đinh Liễn bị giết chết khi say rượu nên Đinh Toàn (khi đó mới 6 tuổi) lên ngôi. Các triều đại nhà Đinh.",
+  "vua": [
+   "Đinh Tiên Hoàng (968-979)",
+   "Đinh Phế Đế (979-980)"
+  ],
+  "kinh_do": "Hoa Lư (Ninh Bình)",
+  "quoc_hieu": "ĐạiCồ Việt",
+  "nam_bat_dau": "968",
+  "ten": "Nhà Đinh"
+ },
+ {
+  "nam_ket_thuc": "1009",
+  "tom_tat": "Năm 980, lợi dụng tình hình nhà Đinh suy yếu và giặc Tống nhăm nhe xâm lược nước ta thì Lê Hoàn đã được Thái hậu Dương Vân Nga trao lại ngôi vua và lấy niên hiệu là Lê Đại Hành để đánh tan quân Tống rồi chấn hưng đất nước. Nhà Tiền Lê tồn tại 29 năm và có 3 đời vua cai trị.",
+  "vua": [
+   "Lê Đại Hành (980-1005)",
+   "Lê Trung Tông (1005)",
+   "Lê Ngọa Triều (1005-1009)"
+  ],
+  "kinh_do": "Hoa Lư (Ninh Bình)",
+  "quoc_hieu": "ĐạiCồ Việt",
+  "nam_bat_dau": "980",
+  "ten": "Nhà Tiền Lê"
+ },
+ {
+  "nam_ket_thuc": "1225",
+  "tom_tat": "Cuối thời nhà Tiền Lê, Lê Ngọa Triều bỏ bê việc triều chính thì Lý Công Uẩn đã được suy tôn lên ngôi vua. Đến tháng 7/1010, Lý Công Uẩn dời đô về Thăng Long và đến năm 1054 lấy quốc hiệu là Đại Việt.\nNhà Lý tồn tại 219 năm và trải qua 9 đời vua cai trị:",
+  "vua": [
+   "Lý Thái Tổ (1009-1028)",
+   "Lý Thái Tông (1028-1054)",
+   "Lý Thánh Tông (1054-1072)",
+   "Lý Nhân Tông (1072-1127)",
+   "Lý Thần Tông (1127-1137)",
+   "Lý Anh Tông (1138-1175)",
+   "Lý Cao Tông (1175-1210)",
+   "Lý Huệ Tông (1210-1224)",
+   "Lý Chiêu Hoàng (1224-1225) "
+  ],
+  "kinh_do": "Hoa Lư (Ninh Bình)",
+  "quoc_hieu": "Đại Việt",
+  "nam_bat_dau": "1009",
+  "ten": "Nhà Lý"
+ },
+ {
+  "nam_ket_thuc": "1400",
+  "tom_tat": "Vào năm 1208, Lý Huệ Tông chạy loạn về Hải Ấp và được nhà ông Trần Lý làm nghề đánh cá giúp đỡ và lấy con gái Trần Thị Dung làm vợ.\nSau đó, anh em nhà họ Trần mộ quân đã giúp Lý Huệ Tông khôi phục kinh đô Thăng Long và lúc đó đứng đầu là Trần Thủ Độ. Trần Thủ Độ ép Lý Chiêu Hoàng (8 tuổi) lấy và nhường ngôi cho Trần Cảnh để chấm dứt sự tồn tại của nhà Lý. \nTrong thời gian cai trị, nhà Trần đã 3 lần đánh tan quân Nguyên. Nhà Trần cũng là một triều đại quân chủ trong lịch sử nước ta, tồn tại 175 năm với 12 đời vua:",
+  "vua": [
+   "Trần Thái Tông (1225-1258)",
+   "Trần Thánh Tông (1258-1278)",
+   "Trần Nhân Tông (1278-1293)",
+   "Trần Anh Tông (1293-1314)",
+   "Trần Minh Tông (1314-1329)",
+   "Trần Hiến Tông (1329-1341)",
+   "Trần Dụ Tông (1341-1369)",
+   "Trần Nghệ Tông (1370-1372)",
+   "Trần Duệ Tông (1372-1377)",
+   "Trần Phế Đế (1377-1388) ",
+   "Trần Thuận Tông (1388-1398)",
+   "Trần Thiếu Đế (1398-1400)  "
+  ],
+  "kinh_do": "Thăng Long",
+  "quoc_hieu": "Đại Ngu",
+  "nam_bat_dau": "1225",
+  "ten": "Nhà Trần"
+ },
+ {
+  "nam_ket_thuc": "1407",
+  "tom_tat": "Khi nhà Trần suy yếu, Hồ Quý Ly cướp ngôi của cháu ngoại Trần Thiếu Đế để lập lên nhà Hồ và lấy tên nước là Đại Ngu. Tuy nhiên, do thực hiện quá nhiều cải cách táo bạo và mắc tội giết vua cùng tôn tộc, quan lại nhà Trần nên ông đã không thể tập hợp được lực lượng của toàn dân. \nNăm 1401, Hồ Quý Ly nhường ngôi cho con trai Hồ Hán Thương. Đến năm 1406, nhà Minh lấy cớ phò Trần diệt Hồ\u201d sang đánh nước Đại Ngu. Cha con nhà Hồ không thể chống cự nên bị bắt và giết chết. Theo đó, nhà Hồ tồn tại trong thời gian 7 năm với 2 đời vua:",
+  "vua": [
+   "Hồ Quý Ly (Thánh Nguyên, 1400-1401)",
+   "Hồ Hán Thương (1401-1407) "
+  ],
+  "kinh_do": "Thăng Long",
+  "quoc_hieu": "Giao Chỉ",
+  "nam_bat_dau": "1400",
+  "ten": "Nhà Hồ"
+ },
+ {
+  "nam_ket_thuc": "1409",
+  "tom_tat": "Năm 1407, quân Minh chiếm đóng Đại Ngu thì Trần Ngỗi là con trai thứ của Trần Nghệ Tông đã bỏ trốn đến Mô Độ, Trường Yên tập hợp binh lính đánh bại nhà Minh và khôi phục lại nhà Trần. \nĐến năm 1409, nội bộ nhà Trần bị chia rẽ thì một số quan lại đã đón Trần Quý Khoách là cháu nội của Trần Nghệ Tông ra Nghệ An làm vua. Trần Quý Khoách sai quân đánh úp ông nội và cho ông về làm Thái Thượng Hoàng. Tuy nhiên, thời nhà Hậu Trần cũng không tồn tại được bao lâu với 2 đời vua:",
+  "vua": [
+   "Giản Định Đế (1407 \u2013 1409) ",
+   "Trùng Quang Đế (1409 \u2013 1413) "
+  ],
+  "kinh_do": "Tây Đô (Thanh Hóa)",
+  "quoc_hieu": "Giao Chỉ",
+  "nam_bat_dau": "1407",
+  "ten": "Nhà Hậu Trần"
+ },
+ {
+  "nam_ket_thuc": "1428",
+  "tom_tat": "Năm 1413, quân Minh phản kích khiến cuộc chiến giữa nhà Trần và quân Minh diễn ra rất ác liệt. Cuối cùng do lực lượng mỏng nên nhà Trần đã bị đánh bại. Vua tôi nhà Trần bị bắt toàn bộ và đã tự vẫn để giữ trọn khí tiết. Nước ta một lần nữa bị rơi vào tay giặc phương Bắc.",
+  "vua": [],
+  "kinh_do": "Đông Đô / Thăng Long",
+  "quoc_hieu": "Đại Việt",
+  "nam_bat_dau": "1413",
+  "ten": "Thời kỳ Bắc Thuộc lần thứ IV"
+ },
+ {
+  "nam_ket_thuc": "1527",
+  "tom_tat": "Năm 1427, Lê Lợi đánh bại quân Minh để lập lên nhà Hậu Lê. Đây được gọi là giai đoạn Nhà Lê sơ, nước Đại Việt phát triển mạnh mẽ về kinh tế và quân sự. Sau hơn 70 năm cai trị, nhà Lê suy yếu do những vị vua kém cỏi. Nhà Lê trải qua các đời vua:",
+  "vua": [
+   "Lê Thái Tổ (1428 \u2013 1433)",
+   "Lê Thái Tông (1433 \u2013 1442)",
+   "Lê Nhân Tông (1442 \u2013 1459)",
+   "Lê Thánh Tông (1460 \u2013 1497)",
+   "Lê Hiến Tông (1497 \u2013 1504)",
+   "Lê Túc Tông (1504)",
+   "Lê Uy Mục (1505 \u2013 1509)",
+   "Lê Tương Dực (1509 \u2013 1516)",
+   "Lê Chiêu Tông (1516 \u2013 1522)",
+   "Lê Cung Hoàng (1522 \u2013 1527)"
+  ],
+  "kinh_do": "Đông Đô / Thăng Long",
+  "quoc_hieu": "Đại Việt",
+  "nam_bat_dau": "1428",
+  "ten": "Thời kỳ Trung Hưng-Nhà Hậu Lê"
+ },
+ {
+  "nam_ket_thuc": "1592",
+  "tom_tat": "Năm 1527, Mạc Đăng Dung cướp ngôi nhà Lê để thành lập lên nhà Mạc ở miền Bắc gọi là Bắc Triều.  \nCựu thần nhà Lê là Nguyễn Kim không phục đã đưa Lê Duy Ninh về làm hoàng đế để phục hưng lại nhà Lê gọi là Nam triều. Theo sử sách ghi lại, Lê Duy Ninh sau gọi là Trang Tông là con trai của vua Lê Chiêu Tông và về sau dân gian gọi ông là chúa Chổm.\nSau khi Nguyễn Kim bị hạ độc chết, con rể là Trịnh Kiểm đã giữ binh quyền và ngấm ngầm hại các em vợ. Nguyễn Hoàng là con trai của Nguyễn Kim đã may mắn thoát chết do xin vào trấn phủ Thuận Hóa, rồi gây dựng lên giang sơn của nhà Nguyễn gọi là Đàng Trong. \nNam triều và Bắc triều giao tranh gần 50 năm (1543-1592), thì Trịnh Tùng   con trai Trịnh Kiểm đã đánh bại được nhà Mạc vào năm 1592 rồi đón vua Lê Thánh Tông vào Thăng Long năm 1595 để mở đầu cho thời kỳ Vua Lê, chúa Trịnh\u201d.",
+  "vua": [],
+  "kinh_do": "Đông Đô / Thăng Long",
+  "quoc_hieu": "Đại Việt",
+  "nam_bat_dau": "1527",
+  "ten": "Thời kỳ Bắc Triều-Nam Triều"
+ },
+ {
+  "nam_ket_thuc": "1788",
+  "tom_tat": "Cuộc chiến Trịnh (Đàng Ngoài) và Nguyễn (Đàng Trong) bắt đầu phân tranh. Mở đầu là năm 1627, Trịnh Tráng đem quân vào Nam đánh Nguyễn Phúc Nguyên. Sau thời gian giằng co thì đến năm 1672, hai bên tạm thời ngừng chiến và lấy sông Gianh làm giới tuyến. Tuy nhiên, trên danh nghĩa thì vua Lê vẫn là người đứng đầu đất nước.\nCác đời vua nhà Lê Trung Hưng tồn tại từ 1533-1788 . \nCác chúa Trịnh ở đàng ngoài (1545-1788) .\nCác chúa Nguyễn ở đàng trong (1558-1777).",
+  "vua": [
+   "Lê Kính Tông (1600-1619)",
+   "Lê Thần Tông (2 lần lên ngôi 1619-1643 và 1649-1662)",
+   "Lê Chân Tông (1643-1649)",
+   "Lê Huyền Tông (1663-1671)",
+   "Lê Gia Tông (1672-1675)",
+   "Lê Hy Tông (1675-1705)",
+   "Lê Dụ Tông (1705-1729)",
+   "Lê Duy Phường (1729-1732)",
+   "Lê Thuần Tông (1732-1735)",
+   "Lê Ý Tông (1735-1740)",
+   "Lê Hiển Tông (1740-1786)",
+   "Lê Mẫn Đế (1787-1788)",
+   "Thanh Đô Vương (tức Trịnh Tráng, 1623-1652)",
+   "Tây Đô Vương (tức Trịnh Tạc, 1653-1682)",
+   "Định Vương (tức Trịnh Căn, 1682-1709)",
+   "An đô vương (tức Trịnh Cương, 1709-1729)",
+   "Uy nam vương (tức Trịnh Giang, 1729-1740)",
+   "Minh đô vương (tức Trịnh Doanh, 1740-1767)",
+   "Tĩnh đô vương (tức Trịnh Sâm, 1767-1782)",
+   "Điện Đô Vương (tức Trịnh Cán, 2 tháng trong năm 1782)",
+   "Đoan Nam Vương (tức Trịnh Khải, 1782-1786)",
+   "Án Đô Vương (tức Trịnh Bồng) (1787-1788)",
+   "Nguyễn Phúc Nguyên (hay gọi là Chúa Sãi, 1613-1635)",
+   "Nguyễn Phúc Lan (tức chúa Thượng, 1635-1648)",
+   "Nguyễn Phúc Tần (hay gọi là chúa Hiền, 1648-1687)",
+   "Nguyễn Phúc Thái (hay gọi là chúa Nghĩa, 1687-1691)",
+   "Nguyễn Phúc Chu (hay gọi là chúa Quốc, 1691-1725)",
+   "Nguyễn Phúc Thụ (tức Ninh Vương, 1725-1738)",
+   "Nguyễn Phúc Khoát (tức Võ Vương, 1738-1765)",
+   "Nguyễn Phúc Thuần (tức Định Vương, 1765-1777)"
+  ],
+  "kinh_do": "Đông Đô / Thăng Long",
+  "quoc_hieu": "Đại Việt",
+  "nam_bat_dau": "1533",
+  "ten": "Thời kỳ Trịnh-Nguyễn phân tranh"
+ },
+ {
+  "nam_ket_thuc": "1802",
+  "tom_tat": "Vào năm 1771, anh em Tây Sơn gồm Nguyễn Nhạc, Nguyễn Lữ và Nguyễn Huệ phất cờ khởi nghĩa và đến năm 1778 thì tiêu diệt được chúa Nguyễn ở Đàng Trong. Tuy nhiên, Nguyễn Ánh đã chạy thoát và Nguyễn Nhạc đã lên ngôi hoàng đế để lập lên Triều đại nhà Tây Sơn, niên hiệu là Thái Đức. Nhà Tây Sơn là một triều đại quân chủ trong lịch sử Việt Nam với 3 đời vua cai trị.",
+  "vua": [
+   "Thái Đức hoàng đế \u2013 Nguyễn Nhạc (1778-1788)",
+   "Quang Trung hoàng đế \u2013 Nguyễn Huệ (1788-1792)",
+   "Cảnh Thịnh hoàng đế \u2013 Nguyễn Quang Toản (con trai Nguyễn Huệ, 1793-1802)"
+  ],
+  "kinh_do": "Đông Đô / Thăng Long",
+  "quoc_hieu": "Đại Việt",
+  "nam_bat_dau": "1778",
+  "ten": "Nhà Tây Sơn"
+ },
+ {
+  "nam_ket_thuc": "1883",
+  "tom_tat": "Vào năm 1802, Nguyễn Ánh tiêu diệt nhà Tây Sơn khi đang suy yếu. Nguyễn Ánh lên ngôi hoàng đế, lấy niên hiệu là Gia Long, đóng đô tại thành Phú Xuân và đặt quốc hiệu là Việt Nam. Đến năm 1820, vua Minh Mạng đổi quốc hiệu thành Đại Nam.\nNhà Nguyễn tồn tại 81 năm với 4 đời vua.",
+  "vua": [
+   "Gia Long (tức Nguyễn Phúc Ánh, 1802-1820)",
+   "Minh Mạng (tức Nguyễn Phúc Đảm, 1820-1840)",
+   "Thiệu Trị (hay Miên Tông, 1841-1847)",
+   "Tự Đức (tức Hồng Nhiệm, 1847-1883)"
+  ],
+  "kinh_do": "Phú Xuân",
+  "quoc_hieu": "Đại Nam",
+  "nam_bat_dau": "1802",
+  "ten": "Nhà Nguyễn -Thời kỳ độc lập tự chủ"
+ },
+ {
+  "nam_ket_thuc": "1945",
+  "tom_tat": "Ngày 31 tháng 8 năm 1858, Hải quân Pháp đã đổ bộ vào tấn công cảng Đà Nẵng rồi chiếm đóng Sài Gòn. Triều đình Huế do vua Tự Đức đứng đầu đã ký hiệp ước nhượng 3 tỉnh miền Đông cho Pháp rồi đến năm 1867, Pháp chiếm nốt 3 tỉnh miền Tây để tạo thành một lãnh thổ Nam Kỳ.\nCác đời vua nhà Nguyễn dưới ách thống trị của Thực dân Pháp.",
+  "vua": [
+   "Dục Đức (tức Ưng Chân, 1883, làm vua 3 ngày)",
+   "Hiệp Hoà (tức Hồng Dật, 6/1883-11/1883, làm vua được 6 tháng)",
+   "Kiến Phúc (tức Ưng Đăng, 1883-1884)",
+   "Hàm Nghi (tức Ưng Lịch, 1884-1885)",
+   "Đồng Khánh (tức Ưng Biện, 1885-1888)",
+   "Thành Thái (tức Bửu Lân, 1889-1907)",
+   "Duy Tân (tức Vĩnh San, 1907-1916)",
+   "Khải Định (tức Bửu Đảo, 1916-1925)",
+   "Bảo Đại (tức Vĩnh Thụy, 1926-1945)"
+  ],
+  "kinh_do": "Huế",
+  "quoc_hieu": "Việt Nam",
+  "nam_bat_dau": "1883",
+  "ten": "Thời kỳ Pháp đô hộ"
+ },
+ {
+  "nam_ket_thuc": "1976",
+  "tom_tat": "Năm 1946, dưới sự lãnh đạo của Nguyễn Ái Quốc, quân và dân ta đã đánh đổ Thực dân Pháp và Phát xít Nhật. Vào đúng ngày 2/9/1945, Chủ tịch Hồ Chí Minh đọc bản tuyên ngôn độc lập tại quảng trường Ba Đình và khai sinh ra nước Việt Nam Dân chủ Cộng Hòa với thủ đô là Hà Nội.",
+  "vua": [],
+  "kinh_do": "Huế",
+  "quoc_hieu": "Việt Nam",
+  "nam_bat_dau": "1945",
+  "ten": "Nước Việt Nam"
+ },
+ {
+  "nam_ket_thuc": "1975",
+  "tom_tat": "Trong thời gian từ 1956-1958, dưới sự trợ giúp của Mỹ thì Ngô Đình Diệm   một vị quan thời vua Bảo Đại đã gian lận để chiến thắng cuộc trưng cầu ý dân nhằm xác định người lãnh đạo của Quốc gia Việt Nam. \nSau này, Ngô Đình Diệm lên làm Tổng thống của nước Việt Nam Cộng Hòa phế truất vua Bảo Đại khiến ông phải lưu vong sang Pháp. Mỹ bắt đầu viện trợ cho chính quyền Ngô Đình Diệm để củng cố chính phủ thân Mỹ. \nDưới thời Ngô Đình Diệm, hàng loạt các cuộc đàn áp chính trị và tôn giáo đã khiến trăm nghìn người thiệt mạng. Chính sách Tố cộng, Diệt cộng\u201d, gây ra các thảm sát, biểu tình Phật giáo diễn ra khắp nơi, mâu thuẫn tôn giáo sâu sắc. Đây chính là giai đoạn tăm tối và khổ sở nhất của người dân miền Nam Việt Nam.",
+  "vua": [],
+  "kinh_do": "Hà Nội",
+  "quoc_hieu": "Việt Nam",
+  "nam_bat_dau": "1955",
+  "ten": "Chiến tranh Việt Nam"
+ },
+ {
+  "nam_ket_thuc": "2023",
+  "tom_tat": "Năm 1954, Việt Nam Dân chủ Cộng hòa đánh tan ý định xâm lược lần thứ 2 của thực dân Pháp bằng chiến thắng Điện Biên Phủ để buộc Pháp phải ký Hiệp định Giơ-ne-vơ công nhận độc lập   chủ quyền và rút quân khỏi Đông Dương.\nSau khi tiến hành nhiều cuộc chiến tranh mà không giành được thắng lợi thì vào ngày 27 tháng 1 năm 1973, Mỹ buộc phải ký Hiệp định Paris và rút chân ra khỏi miền Nam trong danh dự. Năm 1975, quân giải phóng miền Nam đã tổng tiến công và nổi dậy vào Sài Gòn lật đổ chính quyền Việt Nam Cộng Hòa và thống nhất đất nước.\nNăm 1976, nước ta hoàn toàn được độc lập với tên gọi chính thức là Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam có Đảng Cộng Sản Việt Nam, thủ đô Hà Nội và Sài Gòn đổi tên là Thành phố Hồ Chí Minh.",
+  "vua": [],
+  "kinh_do": "Hà Nội",
+  "quoc_hieu": "Việt Nam",
+  "nam_bat_dau": "1976",
+  "ten": "Cộng hòa xã hội chủ nghĩa Việt Nam"
+ }
 ]
