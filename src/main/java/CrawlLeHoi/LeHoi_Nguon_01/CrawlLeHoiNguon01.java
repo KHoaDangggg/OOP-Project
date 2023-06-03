@@ -1,27 +1,25 @@
-package CrawlLeHoi;
+package CrawlLeHoi.LeHoi_Nguon_01;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class CrawlLeHoi {
-    private final static String URL = "https://vi.m.wikipedia.org/wiki/L%E1%BB%85_h%E1%BB%99i_Vi%E1%BB%87t_Nam#Danh_s%C3%A1ch_m%E1%BB%99t_s%E1%BB%91_l%E1%BB%85_h%E1%BB%99i";
+public class CrawlLeHoiNguon01 {
+    private final String URL_WIKI = "https://vi.m.wikipedia.org/wiki/L%E1%BB%85_h%E1%BB%99i_Vi%E1%BB%87t_Nam";
 
-    public static void main(String[] args) {
-        crawlFromWiki();
-    }
 
-    static void crawlFromWiki() {
+    public void crawlFromWiki() {
         Document doc;
         try {
-            doc = Jsoup.connect(URL).get();
+            doc = Jsoup.connect(URL_WIKI).get();
+            //doc = Jsoup.parse(new URL(URL_WIKI).openStream(), "UTF-8", URL_WIKI);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -62,11 +60,10 @@ public class CrawlLeHoi {
         writeToJSON(lehoi);
     }
 
-    static void writeToJSON(ArrayList<LeHoi> lehoi) {
+    public void writeToJSON(ArrayList<LeHoi> lehoi) {
         JSONArray jsonArray = new JSONArray();
         for (LeHoi leHoi : lehoi) {
             JSONObject jsonObject = new JSONObject();
-            //jsonObject.put("ten", t.getTen().replaceAll("[\t\n]", ""));
 
             jsonObject.put("thoi_gian", leHoi.getThoiGian());
             jsonObject.put("dia_diem", leHoi.getDiaDiem());

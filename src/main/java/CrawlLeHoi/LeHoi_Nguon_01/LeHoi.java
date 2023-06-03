@@ -1,4 +1,4 @@
-package CrawlLeHoi;
+package CrawlLeHoi.LeHoi_Nguon_01;
 
 public class LeHoi {
     private String thoiGian;

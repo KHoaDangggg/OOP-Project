@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c6b153c-c21a-4197-a334-89006ac87ee9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CrawlLeHoi/CrawlLeHoi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CrawlLeHoi/LeHoi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="1c6b153c-c21a-4197-a334-89006ac87ee9" name="Changes" comment="Initial">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlLeHoi/CrawlLeHoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlLeHoi/CrawlLeHoi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +38,18 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2P0Han81S4SL8EZwhC968EHCVza" />
   <component name="ProjectViewState">
@@ -56,19 +58,26 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/nhat/Documents/GitHub/OOP-Project/src/main/java/CrawlLeHoi",
+    "jdk.selected.JAVA_MODULE": "openjdk-19",
+    "last_opened_file_path": "C:/Users/nhat/Documents/GitHub/OOP-Project/src/JSON_Data",
     "onboarding.tips.debug.path": "C:/Users/Admin/OneDrive - Hanoi University of Science and Technology/Documents/TaiLieuBK/OOP/web_Scrapper/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
+    "project.structure.side.proportion": "0.6137931",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nhat\Documents\GitHub\OOP-Project\src\JSON_Data" />
+      <recent name="C:\Users\nhat\Documents\GitHub\OOP-Project\test1\src" />
       <recent name="C:\Users\nhat\Documents\GitHub\OOP-Project\src\main\java\CrawlLeHoi" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -146,7 +155,33 @@
       <option name="presentableId" value="Default" />
       <updated>1682587149322</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial">
+      <created>1685778663367</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685778663367</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial">
+      <created>1685778735161</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685778735161</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial">
+      <created>1685781994218</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685781994218</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
