@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c6b153c-c21a-4197-a334-89006ac87ee9" name="Changes" comment="Initial">
+    <list default="true" id="1c6b153c-c21a-4197-a334-89006ac87ee9" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +71,7 @@
     "git-widget-placeholder": "LehHoi",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-19",
-    "last_opened_file_path": "C:/Users/D/Documents/GitHub/testForOopProject",
+    "last_opened_file_path": "C:/Users/D/Documents/GitHub/OOP-Project/src/JSON_Data",
     "onboarding.tips.debug.path": "C:/Users/Admin/OneDrive - Hanoi University of Science and Technology/Documents/TaiLieuBK/OOP/web_Scrapper/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
@@ -81,6 +81,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\D\Documents\GitHub\OOP-Project\src\JSON_Data" />
+      <recent name="C:\Users\D\Documents\GitHub\OOP-Project\src\main\java\CrawlLeHoi" />
       <recent name="C:\Users\nhat\Documents\GitHub\OOP-Project\src\JSON_Data" />
       <recent name="C:\Users\nhat\Documents\GitHub\OOP-Project\test1\src" />
       <recent name="C:\Users\nhat\Documents\GitHub\OOP-Project\src\main\java\CrawlLeHoi" />
@@ -181,12 +183,20 @@
       <option name="project" value="LOCAL" />
       <updated>1685781994218</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update">
+      <created>1686035657081</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686035657081</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
