@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c6b153c-c21a-4197-a334-89006ac87ee9" name="Changes" comment="Update crawl from multiple links from wiki">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="1c6b153c-c21a-4197-a334-89006ac87ee9" name="Changes" comment="Update crawl from Lehoi.info&#10;Add over 1000 new historical characters from Nguoikesu.com in NhanVatLichSu.json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON_Data/LeHoi.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/LeHoi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON_Data/LeHoi_Nguon_02.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/LeHoi_Nguon_02.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON_Data/LeHoi_Nguon_03.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/LeHoi_Nguon_03.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/LeHoi_Nguon_05.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/LeHoi_Nguon_05.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlLeHoi/CrawLeHoiMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlLeHoi/CrawLeHoiMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,29 +62,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "LehHoi",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-19",
-    "last_opened_file_path": "C:/Users/D/Documents/GitHub/OOP-Project/src/main/java/CrawlLeHoi",
-    "onboarding.tips.debug.path": "C:/Users/Admin/OneDrive - Hanoi University of Science and Technology/Documents/TaiLieuBK/OOP/web_Scrapper/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.6137931",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;LehHoi&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/D/Downloads/Java Library/jsoup-1.15.4.jar&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Admin/OneDrive - Hanoi University of Science and Technology/Documents/TaiLieuBK/OOP/web_Scrapper/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.6137931&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\D\Documents\GitHub\OOP-Project\src\main\java\CrawlLeHoi" />
       <recent name="C:\Users\D\Documents\GitHub\OOP-Project\src\JSON_Data" />
+      <recent name="C:\Users\D\Documents\GitHub\OOP-Project\src\main\java\CrawlLeHoi" />
       <recent name="C:\Users\nhat\Documents\GitHub\OOP-Project\src\JSON_Data" />
       <recent name="C:\Users\nhat\Documents\GitHub\OOP-Project\test1\src" />
       <recent name="C:\Users\nhat\Documents\GitHub\OOP-Project\src\main\java\CrawlLeHoi" />
@@ -215,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686038109572</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update crawl from Lehoi.info&#10;Add over 1000 new historical characters from Nguoikesu.com in NhanVatLichSu.json">
+      <created>1686239689577</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686239689577</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,7 +238,8 @@
     <MESSAGE value="Initial" />
     <MESSAGE value="Update" />
     <MESSAGE value="Update crawl from multiple links from wiki" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update crawl from multiple links from wiki" />
+    <MESSAGE value="Update crawl from Lehoi.info&#10;Add over 1000 new historical characters from Nguoikesu.com in NhanVatLichSu.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update crawl from Lehoi.info&#10;Add over 1000 new historical characters from Nguoikesu.com in NhanVatLichSu.json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -47,8 +47,11 @@ public class Thread_X implements Runnable {
             }
             Elements info = content.select("div");
             for(Element in: info){
-                if(in.select("img").first()!=null || in.select("ins").first()!=null) continue;
-                else builder.append(in.text());
+                builder.append(in.text());
+                Elements infoIn = in.select("div");
+                for(Element infoin: infoIn){
+                    if(infoin.childrenSize()<3) builder.append(infoin.text());
+                }
             }
             thongTinLeHoi = builder.toString();
         }
