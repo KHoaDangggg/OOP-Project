@@ -10,10 +10,7 @@ import org.jsoup.select.Elements;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -59,7 +56,7 @@ public class CrawlLeHoiNguon04 {
     }
 
     private void createLeHoiWiki(Element e, String ten) {
-        HashMap<String, String> dacDiem = new HashMap<>();
+        LinkedHashMap<String, String> dacDiem = new LinkedHashMap<>();
         LeHoiWiki leHoiWiki = new LeHoiWiki(ten, null, dacDiem);
         //Lay thong tin mieu ta cua le hoi
         int i = 1;

@@ -1,12 +1,13 @@
 package CrawlLeHoi.LeHoi_Nguon_03;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 public class LeHoiWiki {
     private String ten;
 
     private String mieuTa;
-    private HashMap<String, String> dacDiemLeHoi;
+    private LinkedHashMap<String, String> dacDiemLeHoi;
 
     public String getTen() {
         return ten;
@@ -20,7 +21,7 @@ public class LeHoiWiki {
         return dacDiemLeHoi;
     }
 
-    public void setDacDiemLeHoi(HashMap<String, String> dacDiemLeHoi) {
+    public void setDacDiemLeHoi(LinkedHashMap<String, String> dacDiemLeHoi) {
         this.dacDiemLeHoi = dacDiemLeHoi;
     }
 
@@ -32,7 +33,7 @@ public class LeHoiWiki {
         this.mieuTa = mieuTa;
     }
 
-    public LeHoiWiki(String ten, String mieuTa, HashMap<String, String> dacDiemLeHoi) {
+    public LeHoiWiki(String ten, String mieuTa, LinkedHashMap<String, String> dacDiemLeHoi) {
         this.ten = ten;
         this.mieuTa = mieuTa;
         this.dacDiemLeHoi = dacDiemLeHoi;

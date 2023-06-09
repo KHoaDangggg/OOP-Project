@@ -14,10 +14,10 @@ public class CrawLeHoiMain {
     public static final CrawlLeHoiNguon04 nguon04 = new CrawlLeHoiNguon04();
     public static final CrawlLeHoiNguon05 nguon05 = new CrawlLeHoiNguon05();
     public static void main(String[] args) {
-        nguon01.crawlFromWiki();
-        nguon02.wolCrawl();
+        //nguon01.crawlFromWiki();
+        //nguon02.wolCrawl();
         nguon03.crawlMultipleLinks();
         nguon04.crawlMultipleLinks();
-        nguon05.crawlLeHoiInfo();
+        //nguon05.crawlLeHoiInfo();
     }
 }
