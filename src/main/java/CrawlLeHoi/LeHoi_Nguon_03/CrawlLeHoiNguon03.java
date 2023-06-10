@@ -49,12 +49,12 @@ public class CrawlLeHoiNguon03 {
         String ten = Objects.requireNonNull(doc.getElementsByClass("firstHeading mw-first-heading").first()).text();
         //System.out.println(e.text());
         if (e != null) {
-            createLeHoiWiki(e, ten);
+            createLeHoiWiki(e, ten, url);
         }
         //System.out.println(list.get(0).getTen());
     }
 
-    private void createLeHoiWiki(Element e, String ten) {
+    private void createLeHoiWiki(Element e, String ten, String url) {
         LinkedHashMap<String, String> dacDiem = new LinkedHashMap<>();
         LeHoiWiki leHoiWiki = new LeHoiWiki(ten, null, dacDiem);
         //Lay thong tin mieu ta cua le hoi
@@ -88,6 +88,7 @@ public class CrawlLeHoiNguon03 {
                 dacDiem.put(key, builder1.toString());
                 leHoiWiki.setDacDiemLeHoi(dacDiem);
             }
+            leHoiWiki.setLinkLeHoi(url);
             //Loai bo
             leHoiWiki.getDacDiemLeHoi().remove("Chú thích");
             leHoiWiki.getDacDiemLeHoi().remove("Tham khảo");
@@ -148,7 +149,7 @@ public class CrawlLeHoiNguon03 {
     }
     //Using multiple threads for faster data crawling
     private Thread genThread(String url) {
-        ThreadNetwork threadNetwork1 = new ThreadNetwork(url);
+        ThreadNetwork_Nguon_03 threadNetwork1 = new ThreadNetwork_Nguon_03(url);
         return new Thread(threadNetwork1);
     }
 
@@ -160,6 +161,7 @@ public class CrawlLeHoiNguon03 {
             jsonObject.put("miêu tả", leHoi.getMieuTa());
             for(String key: leHoi.getDacDiemLeHoi().keySet())
              jsonObject.put(key, leHoi.getDacDiemLeHoi().get(key));
+            jsonObject.put("link lễ hội", leHoi.getLinkLeHoi());
             jsonArray.put(jsonObject);
         }
 

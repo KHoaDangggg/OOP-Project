@@ -8,11 +8,11 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class ThreadNetwork implements Runnable{
+public class ThreadNetwork_Nguon_03 implements Runnable{
 
     private final String url;
 
-    public ThreadNetwork(String url) {
+    public ThreadNetwork_Nguon_03(String url) {
         this.url = url;
     }
 

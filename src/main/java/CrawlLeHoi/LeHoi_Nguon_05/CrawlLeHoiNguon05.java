@@ -13,7 +13,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 public class CrawlLeHoiNguon05 {
-    private final String BASE_URL = "http://lehoi.info";
+    public static final String BASE_URL = "http://lehoi.info";
     private final List<String> pages = new ArrayList<>();
     public static List<String> leHoiArticles = new ArrayList<>();
     public static List<LeHoi> listCacLeHoi = new ArrayList<>();
@@ -112,6 +112,7 @@ public class CrawlLeHoiNguon05 {
             jsonObject.put("thời gian tổ chức", leHoi.getThoiGian());
             jsonObject.put("link ảnh", leHoi.getAnh());
             jsonObject.put("thông tin lễ hội", leHoi.getThongTinLeHoi());
+            jsonObject.put("link lễ hội", leHoi.getLinkLeHoi());
             jsonArray.put(jsonObject);
         }
 

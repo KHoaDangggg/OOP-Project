@@ -18,6 +18,6 @@ public class CrawLeHoiMain {
         //nguon02.wolCrawl();
         nguon03.crawlMultipleLinks();
         nguon04.crawlMultipleLinks();
-        //nguon05.crawlLeHoiInfo();
+        nguon05.crawlLeHoiInfo();
     }
 }

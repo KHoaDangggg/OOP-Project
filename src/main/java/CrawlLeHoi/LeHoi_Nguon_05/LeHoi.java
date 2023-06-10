@@ -9,15 +9,20 @@ public class LeHoi {
     private ArrayList<String> anh;
     private String thongTinLeHoi;
 
-    public LeHoi() {
+    private final String linkLeHoi;
+
+    public String getLinkLeHoi() {
+        return linkLeHoi;
     }
 
-    public LeHoi(String ten, String diaDiem, String thoiGian, ArrayList<String> anh, String thongTinLeHoi) {
+
+    public LeHoi(String ten, String diaDiem, String thoiGian, ArrayList<String> anh, String thongTinLeHoi, String linkLeHoi) {
         this.ten = ten;
         this.diaDiem = diaDiem;
         this.thoiGian = thoiGian;
         this.anh = anh;
         this.thongTinLeHoi = thongTinLeHoi;
+        this.linkLeHoi = linkLeHoi;
     }
 
     public String getTen() {

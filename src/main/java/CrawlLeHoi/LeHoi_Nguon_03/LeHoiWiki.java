@@ -8,6 +8,15 @@ public class LeHoiWiki {
 
     private String mieuTa;
     private LinkedHashMap<String, String> dacDiemLeHoi;
+    private String linkLeHoi;
+
+    public String getLinkLeHoi() {
+        return linkLeHoi;
+    }
+
+    public void setLinkLeHoi(String linkLeHoi) {
+        this.linkLeHoi = linkLeHoi;
+    }
 
     public String getTen() {
         return ten;

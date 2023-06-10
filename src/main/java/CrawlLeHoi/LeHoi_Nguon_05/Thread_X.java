@@ -43,19 +43,19 @@ public class Thread_X implements Runnable {
             }
             Elements img = content.select("img");
             for (Element i : img) {
-                if (i != null) anh.add(i.attr("src"));
+                if (i != null) anh.add(CrawlLeHoiNguon05.BASE_URL + i.attr("src"));
             }
             Elements info = content.select("div");
+            Elements paragraph = content.select("p");
             for(Element in: info){
-                builder.append(in.text());
-                Elements infoIn = in.select("div");
-                for(Element infoin: infoIn){
-                    if(infoin.childrenSize()<3) builder.append(infoin.text());
-                }
+                if(in.select("ins").first()==null && in.select("img").first()==null) builder.append(in.text()).append(" ");
+            }
+            for(Element p: paragraph){
+                builder.append(p.text()).append(" ");
             }
             thongTinLeHoi = builder.toString();
         }
-        LeHoi leHoi = new LeHoi(ten, diaDiem, thoiGian, anh, thongTinLeHoi);
+        LeHoi leHoi = new LeHoi(ten, diaDiem, thoiGian, anh, thongTinLeHoi, url);
         System.out.println(leHoi.getTen());
         CrawlLeHoiNguon05.listCacLeHoi.add(leHoi);
     }
