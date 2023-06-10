@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c6b153c-c21a-4197-a334-89006ac87ee9" name="Changes" comment="Update crawl from Lehoi.info&#10;Add over 1000 new historical characters from Nguoikesu.com in NhanVatLichSu.json">
+    <list default="true" id="1c6b153c-c21a-4197-a334-89006ac87ee9" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON_Data/LeHoi_Nguon_05.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/LeHoi_Nguon_05.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlLeHoi/CrawLeHoiMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlLeHoi/CrawLeHoiMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686239689577</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update">
+      <created>1686290684356</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686290684356</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -236,10 +241,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial" />
-    <MESSAGE value="Update" />
     <MESSAGE value="Update crawl from multiple links from wiki" />
     <MESSAGE value="Update crawl from Lehoi.info&#10;Add over 1000 new historical characters from Nguoikesu.com in NhanVatLichSu.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update crawl from Lehoi.info&#10;Add over 1000 new historical characters from Nguoikesu.com in NhanVatLichSu.json" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -248,11 +253,6 @@
           <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/crawl.java</url>
-          <line>248</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
