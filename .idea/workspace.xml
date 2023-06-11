@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c6b153c-c21a-4197-a334-89006ac87ee9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON_Data/trieuDai.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/trieuDai.json" afterDir="false" />
-    </list>
+    <list default="true" id="1c6b153c-c21a-4197-a334-89006ac87ee9" name="Changes" comment="Add NhanVatLichSu.json include 1000 nhan vat lich su from Nguoikesu.com" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +58,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Admin/OneDrive - Hanoi University of Science and Technology/Documents/TaiLieuBK/OOP/web_Scrapper",
+    "last_opened_file_path": "C:/Users/D/Documents/GitHub/OOP-Project/src/JSON_Data",
     "onboarding.tips.debug.path": "C:/Users/Admin/OneDrive - Hanoi University of Science and Technology/Documents/TaiLieuBK/OOP/web_Scrapper/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -70,6 +67,10 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\D\Documents\GitHub\OOP-Project\src\JSON_Data" />
+      <recent name="C:\Users\D\Documents\GitHub\OOP-Project\src\main\java\CrawlData\CrawlNhanVat" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\OneDrive - Hanoi University of Science and Technology\Documents\TaiLieuBK\OOP\web_Scrapper\src\JSON Data" />
     </key>
@@ -145,7 +146,19 @@
       <option name="presentableId" value="Default" />
       <updated>1682587149322</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add NhanVatLichSu.json include 1000 nhan vat lich su from Nguoikesu.com">
+      <created>1686289567897</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686289567897</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add NhanVatLichSu.json include 1000 nhan vat lich su from Nguoikesu.com" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add NhanVatLichSu.json include 1000 nhan vat lich su from Nguoikesu.com" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
