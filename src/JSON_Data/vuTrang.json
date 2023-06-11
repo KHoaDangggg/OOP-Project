@@ -30,7 +30,9 @@
   "ten" : "Bùi Văn Ba",
   "namSinhNamMat" : "1929-",
   "danToc" : "Kinh",
+
   "queQuan" : "Tp. Hồ Chí Minh",
+
   "namPhong" : "07/05/1956",
   "tieuSu" : "Trung đội phó đặc công, phân liên khu miền Tây Nam Bộ, người trực tiếp điều tra và tham gia chiến đấu trận đánh sân bay Tân Sơn Nhất (1952) và trận đánh kho bom Phú Thọ (1954)."
 }, {
@@ -170,7 +172,9 @@
   "ten" : "Lê Văn Thọ[18]",
   "namSinhNamMat" : "1931-1969",
   "danToc" : "Kinh",
+
   "queQuan" : "Tp. Hồ Chí Minh",
+
   "namPhong" : "31/08/1955",
   "tieuSu" : "Trung đội trưởng đặc công thuộc miền Đông Nam Bộ. Người tham gia trận đánh kho bom Tân Sơn Nhất năm 1952."
 }, {
@@ -219,7 +223,9 @@
   "ten" : "Ngô Chí Quốc",
   "namSinhNamMat" : "1929-1954",
   "danToc" : "Kinh",
+
   "queQuan" : "Tp. Hồ Chí Minh",
+
   "namPhong" : "07/05/1956",
   "tieuSu" : "Tiểu đội phó trinh sát Tiểu đoàn 303, Đại đoàn 330. Hy sinh trong trận đánh Cầu Đinh lần thứ hai (tháng 3 năm 1954)."
 }, {
@@ -359,7 +365,9 @@
   "ten" : "Phạm Văn Ry",
   "namSinhNamMat" : "1933-",
   "danToc" : "Kinh",
+
   "queQuan" : "Tp. Hồ Chí Minh",
+
   "namPhong" : "07/05/1956",
   "tieuSu" : "Tiểu đội trưởng đặc công, Phân khu miền Tây Nam Bộ.Trong 10 năm chiến đấu đã tự tay phá được 5 đầu máy xe lửa, một xe bọc thép, diệt 41 tên địch, thu 20 súng, vận động 3 đại đội ngụy ra hàng và 166 tên khác đấu tranh trở về nhà làm ăn."
 }, {
@@ -522,7 +530,9 @@
   "danToc" : "Kinh",
   "queQuan" : "Tp. Hồ Chí Minh",
   "namPhong" : "17/09/1967",
+
   "tieuSu" : "Đặc công Sài Gòn, tham gia trận đánh sân bay Tân Sơn Nhất đêm 2 tháng 12 năm 1966. Sau bị địch bắt và đày đi Côn Đảo, ông bị sát hại trong tù năm 1968."
+
 }, {
   "ten" : "Bế Văn Cắm",
   "namSinhNamMat" : "1945-1968",
@@ -536,7 +546,9 @@
   "danToc" : "Kinh",
   "queQuan" : "Cà Mau",
   "namPhong" : "17/09/1967",
+
   "tieuSu" : "Đoàn phó Đoàn 962 vận tải biển - Quân khu 9. Tham gia hàng chục chuyến vận tải chở vũ khí trên tuyến đường Hồ Chí Minh trên biển."
+
 }, {
   "ten" : "Bùi Anh Tuấn",
   "namSinhNamMat" : "1953-1973",
@@ -592,7 +604,9 @@
   "danToc" : "Kinh",
   "queQuan" : "Bình Dương",
   "namPhong" : "17/09/1967",
+
   "tieuSu" : "Trung đội trưởng thuộc Sư đoàn 5, bộ đội chủ lực miền Đông Nam Bộ."
+
 }, {
   "ten" : "Đặng Văn Thanh",
   "namSinhNamMat" : "1928-2003",
@@ -615,6 +629,7 @@
   "namPhong" : "06/11/1978",
   "tieuSu" : "Xã đội trưởng Đội du kích Đồng Nai"
 }, {
+
   "ten" : "Đinh Nghít",
   "namSinhNamMat" : "1941-",
   "danToc" : "H'rê",
@@ -622,6 +637,7 @@
   "namPhong" : "17/09/1967",
   "tieuSu" : ""
 }, {
+
   "ten" : "Đinh Thị Vân",
   "namSinhNamMat" : "1916-1995",
   "danToc" : "Kinh",
@@ -629,6 +645,7 @@
   "namPhong" : "25/08/1970",
   "tieuSu" : "Đại tá, Anh hùng đầu tiên của ngành Tình báo Quốc phòng Việt Nam"
 }, {
+
   "ten" : "Đoàn Hoàng Minh",
   "namSinhNamMat" : "1938-",
   "danToc" : "Kinh",
@@ -636,6 +653,7 @@
   "namPhong" : "17/09/1967",
   "tieuSu" : "Trung đội trưởng thông tin, bộ đội chủ lực miền Đông Nam Bộ. Phụ trách tổ thông tin vô tuyến điện, cung cấp tin tức kịp thời phục vụ cấp trên chỉ đạo đánh giặc."
 }, {
+
   "ten" : "Đoàn Sinh Hưởng",
   "namSinhNamMat" : "1949-",
   "danToc" : "Kinh",
@@ -655,7 +673,9 @@
   "danToc" : "Kinh",
   "queQuan" : "Hậu Giang",
   "namPhong" : "17/09/1967",
+
   "tieuSu" : "Đại đội phó bộ đội địa phương tỉnh Cần Thơ; chế tạo, cải tiến nhiều vũ khí thô sơ phục vụ đánh giặc."
+
 }, {
   "ten" : "Đỗ Trực",
   "namSinhNamMat" : "1922-",
@@ -702,9 +722,11 @@
   "ten" : "Hoàng Đình Nghĩa",
   "namSinhNamMat" : "1942-1965",
   "danToc" : "Kinh",
+
   "queQuan" : "Tp. Hồ Chí Minh",
   "namPhong" : "17/09/1967",
   "tieuSu" : "Tiểu đội trưởng bộ binh Đại đội 3, Tiểu đoàn 1, Trung đoàn 15, Sư đoàn 9, tham gia chiến đấu trong trận Bình Giã. Trong trận phòng thủ sân bay Thuận Lợi đã tiêu diệt 30 tên địch và anh dũng hy sinh ngày 12 tháng 6 năm 1965."
+
 }, {
   "ten" : "Hoàng Ngọc Chương",
   "namSinhNamMat" : "1936-",
@@ -746,7 +768,9 @@
   "danToc" : "Pa Kô",
   "queQuan" : "Thừa Thiên Huế",
   "namPhong" : "17/09/1967",
+
   "tieuSu" : "Trung đội phó thuộc Binh trạm trung, Phòng hậu cần, Mặt trận Tây Nguyên. Phụ trách vận tải vũ khí, lương thực phục vụ chiến trường."
+
 }, {
   "ten" : "Hồ Đức Thắng",
   "namSinhNamMat" : "1922-2005",
@@ -760,7 +784,9 @@
   "danToc" : "Pa Kô",
   "queQuan" : "Thừa Thiên Huế",
   "namPhong" : "17/09/1967",
+
   "tieuSu" : "Nữ anh hùng đầu tiên trên của dân tộc Pa Kô. Tham gia chiến đấu tại chiến trường Tây Thừa Thiên. Sau là Phó chỉ huy quân sự huyện A Lưới. Bà là cháu của Anh hùng Hồ Vai, chị ruột Anh hùng Hồ A Nun."
+
 }, {
   "ten" : "Hồ Thị Bời[28]",
   "namSinhNamMat" : "1925-",
@@ -795,7 +821,9 @@
   "danToc" : "Kinh",
   "queQuan" : "Quảng Nam",
   "namPhong" : "17/09/1967",
+
   "tieuSu" : "Y tá Đại đội 1, Tiểu đoàn 72 bộ đội địa phương tỉnh Quảng Nam. Tham gia nhiều trận đánh, cứu chữa cho thương binh, bệnh binh"
+
 }, {
   "ten" : "Huỳnh Văn Đảnh",
   "namSinhNamMat" : "1939-1971",
@@ -809,13 +837,16 @@
   "danToc" : "Kinh",
   "queQuan" : "Long An",
   "namPhong" : "17/09/1967",
+
   "tieuSu" : "Tiểu đội phó thuộc Đại đội 2, Tiểu đoàn 2 bộ đội địa phương tỉnh Long An. Hy sinh trong trận diệt đồn Tân Quý ngày 8 tháng 10 năm 1966."
+
 }, {
   "ten" : "Huỳnh Việt Thanh",
   "namSinhNamMat" : "1926-1966",
   "danToc" : "Kinh",
   "queQuan" : "Tiền Giang",
   "namPhong" : "17/09/1967",
+
   "tieuSu" : "Xã đội trưởng xã Hậu Thạnh. Hy sinh trong trận chống càn ngày 25 tháng 9 năm 1966."
 }, {
   "ten" : "Kpă KLơng",
@@ -824,6 +855,16 @@
   "queQuan" : "Gia Lai",
   "namPhong" : "17/09/1967",
   "tieuSu" : "Chiến sĩ du kích với biệt tài \"bắn xuyên táo\". Hy sinh ngày 28 tháng 8 năm 1975 khi mang cấp bậc Thượng úy, tham mưu phó Tỉnh đội Gia Lai."
+=======
+  "tieuSu" : ""
+}, {
+  "ten" : "Kpă KLơng",
+  "namSinhNamMat" : "1948-1975",
+  "danToc" : "Jrai",
+  "queQuan" : "Gia Lai",
+  "namPhong" : "17/09/1967",
+  "tieuSu" : "Chiến sĩ du kích với biệt tài \"bắn xuyên táo\""
+
 }, {
   "ten" : "La Thị Tám",
   "namSinhNamMat" : "1949-",
@@ -888,6 +929,7 @@
   "namPhong" : "06/11/1978",
   "tieuSu" : "Chiến sĩ giao liên tình báo thuộc Đoàn 22, Cục tham mưu Bộ tư lệnh Miền."
 }, {
+
   "ten" : "Lê Thị Thanh",
   "namSinhNamMat" : "1932-",
   "danToc" : "Kinh",
@@ -895,6 +937,7 @@
   "namPhong" : "17/09/1967",
   "tieuSu" : ""
 }, {
+
   "ten" : "Lê Văn Ban",
   "namSinhNamMat" : "1933-",
   "danToc" : "Kinh",
@@ -907,7 +950,10 @@
   "danToc" : "Kinh",
   "queQuan" : "Quảng Ngãi",
   "namPhong" : "17/09/1967",
+
   "tieuSu" : "Đại đội trưởng thuộc bộ đội địa phương tỉnh Bình Thuận, tham gia chiến đấu hơn 30 trận, tự mình diệt 40 tên, bắt sống 16 tên, thu 40 súng các loại."
+
+
 }, {
   "ten" : "Lê Văn Tách",
   "namSinhNamMat" : "1940-1973",
@@ -935,7 +981,10 @@
   "danToc" : "Kinh",
   "queQuan" : "Vĩnh Long",
   "namPhong" : "17/09/1967",
+
   "tieuSu" : "Chiến sĩ biệt động thị xã Vĩnh Long. Hy sinh trong trận đánh tại quán Lệ Hoa, tiêu diệt nhiều lính Mỹ và tay sai ngày 4 tháng 2 năm 1966."
+
+
 }, {
   "ten" : "Lý A Coỏng",
   "namSinhNamMat" : "1923-1999",
@@ -944,6 +993,7 @@
   "namPhong" : "01/01/1967",
   "tieuSu" : "Chính trị viên xã đội Thanh Y, huyện Đầm Hà. Tham gia chống phản động, tiểu phỉ, vây bắt biệt kích Mỹ, góp phần đập tan vành đai “Xứ Nùng tự trị”."
 }, {
+
   "ten" : "Lý Văn Lâm",
   "namSinhNamMat" : "1941-1969",
   "danToc" : "Kinh",
@@ -951,6 +1001,7 @@
   "namPhong" : "17/09/1967",
   "tieuSu" : "Trung đội phó du kích xã Lợi An. Trên đường đi dự Đại hội anh hùng, chiến sĩ thi đua miền Tây Nam Bộ lần 2 bị địch phục kích, ông và người em trai đã anh dũng chống trả và hy sinh."
 }, {
+
   "ten" : "Mai Năng",
   "namSinhNamMat" : "1930-2019",
   "danToc" : "Kinh",
@@ -972,6 +1023,7 @@
   "namPhong" : "01/01/1967",
   "tieuSu" : "Thượng úy, bộ đội tình nguyện tại Lào. Tham gia công tác dân tộc, địch vận tại Lào, kêu gọi được 300 tên phỉ ra đầu hàng. Sau là Đại tá, Phó chỉ huy trưởng về Chính trị, Bộ Chỉ huy Quân sự tỉnh Lai Châu."
 }, {
+
   "ten" : "Ngô Lê Tân",
   "namSinhNamMat" : "1933-",
   "danToc" : "Kinh",
@@ -979,6 +1031,7 @@
   "namPhong" : "17/09/1967",
   "tieuSu" : ""
 }, {
+
   "ten" : "Ngô Minh Trị",
   "namSinhNamMat" : "1936-1960",
   "danToc" : "Kinh",
@@ -986,6 +1039,7 @@
   "namPhong" : "05/05/1965",
   "tieuSu" : "Tiểu đội phó đơn vị đặc công 60. Hy sinh trong trận tấn công đồn Tua Hai ngày 26 tháng 1 năm 1960."
 }, {
+
   "ten" : "Ngô Thanh Trang",
   "namSinhNamMat" : "1943-",
   "danToc" : "Kinh",
@@ -993,6 +1047,7 @@
   "namPhong" : "17/09/1967",
   "tieuSu" : ""
 }, {
+
   "ten" : "Ngô Thị Tuyển",
   "namSinhNamMat" : "1946-",
   "danToc" : "Kinh",
@@ -1007,6 +1062,7 @@
   "namPhong" : "06/11/1978",
   "tieuSu" : "Tiểu đoàn trưởng tiểu đoàn 9 bộ binh,"
 }, {
+
   "ten" : "Ngô Văn Rạnh",
   "namSinhNamMat" : "1922-",
   "danToc" : "Kinh",
@@ -1021,6 +1077,7 @@
   "namPhong" : "17/09/1967",
   "tieuSu" : ""
 }, {
+
   "ten" : "Nguyễn Đình Thử",
   "namSinhNamMat" : "1933-",
   "danToc" : "Kinh",
@@ -1028,6 +1085,7 @@
   "namPhong" : "01/01/1967",
   "tieuSu" : "Trung úy, phụ trách đội công tác cơ sở, thuộc đồn biên phòng Sốp Cộp; vận động quần chúng, tiễu phỉ, trừ gian, bảo vệ trật tự trị an vùng đồng bào các dân tộc ở miền cao biên giới. Phối hợp với nước bạn Lào đảm bảo an ninh khu vực biên giới."
 }, {
+
   "ten" : "Nguyễn Đức Nghĩa",
   "namSinhNamMat" : "1945-",
   "danToc" : "Kinh",
@@ -1035,6 +1093,7 @@
   "namPhong" : "17/09/1967",
   "tieuSu" : "Trung đội phó thuộc Đại đội 2, Tiểu đoàn 7, Trung đoàn 16 bộ đội chủ lực miền Đông Nam Bộ. Tham gia trận đánh Mỹ tại Chà Dơ (Dương Minh Châu, Tây Ninh). Sau là Thiếu tá, công tác tại Ban chỉ huy quân sự huyện Hoằng Hóa."
 }, {
+
   "ten" : "Nguyễn Đức Soát",
   "namSinhNamMat" : "1946-",
   "danToc" : "Kinh",
@@ -1082,7 +1141,9 @@
   "danToc" : "Kinh",
   "queQuan" : "Quảng Nam",
   "namPhong" : "17/09/1967",
+
   "tieuSu" : "Tiểu đoàn phó Tiểu đoàn 409 đặc công, Quân khu 5. Sau là Trung tá, hiệu trưởng trường Đặc Công Quân khu 5."
+
 }, {
   "ten" : "Nguyễn Thanh Sơn",
   "namSinhNamMat" : "1945-1978",
@@ -1103,7 +1164,9 @@
   "danToc" : "Kinh",
   "queQuan" : "Long An",
   "namPhong" : "17/09/1967",
+
   "tieuSu" : "Trung đội trưởng du kích xã Mỹ Hạnh. Xây dựng và phát triển cơ sở, đội du kích và chỉ huy đội du kích đánh địch hàng trăm trận."
+
 }, {
   "ten" : "Nguyễn Thị Út (Út Tịch)",
   "namSinhNamMat" : "1931-1968",
@@ -1141,11 +1204,13 @@
   "tieuSu" : "Thượng úy, Đại đội phó Đại đội 1 Không quân, Trung đoàn không quân 923. Phi công cấp Ace của Không quân nhân dân Việt Nam, bắn hạ 7 máy bay Mỹ. Sau là Đại tá, Phó Tham mưu trưởng Không quân nhân dân Việt Nam."
 }, {
   "ten" : "Nguyễn Văn Bé",
-  "namSinhNamMat" : "1941-",
+
+  "namSinhNamMat" : "1941-2002",
   "danToc" : "Kinh",
   "queQuan" : "Bình Dương",
   "namPhong" : "17/09/1967",
   "tieuSu" : "Đại đội phó Đại đội 304, Tiểu đoàn bộ đội địa phương Phú Lợi, huyện Thủ Dầu Một."
+
 }, {
   "ten" : "Nguyễn Văn Dậu",
   "namSinhNamMat" : "1929-",
@@ -1161,6 +1226,7 @@
   "namPhong" : "05/05/1965",
   "tieuSu" : "Tiểu đội trưởng Tiểu đội 4, Đại đội 1, Tiểu đoàn 261A (Tiểu đoàn Giron), tham gia chiến đấu, chỉ huy đơn vị đẩy lùi địch, tiêu diệt 2 xe M-113, bắn bị thương 1 chiếc khác, góp công vào thắng lợi trong trận Ấp Bắc và đã anh dũng hy sinh."
 }, {
+
   "ten" : "Nguyễn Văn Lên",
   "namSinhNamMat" : "1942-",
   "danToc" : "Kinh",
@@ -1174,6 +1240,7 @@
   "queQuan" : "Tp. Hồ Chí Minh",
   "namPhong" : "17/09/1967",
   "tieuSu" : "Tiểu đội trưởng trinh sát bộ đội địa phương quận Dĩ An. Khi bị thương cả hai chân đã dùng lựu đạn tấn công tiêu diệt giặc và anh dũng hy sinh ngày 28 tháng 5 năm 1966."
+
 }, {
   "ten" : "Nguyễn Văn Mật",
   "namSinhNamMat" : "1940-",
@@ -1182,6 +1249,7 @@
   "namPhong" : "01/01/1967",
   "tieuSu" : "Trung sĩ, khẩu đội trưởng súng cao xạ 14,5mm tham gia chiến đấu nhiều trận bảo vệ Cồn Cỏ."
 }, {
+
   "ten" : "Nguyễn Văn Mốt",
   "namSinhNamMat" : "1941-",
   "danToc" : "Kinh",
@@ -1201,11 +1269,13 @@
   "danToc" : "Kinh",
   "queQuan" : "Đồng Nai",
   "namPhong" : "17/09/1967",
+
   "tieuSu" : ""
 }, {
   "ten" : "Nguyễn Văn Quỳ",
   "namSinhNamMat" : "1937-1967",
   "danToc" : "Kinh",
+
   "queQuan" : "Tp. Hồ Chí Minh",
   "namPhong" : "05/05/1965",
   "tieuSu" : "Đại đội phó bộ đội địa phương huyện Nhà Bè. Tham gia chiến đấu 24 trận cùng đơn vị diệt 149 tên, bắt sống 15 tên, thu 59 súng và nhiều máy móc, tài liệu. Hy sinh khi chiến đấu chống trận càn Cedar Falls vào vùng \"Tam giác sắt\" năm 1967."
@@ -1224,6 +1294,7 @@
   "namPhong" : "17/09/1967",
   "tieuSu" : ""
 }, {
+
   "ten" : "Nguyễn Văn Thương",
   "namSinhNamMat" : "1938-2018",
   "danToc" : "Kinh",
@@ -1252,6 +1323,7 @@
   "namPhong" : "05/05/1965",
   "tieuSu" : "Trung đội phó Trung đội 3, Đại đội Quyết Thắng, Tiểu đoàn U Minh 2. Trong trận đánh ngày 8 tháng 12 năm 1962 đã bắn rơi 4 trực thăng với 8 phát đạn carbine. Hy sinh trong trận đánh đồn Vàm Cái Tàu tháng 10 năm 1963."
 }, {
+
   "ten" : "Nguyễn Viết Phong",
   "namSinhNamMat" : "1945-1970",
   "danToc" : "Kinh",
@@ -1259,6 +1331,7 @@
   "namPhong" : "17/09/1967",
   "tieuSu" : ""
 }, {
+
   "ten" : "Nguyễn Viết Sinh",
   "namSinhNamMat" : "1942-",
   "danToc" : "Kinh",
@@ -1287,6 +1360,7 @@
   "namPhong" : "01/01/1967",
   "tieuSu" : "Trung sĩ, Tiểu đội trưởng thuộc đồn biên phòng Roòn. Từ 1965-1966 đã tham gia chiến đấu 35 trận chống biệt kích vũ trang và đánh trả máy bay Mỹ ở vùng ven biển tỉnh Quảng Bình. Sau là Đại tá, nguyên Chỉ huy trưởng Bộ đội Biên phòng tỉnh Quảng Bình, Phó Giám đốc Công an tỉnh Quảng Bình."
 }, {
+
   "ten" : "Phạm Đình Nghiệp",
   "namSinhNamMat" : "1943-",
   "danToc" : "Kinh",
@@ -1294,6 +1368,7 @@
   "namPhong" : "17/09/1967",
   "tieuSu" : "Đại đội phó Đại đội đặc công 506A tỉnh đội Quảng Ngãi. Tham gia chiến đấu 30 trận, tự tay diệt và bắt sống 79 tên, thu 33 khẩu súng các loại, đánh hỏng một xe M.113."
 }, {
+
   "ten" : "Phạm Gia Triệu",
   "namSinhNamMat" : "1918-1990",
   "danToc" : "Kinh",
@@ -1325,14 +1400,18 @@
   "ten" : "Phạm Văn Cội",
   "namSinhNamMat" : "1940-1967",
   "danToc" : "Kinh",
+
   "queQuan" : "Tp. Hồ Chí Minh",
+
   "namPhong" : "17/09/1967",
   "tieuSu" : "Xã đội trưởng xã Nhuận Đức. Trong chiến đấu đã tiêu diệt 120 lính Mỹ, 8 xe cơ giới và 1 máy bay lên thẳng. Hy sinh trong trận chống càn ngày 28 tháng 7 năm 1967."
 }, {
   "ten" : "Phạm Văn Hai",
   "namSinhNamMat" : "1931-1966",
   "danToc" : "Kinh",
+
   "queQuan" : "Tp. Hồ Chí Minh",
+
   "namPhong" : "05/05/1965",
   "tieuSu" : "Đội trưởng Đội biệt động 65 nội thành Sài Gòn. Tham gia trận đánh kho bom Phú Thọ Hòa ngày 1 tháng 6 năm 1954, chỉ huy đơn vị tập kích hơn 30 trận vào các mục tiêu quân sự của Mỹ và chính quyền Việt Nam Cộng hòa. Hy sinh tại chiến trường Củ Chi năm 1966."
 }, {
@@ -1355,7 +1434,9 @@
   "danToc" : "Kinh",
   "queQuan" : "Quảng Trị",
   "namPhong" : "17/09/1967",
+
   "tieuSu" : "Trung đội phó thuộc đội 10, bộ đội đặc công tỉnh Quảng Trị."
+
 }, {
   "ten" : "Phan Trung Kiên",
   "namSinhNamMat" : "1946-",
@@ -1380,7 +1461,9 @@
 }, {
   "ten" : "Puih Thu (Puih Banh)",
   "namSinhNamMat" : "1935-",
+
   "danToc" : "Gia Rai",
+
   "queQuan" : "Gia Lai",
   "namPhong" : "05/05/1965",
   "tieuSu" : "Trung đội trưởng du kích xã Ia Lớp, huyện Chư Prông. Ngày 14 tháng 5 năm 1964, chỉ huy trung đội du kích cùng nhân dân làng Lan nổi dậy diệt 18 tên, đốt nhà hội đồng của địch bắt sống 6 tên, thu 12 súng các loại và nhiều đạn dược. Khi máy bay địch đến oanh tạc, đã dùng súng trường bắn rơi 1 máy bay lên thẳng."
@@ -1397,7 +1480,9 @@
   "danToc" : "Hoa",
   "queQuan" : "Hậu Giang",
   "namPhong" : "17/09/1967",
+
   "tieuSu" : "Nguyên Phó Tham Mưu trưởng Quân Đoàn 4, tham gia và có công lớn trong chiến dịch Bình Giã."
+
 }, {
   "ten" : "Tạ Thị Kiều",
   "namSinhNamMat" : "1938-2012",
@@ -1413,6 +1498,7 @@
   "namPhong" : "01/01/1967",
   "tieuSu" : "Đại tá, khi tuyên dương là Thượng sĩ, quan sát viên đảo Cồn Cỏ. Trong ba năm làm nhiệm vụ trên đảo, đã góp phần cùng đơn vị bắn rơi 20 máy bay Mỹ (riêng tổ trinh sát trực tiếp bắn rơi một chiếc) và xác định các vị trí có bom địch chưa nổ để công binh xử lý."
 }, {
+
   "ten" : "Thanh Minh Tám",
   "namSinhNamMat" : "1935-",
   "danToc" : "Xơ Đăng",
@@ -1420,19 +1506,24 @@
   "namPhong" : "17/09/1967",
   "tieuSu" : ""
 }, {
+
   "ten" : "Tô Thị Huỳnh",
   "namSinhNamMat" : "1946-1966",
   "danToc" : "Kinh",
   "queQuan" : "Trà Vinh",
   "namPhong" : "17/09/1967",
+
   "tieuSu" : "Xã đội phó xã Lương Hòa, Tiểu đội trưởng tiểu đội nữ du kích xã. Hy sinh trong trận chống càn ngày 20 tháng 12 năm 1966."
+
 }, {
   "ten" : "Tô Văn Đực",
   "namSinhNamMat" : "1942-",
   "danToc" : "Kinh",
+
   "queQuan" : "Tp. Hồ Chí Minh",
   "namPhong" : "17/09/1967",
   "tieuSu" : "Tổ trưởng tổ sản xuất và sửa chữa vũ khí xã Nhuận Đức. Nghiên cứu chế tạo mìn gạt đánh xe cơ giới và sửa chữa, cải tiến nhiều loại vũ khí khác. Sau là Trung tá, Phó Chủ nhiệm kỹ thuật Quân khu 7."
+
 }, {
   "ten" : "Tôn Minh Lai[26]",
   "namSinhNamMat" : "",
@@ -1460,7 +1551,9 @@
   "danToc" : "Kinh",
   "queQuan" : "Nam Định",
   "namPhong" : "01/01/1967",
+
   "tieuSu" : "Thiếu tá, Trung đoàn phó Trung đoàn không quân 921. Tham gia chiến đấu trong trận không chiến bảo vệ cầu Hàm Rồng tháng 4 năm 1965. Sau là Trung tướng, Thứ trưởng Bộ Quốc phòng, Chủ tịch Hội Cựu chiến binh Việt Nam."
+
 }, {
   "ten" : "Trần Minh Khâm",
   "namSinhNamMat" : "1930-",
@@ -1509,6 +1602,7 @@
   "danToc" : "Kinh",
   "queQuan" : "Quảng Nam",
   "namPhong" : "17/09/1967",
+
   "tieuSu" : "Đội phó đặc công thuộc Sư đoàn 2, Quân khu 5. Tham gia chiến đấu trong trận Ba Gia."
 }, {
   "ten" : "Trần Văn Lư",
@@ -1517,6 +1611,7 @@
   "queQuan" : "Trà Vinh",
   "namPhong" : "17/09/1967",
   "tieuSu" : "Bác sĩ, Đội trưởng đội phẫu thuật Sư đoàn 5, bộ đội chủ lực miền Đông Nam Bộ. Tham gia phẫu thuật cứu sống nhiều thương binh, bệnh binh."
+
 }, {
   "ten" : "Trần Văn Nhỏ",
   "namSinhNamMat" : "1929-",
@@ -1562,6 +1657,7 @@
 }, {
   "ten" : "Trương Văn Hòa",
   "namSinhNamMat" : "1937-",
+
   "danToc" : "Kinh",
   "queQuan" : "Quảng Nam",
   "namPhong" : "17/09/1967",
@@ -1581,6 +1677,7 @@
   "namPhong" : "17/09/1967",
   "tieuSu" : "Đại đội phó thuộc Tiểu đoàn 52 bộ đội địa phương tỉnh Bình Định. Sau là Tiểu đoàn trưởng Tiểu đoàn 52. Hy sinh trong trận đánh ngày 18 tháng 8 năm 1968."
 }, {
+
   "ten" : "Võ Như Hưng",
   "namSinhNamMat" : "1929-1963",
   "danToc" : "Kinh",
