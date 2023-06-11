@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c6b153c-c21a-4197-a334-89006ac87ee9" name="Changes" comment="" />
+    <list default="true" id="1c6b153c-c21a-4197-a334-89006ac87ee9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/trieuDai.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/trieuDai.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +74,7 @@
       <recent name="C:\Users\Admin\OneDrive - Hanoi University of Science and Technology\Documents\TaiLieuBK\OOP\web_Scrapper\src\JSON Data" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.crawl">
+  <component name="RunManager" selected="Application.test">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true" show_console_on_std_err="true">
       <option name="MAIN_CLASS_NAME" value="CrawlData.CrawTrieuDai.Main" />
       <module name="web_Scrapper.main" />
@@ -111,8 +114,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CrawlData.CrawlTrieuDai.test" />
+      <module name="web_Scrapper.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CrawlData.CrawlTrieuDai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.crawler" />
         <item itemvalue="Application.crawl" />
         <item itemvalue="Application.Main" />
@@ -137,11 +154,6 @@
           <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/crawl.java</url>
-          <line>248</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
