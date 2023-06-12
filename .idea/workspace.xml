@@ -5,25 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3779d972-e9c0-42b6-a657-5ca42dc87135" name="Changes" comment="UI and controller">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_06_2023_9_01_PM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_06_2023_9_01_PM_[Changes]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_06_2023_9_01_PM__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Application/ReadJSON.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Application/app.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/MainSceneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/SearchSceneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fxml/MainScene.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fxml/SearchScene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JSON_Data/trieuDai.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/trieuDai.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat_NguoiKeSu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat_NguoiKeSu/Main1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat_NguoiKeSu/Thread_T.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat_NguoiKeSu/Thread_T.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat_NguoiKeSu/Thread_X.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat_NguoiKeSu/Thread_X.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/ReadJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/ReadJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/MainSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/MainSceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/SearchSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/SearchSceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/crawl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/crawl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
