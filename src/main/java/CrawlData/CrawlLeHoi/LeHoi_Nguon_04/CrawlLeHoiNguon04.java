@@ -1,7 +1,6 @@
 package CrawlData.CrawlLeHoi.LeHoi_Nguon_04;
 
 import CrawlData.CrawlLeHoi.LeHoi_Nguon_03.LeHoiWiki;
-import CrawlData.CrawlLeHoi.LeHoi_Nguon_04.ThreadNetwork_Nguon_04;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
@@ -155,7 +154,7 @@ public class CrawlLeHoiNguon04 {
     }
     //Using multiple threads for faster data crawling
     private Thread genThread(String url) {
-        CrawlLeHoi.LeHoi_Nguon_04.ThreadNetwork_Nguon_04 threadNetwork1 = new ThreadNetwork_Nguon_04(url);
+        ThreadNetwork_Nguon_04 threadNetwork1 = new ThreadNetwork_Nguon_04(url);
         return new Thread(threadNetwork1);
     }
 
