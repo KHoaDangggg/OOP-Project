@@ -1,0 +1,386 @@
+Index: src/main/java/CrawlData/CrawlSuKien/crawlChienTranh.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/CrawlData/CrawlSuKien/crawlChienTranh.java b/src/main/java/CrawlData/CrawlSuKien/crawlChienTranh.java
+new file mode 100644
+--- /dev/null	(date 1686145507243)
++++ b/src/main/java/CrawlData/CrawlSuKien/crawlChienTranh.java	(date 1686145507243)
+@@ -0,0 +1,136 @@
++package CrawlData.CrawlSuKien;
++
++import org.jsoup.Jsoup;
++import org.jsoup.nodes.Document;
++import org.jsoup.nodes.Element;
++import org.jsoup.select.Elements;
++
++import java.io.FileWriter;
++import java.io.IOException;
++import java.util.ArrayList;
++
++
++public class crawlChienTranh {
++    public static void main(String[] args) throws IOException {
++        //Get links in the first page
++        String link = "https://nguoikesu.com/tu-lieu/quan-su?filter_tag[0]=";
++        Document doc_first = Jsoup.connect(link).get();
++        ArrayList<String> list_href = new ArrayList<>();
++        Elements a_tags = doc_first.select("a[itemprop=url]");
++        for (Element a_tag : a_tags) {
++            list_href.add(a_tag.attr("href"));
++        }
++
++        //Get link in the other page
++        for(int i=5;i<=70;i+=5){
++            String links = link + "&start="+i;
++            Document docs = Jsoup.connect(links).get();
++            Elements a_tagss = docs.select("a[itemprop=url]");
++            for(Element a: a_tagss){
++                list_href.add(a.attr("href"));
++            }
++        }
++
++        //Get data from each page
++
++        ArrayList<SuKienChienTranh> list_events = new ArrayList<>();
++        // Loop for all links
++
++        for (int i = 0; i < list_href.size(); i++) {
++            String link_expand = "https://nguoikesu.com" + list_href.get(i);
++            Document doc_expand = Jsoup.connect(link_expand).get();
++
++            //Get the relative objects
++            ArrayList<String> nhanVatLienQuan = new ArrayList<>();
++            ArrayList<String> diaDiemLienQuan = new ArrayList<>();
++            ArrayList<String> trieuDaiLienQuan = new ArrayList<>();
++
++            Elements link_tags = doc_expand.select("a[class=annotation]");
++            for(Element link_tag: link_tags){
++                if(link_tag.attr("href").contains("/dia-danh/")){
++                    if(!diaDiemLienQuan.contains(link_tag.text())){
++                        diaDiemLienQuan.add(link_tag.text());
++                    }
++                }
++
++                if(link_tag.attr("href").contains("/nhan-vat/")){
++                    if(link_tag.text().contains("nhà")){
++                        if(!trieuDaiLienQuan.contains(link_tag.text())){
++                            trieuDaiLienQuan.add(link_tag.text());
++                        }
++                    }
++                    else{
++                        if(!nhanVatLienQuan.contains(link_tag.text())){
++                            nhanVatLienQuan.add(link_tag.text());
++                        }
++                    }
++                }
++            }
++
++            //Get the other data
++            ArrayList<String> data = new ArrayList<>();
++            if(doc_expand.select("table[cellspacing=2]").size()!=0) {
++                Element table = doc_expand.select("table[cellspacing=2]").first();
++                Elements rows = table.select("tr");
++                for (Element row : rows) {
++                    if (row.select("td").size() == 0) {
++                        data.add(row.text());
++                    } else {
++                        Elements cells = row.select("td");
++                        for (Element cell : cells) {
++                            data.add(cell.text());
++                        }
++                    }
++                }
++            }
++            SuKienChienTranh obj = new SuKienChienTranh();
++            for (int j = 0; j < data.size(); j++) {
++                if (j == 0) {
++                    obj.setTenSuKien(data.get(j));
++                }
++                if (data.get(j).equals("Thời gian")) {
++                    obj.setThoiGian(data.get(j + 1));
++                }
++                if (data.get(j).equals("Địa điểm")) {
++                    obj.setDiaDiem(data.get(j + 1));
++                }
++                if (data.get(j).equals("Kết quả")) {
++                    obj.setKetQua(data.get(j + 1).replaceAll("\"",""));
++                }
++                if (data.get(j).equals("Tham chiến")) {
++                    obj.setPheTa(data.get(j + 1));
++                    obj.setPheDich(data.get(j + 2).replaceAll(".gif\" src=\"/images/wiki/tran-ngoc-hoi-dong-da/05869fc73a25b2f4c8999abd4386ab9b.gif\" />",""));
++                }
++                if (data.get(j).equals("Lực lượng")) {
++                    obj.setLucLuongPheTa(data.get(j + 1));
++                    obj.setLucLuongPheDich(data.get(j + 2));
++                }
++                if (data.get(j).equals("Chỉ huy")) {
++                    obj.setChiHuyPheTa(data.get(j + 1).replaceAll("\"",""));
++                    obj.setChiHuyPheDich(data.get(j + 2).replaceAll("\"",""));
++                }
++                if (data.get(j).equals("Tổn thất")) {
++                    obj.setTonThatTa(data.get(j + 1));
++                    obj.setTonThatDich(data.get(j + 2));
++                }
++                if(data.get(j).equals("Nguyên nhân bùng nổ")){
++                    obj.setNguyenNhan(data.get(j+1));
++                }
++                obj.setNameRelativePerson(nhanVatLienQuan);
++                obj.setNameRelativePlace(diaDiemLienQuan);
++                obj.setNameRelativeDinasty(trieuDaiLienQuan);
++            }
++            if(obj.getTenSuKien()!=null) {
++                list_events.add(obj);
++            }
++        }
++
++        //Write to the json file
++
++        FileWriter file = new FileWriter("ChienTranh.json");
++        file.write(list_events.toString());
++        file.flush();
++        file.close();
++
++    }
++}
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"1c6b153c-c21a-4197-a334-89006ac87ee9\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <projects_view>\r\n          <tree_state>\r\n            <expand>\r\n              <path>\r\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\r\n                <item name=\"web_Scrapper\" type=\"f1a62948:ProjectNode\" />\r\n              </path>\r\n            </expand>\r\n            <select />\r\n          </tree_state>\r\n        </projects_view>\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"ProjectErrors\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2P0Han81S4SL8EZwhC968EHCVza\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/Admin/OneDrive - Hanoi University of Science and Technology/Documents/TaiLieuBK/OOP/web_Scrapper\",\r\n    \"onboarding.tips.debug.path\": \"C:/Users/Admin/OneDrive - Hanoi University of Science and Technology/Documents/TaiLieuBK/OOP/web_Scrapper/src/main/java/org/example/Main.java\",\r\n    \"project.structure.last.edited\": \"Modules\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"settings.editor.selected.configurable\": \"editor.preferences.fonts.default\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Admin\\OneDrive - Hanoi University of Science and Technology\\Documents\\TaiLieuBK\\OOP\\web_Scrapper\\src\\JSON Data\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Application.crawl\">\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\" show_console_on_std_err=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"CrawlData.CrawTrieuDai.Main\" />\r\n      <module name=\"web_Scrapper.main\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"CrawlData.CrawlTrieuDai.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"crawl\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"CrawlData.CrawlTrieuDai.crawl\" />\r\n      <module name=\"web_Scrapper.main\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"CrawlData.CrawlTrieuDai.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"crawler\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"CrawlData.CrawlTrieuDai.crawler\" />\r\n      <module name=\"web_Scrapper.main\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"CrawlData.CrawlTrieuDai.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.crawler\" />\r\n        <item itemvalue=\"Application.crawl\" />\r\n        <item itemvalue=\"Application.Main\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"1c6b153c-c21a-4197-a334-89006ac87ee9\" name=\"Changes\" comment=\"\" />\r\n      <created>1682587149322</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1682587149322</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <breakpoint enabled=\"true\" type=\"java-exception\">\r\n          <properties class=\"java.lang.StringIndexOutOfBoundsException\" package=\"java.lang\" />\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/crawl.java</url>\r\n          <line>248</line>\r\n          <option name=\"timeStamp\" value=\"3\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/web_Scrapper$Main.ic\" NAME=\"Main Coverage Results\" MODIFIED=\"1683567461175\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\">\r\n      <FILTER>org.example.*</FILTER>\r\n    </SUITE>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 2ecc89afe657e84e65bb8b709530e2369d1efc60)
++++ b/.idea/workspace.xml	(date 1686145507293)
+@@ -4,7 +4,12 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="1c6b153c-c21a-4197-a334-89006ac87ee9" name="Changes" comment="" />
++    <list default="true" id="1c6b153c-c21a-4197-a334-89006ac87ee9" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlSuKien/SuKienChienTranh.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlSuKien/crawlChienTranh.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -58,12 +63,12 @@
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "ignore.virus.scanning.warn.message": "true",
+-    "last_opened_file_path": "C:/Users/Admin/OneDrive - Hanoi University of Science and Technology/Documents/TaiLieuBK/OOP/web_Scrapper",
++    "last_opened_file_path": "D:/CodeViet/OOP Java/LichsuVN",
+     "onboarding.tips.debug.path": "C:/Users/Admin/OneDrive - Hanoi University of Science and Technology/Documents/TaiLieuBK/OOP/web_Scrapper/src/main/java/org/example/Main.java",
+     "project.structure.last.edited": "Modules",
+     "project.structure.proportion": "0.15",
+     "project.structure.side.proportion": "0.2",
+-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
++    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+   }
+ }]]></component>
+   <component name="RecentsManager">
+@@ -71,7 +76,7 @@
+       <recent name="C:\Users\Admin\OneDrive - Hanoi University of Science and Technology\Documents\TaiLieuBK\OOP\web_Scrapper\src\JSON Data" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Application.crawl">
++  <component name="RunManager">
+     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true" show_console_on_std_err="true">
+       <option name="MAIN_CLASS_NAME" value="CrawlData.CrawTrieuDai.Main" />
+       <module name="web_Scrapper.main" />
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleHome\" value=\"$PROJECT_DIR$/../../../../../../../Program Files/gradle-8.1.1\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n          </set>\r\n        </option>\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision 2ecc89afe657e84e65bb8b709530e2369d1efc60)
++++ b/.idea/gradle.xml	(date 1686144950944)
+@@ -4,8 +4,8 @@
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
++        <option name="delegatedBuild" value="false" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+-        <option name="gradleHome" value="$PROJECT_DIR$/../../../../../../../Program Files/gradle-8.1.1" />
+         <option name="modules">
+           <set>
+             <option value="$PROJECT_DIR$" />
+Index: src/main/java/CrawlData/CrawlSuKien/SuKienChienTranh.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/CrawlData/CrawlSuKien/SuKienChienTranh.java b/src/main/java/CrawlData/CrawlSuKien/SuKienChienTranh.java
+new file mode 100644
+--- /dev/null	(date 1686150391046)
++++ b/src/main/java/CrawlData/CrawlSuKien/SuKienChienTranh.java	(date 1686150391046)
+@@ -0,0 +1,161 @@
++package CrawlData.CrawlSuKien;
++
++import org.json.JSONArray;
++import org.json.JSONObject;
++import org.json.JSONTokener;
++
++import java.io.FileReader;
++import java.io.IOException;
++import java.util.ArrayList;
++import java.util.Objects;
++
++public class SuKienChienTranh {
++    private String tenSuKien;
++    private String thoiGian;
++    private String diaDiem;
++    private String ketQua;
++    private String pheTa;
++    private String pheDich;
++    private String chiHuyPheTa;
++    private String chiHuyPheDich;
++    private String lucLuongPheTa;
++    private String lucLuongPheDich;
++    private String tonThatTa;
++    private String tonThatDich;
++    private String nguyenNhan;
++    private ArrayList<String> nameRelativePerson;
++    private ArrayList<String> nameRelativePlace;
++    private ArrayList<String> nameRelativeDinasty;
++    public void setTenSuKien(String tenSuKien) {
++        this.tenSuKien = tenSuKien;
++    }
++
++    public void setDiaDiem(String diaDiem) {
++        this.diaDiem = diaDiem;
++    }
++
++    public void setThoiGian(String thoiGian) {
++        this.thoiGian = thoiGian;
++    }
++
++    public void setKetQua(String ketQua) {
++        this.ketQua = ketQua;
++    }
++
++    public void setPheTa(String pheTa) {
++        this.pheTa = pheTa;
++    }
++
++    public void setPheDich(String pheDich) {
++        this.pheDich = pheDich;
++    }
++
++    public void setChiHuyPheTa(String chiHuyPheTa) {
++        this.chiHuyPheTa = chiHuyPheTa;
++    }
++
++    public void setChiHuyPheDich(String chiHuyPheDich) {
++        this.chiHuyPheDich = chiHuyPheDich;
++    }
++
++    public void setLucLuongPheTa(String lucLuongPheTa) {
++        this.lucLuongPheTa = lucLuongPheTa;
++    }
++
++    public void setLucLuongPheDich(String lucLuongPheDich) {
++        this.lucLuongPheDich = lucLuongPheDich;
++    }
++
++    public String getTenSuKien() {
++        return tenSuKien;
++    }
++
++    public String getThoiGian() {
++        return thoiGian;
++    }
++
++    public String getDiaDiem() {
++        return diaDiem;
++    }
++
++    public String getKetQua() {
++        return ketQua;
++    }
++
++    public String getPheTa() {
++        return pheTa;
++    }
++
++    public String getPheDich() {
++        return pheDich;
++    }
++
++    public String getChiHuyPheTa() {
++        return chiHuyPheTa;
++    }
++
++    public String getChiHuyPheDich() {
++        return chiHuyPheDich;
++    }
++
++    public String getLucLuongPheTa() {
++        return lucLuongPheTa;
++    }
++
++    public String getLucLuongPheDich() {
++        return lucLuongPheDich;
++    }
++
++    public void setTonThatDich(String tonThatDich) {
++        this.tonThatDich = tonThatDich;
++    }
++
++    public void setTonThatTa(String tonThatTa) {
++        this.tonThatTa = tonThatTa;
++    }
++
++    public String getTonThatDich() {
++        return tonThatDich;
++    }
++
++    public String getTonThatTa() {
++        return tonThatTa;
++    }
++
++    public void setNguyenNhan(String nguyenNhan) {
++        this.nguyenNhan = nguyenNhan;
++    }
++
++    public void setNameRelativePerson(ArrayList<String> nameRelativePerson) {
++        this.nameRelativePerson = nameRelativePerson;
++    }
++
++    public void setNameRelativePlace(ArrayList<String> nameRelativePlace) {
++        this.nameRelativePlace = nameRelativePlace;
++    }
++
++    public void setNameRelativeDinasty(ArrayList<String> nameRelativeDinasty) {
++        this.nameRelativeDinasty = nameRelativeDinasty;
++    }
++
++    public void lienKetNhanVat() throws IOException {
++
++
++    }
++    public String toString(){
++        return "\n{\"tenSuKien\": "+"\""+tenSuKien+"\",\n"+
++                "\"thoiGian\": "+"\""+thoiGian+"\",\n"+
++                "\"diaDiem\": "+"\""+diaDiem+"\",\n"+
++                "\"nguyenNhan\": "+"\""+nguyenNhan+"\",\n"+
++                "\"pheTa\": "+"\""+pheTa+"\",\n"+
++                "\"pheDich\": "+"\""+pheDich+"\",\n"+
++                "\"chiHuyPheTa\": "+"\""+chiHuyPheTa+"\",\n"+
++                "\"chiHuyPheDich\": "+"\""+chiHuyPheDich+"\",\n"+
++                "\"tonThatPheTa\": "+"\""+tonThatTa+"\",\n"+
++                "\"tonThatPheDich\": "+"\""+tonThatDich+"\",\n"+
++                "\"ketQua\": "+"\""+ketQua+"\",\n"+
++                "\"nhanVatLienQuan\": "+"\""+nameRelativePerson+"\",\n"+
++                "\"trieuDaiLienQuan\": "+"\""+nameRelativeDinasty+"\",\n"+
++                "\"diaDiemLienQuan\": "+"\""+nameRelativePlace+"\"\n}";
++    }
++}

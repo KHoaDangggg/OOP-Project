@@ -87,7 +87,7 @@
       <recent name="C:\Users\Admin\OneDrive - Hanoi University of Science and Technology\Documents\TaiLieuBK\OOP\web_Scrapper\src\JSON Data" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.crawl">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true" show_console_on_std_err="true">
       <option name="MAIN_CLASS_NAME" value="CrawlData.CrawTrieuDai.Main" />
       <module name="web_Scrapper.main" />
