@@ -1,4 +1,6 @@
 plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
     id 'java'
 }
 
@@ -16,7 +18,22 @@ dependencies {
     implementation "org.seleniumhq.selenium:selenium-java:4.9.0"
     implementation 'org.json:json:20200518'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.5'
-
+    implementation 'com.google.code.gson:gson:2.8.9'
+}
+sourceSets {
+    main {
+        java {
+            srcDirs 'src/main/java'
+        }
+        resources {
+            srcDirs 'src/main/resources'
+            srcDirs 'src/main/java'
+        }
+    }
+}
+javafx {
+    version = "20"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
 test {

@@ -1,0 +1,294 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"1c6b153c-c21a-4197-a334-89006ac87ee9\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/JSON_Data/trieuDai.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/JSON_Data/trieuDai.json\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <projects_view>\r\n          <tree_state>\r\n            <expand>\r\n              <path>\r\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\r\n                <item name=\"web_Scrapper\" type=\"f1a62948:ProjectNode\" />\r\n              </path>\r\n            </expand>\r\n            <select />\r\n          </tree_state>\r\n        </projects_view>\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"ProjectErrors\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2P0Han81S4SL8EZwhC968EHCVza\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/Admin/OneDrive - Hanoi University of Science and Technology/Documents/TaiLieuBK/OOP/web_Scrapper\",\r\n    \"onboarding.tips.debug.path\": \"C:/Users/Admin/OneDrive - Hanoi University of Science and Technology/Documents/TaiLieuBK/OOP/web_Scrapper/src/main/java/org/example/Main.java\",\r\n    \"project.structure.last.edited\": \"Modules\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"settings.editor.selected.configurable\": \"editor.preferences.fonts.default\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Admin\\OneDrive - Hanoi University of Science and Technology\\Documents\\TaiLieuBK\\OOP\\web_Scrapper\\src\\JSON Data\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Application.test\">\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\" show_console_on_std_err=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"CrawlData.CrawTrieuDai.Main\" />\r\n      <module name=\"web_Scrapper.main\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"CrawlData.CrawlTrieuDai.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"crawl\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"CrawlData.CrawlTrieuDai.crawl\" />\r\n      <module name=\"web_Scrapper.main\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"CrawlData.CrawlTrieuDai.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"crawler\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"CrawlData.CrawlTrieuDai.crawler\" />\r\n      <module name=\"web_Scrapper.main\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"CrawlData.CrawlTrieuDai.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"test\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"CrawlData.CrawlTrieuDai.test\" />\r\n      <module name=\"web_Scrapper.main\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"CrawlData.CrawlTrieuDai.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.test\" />\r\n        <item itemvalue=\"Application.crawler\" />\r\n        <item itemvalue=\"Application.crawl\" />\r\n        <item itemvalue=\"Application.Main\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"1c6b153c-c21a-4197-a334-89006ac87ee9\" name=\"Changes\" comment=\"\" />\r\n      <created>1682587149322</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1682587149322</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <breakpoint enabled=\"true\" type=\"java-exception\">\r\n          <properties class=\"java.lang.StringIndexOutOfBoundsException\" package=\"java.lang\" />\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/web_Scrapper$Main.ic\" NAME=\"Main Coverage Results\" MODIFIED=\"1683567461175\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\">\r\n      <FILTER>org.example.*</FILTER>\r\n    </SUITE>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -44,6 +44,7 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="UPDATE_TYPE" value="REBASE" />
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+@@ -60,8 +61,9 @@
+   "keyToString": {
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
++    "git-widget-placeholder": "crawl/Khoa",
+     "ignore.virus.scanning.warn.message": "true",
+-    "last_opened_file_path": "C:/Users/Admin/OneDrive - Hanoi University of Science and Technology/Documents/TaiLieuBK/OOP/web_Scrapper",
++    "last_opened_file_path": "C:/Users/Admin/OneDrive - Hanoi University of Science and Technology/Documents/TaiLieuBK/OOP project/OOP-Project",
+     "onboarding.tips.debug.path": "C:/Users/Admin/OneDrive - Hanoi University of Science and Technology/Documents/TaiLieuBK/OOP/web_Scrapper/src/main/java/org/example/Main.java",
+     "project.structure.last.edited": "Modules",
+     "project.structure.proportion": "0.15",
+@@ -74,7 +76,7 @@
+       <recent name="C:\Users\Admin\OneDrive - Hanoi University of Science and Technology\Documents\TaiLieuBK\OOP\web_Scrapper\src\JSON Data" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Application.test">
++  <component name="RunManager" selected="Application.crawl">
+     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true" show_console_on_std_err="true">
+       <option name="MAIN_CLASS_NAME" value="CrawlData.CrawTrieuDai.Main" />
+       <module name="web_Scrapper.main" />
+Index: src/JSON_Data/trieuDai.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>[\r\n {\r\n  \"nam_ket_thuc\": \"258TCN\",\r\n  \"tom_tat\": \"Gồm hai nhà nước nhỏ bao gồm: \\nNước Xích Quỷ: Là 1 nhà nước liên bang\\u201d, lỏng lẻo của các bộ tộc người Việt cổ ở vùng Lĩnh Nam. Theo tương truyền, Kinh Dương Vương là Thủy tổ của dân tộc Việt Nam có con là Lạc Long Quân đã lấy Âu Cơ và sinh ra một bọc trăm trứng nở ra một trăm người con trai. Đây được xem là tổ tiên của người Bách Việt, có con trưởng là Hùng Vương nối ngôi.\\nNhà nước Văn Lang (Thế kỷ VII 258 TCN hoặc 218 TCN): Sau khi nhà nước liên bang tan rã thì vào khoảng thế kỷ thứ 7 TCN, người Lạc Việt ở miền Bắc lúc bấy giờ đã xây dựng một nhà nước lấy tên là Văn Lang, do vua Hùng cai trị và đóng đô ở Phong Châu (Phú Thọ).\",\r\n  \"vua\": [],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"?\",\r\n  \"ten\": \"Kỷ Hồng Bàng\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"208TCN\",\r\n  \"tom_tat\": \"Vào khoảng thế kỷ thứ 3 TCN, Thục Phán của bộ Âu Lạc đã hợp lực cùng vua Hùng thứ 18 đánh bại quân xâm lược nhà Tần. Sau đó, sáp nhập Âu Việt và Lạc Việt thành Âu Lạc. Thục Phán lên ngôi, lấy hiệu là An Dương Vương lập lên nhà Thục và đóng đô ở Cổ Loa.\",\r\n  \"vua\": [],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"257TCN\",\r\n  \"ten\": \"Nhà Thục\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"39\",\r\n  \"tom_tat\": \"Trong thời kỳ phong kiến phương Bắc đô hộ lần thứ nhất, Triệu Đà là quận ủy quận Nam Hải nhân lúc nhà Tần suy yếu đã giết Trưởng lại nhà Tần, chiếm giữ Lĩnh Nam rồi đem quân đi thôn tính lãnh thổ Âu Lạc, Mân Việt, Quế Lâm thành lập lên nhà Triệu, lấy tên nước là Nam Việt và kinh đô là Phiên Ngưng. Nhà Triệu tồn tại 5 đời vua.\\nNăm 111 TCN, Hán Vũ Đế đem 10 vạn quân đi thôn tính Nam Việt. Nhà Hán chia Nam Việt thành 9 quận bao gồm Đạm Nhĩ, Nam Hải, Hợp Phố, Uất Lâm, Thương Ngô, Giao Chỉ (Bắc Bộ nước ta), Cửu Chân (Thanh Hóa-Nghệ Tĩnh), Nhật Nam (Quảng Bình-Quảng Nam). Chúng thực hiện các chính sách cai trị tàn bạo và vô cùng khắc nghiệt.\",\r\n  \"vua\": [\r\n   \"Triệu Vũ Đế (Triệu Đà, 207-136 TCN)\",\r\n   \"Triệu Văn Đế (Triệu Hồ, 136-124 TCN)\",\r\n   \"Triệu Minh Vương (Triệu Anh Tề, 124-112 TCN)\",\r\n   \"Triệu Ai Vương (Triệu Hưng, 112-112 TCN)\",\r\n   \"Triệu Dương Vương (tức là Triệu Kiến Đức, 112-111 TCN)\"\r\n  ],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"208TCN\",\r\n  \"ten\": \"Thời Bắc thuộc lần thứ I\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"43\",\r\n  \"tom_tat\": \"Cuộc khởi nghĩa của hai chị em Trưng Trắc Trưng Nhị diễn ra trong vòng 3  năm đã giúp quân ta đã chiếm được 65 thành trì ở các quận Giao Chỉ, Cửu Chân, Nhật Nam và Hợp Phố. \\nSau đó, do bị cô lập và quân đội còn sơ khai đã khiến 2 bà không chống cự nổi quân của Mã Viện. Cuối cùng, để giữ vẹn khí tiết thì 2 bà đã tuẫn tiết tại sông Hát.\",\r\n  \"vua\": [],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"40\",\r\n  \"ten\": \"Trưng Nữ Vương\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"543\",\r\n  \"tom_tat\": \"Sau nhà Hán, các triều đại phong kiến phương Bắc gồm Đông Ngô, nhà Tấn, Lưu Tống, Nam Tề và nhà Lương đã thay nhau đô hộ nước ta. Có rất nhiều cuộc khởi nghĩa đã nổi dậy nhưng tất cả đều không thành công.\\nMột số cuộc khởi nghĩa tiêu biểu ở thời kỳ này có thể kể đến là khởi nghĩa anh em Triệu Quốc Đạt và Triệu Thị Trinh thời Đông Ngô, khởi nghĩa anh em Lý Trường Nhân và Lý Thúc Hiến thời Lưu Tống   Nam Tề.\",\r\n  \"vua\": [],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"43\",\r\n  \"ten\": \"Thời kỳ Bắc thuộc lần thứ II\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"602\",\r\n  \"tom_tat\": \"Trong thời kỳ bị đô hộ bởi nhà Lương, Lý Bôn hay còn gọi là Lý Bí đã đánh đuổi thành công quân Lương để thành lập nên nhà Tiền Lý hay gọi là nhà nước Vạn Xuân, đóng đô ở Long Biên. \\nNhà Tiền Lý trải qua 3 đời vua trước khi sụp đổ.\",\r\n  \"vua\": [\r\n   \"Lý Nam Đế (544-548)\",\r\n   \"Triệu Việt Vương (548-571)\",\r\n   \"Lý Phật Tử (571-602)\"\r\n  ],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"544\",\r\n  \"ten\": \"Nhà Tiền Lý\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"905\",\r\n  \"tom_tat\": \"Đến năm 581, Trung Quốc lập ra nhà Tùy và đến năm 602, vua Tùy đem quân sang đánh nước ta. Lý Phật Tử xin hàng và nước ta lại rơi vào tay giặc ngoại bang phương Bắc. Sau khi nhà Tùy sụp đổ, nhà Đường đã cai trị nước ta.\\nMột số cuộc khởi nghĩa tiêu biểu vào giai đoạn này phải kể đến: Khởi nghĩa Mai Thúc Loan (722), khởi nghĩa Phùng Hưng (766-791), khởi nghĩa Dương Thanh (819-820).\",\r\n  \"vua\": [],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"602\",\r\n  \"ten\": \"Thời kỳ Bắc thuộc lần thứ III\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"938\",\r\n  \"tom_tat\": \"Vào năm 905, nhân lúc nhà Đường suy yếu Khúc Thừa Dụ đánh đuổi giặc Đường và tự xưng là Tiết độ sứ. Ông được Nhà Đường công nhận là người đứng đầu đất Việt và họ Khúc đã đặt nền móng cho nền độc lập của nước ta.\\nỞ thời kỳ này, nhà Khúc trải qua 4 đời vua cai trị.\",\r\n  \"vua\": [\r\n   \"Khúc Thừa Dụ (905-907)\",\r\n   \"Khúc Hạo (907-917)\",\r\n   \"Khúc Thừa Mỹ (917-930)\",\r\n   \"Dương Đình Nghệ (931-938, tướng của vua Khúc Hạo)\"\r\n  ],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"905\",\r\n  \"ten\": \"Thời kỳ tự chủ\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"965\",\r\n  \"tom_tat\": \"Năm 938, Dương Đình Nghệ bị Kiều Công Tiễn giết chết và để trả thù cho bố vợ thì Ngô Quyền đã giết chết Kiều Công Tiễn. Sau đó, ông đánh thắng quân Nam Hán trên sông Bạch Đằng để lập lên nhà Ngô và đóng đô ở Cổ Loa. \\nNăm 944, Ngô Quyền mất và em vợ Dương Tam Kha cướp nhà Ngô làm các nơi không chịu thuần phục khiến các thủ lĩnh nổi lên cát cứ một vùng gọi là Loạn 12 sứ quân\\u201d. Các đời cai trị của nhà Ngô.\",\r\n  \"vua\": [\r\n   \"Ngô Vương (939-944)\",\r\n   \"Dương Bình Vương (944-950)\",\r\n   \"Hậu Ngô Vương (944-965)\"\r\n  ],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"939\",\r\n  \"ten\": \"Nhà Ngô\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"980\",\r\n  \"tom_tat\": \"Sau thời Hậu Ngô Vương, đất nước rơi vào tình trạng loạn lạc và hình thành lên 12 sứ quân. Giai đoạn loạn 12 sứ quân kéo dài hơn 20 năm từ 944   968.\\nĐến năm 968, Đinh Bộ Lĩnh dẹp loạn 12 sứ quân để lên ngôi hoàng đế, lấy niên hiệu là Tiên Hoàng Đế, quốc hiệu là Đại Cồ Việt   Nhà nước tập quyền đầu tiên ở nước ta đóng đô ở Hoa Lư. Năm 979, Đinh Tiên Hoàng và con trai Đinh Liễn bị giết chết khi say rượu nên Đinh Toàn (khi đó mới 6 tuổi) lên ngôi. Các triều đại nhà Đinh.\",\r\n  \"vua\": [\r\n   \"Đinh Tiên Hoàng (968-979)\",\r\n   \"Đinh Phế Đế (979-980)\"\r\n  ],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"968\",\r\n  \"ten\": \"Nhà Đinh\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"1009\",\r\n  \"tom_tat\": \"Năm 980, lợi dụng tình hình nhà Đinh suy yếu và giặc Tống nhăm nhe xâm lược nước ta thì Lê Hoàn đã được Thái hậu Dương Vân Nga trao lại ngôi vua và lấy niên hiệu là Lê Đại Hành để đánh tan quân Tống rồi chấn hưng đất nước. Nhà Tiền Lê tồn tại 29 năm và có 3 đời vua cai trị.\",\r\n  \"vua\": [\r\n   \"Lê Đại Hành (980-1005)\",\r\n   \"Lê Trung Tông (1005)\",\r\n   \"Lê Ngọa Triều (1005-1009)\"\r\n  ],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"980\",\r\n  \"ten\": \"Nhà Tiền Lê\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"1225\",\r\n  \"tom_tat\": \"Cuối thời nhà Tiền Lê, Lê Ngọa Triều bỏ bê việc triều chính thì Lý Công Uẩn đã được suy tôn lên ngôi vua. Đến tháng 7/1010, Lý Công Uẩn dời đô về Thăng Long và đến năm 1054 lấy quốc hiệu là Đại Việt.\\nNhà Lý tồn tại 219 năm và trải qua 9 đời vua cai trị:\",\r\n  \"vua\": [\r\n   \"Lý Thái Tổ (1009-1028)\",\r\n   \"Lý Thái Tông (1028-1054)\",\r\n   \"Lý Thánh Tông (1054-1072)\",\r\n   \"Lý Nhân Tông (1072-1127)\",\r\n   \"Lý Thần Tông (1127-1137)\",\r\n   \"Lý Anh Tông (1138-1175)\",\r\n   \"Lý Cao Tông (1175-1210)\",\r\n   \"Lý Huệ Tông (1210-1224)\",\r\n   \"Lý Chiêu Hoàng (1224-1225) \"\r\n  ],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"1009\",\r\n  \"ten\": \"Nhà Lý\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"1400\",\r\n  \"tom_tat\": \"Vào năm 1208, Lý Huệ Tông chạy loạn về Hải Ấp và được nhà ông Trần Lý làm nghề đánh cá giúp đỡ và lấy con gái Trần Thị Dung làm vợ.\\nSau đó, anh em nhà họ Trần mộ quân đã giúp Lý Huệ Tông khôi phục kinh đô Thăng Long và lúc đó đứng đầu là Trần Thủ Độ. Trần Thủ Độ ép Lý Chiêu Hoàng (8 tuổi) lấy và nhường ngôi cho Trần Cảnh để chấm dứt sự tồn tại của nhà Lý. \\nTrong thời gian cai trị, nhà Trần đã 3 lần đánh tan quân Nguyên. Nhà Trần cũng là một triều đại quân chủ trong lịch sử nước ta, tồn tại 175 năm với 12 đời vua:\",\r\n  \"vua\": [\r\n   \"Trần Thái Tông (1225-1258)\",\r\n   \"Trần Thánh Tông (1258-1278)\",\r\n   \"Trần Nhân Tông (1278-1293)\",\r\n   \"Trần Anh Tông (1293-1314)\",\r\n   \"Trần Minh Tông (1314-1329)\",\r\n   \"Trần Hiến Tông (1329-1341)\",\r\n   \"Trần Dụ Tông (1341-1369)\",\r\n   \"Trần Nghệ Tông (1370-1372)\",\r\n   \"Trần Duệ Tông (1372-1377)\",\r\n   \"Trần Phế Đế (1377-1388) \",\r\n   \"Trần Thuận Tông (1388-1398)\",\r\n   \"Trần Thiếu Đế (1398-1400)  \"\r\n  ],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"1225\",\r\n  \"ten\": \"Nhà Trần\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"1407\",\r\n  \"tom_tat\": \"Khi nhà Trần suy yếu, Hồ Quý Ly cướp ngôi của cháu ngoại Trần Thiếu Đế để lập lên nhà Hồ và lấy tên nước là Đại Ngu. Tuy nhiên, do thực hiện quá nhiều cải cách táo bạo và mắc tội giết vua cùng tôn tộc, quan lại nhà Trần nên ông đã không thể tập hợp được lực lượng của toàn dân. \\nNăm 1401, Hồ Quý Ly nhường ngôi cho con trai Hồ Hán Thương. Đến năm 1406, nhà Minh lấy cớ phò Trần diệt Hồ\\u201d sang đánh nước Đại Ngu. Cha con nhà Hồ không thể chống cự nên bị bắt và giết chết. Theo đó, nhà Hồ tồn tại trong thời gian 7 năm với 2 đời vua:\",\r\n  \"vua\": [\r\n   \"Hồ Quý Ly (Thánh Nguyên, 1400-1401)\",\r\n   \"Hồ Hán Thương (1401-1407) \"\r\n  ],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"1400\",\r\n  \"ten\": \"Nhà Hồ\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"1409\",\r\n  \"tom_tat\": \"Năm 1407, quân Minh chiếm đóng Đại Ngu thì Trần Ngỗi là con trai thứ của Trần Nghệ Tông đã bỏ trốn đến Mô Độ, Trường Yên tập hợp binh lính đánh bại nhà Minh và khôi phục lại nhà Trần. \\nĐến năm 1409, nội bộ nhà Trần bị chia rẽ thì một số quan lại đã đón Trần Quý Khoách là cháu nội của Trần Nghệ Tông ra Nghệ An làm vua. Trần Quý Khoách sai quân đánh úp ông nội và cho ông về làm Thái Thượng Hoàng. Tuy nhiên, thời nhà Hậu Trần cũng không tồn tại được bao lâu với 2 đời vua:\",\r\n  \"vua\": [\r\n   \"Giản Định Đế (1407 \\u2013 1409) \",\r\n   \"Trùng Quang Đế (1409 \\u2013 1413) \"\r\n  ],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"1407\",\r\n  \"ten\": \"Nhà Hậu Trần\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"1428\",\r\n  \"tom_tat\": \"Năm 1413, quân Minh phản kích khiến cuộc chiến giữa nhà Trần và quân Minh diễn ra rất ác liệt. Cuối cùng do lực lượng mỏng nên nhà Trần đã bị đánh bại. Vua tôi nhà Trần bị bắt toàn bộ và đã tự vẫn để giữ trọn khí tiết. Nước ta một lần nữa bị rơi vào tay giặc phương Bắc.\",\r\n  \"vua\": [],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"1413\",\r\n  \"ten\": \"Thời kỳ Bắc Thuộc lần thứ IV\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"1527\",\r\n  \"tom_tat\": \"Năm 1427, Lê Lợi đánh bại quân Minh để lập lên nhà Hậu Lê. Đây được gọi là giai đoạn Nhà Lê sơ, nước Đại Việt phát triển mạnh mẽ về kinh tế và quân sự. Sau hơn 70 năm cai trị, nhà Lê suy yếu do những vị vua kém cỏi. Nhà Lê trải qua các đời vua:\",\r\n  \"vua\": [\r\n   \"Lê Thái Tổ (1428 \\u2013 1433)\",\r\n   \"Lê Thái Tông (1433 \\u2013 1442)\",\r\n   \"Lê Nhân Tông (1442 \\u2013 1459)\",\r\n   \"Lê Thánh Tông (1460 \\u2013 1497)\",\r\n   \"Lê Hiến Tông (1497 \\u2013 1504)\",\r\n   \"Lê Túc Tông (1504)\",\r\n   \"Lê Uy Mục (1505 \\u2013 1509)\",\r\n   \"Lê Tương Dực (1509 \\u2013 1516)\",\r\n   \"Lê Chiêu Tông (1516 \\u2013 1522)\",\r\n   \"Lê Cung Hoàng (1522 \\u2013 1527)\"\r\n  ],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"1428\",\r\n  \"ten\": \"Thời kỳ Trung Hưng-Nhà Hậu Lê\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"1592\",\r\n  \"tom_tat\": \"Năm 1527, Mạc Đăng Dung cướp ngôi nhà Lê để thành lập lên nhà Mạc ở miền Bắc gọi là Bắc Triều.  \\nCựu thần nhà Lê là Nguyễn Kim không phục đã đưa Lê Duy Ninh về làm hoàng đế để phục hưng lại nhà Lê gọi là Nam triều. Theo sử sách ghi lại, Lê Duy Ninh sau gọi là Trang Tông là con trai của vua Lê Chiêu Tông và về sau dân gian gọi ông là chúa Chổm.\\nSau khi Nguyễn Kim bị hạ độc chết, con rể là Trịnh Kiểm đã giữ binh quyền và ngấm ngầm hại các em vợ. Nguyễn Hoàng là con trai của Nguyễn Kim đã may mắn thoát chết do xin vào trấn phủ Thuận Hóa, rồi gây dựng lên giang sơn của nhà Nguyễn gọi là Đàng Trong. \\nNam triều và Bắc triều giao tranh gần 50 năm (1543-1592), thì Trịnh Tùng   con trai Trịnh Kiểm đã đánh bại được nhà Mạc vào năm 1592 rồi đón vua Lê Thánh Tông vào Thăng Long năm 1595 để mở đầu cho thời kỳ Vua Lê, chúa Trịnh\\u201d.\",\r\n  \"vua\": [],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"1527\",\r\n  \"ten\": \"Thời kỳ Bắc Triều-Nam Triều\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"1788\",\r\n  \"tom_tat\": \"Cuộc chiến Trịnh (Đàng Ngoài) và Nguyễn (Đàng Trong) bắt đầu phân tranh. Mở đầu là năm 1627, Trịnh Tráng đem quân vào Nam đánh Nguyễn Phúc Nguyên. Sau thời gian giằng co thì đến năm 1672, hai bên tạm thời ngừng chiến và lấy sông Gianh làm giới tuyến. Tuy nhiên, trên danh nghĩa thì vua Lê vẫn là người đứng đầu đất nước.\\nCác đời vua nhà Lê Trung Hưng tồn tại từ 1533-1788 . \\nCác chúa Trịnh ở đàng ngoài (1545-1788) .\\nCác chúa Nguyễn ở đàng trong (1558-1777).\",\r\n  \"vua\": [\r\n   \"Lê Kính Tông (1600-1619)\",\r\n   \"Lê Thần Tông (2 lần lên ngôi 1619-1643 và 1649-1662)\",\r\n   \"Lê Chân Tông (1643-1649)\",\r\n   \"Lê Huyền Tông (1663-1671)\",\r\n   \"Lê Gia Tông (1672-1675)\",\r\n   \"Lê Hy Tông (1675-1705)\",\r\n   \"Lê Dụ Tông (1705-1729)\",\r\n   \"Lê Duy Phường (1729-1732)\",\r\n   \"Lê Thuần Tông (1732-1735)\",\r\n   \"Lê Ý Tông (1735-1740)\",\r\n   \"Lê Hiển Tông (1740-1786)\",\r\n   \"Lê Mẫn Đế (1787-1788)\",\r\n   \"Thanh Đô Vương (tức Trịnh Tráng, 1623-1652)\",\r\n   \"Tây Đô Vương (tức Trịnh Tạc, 1653-1682)\",\r\n   \"Định Vương (tức Trịnh Căn, 1682-1709)\",\r\n   \"An đô vương (tức Trịnh Cương, 1709-1729)\",\r\n   \"Uy nam vương (tức Trịnh Giang, 1729-1740)\",\r\n   \"Minh đô vương (tức Trịnh Doanh, 1740-1767)\",\r\n   \"Tĩnh đô vương (tức Trịnh Sâm, 1767-1782)\",\r\n   \"Điện Đô Vương (tức Trịnh Cán, 2 tháng trong năm 1782)\",\r\n   \"Đoan Nam Vương (tức Trịnh Khải, 1782-1786)\",\r\n   \"Án Đô Vương (tức Trịnh Bồng) (1787-1788)\",\r\n   \"Nguyễn Phúc Nguyên (hay gọi là Chúa Sãi, 1613-1635)\",\r\n   \"Nguyễn Phúc Lan (tức chúa Thượng, 1635-1648)\",\r\n   \"Nguyễn Phúc Tần (hay gọi là chúa Hiền, 1648-1687)\",\r\n   \"Nguyễn Phúc Thái (hay gọi là chúa Nghĩa, 1687-1691)\",\r\n   \"Nguyễn Phúc Chu (hay gọi là chúa Quốc, 1691-1725)\",\r\n   \"Nguyễn Phúc Thụ (tức Ninh Vương, 1725-1738)\",\r\n   \"Nguyễn Phúc Khoát (tức Võ Vương, 1738-1765)\",\r\n   \"Nguyễn Phúc Thuần (tức Định Vương, 1765-1777)\"\r\n  ],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"1533\",\r\n  \"ten\": \"Thời kỳ Trịnh-Nguyễn phân tranh\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"1802\",\r\n  \"tom_tat\": \"Vào năm 1771, anh em Tây Sơn gồm Nguyễn Nhạc, Nguyễn Lữ và Nguyễn Huệ phất cờ khởi nghĩa và đến năm 1778 thì tiêu diệt được chúa Nguyễn ở Đàng Trong. Tuy nhiên, Nguyễn Ánh đã chạy thoát và Nguyễn Nhạc đã lên ngôi hoàng đế để lập lên Triều đại nhà Tây Sơn, niên hiệu là Thái Đức. Nhà Tây Sơn là một triều đại quân chủ trong lịch sử Việt Nam với 3 đời vua cai trị.\",\r\n  \"vua\": [\r\n   \"Thái Đức hoàng đế \\u2013 Nguyễn Nhạc (1778-1788)\",\r\n   \"Quang Trung hoàng đế \\u2013 Nguyễn Huệ (1788-1792)\",\r\n   \"Cảnh Thịnh hoàng đế \\u2013 Nguyễn Quang Toản (con trai Nguyễn Huệ, 1793-1802)\"\r\n  ],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"1778\",\r\n  \"ten\": \"Nhà Tây Sơn\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"1883\",\r\n  \"tom_tat\": \"Vào năm 1802, Nguyễn Ánh tiêu diệt nhà Tây Sơn khi đang suy yếu. Nguyễn Ánh lên ngôi hoàng đế, lấy niên hiệu là Gia Long, đóng đô tại thành Phú Xuân và đặt quốc hiệu là Việt Nam. Đến năm 1820, vua Minh Mạng đổi quốc hiệu thành Đại Nam.\\nNhà Nguyễn tồn tại 81 năm với 4 đời vua.\",\r\n  \"vua\": [\r\n   \"Gia Long (tức Nguyễn Phúc Ánh, 1802-1820)\",\r\n   \"Minh Mạng (tức Nguyễn Phúc Đảm, 1820-1840)\",\r\n   \"Thiệu Trị (hay Miên Tông, 1841-1847)\",\r\n   \"Tự Đức (tức Hồng Nhiệm, 1847-1883)\"\r\n  ],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"1802\",\r\n  \"ten\": \"Nhà Nguyễn -Thời kỳ độc lập tự chủ\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"1945\",\r\n  \"tom_tat\": \"Ngày 31 tháng 8 năm 1858, Hải quân Pháp đã đổ bộ vào tấn công cảng Đà Nẵng rồi chiếm đóng Sài Gòn. Triều đình Huế do vua Tự Đức đứng đầu đã ký hiệp ước nhượng 3 tỉnh miền Đông cho Pháp rồi đến năm 1867, Pháp chiếm nốt 3 tỉnh miền Tây để tạo thành một lãnh thổ Nam Kỳ.\\nCác đời vua nhà Nguyễn dưới ách thống trị của Thực dân Pháp.\",\r\n  \"vua\": [\r\n   \"Dục Đức (tức Ưng Chân, 1883, làm vua 3 ngày)\",\r\n   \"Hiệp Hoà (tức Hồng Dật, 6/1883-11/1883, làm vua được 6 tháng)\",\r\n   \"Kiến Phúc (tức Ưng Đăng, 1883-1884)\",\r\n   \"Hàm Nghi (tức Ưng Lịch, 1884-1885)\",\r\n   \"Đồng Khánh (tức Ưng Biện, 1885-1888)\",\r\n   \"Thành Thái (tức Bửu Lân, 1889-1907)\",\r\n   \"Duy Tân (tức Vĩnh San, 1907-1916)\",\r\n   \"Khải Định (tức Bửu Đảo, 1916-1925)\",\r\n   \"Bảo Đại (tức Vĩnh Thụy, 1926-1945)\"\r\n  ],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"1883\",\r\n  \"ten\": \"Thời kỳ Pháp đô hộ\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"1976\",\r\n  \"tom_tat\": \"Năm 1946, dưới sự lãnh đạo của Nguyễn Ái Quốc, quân và dân ta đã đánh đổ Thực dân Pháp và Phát xít Nhật. Vào đúng ngày 2/9/1945, Chủ tịch Hồ Chí Minh đọc bản tuyên ngôn độc lập tại quảng trường Ba Đình và khai sinh ra nước Việt Nam Dân chủ Cộng Hòa với thủ đô là Hà Nội.\",\r\n  \"vua\": [],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"1945\",\r\n  \"ten\": \"Nước Việt Nam\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"1975\",\r\n  \"tom_tat\": \"Trong thời gian từ 1956-1958, dưới sự trợ giúp của Mỹ thì Ngô Đình Diệm   một vị quan thời vua Bảo Đại đã gian lận để chiến thắng cuộc trưng cầu ý dân nhằm xác định người lãnh đạo của Quốc gia Việt Nam. \\nSau này, Ngô Đình Diệm lên làm Tổng thống của nước Việt Nam Cộng Hòa phế truất vua Bảo Đại khiến ông phải lưu vong sang Pháp. Mỹ bắt đầu viện trợ cho chính quyền Ngô Đình Diệm để củng cố chính phủ thân Mỹ. \\nDưới thời Ngô Đình Diệm, hàng loạt các cuộc đàn áp chính trị và tôn giáo đã khiến trăm nghìn người thiệt mạng. Chính sách Tố cộng, Diệt cộng\\u201d, gây ra các thảm sát, biểu tình Phật giáo diễn ra khắp nơi, mâu thuẫn tôn giáo sâu sắc. Đây chính là giai đoạn tăm tối và khổ sở nhất của người dân miền Nam Việt Nam.\",\r\n  \"vua\": [],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"1955\",\r\n  \"ten\": \"Chiến tranh Việt Nam\"\r\n },\r\n {\r\n  \"nam_ket_thuc\": \"2023\",\r\n  \"tom_tat\": \"Năm 1954, Việt Nam Dân chủ Cộng hòa đánh tan ý định xâm lược lần thứ 2 của thực dân Pháp bằng chiến thắng Điện Biên Phủ để buộc Pháp phải ký Hiệp định Giơ-ne-vơ công nhận độc lập   chủ quyền và rút quân khỏi Đông Dương.\\nSau khi tiến hành nhiều cuộc chiến tranh mà không giành được thắng lợi thì vào ngày 27 tháng 1 năm 1973, Mỹ buộc phải ký Hiệp định Paris và rút chân ra khỏi miền Nam trong danh dự. Năm 1975, quân giải phóng miền Nam đã tổng tiến công và nổi dậy vào Sài Gòn lật đổ chính quyền Việt Nam Cộng Hòa và thống nhất đất nước.\\nNăm 1976, nước ta hoàn toàn được độc lập với tên gọi chính thức là Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam có Đảng Cộng Sản Việt Nam, thủ đô Hà Nội và Sài Gòn đổi tên là Thành phố Hồ Chí Minh.\",\r\n  \"vua\": [],\r\n  \"kinh_do\": \"Không rõ\",\r\n  \"nam_bat_dau\": \"1976\",\r\n  \"ten\": \"Cộng hòa xã hội chủ nghĩa Việt Nam\"\r\n }\r\n]
+===================================================================
+diff --git a/src/JSON_Data/trieuDai.json b/src/JSON_Data/trieuDai.json
+--- a/src/JSON_Data/trieuDai.json	
++++ b/src/JSON_Data/trieuDai.json	
+@@ -4,6 +4,7 @@
+   "tom_tat": "Gồm hai nhà nước nhỏ bao gồm: \nNước Xích Quỷ: Là 1 nhà nước liên bang\u201d, lỏng lẻo của các bộ tộc người Việt cổ ở vùng Lĩnh Nam. Theo tương truyền, Kinh Dương Vương là Thủy tổ của dân tộc Việt Nam có con là Lạc Long Quân đã lấy Âu Cơ và sinh ra một bọc trăm trứng nở ra một trăm người con trai. Đây được xem là tổ tiên của người Bách Việt, có con trưởng là Hùng Vương nối ngôi.\nNhà nước Văn Lang (Thế kỷ VII 258 TCN hoặc 218 TCN): Sau khi nhà nước liên bang tan rã thì vào khoảng thế kỷ thứ 7 TCN, người Lạc Việt ở miền Bắc lúc bấy giờ đã xây dựng một nhà nước lấy tên là Văn Lang, do vua Hùng cai trị và đóng đô ở Phong Châu (Phú Thọ).",
+   "vua": [],
+   "kinh_do": "Không rõ",
++  "quoc_hieu": "Không rõ",
+   "nam_bat_dau": "?",
+   "ten": "Kỷ Hồng Bàng"
+  },
+@@ -11,7 +12,8 @@
+   "nam_ket_thuc": "208TCN",
+   "tom_tat": "Vào khoảng thế kỷ thứ 3 TCN, Thục Phán của bộ Âu Lạc đã hợp lực cùng vua Hùng thứ 18 đánh bại quân xâm lược nhà Tần. Sau đó, sáp nhập Âu Việt và Lạc Việt thành Âu Lạc. Thục Phán lên ngôi, lấy hiệu là An Dương Vương lập lên nhà Thục và đóng đô ở Cổ Loa.",
+   "vua": [],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Cổ Loa",
++  "quoc_hieu": "Âu Lạc",
+   "nam_bat_dau": "257TCN",
+   "ten": "Nhà Thục"
+  },
+@@ -25,7 +27,8 @@
+    "Triệu Ai Vương (Triệu Hưng, 112-112 TCN)",
+    "Triệu Dương Vương (tức là Triệu Kiến Đức, 112-111 TCN)"
+   ],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Cổ Loa",
++  "quoc_hieu": "Giao Chỉ",
+   "nam_bat_dau": "208TCN",
+   "ten": "Thời Bắc thuộc lần thứ I"
+  },
+@@ -33,7 +36,8 @@
+   "nam_ket_thuc": "43",
+   "tom_tat": "Cuộc khởi nghĩa của hai chị em Trưng Trắc Trưng Nhị diễn ra trong vòng 3  năm đã giúp quân ta đã chiếm được 65 thành trì ở các quận Giao Chỉ, Cửu Chân, Nhật Nam và Hợp Phố. \nSau đó, do bị cô lập và quân đội còn sơ khai đã khiến 2 bà không chống cự nổi quân của Mã Viện. Cuối cùng, để giữ vẹn khí tiết thì 2 bà đã tuẫn tiết tại sông Hát.",
+   "vua": [],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Mê Linh (Vĩnh Phúc)",
++  "quoc_hieu": "Giao Chỉ",
+   "nam_bat_dau": "40",
+   "ten": "Trưng Nữ Vương"
+  },
+@@ -41,7 +45,8 @@
+   "nam_ket_thuc": "543",
+   "tom_tat": "Sau nhà Hán, các triều đại phong kiến phương Bắc gồm Đông Ngô, nhà Tấn, Lưu Tống, Nam Tề và nhà Lương đã thay nhau đô hộ nước ta. Có rất nhiều cuộc khởi nghĩa đã nổi dậy nhưng tất cả đều không thành công.\nMột số cuộc khởi nghĩa tiêu biểu ở thời kỳ này có thể kể đến là khởi nghĩa anh em Triệu Quốc Đạt và Triệu Thị Trinh thời Đông Ngô, khởi nghĩa anh em Lý Trường Nhân và Lý Thúc Hiến thời Lưu Tống   Nam Tề.",
+   "vua": [],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Mê Linh (Vĩnh Phúc)",
++  "quoc_hieu": "Giao Châu",
+   "nam_bat_dau": "43",
+   "ten": "Thời kỳ Bắc thuộc lần thứ II"
+  },
+@@ -53,7 +58,8 @@
+    "Triệu Việt Vương (548-571)",
+    "Lý Phật Tử (571-602)"
+   ],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Long Biên",
++  "quoc_hieu": "Giao Châu",
+   "nam_bat_dau": "544",
+   "ten": "Nhà Tiền Lý"
+  },
+@@ -61,7 +67,8 @@
+   "nam_ket_thuc": "905",
+   "tom_tat": "Đến năm 581, Trung Quốc lập ra nhà Tùy và đến năm 602, vua Tùy đem quân sang đánh nước ta. Lý Phật Tử xin hàng và nước ta lại rơi vào tay giặc ngoại bang phương Bắc. Sau khi nhà Tùy sụp đổ, nhà Đường đã cai trị nước ta.\nMột số cuộc khởi nghĩa tiêu biểu vào giai đoạn này phải kể đến: Khởi nghĩa Mai Thúc Loan (722), khởi nghĩa Phùng Hưng (766-791), khởi nghĩa Dương Thanh (819-820).",
+   "vua": [],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Long Biên",
++  "quoc_hieu": "Tĩnh Hảiquân",
+   "nam_bat_dau": "602",
+   "ten": "Thời kỳ Bắc thuộc lần thứ III"
+  },
+@@ -74,7 +81,8 @@
+    "Khúc Thừa Mỹ (917-930)",
+    "Dương Đình Nghệ (931-938, tướng của vua Khúc Hạo)"
+   ],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Đại La",
++  "quoc_hieu": "Tĩnh Hảiquân",
+   "nam_bat_dau": "905",
+   "ten": "Thời kỳ tự chủ"
+  },
+@@ -86,7 +94,8 @@
+    "Dương Bình Vương (944-950)",
+    "Hậu Ngô Vương (944-965)"
+   ],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Loa Thành",
++  "quoc_hieu": "Tĩnh Hảiquân",
+   "nam_bat_dau": "939",
+   "ten": "Nhà Ngô"
+  },
+@@ -97,7 +106,8 @@
+    "Đinh Tiên Hoàng (968-979)",
+    "Đinh Phế Đế (979-980)"
+   ],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Hoa Lư (Ninh Bình)",
++  "quoc_hieu": "ĐạiCồ Việt",
+   "nam_bat_dau": "968",
+   "ten": "Nhà Đinh"
+  },
+@@ -109,7 +119,8 @@
+    "Lê Trung Tông (1005)",
+    "Lê Ngọa Triều (1005-1009)"
+   ],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Hoa Lư (Ninh Bình)",
++  "quoc_hieu": "ĐạiCồ Việt",
+   "nam_bat_dau": "980",
+   "ten": "Nhà Tiền Lê"
+  },
+@@ -127,7 +138,8 @@
+    "Lý Huệ Tông (1210-1224)",
+    "Lý Chiêu Hoàng (1224-1225) "
+   ],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Hoa Lư (Ninh Bình)",
++  "quoc_hieu": "Đại Việt",
+   "nam_bat_dau": "1009",
+   "ten": "Nhà Lý"
+  },
+@@ -148,7 +160,8 @@
+    "Trần Thuận Tông (1388-1398)",
+    "Trần Thiếu Đế (1398-1400)  "
+   ],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Thăng Long",
++  "quoc_hieu": "Đại Ngu",
+   "nam_bat_dau": "1225",
+   "ten": "Nhà Trần"
+  },
+@@ -159,7 +172,8 @@
+    "Hồ Quý Ly (Thánh Nguyên, 1400-1401)",
+    "Hồ Hán Thương (1401-1407) "
+   ],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Thăng Long",
++  "quoc_hieu": "Giao Chỉ",
+   "nam_bat_dau": "1400",
+   "ten": "Nhà Hồ"
+  },
+@@ -170,7 +184,8 @@
+    "Giản Định Đế (1407 \u2013 1409) ",
+    "Trùng Quang Đế (1409 \u2013 1413) "
+   ],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Tây Đô (Thanh Hóa)",
++  "quoc_hieu": "Giao Chỉ",
+   "nam_bat_dau": "1407",
+   "ten": "Nhà Hậu Trần"
+  },
+@@ -178,7 +193,8 @@
+   "nam_ket_thuc": "1428",
+   "tom_tat": "Năm 1413, quân Minh phản kích khiến cuộc chiến giữa nhà Trần và quân Minh diễn ra rất ác liệt. Cuối cùng do lực lượng mỏng nên nhà Trần đã bị đánh bại. Vua tôi nhà Trần bị bắt toàn bộ và đã tự vẫn để giữ trọn khí tiết. Nước ta một lần nữa bị rơi vào tay giặc phương Bắc.",
+   "vua": [],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Đông Đô / Thăng Long",
++  "quoc_hieu": "Đại Việt",
+   "nam_bat_dau": "1413",
+   "ten": "Thời kỳ Bắc Thuộc lần thứ IV"
+  },
+@@ -197,7 +213,8 @@
+    "Lê Chiêu Tông (1516 \u2013 1522)",
+    "Lê Cung Hoàng (1522 \u2013 1527)"
+   ],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Đông Đô / Thăng Long",
++  "quoc_hieu": "Đại Việt",
+   "nam_bat_dau": "1428",
+   "ten": "Thời kỳ Trung Hưng-Nhà Hậu Lê"
+  },
+@@ -205,7 +222,8 @@
+   "nam_ket_thuc": "1592",
+   "tom_tat": "Năm 1527, Mạc Đăng Dung cướp ngôi nhà Lê để thành lập lên nhà Mạc ở miền Bắc gọi là Bắc Triều.  \nCựu thần nhà Lê là Nguyễn Kim không phục đã đưa Lê Duy Ninh về làm hoàng đế để phục hưng lại nhà Lê gọi là Nam triều. Theo sử sách ghi lại, Lê Duy Ninh sau gọi là Trang Tông là con trai của vua Lê Chiêu Tông và về sau dân gian gọi ông là chúa Chổm.\nSau khi Nguyễn Kim bị hạ độc chết, con rể là Trịnh Kiểm đã giữ binh quyền và ngấm ngầm hại các em vợ. Nguyễn Hoàng là con trai của Nguyễn Kim đã may mắn thoát chết do xin vào trấn phủ Thuận Hóa, rồi gây dựng lên giang sơn của nhà Nguyễn gọi là Đàng Trong. \nNam triều và Bắc triều giao tranh gần 50 năm (1543-1592), thì Trịnh Tùng   con trai Trịnh Kiểm đã đánh bại được nhà Mạc vào năm 1592 rồi đón vua Lê Thánh Tông vào Thăng Long năm 1595 để mở đầu cho thời kỳ Vua Lê, chúa Trịnh\u201d.",
+   "vua": [],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Đông Đô / Thăng Long",
++  "quoc_hieu": "Đại Việt",
+   "nam_bat_dau": "1527",
+   "ten": "Thời kỳ Bắc Triều-Nam Triều"
+  },
+@@ -244,7 +262,8 @@
+    "Nguyễn Phúc Khoát (tức Võ Vương, 1738-1765)",
+    "Nguyễn Phúc Thuần (tức Định Vương, 1765-1777)"
+   ],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Đông Đô / Thăng Long",
++  "quoc_hieu": "Đại Việt",
+   "nam_bat_dau": "1533",
+   "ten": "Thời kỳ Trịnh-Nguyễn phân tranh"
+  },
+@@ -256,7 +275,8 @@
+    "Quang Trung hoàng đế \u2013 Nguyễn Huệ (1788-1792)",
+    "Cảnh Thịnh hoàng đế \u2013 Nguyễn Quang Toản (con trai Nguyễn Huệ, 1793-1802)"
+   ],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Đông Đô / Thăng Long",
++  "quoc_hieu": "Đại Việt",
+   "nam_bat_dau": "1778",
+   "ten": "Nhà Tây Sơn"
+  },
+@@ -269,7 +289,8 @@
+    "Thiệu Trị (hay Miên Tông, 1841-1847)",
+    "Tự Đức (tức Hồng Nhiệm, 1847-1883)"
+   ],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Phú Xuân",
++  "quoc_hieu": "Đại Nam",
+   "nam_bat_dau": "1802",
+   "ten": "Nhà Nguyễn -Thời kỳ độc lập tự chủ"
+  },
+@@ -287,7 +308,8 @@
+    "Khải Định (tức Bửu Đảo, 1916-1925)",
+    "Bảo Đại (tức Vĩnh Thụy, 1926-1945)"
+   ],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Huế",
++  "quoc_hieu": "Việt Nam",
+   "nam_bat_dau": "1883",
+   "ten": "Thời kỳ Pháp đô hộ"
+  },
+@@ -295,7 +317,8 @@
+   "nam_ket_thuc": "1976",
+   "tom_tat": "Năm 1946, dưới sự lãnh đạo của Nguyễn Ái Quốc, quân và dân ta đã đánh đổ Thực dân Pháp và Phát xít Nhật. Vào đúng ngày 2/9/1945, Chủ tịch Hồ Chí Minh đọc bản tuyên ngôn độc lập tại quảng trường Ba Đình và khai sinh ra nước Việt Nam Dân chủ Cộng Hòa với thủ đô là Hà Nội.",
+   "vua": [],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Huế",
++  "quoc_hieu": "Việt Nam",
+   "nam_bat_dau": "1945",
+   "ten": "Nước Việt Nam"
+  },
+@@ -303,7 +326,8 @@
+   "nam_ket_thuc": "1975",
+   "tom_tat": "Trong thời gian từ 1956-1958, dưới sự trợ giúp của Mỹ thì Ngô Đình Diệm   một vị quan thời vua Bảo Đại đã gian lận để chiến thắng cuộc trưng cầu ý dân nhằm xác định người lãnh đạo của Quốc gia Việt Nam. \nSau này, Ngô Đình Diệm lên làm Tổng thống của nước Việt Nam Cộng Hòa phế truất vua Bảo Đại khiến ông phải lưu vong sang Pháp. Mỹ bắt đầu viện trợ cho chính quyền Ngô Đình Diệm để củng cố chính phủ thân Mỹ. \nDưới thời Ngô Đình Diệm, hàng loạt các cuộc đàn áp chính trị và tôn giáo đã khiến trăm nghìn người thiệt mạng. Chính sách Tố cộng, Diệt cộng\u201d, gây ra các thảm sát, biểu tình Phật giáo diễn ra khắp nơi, mâu thuẫn tôn giáo sâu sắc. Đây chính là giai đoạn tăm tối và khổ sở nhất của người dân miền Nam Việt Nam.",
+   "vua": [],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Hà Nội",
++  "quoc_hieu": "Việt Nam",
+   "nam_bat_dau": "1955",
+   "ten": "Chiến tranh Việt Nam"
+  },
+@@ -311,7 +335,8 @@
+   "nam_ket_thuc": "2023",
+   "tom_tat": "Năm 1954, Việt Nam Dân chủ Cộng hòa đánh tan ý định xâm lược lần thứ 2 của thực dân Pháp bằng chiến thắng Điện Biên Phủ để buộc Pháp phải ký Hiệp định Giơ-ne-vơ công nhận độc lập   chủ quyền và rút quân khỏi Đông Dương.\nSau khi tiến hành nhiều cuộc chiến tranh mà không giành được thắng lợi thì vào ngày 27 tháng 1 năm 1973, Mỹ buộc phải ký Hiệp định Paris và rút chân ra khỏi miền Nam trong danh dự. Năm 1975, quân giải phóng miền Nam đã tổng tiến công và nổi dậy vào Sài Gòn lật đổ chính quyền Việt Nam Cộng Hòa và thống nhất đất nước.\nNăm 1976, nước ta hoàn toàn được độc lập với tên gọi chính thức là Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam có Đảng Cộng Sản Việt Nam, thủ đô Hà Nội và Sài Gòn đổi tên là Thành phố Hồ Chí Minh.",
+   "vua": [],
+-  "kinh_do": "Không rõ",
++  "kinh_do": "Hà Nội",
++  "quoc_hieu": "Việt Nam",
+   "nam_bat_dau": "1976",
+   "ten": "Cộng hòa xã hội chủ nghĩa Việt Nam"
+  }
