@@ -4,28 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
     <list default="true" id="3779d972-e9c0-42b6-a657-5ca42dc87135" name="Changes" comment="UI and controller">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_06_2023_9_01_PM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_06_2023_9_01_PM_[Changes]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_06_2023_9_01_PM__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Application/ReadJSON.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Application/app.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/MainSceneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/SearchSceneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fxml/MainScene.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fxml/SearchScene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JSON_Data/trieuDai.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/trieuDai.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat_NguoiKeSu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat_NguoiKeSu/Main1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat_NguoiKeSu/Thread_T.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat_NguoiKeSu/Thread_T.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat_NguoiKeSu/Thread_X.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat_NguoiKeSu/Thread_X.java" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/ReadJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/ReadJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/MainSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/MainSceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/SearchSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/SearchSceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/crawl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/crawl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +38,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-
   <component name="ProjectId" id="2R4RUeWn4CKvZShvojLmxCAH4W3" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -63,14 +48,12 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;crawl/Khoa&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/OneDrive - Hanoi University of Science and Technology/Documents/TaiLieuBK/OOP/web_Scrapper/src/main/java/controller&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
-
   }
 }</component>
   <component name="RecentsManager">
@@ -163,13 +146,11 @@
     </list>
     <recent_temporary>
       <list>
-
         <item itemvalue="Application.ReadJSON" />
         <item itemvalue="Application.app" />
         <item itemvalue="Application.Main123" />
         <item itemvalue="Application.main" />
         <item itemvalue="Application.crawl" />
-
       </list>
     </recent_temporary>
   </component>
@@ -185,10 +166,8 @@
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-
     <MESSAGE value="UI and controller" />
     <option name="LAST_COMMIT_MESSAGE" value="UI and controller" />
-
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/web_Scrapper$Main.ic" NAME="Main Coverage Results" MODIFIED="1683567461175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
