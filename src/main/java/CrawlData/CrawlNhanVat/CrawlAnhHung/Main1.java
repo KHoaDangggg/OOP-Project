@@ -1,4 +1,4 @@
-package CrawlData.CrawlTrieuDai.CrawlAnhHung;
+package CrawlData.CrawlNhanVat.CrawlAnhHung;
 
 import java.io.IOException;
 import com.fasterxml.jackson.databind.SerializationFeature;
