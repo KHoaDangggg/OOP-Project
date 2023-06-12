@@ -11,6 +11,7 @@ import java.io.IOException;
 
 public class ReadJSON {
     private static ObservableList<TrieuDai> trieuDaiList = FXCollections.observableArrayList();
+    private static ObservableList<> trieuDaiList = FXCollections.observableArrayList();
     public static void main(String[] args) {
         readData();
     }
@@ -20,13 +21,7 @@ public class ReadJSON {
         String filePath = "src/JSON_Data/trieuDai.json";
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
-            // Read the JSON file into an array of objects
             TrieuDai[] objects = gson.fromJson(reader, TrieuDai[].class);
-
-            // Do something with the array of objects
-            for (TrieuDai obj : objects) {
-                System.out.println(obj.getTen());
-            }
             trieuDaiList.addAll(objects);
         } catch (IOException e) {
             e.printStackTrace();

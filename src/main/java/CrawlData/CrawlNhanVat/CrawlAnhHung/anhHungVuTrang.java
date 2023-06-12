@@ -1,7 +1,9 @@
 package CrawlData.CrawlNhanVat.CrawlAnhHung;
 
-public class anhHungVuTrang {
-    private String ten;
+import CrawlData.CrawlNhanVat.NhanVat;
+
+public class anhHungVuTrang extends NhanVat {
+
     private String namSinhNamMat;
     private String danToc;
     private String queQuan;

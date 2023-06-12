@@ -222,16 +222,16 @@ public class crawl {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("ten", t.getTen().replaceAll("[\t\n]", ""));
             if(t.getKinhDo() == null) {
-                jsonObject.put("kinh_do", "Không rõ");
+                jsonObject.put("kinhDo", "Không rõ");
 
             }else {
-                jsonObject.put("kinh_do", t.getKinhDo());
+                jsonObject.put("kinhDo", t.getKinhDo());
             }
-            jsonObject.put("nam_bat_dau", t.getNamBatDau());
-            jsonObject.put("nam_ket_thuc", t.getNamKetThuc());
-            jsonObject.put("tom_tat", t.getMoTa());
-            jsonObject.put("vua", t.getKings());
-            jsonObject.put("quoc_hieu", t.getQuocHieu());
+            jsonObject.put("namBatDau", t.getNamBatDau());
+            jsonObject.put("namKetThuc", t.getNamKetThuc());
+            jsonObject.put("moTa", t.getMoTa());
+            jsonObject.put("kings", t.getKings());
+            jsonObject.put("quocHieu", t.getQuocHieu());
             jsonArray.put(jsonObject);
         }
 

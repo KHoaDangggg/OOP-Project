@@ -1,14 +1,15 @@
 package CrawlData.CrawlNhanVat.CrawlAnhHung;
 
-public class AnhHung {
-    private String hoVaTen;
+import CrawlData.CrawlNhanVat.NhanVat;
+
+public class AnhHung extends NhanVat {
     private String tuLieu;
     private String tomTat;
     private String queQuan;
 
 
-    public String getHoVaTen() {
-        return hoVaTen;
+    public String getTen() {
+        return ten;
     }
 
     public String gettuLieu() {
@@ -24,8 +25,8 @@ public class AnhHung {
     }
 
 
-    public AnhHung(String hoVaTen, String tuLieu, String queQuan, String tomTat) {
-        this.hoVaTen = hoVaTen;
+    public AnhHung(String ten, String tuLieu, String queQuan, String tomTat) {
+        this.ten = ten;
         this.tuLieu = tuLieu;
         this.tomTat = tomTat;
         this.queQuan = queQuan;

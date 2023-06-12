@@ -1,9 +1,11 @@
 package CrawlData.CrawlNhanVat.NhanVat_NguoiKeSu;
 
+import CrawlData.CrawlNhanVat.NhanVat;
+
 import java.util.HashMap;
 
-public class NhanVatLichSu {
-    private String ten;
+public class NhanVatLichSu extends NhanVat {
+
     private HashMap<String, String> thongTinCoBan;
     private String mieuTa;
     private HashMap<String, String> thongTin;
