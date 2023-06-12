@@ -1,7 +1,9 @@
 package CrawlData.CrawlNhanVat.trangnguyenbangnhan.src;
 
-public class DanhHieu {
-    private String ten;
+import CrawlData.CrawlNhanVat.NhanVat;
+
+public class DanhHieu extends NhanVat {
+
     private String nam_sinh;
     private String nam_mat;
     private String que_quan;

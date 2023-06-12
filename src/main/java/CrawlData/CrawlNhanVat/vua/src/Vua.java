@@ -1,8 +1,10 @@
 package CrawlData.CrawlNhanVat.vua.src;
 
-public class Vua {
+import CrawlData.CrawlNhanVat.NhanVat;
+
+public class Vua extends NhanVat {
     private String img;
-    private String ten;
+
 
     private String mieu_hieu;
     private String thuy_hieu;
