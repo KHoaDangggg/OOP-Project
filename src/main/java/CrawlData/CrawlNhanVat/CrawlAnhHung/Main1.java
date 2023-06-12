@@ -53,7 +53,7 @@ public class Main1 {
                 int count = 0;
                 for (AnhHung anhhung : dsAnhHung)
                 {
-                    System.out.println(anhhung.getHoVaTen() );
+                    System.out.println(anhhung.getTen() );
                     System.out.println(anhhung.gettuLieu() );
                     System.out.println(anhhung.getQueQuan() );
                     System.out.println(anhhung.gettomTat() );
