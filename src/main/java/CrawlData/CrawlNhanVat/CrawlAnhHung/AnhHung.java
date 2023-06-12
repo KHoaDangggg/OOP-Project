@@ -1,4 +1,4 @@
-package CrawlData.CrawlTrieuDai.CrawlAnhHung;
+package CrawlData.CrawlNhanVat.CrawlAnhHung;
 
 public class AnhHung {
     private String hoVaTen;
