@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.ListView?>
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SearchSceneController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ChoiceBox fx:id="choiceBox" layoutX="14.0" layoutY="14.0" prefWidth="150.0" />
+            <TextField fx:id="textField" layoutX="171.0" layoutY="14.0" prefHeight="26.0" prefWidth="306.0" />
+            <Button fx:id="searchButton" layoutX="487.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="103.0" text="Tìm kiếm" />
+            <ScrollPane layoutX="14.0" layoutY="65.0" prefHeight="320.0" prefWidth="150.0">
+              <content>
+                  <ListView fx:id="listView" prefHeight="350.0" prefWidth="151.0" />
+              </content>
+            </ScrollPane>
+            <TextArea fx:id="textArea" layoutX="171.0" layoutY="65.0" prefHeight="320.0" prefWidth="446.0" wrapText="true" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

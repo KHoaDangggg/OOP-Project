@@ -24,7 +24,7 @@ public class Thread_T implements Runnable{
             String url = name.attr("href");
             url = "https://nguoikesu.com" + url;
             //System.out.println(url);
-            Main.listlink.add(url);
+            Main1.listlink.add(url);
         }
     }
 

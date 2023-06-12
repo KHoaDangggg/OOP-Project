@@ -4,6 +4,7 @@
   "tom_tat": "Gồm hai nhà nước nhỏ bao gồm: \nNước Xích Quỷ: Là 1 nhà nước liên bang\u201d, lỏng lẻo của các bộ tộc người Việt cổ ở vùng Lĩnh Nam. Theo tương truyền, Kinh Dương Vương là Thủy tổ của dân tộc Việt Nam có con là Lạc Long Quân đã lấy Âu Cơ và sinh ra một bọc trăm trứng nở ra một trăm người con trai. Đây được xem là tổ tiên của người Bách Việt, có con trưởng là Hùng Vương nối ngôi.\nNhà nước Văn Lang (Thế kỷ VII 258 TCN hoặc 218 TCN): Sau khi nhà nước liên bang tan rã thì vào khoảng thế kỷ thứ 7 TCN, người Lạc Việt ở miền Bắc lúc bấy giờ đã xây dựng một nhà nước lấy tên là Văn Lang, do vua Hùng cai trị và đóng đô ở Phong Châu (Phú Thọ).",
   "vua": [],
   "kinh_do": "Không rõ",
+  "quoc_hieu": "Không rõ",
   "nam_bat_dau": "?",
   "ten": "Kỷ Hồng Bàng"
  },
@@ -11,7 +12,8 @@
   "nam_ket_thuc": "208TCN",
   "tom_tat": "Vào khoảng thế kỷ thứ 3 TCN, Thục Phán của bộ Âu Lạc đã hợp lực cùng vua Hùng thứ 18 đánh bại quân xâm lược nhà Tần. Sau đó, sáp nhập Âu Việt và Lạc Việt thành Âu Lạc. Thục Phán lên ngôi, lấy hiệu là An Dương Vương lập lên nhà Thục và đóng đô ở Cổ Loa.",
   "vua": [],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Cổ Loa",
+  "quoc_hieu": "Âu Lạc",
   "nam_bat_dau": "257TCN",
   "ten": "Nhà Thục"
  },
@@ -25,7 +27,8 @@
    "Triệu Ai Vương (Triệu Hưng, 112-112 TCN)",
    "Triệu Dương Vương (tức là Triệu Kiến Đức, 112-111 TCN)"
   ],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Cổ Loa",
+  "quoc_hieu": "Giao Chỉ",
   "nam_bat_dau": "208TCN",
   "ten": "Thời Bắc thuộc lần thứ I"
  },
@@ -33,7 +36,8 @@
   "nam_ket_thuc": "43",
   "tom_tat": "Cuộc khởi nghĩa của hai chị em Trưng Trắc Trưng Nhị diễn ra trong vòng 3  năm đã giúp quân ta đã chiếm được 65 thành trì ở các quận Giao Chỉ, Cửu Chân, Nhật Nam và Hợp Phố. \nSau đó, do bị cô lập và quân đội còn sơ khai đã khiến 2 bà không chống cự nổi quân của Mã Viện. Cuối cùng, để giữ vẹn khí tiết thì 2 bà đã tuẫn tiết tại sông Hát.",
   "vua": [],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Mê Linh (Vĩnh Phúc)",
+  "quoc_hieu": "Giao Chỉ",
   "nam_bat_dau": "40",
   "ten": "Trưng Nữ Vương"
  },
@@ -41,7 +45,8 @@
   "nam_ket_thuc": "543",
   "tom_tat": "Sau nhà Hán, các triều đại phong kiến phương Bắc gồm Đông Ngô, nhà Tấn, Lưu Tống, Nam Tề và nhà Lương đã thay nhau đô hộ nước ta. Có rất nhiều cuộc khởi nghĩa đã nổi dậy nhưng tất cả đều không thành công.\nMột số cuộc khởi nghĩa tiêu biểu ở thời kỳ này có thể kể đến là khởi nghĩa anh em Triệu Quốc Đạt và Triệu Thị Trinh thời Đông Ngô, khởi nghĩa anh em Lý Trường Nhân và Lý Thúc Hiến thời Lưu Tống   Nam Tề.",
   "vua": [],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Mê Linh (Vĩnh Phúc)",
+  "quoc_hieu": "Giao Châu",
   "nam_bat_dau": "43",
   "ten": "Thời kỳ Bắc thuộc lần thứ II"
  },
@@ -53,7 +58,8 @@
    "Triệu Việt Vương (548-571)",
    "Lý Phật Tử (571-602)"
   ],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Long Biên",
+  "quoc_hieu": "Giao Châu",
   "nam_bat_dau": "544",
   "ten": "Nhà Tiền Lý"
  },
@@ -61,7 +67,8 @@
   "nam_ket_thuc": "905",
   "tom_tat": "Đến năm 581, Trung Quốc lập ra nhà Tùy và đến năm 602, vua Tùy đem quân sang đánh nước ta. Lý Phật Tử xin hàng và nước ta lại rơi vào tay giặc ngoại bang phương Bắc. Sau khi nhà Tùy sụp đổ, nhà Đường đã cai trị nước ta.\nMột số cuộc khởi nghĩa tiêu biểu vào giai đoạn này phải kể đến: Khởi nghĩa Mai Thúc Loan (722), khởi nghĩa Phùng Hưng (766-791), khởi nghĩa Dương Thanh (819-820).",
   "vua": [],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Long Biên",
+  "quoc_hieu": "Tĩnh Hảiquân",
   "nam_bat_dau": "602",
   "ten": "Thời kỳ Bắc thuộc lần thứ III"
  },
@@ -74,7 +81,8 @@
    "Khúc Thừa Mỹ (917-930)",
    "Dương Đình Nghệ (931-938, tướng của vua Khúc Hạo)"
   ],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Đại La",
+  "quoc_hieu": "Tĩnh Hảiquân",
   "nam_bat_dau": "905",
   "ten": "Thời kỳ tự chủ"
  },
@@ -86,7 +94,8 @@
    "Dương Bình Vương (944-950)",
    "Hậu Ngô Vương (944-965)"
   ],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Loa Thành",
+  "quoc_hieu": "Tĩnh Hảiquân",
   "nam_bat_dau": "939",
   "ten": "Nhà Ngô"
  },
@@ -97,7 +106,8 @@
    "Đinh Tiên Hoàng (968-979)",
    "Đinh Phế Đế (979-980)"
   ],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Hoa Lư (Ninh Bình)",
+  "quoc_hieu": "ĐạiCồ Việt",
   "nam_bat_dau": "968",
   "ten": "Nhà Đinh"
  },
@@ -109,7 +119,8 @@
    "Lê Trung Tông (1005)",
    "Lê Ngọa Triều (1005-1009)"
   ],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Hoa Lư (Ninh Bình)",
+  "quoc_hieu": "ĐạiCồ Việt",
   "nam_bat_dau": "980",
   "ten": "Nhà Tiền Lê"
  },
@@ -127,7 +138,8 @@
    "Lý Huệ Tông (1210-1224)",
    "Lý Chiêu Hoàng (1224-1225) "
   ],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Hoa Lư (Ninh Bình)",
+  "quoc_hieu": "Đại Việt",
   "nam_bat_dau": "1009",
   "ten": "Nhà Lý"
  },
@@ -148,7 +160,8 @@
    "Trần Thuận Tông (1388-1398)",
    "Trần Thiếu Đế (1398-1400)  "
   ],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Thăng Long",
+  "quoc_hieu": "Đại Ngu",
   "nam_bat_dau": "1225",
   "ten": "Nhà Trần"
  },
@@ -159,7 +172,8 @@
    "Hồ Quý Ly (Thánh Nguyên, 1400-1401)",
    "Hồ Hán Thương (1401-1407) "
   ],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Thăng Long",
+  "quoc_hieu": "Giao Chỉ",
   "nam_bat_dau": "1400",
   "ten": "Nhà Hồ"
  },
@@ -170,7 +184,8 @@
    "Giản Định Đế (1407 \u2013 1409) ",
    "Trùng Quang Đế (1409 \u2013 1413) "
   ],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Tây Đô (Thanh Hóa)",
+  "quoc_hieu": "Giao Chỉ",
   "nam_bat_dau": "1407",
   "ten": "Nhà Hậu Trần"
  },
@@ -178,7 +193,8 @@
   "nam_ket_thuc": "1428",
   "tom_tat": "Năm 1413, quân Minh phản kích khiến cuộc chiến giữa nhà Trần và quân Minh diễn ra rất ác liệt. Cuối cùng do lực lượng mỏng nên nhà Trần đã bị đánh bại. Vua tôi nhà Trần bị bắt toàn bộ và đã tự vẫn để giữ trọn khí tiết. Nước ta một lần nữa bị rơi vào tay giặc phương Bắc.",
   "vua": [],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Đông Đô / Thăng Long",
+  "quoc_hieu": "Đại Việt",
   "nam_bat_dau": "1413",
   "ten": "Thời kỳ Bắc Thuộc lần thứ IV"
  },
@@ -197,7 +213,8 @@
    "Lê Chiêu Tông (1516 \u2013 1522)",
    "Lê Cung Hoàng (1522 \u2013 1527)"
   ],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Đông Đô / Thăng Long",
+  "quoc_hieu": "Đại Việt",
   "nam_bat_dau": "1428",
   "ten": "Thời kỳ Trung Hưng-Nhà Hậu Lê"
  },
@@ -205,7 +222,8 @@
   "nam_ket_thuc": "1592",
   "tom_tat": "Năm 1527, Mạc Đăng Dung cướp ngôi nhà Lê để thành lập lên nhà Mạc ở miền Bắc gọi là Bắc Triều.  \nCựu thần nhà Lê là Nguyễn Kim không phục đã đưa Lê Duy Ninh về làm hoàng đế để phục hưng lại nhà Lê gọi là Nam triều. Theo sử sách ghi lại, Lê Duy Ninh sau gọi là Trang Tông là con trai của vua Lê Chiêu Tông và về sau dân gian gọi ông là chúa Chổm.\nSau khi Nguyễn Kim bị hạ độc chết, con rể là Trịnh Kiểm đã giữ binh quyền và ngấm ngầm hại các em vợ. Nguyễn Hoàng là con trai của Nguyễn Kim đã may mắn thoát chết do xin vào trấn phủ Thuận Hóa, rồi gây dựng lên giang sơn của nhà Nguyễn gọi là Đàng Trong. \nNam triều và Bắc triều giao tranh gần 50 năm (1543-1592), thì Trịnh Tùng   con trai Trịnh Kiểm đã đánh bại được nhà Mạc vào năm 1592 rồi đón vua Lê Thánh Tông vào Thăng Long năm 1595 để mở đầu cho thời kỳ Vua Lê, chúa Trịnh\u201d.",
   "vua": [],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Đông Đô / Thăng Long",
+  "quoc_hieu": "Đại Việt",
   "nam_bat_dau": "1527",
   "ten": "Thời kỳ Bắc Triều-Nam Triều"
  },
@@ -244,7 +262,8 @@
    "Nguyễn Phúc Khoát (tức Võ Vương, 1738-1765)",
    "Nguyễn Phúc Thuần (tức Định Vương, 1765-1777)"
   ],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Đông Đô / Thăng Long",
+  "quoc_hieu": "Đại Việt",
   "nam_bat_dau": "1533",
   "ten": "Thời kỳ Trịnh-Nguyễn phân tranh"
  },
@@ -256,7 +275,8 @@
    "Quang Trung hoàng đế \u2013 Nguyễn Huệ (1788-1792)",
    "Cảnh Thịnh hoàng đế \u2013 Nguyễn Quang Toản (con trai Nguyễn Huệ, 1793-1802)"
   ],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Đông Đô / Thăng Long",
+  "quoc_hieu": "Đại Việt",
   "nam_bat_dau": "1778",
   "ten": "Nhà Tây Sơn"
  },
@@ -269,7 +289,8 @@
    "Thiệu Trị (hay Miên Tông, 1841-1847)",
    "Tự Đức (tức Hồng Nhiệm, 1847-1883)"
   ],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Phú Xuân",
+  "quoc_hieu": "Đại Nam",
   "nam_bat_dau": "1802",
   "ten": "Nhà Nguyễn -Thời kỳ độc lập tự chủ"
  },
@@ -287,7 +308,8 @@
    "Khải Định (tức Bửu Đảo, 1916-1925)",
    "Bảo Đại (tức Vĩnh Thụy, 1926-1945)"
   ],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Huế",
+  "quoc_hieu": "Việt Nam",
   "nam_bat_dau": "1883",
   "ten": "Thời kỳ Pháp đô hộ"
  },
@@ -295,7 +317,8 @@
   "nam_ket_thuc": "1976",
   "tom_tat": "Năm 1946, dưới sự lãnh đạo của Nguyễn Ái Quốc, quân và dân ta đã đánh đổ Thực dân Pháp và Phát xít Nhật. Vào đúng ngày 2/9/1945, Chủ tịch Hồ Chí Minh đọc bản tuyên ngôn độc lập tại quảng trường Ba Đình và khai sinh ra nước Việt Nam Dân chủ Cộng Hòa với thủ đô là Hà Nội.",
   "vua": [],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Huế",
+  "quoc_hieu": "Việt Nam",
   "nam_bat_dau": "1945",
   "ten": "Nước Việt Nam"
  },
@@ -303,7 +326,8 @@
   "nam_ket_thuc": "1975",
   "tom_tat": "Trong thời gian từ 1956-1958, dưới sự trợ giúp của Mỹ thì Ngô Đình Diệm   một vị quan thời vua Bảo Đại đã gian lận để chiến thắng cuộc trưng cầu ý dân nhằm xác định người lãnh đạo của Quốc gia Việt Nam. \nSau này, Ngô Đình Diệm lên làm Tổng thống của nước Việt Nam Cộng Hòa phế truất vua Bảo Đại khiến ông phải lưu vong sang Pháp. Mỹ bắt đầu viện trợ cho chính quyền Ngô Đình Diệm để củng cố chính phủ thân Mỹ. \nDưới thời Ngô Đình Diệm, hàng loạt các cuộc đàn áp chính trị và tôn giáo đã khiến trăm nghìn người thiệt mạng. Chính sách Tố cộng, Diệt cộng\u201d, gây ra các thảm sát, biểu tình Phật giáo diễn ra khắp nơi, mâu thuẫn tôn giáo sâu sắc. Đây chính là giai đoạn tăm tối và khổ sở nhất của người dân miền Nam Việt Nam.",
   "vua": [],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Hà Nội",
+  "quoc_hieu": "Việt Nam",
   "nam_bat_dau": "1955",
   "ten": "Chiến tranh Việt Nam"
  },
@@ -311,7 +335,8 @@
   "nam_ket_thuc": "2023",
   "tom_tat": "Năm 1954, Việt Nam Dân chủ Cộng hòa đánh tan ý định xâm lược lần thứ 2 của thực dân Pháp bằng chiến thắng Điện Biên Phủ để buộc Pháp phải ký Hiệp định Giơ-ne-vơ công nhận độc lập   chủ quyền và rút quân khỏi Đông Dương.\nSau khi tiến hành nhiều cuộc chiến tranh mà không giành được thắng lợi thì vào ngày 27 tháng 1 năm 1973, Mỹ buộc phải ký Hiệp định Paris và rút chân ra khỏi miền Nam trong danh dự. Năm 1975, quân giải phóng miền Nam đã tổng tiến công và nổi dậy vào Sài Gòn lật đổ chính quyền Việt Nam Cộng Hòa và thống nhất đất nước.\nNăm 1976, nước ta hoàn toàn được độc lập với tên gọi chính thức là Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam có Đảng Cộng Sản Việt Nam, thủ đô Hà Nội và Sài Gòn đổi tên là Thành phố Hồ Chí Minh.",
   "vua": [],
-  "kinh_do": "Không rõ",
+  "kinh_do": "Hà Nội",
+  "quoc_hieu": "Việt Nam",
   "nam_bat_dau": "1976",
   "ten": "Cộng hòa xã hội chủ nghĩa Việt Nam"
  }

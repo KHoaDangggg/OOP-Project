@@ -87,7 +87,7 @@ public class Thread_X implements Runnable{
             }
         }
         nv.setThongTin(thongTin);
-        Main.nhanVat.add(nv);
+        Main1.nhanVat.add(nv);
         //System.out.println(nv.getTen());
     }
 }
