@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="1c6b153c-c21a-4197-a334-89006ac87ee9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JSON_Data/danhNhanThoiDinh.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/danhNhanThoiDinh.json" afterDir="false" />
@@ -13,6 +14,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/CrawlAnhHung/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/CrawlAnhHung/Main1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/CrawlAnhHung/anhHungVuTrang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/CrawlAnhHung/anhHungVuTrang.java" afterDir="false" />
     </list>
+=======
+    <list default="true" id="1c6b153c-c21a-4197-a334-89006ac87ee9" name="Changes" comment="Add NhanVatLichSu.json include 1000 nhan vat lich su from Nguoikesu.com" />
+>>>>>>> 57557c997d78756c356bcdbc41273062cfff400f
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,23 +65,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 57557c997d78756c356bcdbc41273062cfff400f
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
     "git-widget-placeholder": "crawl/Hai",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "Q:/Java/OOP-Project/src/JSON_Data",
+=======
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/D/Documents/GitHub/OOP-Project/src/JSON_Data",
+>>>>>>> 57557c997d78756c356bcdbc41273062cfff400f
     "onboarding.tips.debug.path": "C:/Users/Admin/OneDrive - Hanoi University of Science and Technology/Documents/TaiLieuBK/OOP/web_Scrapper/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+<<<<<<< HEAD
+=======
+
+>>>>>>> 57557c997d78756c356bcdbc41273062cfff400f
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="Q:\Java\OOP-Project\src\main\java\CrawlData\CrawlTrieuDai\CrawlAnhHung" />
+
+      <recent name="C:\Users\D\Documents\GitHub\OOP-Project\src\JSON_Data" />
+      <recent name="C:\Users\D\Documents\GitHub\OOP-Project\src\main\java\CrawlData\CrawlNhanVat" />
+
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="Q:\Java\OOP-Project\src\JSON_Data" />
@@ -173,8 +193,17 @@
       <option name="presentableId" value="Default" />
       <updated>1682587149322</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add NhanVatLichSu.json include 1000 nhan vat lich su from Nguoikesu.com">
+      <created>1686289567897</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686289567897</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+<<<<<<< HEAD
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -197,6 +226,11 @@
         </entry>
       </map>
     </option>
+=======
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add NhanVatLichSu.json include 1000 nhan vat lich su from Nguoikesu.com" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add NhanVatLichSu.json include 1000 nhan vat lich su from Nguoikesu.com" />
+>>>>>>> 57557c997d78756c356bcdbc41273062cfff400f
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
