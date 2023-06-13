@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SearchSceneController">
   <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #FDE440;" VBox.vgrow="ALWAYS">
          <children>
             <ChoiceBox fx:id="choiceBox" layoutX="14.0" layoutY="14.0" prefWidth="150.0" />
-            <TextField fx:id="textField" layoutX="171.0" layoutY="14.0" prefHeight="26.0" prefWidth="306.0" />
-            <Button fx:id="searchButton" layoutX="487.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="103.0" text="Tìm kiếm" />
+            <TextField fx:id="textField" layoutX="171.0" layoutY="14.0" prefHeight="26.0" prefWidth="306.0" promptText="Info" />
+            <Button fx:id="searchButton" blendMode="SRC_ATOP" layoutX="487.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="103.0" style="-fx-background-color: #FFFFFF;" text="Tìm kiếm" />
             <ScrollPane layoutX="14.0" layoutY="65.0" prefHeight="320.0" prefWidth="150.0">
               <content>
-                  <ListView fx:id="listView" prefHeight="350.0" prefWidth="151.0" />
+                  <ListView fx:id="listView" prefHeight="350.0" prefWidth="151.0" style="-fx-background-color: #FFFFFF;" visible="false" />
               </content>
             </ScrollPane>
-            <TextArea fx:id="textArea" layoutX="171.0" layoutY="65.0" prefHeight="320.0" prefWidth="446.0" wrapText="true" />
-            <Button fx:id="exitBtn" alignment="CENTER" layoutX="596.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="18.0" text="X" AnchorPane.leftAnchor="596.0" onAction="#back"/>
+            <TextArea fx:id="textArea" layoutX="171.0" layoutY="65.0" prefHeight="320.0" prefWidth="446.0" style="-fx-background-color: #FFFFFF;" wrapText="true" />
+            <ImageView blendMode="SRC_ATOP" fitHeight="47.0" fitWidth="65.0" layoutX="543.0" layoutY="328.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="25.0">
+               <image>
+                  <Image url="C:\Users\D\Documents\GitHub\OOP-Project\src\main\img.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="exitBtn" alignment="CENTER" blendMode="SRC_ATOP" layoutX="592.0" layoutY="13.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: #FFFFFF;" text="X" AnchorPane.leftAnchor="595.0" AnchorPane.topAnchor="14.0" />
          </children>
     </AnchorPane>
   </children>
