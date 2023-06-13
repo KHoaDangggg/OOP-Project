@@ -18,7 +18,7 @@ public class DanhHieu extends NhanVat {
     }
 
     public DanhHieu(String ten, String sinhmat, String que_quan, String nam_do, String doi_vua, String ghi_chu) {
-        this.ten = ten;
+        super(ten);
 
         if(sinhmat.isBlank()) {
             this.nam_sinh = "không rõ";
@@ -51,10 +51,6 @@ public class DanhHieu extends NhanVat {
             }
         }
         return ghichu;
-    }
-
-    public String getTen() {
-        return ten;
     }
 
     public String getNam_sinh() {

@@ -81,7 +81,7 @@ public class Main1 {
             try {
                 ObjectMapper objectMapper = new ObjectMapper();
                 objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-                objectMapper.writeValue(new File("danhNhanThoiDinh.json"), dsAnhHung);
+                objectMapper.writeValue(new File("src/JSON_Data/danhNhanThoiDinh.json"), dsAnhHung);
             } catch (IOException e){
                 e.printStackTrace();
             }

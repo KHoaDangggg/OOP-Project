@@ -10,16 +10,6 @@ public class NhanVatLichSu extends NhanVat {
     private String mieuTa;
     private HashMap<String, String> thongTin;
 
-    public NhanVatLichSu() {
-    }
-
-    public String getTen() {
-        return ten;
-    }
-
-    public void setTen(String ten) {
-        this.ten = ten;
-    }
 
     public HashMap<String, String> getThongTinCoBan() {
         return thongTinCoBan;
@@ -46,7 +36,7 @@ public class NhanVatLichSu extends NhanVat {
     }
 
     public NhanVatLichSu(String ten, HashMap<String, String> thongTinCoBan, String mieuTa, HashMap<String, String> thongTin) {
-        this.ten = ten;
+        super(ten);
         this.thongTinCoBan = thongTinCoBan;
         this.mieuTa = mieuTa;
         this.thongTin = thongTin;

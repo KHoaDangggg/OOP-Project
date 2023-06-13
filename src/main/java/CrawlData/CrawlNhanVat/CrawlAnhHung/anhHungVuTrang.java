@@ -10,9 +10,6 @@ public class anhHungVuTrang extends NhanVat {
     private String namPhong;
     private String tieuSu;
 
-    public String getTen() {
-        return ten;
-    }
 
     public String getNamSinhNamMat() {
         return namSinhNamMat;
@@ -35,7 +32,7 @@ public class anhHungVuTrang extends NhanVat {
     }
 
     public anhHungVuTrang(String ten, String namSinhNamMat, String danToc, String queQuan, String namPhong, String tieuSu) {
-        this.ten = ten;
+        super(ten);
         this.namSinhNamMat = namSinhNamMat;
         this.danToc = danToc;
         this.queQuan = queQuan;

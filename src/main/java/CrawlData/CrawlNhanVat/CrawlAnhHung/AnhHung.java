@@ -8,10 +8,6 @@ public class AnhHung extends NhanVat {
     private String queQuan;
 
 
-    public String getTen() {
-        return ten;
-    }
-
     public String gettuLieu() {
         return tuLieu;
     }
@@ -26,7 +22,7 @@ public class AnhHung extends NhanVat {
 
 
     public AnhHung(String ten, String tuLieu, String queQuan, String tomTat) {
-        this.ten = ten;
+        super(ten);
         this.tuLieu = tuLieu;
         this.tomTat = tomTat;
         this.queQuan = queQuan;
