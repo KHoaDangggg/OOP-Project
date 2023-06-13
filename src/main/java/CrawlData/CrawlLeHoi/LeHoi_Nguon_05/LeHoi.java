@@ -6,7 +6,7 @@ public class LeHoi {
     private String ten;
     private String diaDiem;
     private String thoiGian;
-    private ArrayList<String> anh;
+    private ArrayList<String> linkAnh;
     private String thongTinLeHoi;
 
     private final String linkLeHoi;
@@ -20,7 +20,7 @@ public class LeHoi {
         this.ten = ten;
         this.diaDiem = diaDiem;
         this.thoiGian = thoiGian;
-        this.anh = anh;
+        this.linkAnh = anh;
         this.thongTinLeHoi = thongTinLeHoi;
         this.linkLeHoi = linkLeHoi;
     }
@@ -49,12 +49,12 @@ public class LeHoi {
         this.thoiGian = thoiGian;
     }
 
-    public ArrayList<String> getAnh() {
-        return anh;
+    public ArrayList<String> getLinkAnh() {
+        return linkAnh;
     }
 
-    public void setAnh(ArrayList<String> anh) {
-        this.anh = anh;
+    public void setLinkAnh(ArrayList<String> linkAnh) {
+        this.linkAnh = linkAnh;
     }
 
     public String getThongTinLeHoi() {
