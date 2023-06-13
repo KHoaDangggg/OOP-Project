@@ -8,7 +8,9 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -26,9 +28,20 @@ public class SearchSceneController implements Initializable {
     private TextArea textArea;
     @FXML
     private ListView listView;
+    @FXML
+    private Button exitBtn;
     private ObservableList<String> nameSelectedList = FXCollections.observableArrayList();
     private static ObservableList<TrieuDai> trieuDaiList = FXCollections.observableArrayList();
+    private Scene scene;
 
+    public void setScene(Scene scene) {
+        this.scene = scene;
+    }
+
+    public void back(){
+       Stage stage = (Stage) exitBtn.getScene().getWindow();
+       stage.setScene(scene);
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

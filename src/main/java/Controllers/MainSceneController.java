@@ -53,7 +53,7 @@ public class MainSceneController {
             stage.close();
         }
     }
-    private void renderNewScence(String buttonName) {
+/*    private void renderNewScence(String buttonName) {
         try {
             FXMLLoader newLoader = new FXMLLoader(getClass().getResource("../fxml/SearchScene.fxml"));
             Parent root = newLoader.load();
@@ -63,6 +63,23 @@ public class MainSceneController {
             ChoiceBox<String> choiceBox = (ChoiceBox<String>) root.lookup("#choiceBox");
             choiceBox.setValue(buttonName);
             newStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }*/
+
+    private void renderNewScence(String buttonName) {
+        try {
+            FXMLLoader newLoader = new FXMLLoader(getClass().getResource("../fxml/SearchScene.fxml"));
+            Parent root = newLoader.load();
+            SearchSceneController controller = newLoader.getController();
+            Scene currentScene = btnExit.getScene();
+            Stage stage = (Stage) currentScene.getWindow();
+            controller.setScene(currentScene);
+            Scene newScene = new Scene(root);
+            stage.setScene(newScene);
+            ChoiceBox<String> choiceBox = (ChoiceBox<String>) root.lookup("#choiceBox");
+            choiceBox.setValue(buttonName);
         } catch (Exception e) {
             e.printStackTrace();
         }
