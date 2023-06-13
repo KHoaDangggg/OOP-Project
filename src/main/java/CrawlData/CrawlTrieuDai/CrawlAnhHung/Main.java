@@ -34,6 +34,7 @@ public class Main {
             System.out.println(anhHung.getQueQuan());
             System.out.println(anhHung.getNamPhong());
             System.out.println(anhHung.getTieuSu());
+            System.out.println(anhHung.getLink());
 
         }
         System.out.println(dsAnhHung.size());
@@ -70,7 +71,7 @@ public class Main {
                 String queQuan = cells.get(3).getText();
                 String namPhong =cells.get(4).getText();
                 String tieuSu = cells.get(5).getText();
-                anhHungVuTrang anhHung = new anhHungVuTrang(ten, namSinhNamMat, danToc, queQuan, namPhong, tieuSu);
+                anhHungVuTrang anhHung = new anhHungVuTrang(ten, namSinhNamMat, danToc, queQuan, namPhong, tieuSu, url);
                 dsAnhHung.add(anhHung);
             }
         }

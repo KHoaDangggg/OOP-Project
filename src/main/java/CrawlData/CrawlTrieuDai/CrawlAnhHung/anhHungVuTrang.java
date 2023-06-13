@@ -7,6 +7,7 @@ public class anhHungVuTrang {
     private String queQuan;
     private String namPhong;
     private String tieuSu;
+    private String link;
 
     public String getTen() {
         return ten;
@@ -31,13 +32,17 @@ public class anhHungVuTrang {
     public String getTieuSu() {
         return tieuSu;
     }
+    public String getLink(){ return  link; }
 
-    public anhHungVuTrang(String ten, String namSinhNamMat, String danToc, String queQuan, String namPhong, String tieuSu) {
+
+
+    public anhHungVuTrang(String ten, String namSinhNamMat, String danToc, String queQuan, String namPhong, String tieuSu, String link) {
         this.ten = ten;
         this.namSinhNamMat = namSinhNamMat;
         this.danToc = danToc;
         this.queQuan = queQuan;
         this.namPhong = namPhong;
         this.tieuSu = tieuSu;
+        this.link = link;
     }
 }

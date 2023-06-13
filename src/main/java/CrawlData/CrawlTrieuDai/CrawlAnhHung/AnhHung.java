@@ -5,6 +5,8 @@ public class AnhHung {
     private String tuLieu;
     private String tomTat;
     private String queQuan;
+    private String link;
+
 
 
     public String getHoVaTen() {
@@ -23,11 +25,14 @@ public class AnhHung {
         return queQuan;
     }
 
+    public String getLink(){ return  link; }
 
-    public AnhHung(String hoVaTen, String tuLieu, String queQuan, String tomTat) {
+
+    public AnhHung(String hoVaTen, String tuLieu, String queQuan, String tomTat, String link) {
         this.hoVaTen = hoVaTen;
         this.tuLieu = tuLieu;
         this.tomTat = tomTat;
         this.queQuan = queQuan;
+        this.link = link;
     }
 }

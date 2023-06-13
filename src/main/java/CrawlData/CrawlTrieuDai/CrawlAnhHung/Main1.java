@@ -43,7 +43,7 @@ public class Main1 {
                         String tuLieu = cells.get(1).text();
                         String queQuan = cells.get(2).text();
                         String tomTat = cells.get(3).text();
-                        AnhHung anhhung = new AnhHung(hoVaTen, tuLieu, queQuan, tomTat);
+                        AnhHung anhhung = new AnhHung(hoVaTen, tuLieu, queQuan, tomTat, url);
                         dsAnhHung.add(anhhung);
                     }
                 }
@@ -57,6 +57,8 @@ public class Main1 {
                     System.out.println(anhhung.gettuLieu() );
                     System.out.println(anhhung.getQueQuan() );
                     System.out.println(anhhung.gettomTat() );
+                    // add link
+                    System.out.println(anhhung.getLink());
 
                     System.out.println("\n");
                     count++;
