@@ -1,5 +1,9 @@
 package CrawlData.CrawlTrieuDai;
+import CrawlData.CrawlNhanVat.vua.src.Vua;
+import CrawlData.CrawlSuKien.SuKienChienTranh;
+
 import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class TrieuDai {
@@ -11,6 +15,9 @@ public class TrieuDai {
     String namKetThuc;
 
     ArrayList<String> kings;
+    HashMap<String, Vua> lienKetVua = new HashMap<>();
+
+    HashMap<String, SuKienChienTranh> lienKetSuKien = new HashMap<>();
 
     public void setKinhDo(String kinhDo) {
         this.kinhDo = kinhDo;
@@ -20,8 +27,7 @@ public class TrieuDai {
         this.quocHieu = quocHieu;
     }
 
-    public TrieuDai( String ten, String batDau, String ketThuc, String moTa, ArrayList<String> kings)
-    {
+    public TrieuDai(String ten, String batDau, String ketThuc, String moTa, ArrayList<String> kings) {
         this.ten = ten;
         this.namBatDau = batDau;
         this.namKetThuc = ketThuc;
@@ -57,4 +63,19 @@ public class TrieuDai {
         return kings;
     }
 
+    public void setLienKetSuKien(HashMap<String, SuKienChienTranh> lienKetSuKien) {
+        this.lienKetSuKien = lienKetSuKien;
+    }
+
+    public void setLienKetVua(HashMap<String, Vua> lienKetVua) {
+        this.lienKetVua = lienKetVua;
+    }
+
+    public HashMap<String, SuKienChienTranh> getLienKetSuKien() {
+        return lienKetSuKien;
+    }
+
+    public HashMap<String, Vua> getLienKetVua() {
+        return lienKetVua;
+    }
 }

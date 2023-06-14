@@ -10,11 +10,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class LinkingObject implements LinkInterface {
-    public ArrayList<SuKienChienTranh> listSuKien = new ArrayList<>();
-    public ArrayList<TrieuDai> listTrieuDai = new ArrayList<>();
-    public ArrayList<Vua> listVua = new ArrayList<>();
-    public ArrayList<NhanVatLichSu> listNhanVat = new ArrayList<>();
-    public ArrayList<LeHoi> listLeHoi = new ArrayList<>();
+    public ArrayList<SuKienChienTranh> listSuKien;
+    public ArrayList<TrieuDai> listTrieuDai;
+    public ArrayList<Vua> listVua;
+    public ArrayList<NhanVatLichSu> listNhanVat;
+    public ArrayList<LeHoi> listLeHoi;
 
     public LinkingObject(ArrayList<SuKienChienTranh> listSuKien, ArrayList<TrieuDai> listTrieuDai, ArrayList<Vua> listVua, ArrayList<NhanVatLichSu> listNhanVat, ArrayList<LeHoi> listLeHoi) {
         this.listSuKien = listSuKien;
@@ -24,7 +24,7 @@ public class LinkingObject implements LinkInterface {
         this.listLeHoi = listLeHoi;
     }
 
-    public void link(){
+    public void link() {
         linkLeHoi(listLeHoi);
         linkSuKien(listSuKien);
         linkNhanVat(listNhanVat);

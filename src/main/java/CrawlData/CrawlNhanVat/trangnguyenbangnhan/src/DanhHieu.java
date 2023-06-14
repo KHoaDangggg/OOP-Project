@@ -4,13 +4,13 @@ import CrawlData.CrawlNhanVat.NhanVat;
 
 public class DanhHieu extends NhanVat {
 
-    private String nam_sinh;
-    private String nam_mat;
-    private String que_quan;
-    private String nam_do;
+    private final String nam_sinh;
+    private final String nam_mat;
+    private final String que_quan;
+    private final String nam_do;
     private String danh_hieu;
-    private String doi_vua;
-    private String ghi_chu = "";
+    private final String doi_vua;
+    private final String ghi_chu;
 
 
     public void setDanh_hieu(String danh_hieu){

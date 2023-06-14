@@ -86,6 +86,13 @@ public class Thread_X implements Runnable{
                 thongTin.put(key, builder1.toString());
             }
         }
+        thongTin.remove("Chú thích");
+        thongTin.remove("Tham khảo");
+        thongTin.remove("Xem thêm");
+        thongTin.remove("Liên kết ngoài");
+        thongTin.remove("Bài liên quan");
+        thongTin.remove("Nguồn tham khảo");
+        thongTin.remove(null);
         nv.setThongTin(thongTin);
         Main1.nhanVat.add(nv);
         //System.out.println(nv.getTen());

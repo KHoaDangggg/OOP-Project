@@ -56,7 +56,7 @@ public class JsonToObj {
         return fileReader;
     }
 
-    public <T> void JsonToObj(String path, ArrayList<T> list) {
+/*    public <T> void JsonToObj(String path, ArrayList<T> list) {
         Gson gson = new Gson();
         FileReader fileReader = reader(path);
         Type objectType = new TypeToken<ArrayList<T>>() {
@@ -65,7 +65,7 @@ public class JsonToObj {
         ArrayList<T> convertedList = gson.fromJson(fileReader, objectType);
         list.addAll(convertedList);
         System.out.println("Convert to obj successful!");
-    }
+    }*/
 
     public void JsonToObj1(String path, ArrayList<SuKienChienTranh> list) {
         Gson gson = new Gson();
@@ -123,10 +123,8 @@ public class JsonToObj {
             String ten = obj.getString("ten");
             String mieuta = obj.getString("mieuTa");
             for (String key : obj.keySet()) {
-                if (key.equals("ten") || key.equals("mieuTa")) continue;
-                else {
+                if (!key.equals("ten") && !key.equals("mieuTa"))
                     thongTin.put(key, obj.getString(key));
-                }
             }
             list.add(new NhanVatLichSu(ten, mieuta, thongTin));
         }

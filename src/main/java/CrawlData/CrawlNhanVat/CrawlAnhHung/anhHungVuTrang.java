@@ -4,11 +4,11 @@ import CrawlData.CrawlNhanVat.NhanVat;
 
 public class anhHungVuTrang extends NhanVat {
 
-    private String namSinhNamMat;
-    private String danToc;
-    private String queQuan;
-    private String namPhong;
-    private String tieuSu;
+    private final String namSinhNamMat;
+    private final String danToc;
+    private final String queQuan;
+    private final String namPhong;
+    private final String tieuSu;
 
 
     public String getNamSinhNamMat() {

@@ -3,9 +3,9 @@ package CrawlData.CrawlNhanVat.CrawlAnhHung;
 import CrawlData.CrawlNhanVat.NhanVat;
 
 public class AnhHung extends NhanVat {
-    private String tuLieu;
-    private String tomTat;
-    private String queQuan;
+    private final String tuLieu;
+    private final String tomTat;
+    private final String queQuan;
 
 
     public String gettuLieu() {

@@ -3,16 +3,16 @@ package CrawlData.CrawlNhanVat.vua.src;
 import CrawlData.CrawlNhanVat.NhanVat;
 
 public class Vua extends NhanVat {
-    private String img;
+    private final String img;
 
-    private String mieu_hieu;
-    private String thuy_hieu;
-    private String nien_hieu;
-    private String ten_huy;
-    private String the_thu;
-    private String nam_bat_dau_tri_vi;
+    private final String mieu_hieu;
+    private final String thuy_hieu;
+    private final String nien_hieu;
+    private final String ten_huy;
+    private final String the_thu;
+    private final String nam_bat_dau_tri_vi;
     //private String middle;
-    private String nam_ket_thuc_tri_vi;
+    private final String nam_ket_thuc_tri_vi;
 
     private String nam_sinh;
     private String nam_mat;
@@ -46,33 +46,31 @@ public class Vua extends NhanVat {
         this.nam_ket_thuc_tri_vi = clear(end);
     }
 
-    public String clearImg(String img){
-        if(img.equalsIgnoreCase("")) return null;
+    public String clearImg(String img) {
+        if (img.equalsIgnoreCase("")) return null;
         return img;
     }
 
-    public  String clear(String str){
+    public String clear(String str) {
 
         boolean modified = true;
-        while(modified) {
+        while (modified) {
             int index1 = str.indexOf("(");
             int index2 = str.indexOf(")");
             if (index1 >= 0 && index2 >= 0) {
                 String s = str.substring(index1, index2 + 1);
                 str = str.replace(s, "");
-            }
-            else modified = false;
+            } else modified = false;
         }
 
         modified = true;
-        while(modified) {
+        while (modified) {
             int index1 = str.indexOf("[");
             int index2 = str.indexOf("]");
             if (index1 >= 0 && index2 >= 0) {
                 String s = str.substring(index1, index2 + 1);
                 str = str.replace(s, "");
-            }
-            else modified = false;
+            } else modified = false;
         }
 
         return str;
