@@ -31,6 +31,7 @@ public class Data {
                     if (!columns.isEmpty()) {
                         //Extract the Name, Location and Classification of the site
                         String name = columns.get(0).text();
+                        System.out.println(name);
                         String area = columns.get(1).text();
                         String classify = columns.get(2).text();
 
@@ -83,7 +84,7 @@ public class Data {
             } */
 
             //Writing Json file
-            try (FileWriter file = new FileWriter("heritage4.json")) {
+            try (FileWriter file = new FileWriter("src/JSON_Data/DiTichLichSu.json")) {
                 JSONArray jsonArray = new JSONArray();
                 for (String[] heritage : heritageList) {
                     JSONObject jsonObject = new JSONObject();

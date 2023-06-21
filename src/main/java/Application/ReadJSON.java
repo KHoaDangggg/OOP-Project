@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class ReadJSON {
     private static ObservableList<TrieuDai> trieuDaiList = FXCollections.observableArrayList();
-    private static ObservableList<> trieuDaiList = FXCollections.observableArrayList();
+    //private static ObservableList<> trieuDaiList = FXCollections.observableArrayList();
     public static void main(String[] args) {
         readData();
     }

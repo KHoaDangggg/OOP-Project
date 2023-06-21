@@ -1,6 +1,6 @@
 package CrawlData.CrawlSuKien;
 
-import CrawlData.CrawlNhanVat.NhanVat_NguoiKeSu.NhanVatLichSu;
+import CrawlData.CrawlNhanVat.NhanVat;
 import CrawlData.CrawlTrieuDai.TrieuDai;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,7 +22,7 @@ public class SuKienChienTranh {
     private String nguyenNhan;
     private ArrayList<String> nameRelativePerson = new ArrayList<>();
     private ArrayList<String> nameRelativeDinasty = new ArrayList<>();
-    private HashMap<String, NhanVatLichSu> lienKetNhanVat = new HashMap<>();
+    private HashMap<String, NhanVat> lienKetNhanVat = new HashMap<>();
     private HashMap<String, TrieuDai>lienKetTrieuDai = new HashMap<>();
     public void setTenSuKien(String tenSuKien) {
         this.tenSuKien = tenSuKien;
@@ -84,7 +84,7 @@ public class SuKienChienTranh {
         this.nameRelativeDinasty = nameRelativeDinasty;
     }
 
-    public void setLienKetNhanVat(HashMap<String, NhanVatLichSu> lienKetNhanVat) {
+    public void setLienKetNhanVat(HashMap<String, NhanVat> lienKetNhanVat) {
         this.lienKetNhanVat = lienKetNhanVat;
     }
 
@@ -150,7 +150,7 @@ public class SuKienChienTranh {
     public ArrayList<String> getNameRelativeDinasty() {
         return nameRelativeDinasty;
     }
-    public HashMap<String, NhanVatLichSu> getLienKetNhanVat() {
+    public HashMap<String, NhanVat> getLienKetNhanVat() {
         return lienKetNhanVat;
     }
     public HashMap<String, TrieuDai> getLienKetTrieuDai() {

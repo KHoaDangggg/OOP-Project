@@ -2,7 +2,8 @@ package Controllers.object_for_ui;
 
 import CrawlData.CrawlDiTich.DiTichLichSu;
 import CrawlData.CrawlLeHoi.LeHoi_Nguon_05.LeHoi;
-import CrawlData.CrawlNhanVat.NhanVat_NguoiKeSu.NhanVatLichSu;
+import CrawlData.CrawlNhanVat.NhanVat;
+
 import CrawlData.CrawlNhanVat.vua.src.Vua;
 import CrawlData.CrawlSuKien.SuKienChienTranh;
 import CrawlData.CrawlTrieuDai.TrieuDai;
@@ -15,7 +16,7 @@ public class GenerateUIObject {
     public static ArrayList<SuKienChienTranh> listSuKien = JsonToObj.listSuKien; //List cac su kien
     public static ArrayList<TrieuDai> listTrieuDai = JsonToObj.listTrieuDai; //List cac trieu dai
     public static ArrayList<Vua> listVua = JsonToObj.listVua; //List cac vi vua
-    public static ArrayList<NhanVatLichSu> listNhanVat = JsonToObj.listNhanVat; //List cac nhan vat
+    public static ArrayList<NhanVat> listNhanVat = JsonToObj.listNhanVat; //List cac nhan vat
     public static ArrayList<LeHoi> listLeHoi = JsonToObj.listLeHoi; //List cac le hoi
     public static ArrayList<DiTichLichSu> listDiTich = JsonToObj.listDiTich; //List cac di tich lich su
 

@@ -12,7 +12,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 
 public class Main1 {
-    static List<AnhHung> dsAnhHung = new ArrayList<AnhHung>();
+    static List<DanhNhan> dsAnhHung = new ArrayList<>();
     public static void main(String[] args) {
         crawlAnhHung();
         crawl();
@@ -43,7 +43,7 @@ public class Main1 {
                         String tuLieu = cells.get(1).text();
                         String queQuan = cells.get(2).text();
                         String tomTat = cells.get(3).text();
-                        AnhHung anhhung = new AnhHung(hoVaTen, tuLieu, queQuan, tomTat);
+                        DanhNhan anhhung = new DanhNhan(hoVaTen, tuLieu, queQuan, tomTat);
                         dsAnhHung.add(anhhung);
                     }
                 }
@@ -51,7 +51,7 @@ public class Main1 {
 
 
                 int count = 0;
-                for (AnhHung anhhung : dsAnhHung)
+                for (DanhNhan anhhung : dsAnhHung)
                 {
                     System.out.println(anhhung.getTen() );
                     System.out.println(anhhung.gettuLieu() );

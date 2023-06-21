@@ -2,7 +2,11 @@ package Controllers.object_for_ui;
 
 import CrawlData.CrawlDiTich.DiTichLichSu;
 import CrawlData.CrawlLeHoi.LeHoi_Nguon_05.LeHoi;
+import CrawlData.CrawlNhanVat.CrawlAnhHung.DanhNhan;
+import CrawlData.CrawlNhanVat.CrawlAnhHung.anhHungVuTrang;
+import CrawlData.CrawlNhanVat.NhanVat;
 import CrawlData.CrawlNhanVat.NhanVat_NguoiKeSu.NhanVatLichSu;
+import CrawlData.CrawlNhanVat.trangnguyenbangnhan.src.DanhHieu;
 import CrawlData.CrawlNhanVat.vua.src.Vua;
 import CrawlData.CrawlSuKien.SuKienChienTranh;
 import CrawlData.CrawlTrieuDai.TrieuDai;
@@ -26,9 +30,13 @@ public class JsonToObj {
     public static ArrayList<SuKienChienTranh> listSuKien = new ArrayList<>();
     public static ArrayList<TrieuDai> listTrieuDai = new ArrayList<>();
     public static ArrayList<Vua> listVua = new ArrayList<>();
-    public static ArrayList<NhanVatLichSu> listNhanVat = new ArrayList<>();
+    public static ArrayList<NhanVat> listNhanVat = new ArrayList<>();
     public static ArrayList<LeHoi> listLeHoi = new ArrayList<>();
     public static ArrayList<DiTichLichSu> listDiTich = new ArrayList<>();
+    public static ArrayList<DanhNhan> listDanhNhan = new ArrayList<>();
+    public static ArrayList<DanhHieu> listTrangNguyenBangNhan = new ArrayList<>();
+    public static ArrayList<anhHungVuTrang> listAnhHungVuTrang = new ArrayList<>();
+
 
     public void generate() {
         //Get su kien
@@ -41,8 +49,35 @@ public class JsonToObj {
         JsonToObj5("src/JSON_Data/NhanVatLichSu.json", listNhanVat);
         //Get Le hoi
         JsonToObj4("src/JSON_Data/LeHoi_Nguon_05.json", listLeHoi);
+
         //Get Di tich lich su
-        JsonToObj6("src/JSON_Data/DiTichLichSu.json", listDiTich);
+        //JsonToObj6("src/JSON_Data/DiTichLichSu.json", listDiTich);
+
+        //Get danh nhan, trang nguyen, anh hung vu trang
+        JsonToObj7("src/JSON_Data/danhNhanThoiDinh.json",
+                "src/JSON_Data/TrangNguyen&BangNhan.json",
+                "src/JSON_Data/vuTrang.json");
+        //Clean and merge nhanvatlichsu
+        cleanNhanVat();
+    }
+
+    public void cleanNhanVat(){
+        ArrayList<NhanVat> nhanVats = new ArrayList<>();
+        nhanVats.addAll(listDanhNhan);
+        nhanVats.addAll(listTrangNguyenBangNhan);
+        nhanVats.addAll(listAnhHungVuTrang);
+
+        ArrayList<NhanVat> temp = new ArrayList<>();
+        for(NhanVat nv: nhanVats){
+            for(NhanVat n: listNhanVat){
+                if(!nv.getTen().equals(n.getTen())){
+                    temp.add(nv);
+                    //System.out.println(n.getTen());
+                }
+            }
+        }
+        listNhanVat.addAll(temp);
+        System.out.println("Clean successfully");
     }
 
 
@@ -107,7 +142,7 @@ public class JsonToObj {
         System.out.println("Convert to obj successful!");
     }
 
-    public void JsonToObj5(String path, ArrayList<NhanVatLichSu> list) {
+    public void JsonToObj5(String path, ArrayList<NhanVat> list) {
         String input;
         try {
             input = Files.readString(Path.of(path), StandardCharsets.UTF_8);
@@ -137,6 +172,28 @@ public class JsonToObj {
         }.getType();
         ArrayList<DiTichLichSu> convertedList = gson.fromJson(fileReader, objectType);
         list.addAll(convertedList);
+        System.out.println("Convert to obj successful!");
+    }
+
+    public void JsonToObj7(String pathDanhNhan, String pathTNBN, String pathAHVT){
+        Gson gson = new Gson();
+        FileReader fileReader = reader(pathDanhNhan);
+        Type objectType = new TypeToken<ArrayList<DanhNhan>>() {
+        }.getType();
+        ArrayList<DanhNhan> convertedList = gson.fromJson(fileReader, objectType);
+        listDanhNhan.addAll(convertedList);
+
+        fileReader = reader(pathTNBN);
+        objectType = new TypeToken<ArrayList<DanhHieu>>() {
+        }.getType();
+        ArrayList<DanhHieu> convertedList1 = gson.fromJson(fileReader, objectType);
+        listTrangNguyenBangNhan.addAll(convertedList1);
+
+        fileReader = reader(pathAHVT);
+        objectType = new TypeToken<ArrayList<anhHungVuTrang>>() {
+        }.getType();
+        ArrayList<anhHungVuTrang> convertedList2 = gson.fromJson(fileReader, objectType);
+        listAnhHungVuTrang.addAll(convertedList2);
         System.out.println("Convert to obj successful!");
     }
 
