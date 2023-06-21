@@ -102,7 +102,6 @@ public class SearchSceneController implements Initializable {
         String searchString = textField.getText();
         boolean found = false;
         ObservableList<String> nameList = FXCollections.observableArrayList();
-        System.out.println("num: " + nameSelectedList.size());
         for(String str: nameSelectedList) {
             if(removeVietnameseAccent(str).contains(removeVietnameseAccent(searchString))
                 && !nameList.contains(str)) {
@@ -116,8 +115,6 @@ public class SearchSceneController implements Initializable {
         }
     }
     public void handleRenderTextArea(String selectedItem, String field, TextFlow relative1) {
-        System.out.println(field);
-        System.out.println( "0" + selectedItem + "0");
         relative1.getChildren().clear();
         if(field.equals("Triều Đại")) {
             handleRenderTrieuDai(selectedItem, relative1);
@@ -233,12 +230,15 @@ public class SearchSceneController implements Initializable {
     }
     public void handleRenderLeHoi(String tenLeHoi, TextFlow relative) {
         LeHoi selectedLeHoi = null;
-        if(tenLeHoi != null) {
-            for(LeHoi t: leHoiList) {
-                if(tenLeHoi.equals(t.getTen())) {
-                    selectedLeHoi = t;
-                }
-            }
+        if(tenLeHoi != null)
+            relative.getChildren().add(new Text("Lễ hội liên quan: "));
+        for(String sk: selectedLeHoi.getLienKetLeHoi().keySet()) {
+            Hyperlink link = new Hyperlink(sk);
+            // Add the Text and Hyperlink nodes to the TextFlow node
+            relative.getChildren().addAll(link, new Text(", "));
+            link.setOnAction(e -> {
+                handleLabel("Lễ Hội", sk, link);
+            });
         }
         if(selectedLeHoi == null) return;
         relative.getChildren().add(new Text("Tên lễ hội: " + selectedLeHoi.getTen() + "\n" +

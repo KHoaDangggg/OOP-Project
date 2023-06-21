@@ -38,7 +38,6 @@ public class GenerateUIObject {
         linkingObject.link();
         listNhanVat.addAll(listVua);
         listNhanVat.addAll(listNhanVatLichSu);
-
     }
 
 }

@@ -26,7 +26,6 @@ public class app extends Application {
     public static ArrayList<LeHoi> listLeHoi = null; //List cac le hoi
     public static ArrayList<DiTichLichSu> listDiTich = null; //List cac di tich lich su
     public static ArrayList<NhanVat> listNhanVat = null;
-    public static int currentScene = 1;
     @SuppressWarnings("exports")
     @Override
     public void start(Stage primaryStage) throws IOException {
