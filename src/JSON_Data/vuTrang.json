@@ -821,9 +821,7 @@
   "danToc" : "Kinh",
   "queQuan" : "Quảng Nam",
   "namPhong" : "17/09/1967",
-
   "tieuSu" : "Y tá Đại đội 1, Tiểu đoàn 72 bộ đội địa phương tỉnh Quảng Nam. Tham gia nhiều trận đánh, cứu chữa cho thương binh, bệnh binh"
-
 }, {
   "ten" : "Huỳnh Văn Đảnh",
   "namSinhNamMat" : "1939-1971",
@@ -837,9 +835,7 @@
   "danToc" : "Kinh",
   "queQuan" : "Long An",
   "namPhong" : "17/09/1967",
-
   "tieuSu" : "Tiểu đội phó thuộc Đại đội 2, Tiểu đoàn 2 bộ đội địa phương tỉnh Long An. Hy sinh trong trận diệt đồn Tân Quý ngày 8 tháng 10 năm 1966."
-
 }, {
   "ten" : "Huỳnh Việt Thanh",
   "namSinhNamMat" : "1926-1966",
@@ -855,8 +851,6 @@
   "queQuan" : "Gia Lai",
   "namPhong" : "17/09/1967",
   "tieuSu" : "Chiến sĩ du kích với biệt tài \"bắn xuyên táo\". Hy sinh ngày 28 tháng 8 năm 1975 khi mang cấp bậc Thượng úy, tham mưu phó Tỉnh đội Gia Lai."
-=======
-  "tieuSu" : ""
 }, {
   "ten" : "Kpă KLơng",
   "namSinhNamMat" : "1948-1975",
@@ -864,7 +858,6 @@
   "queQuan" : "Gia Lai",
   "namPhong" : "17/09/1967",
   "tieuSu" : "Chiến sĩ du kích với biệt tài \"bắn xuyên táo\""
-
 }, {
   "ten" : "La Thị Tám",
   "namSinhNamMat" : "1949-",

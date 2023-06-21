@@ -160,7 +160,7 @@ public class Cart {
         String json = gson.toJson(vuaArrayList);
 
         try {
-            FileWriter file = new FileWriter("vua/Vua.json");
+            FileWriter file = new FileWriter("src/JSON_Data/Vua.json");
             file.write(json);
             file.flush();
             file.close();

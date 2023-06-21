@@ -5,13 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3779d972-e9c0-42b6-a657-5ca42dc87135" name="Changes" comment="UI and controller">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON_Data/trieuDai.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/trieuDai.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Application/ReadJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/ReadJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/NhanVatLichSu.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/NhanVatLichSu.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/danhNhanThoiDinh.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/danhNhanThoiDinh.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/vuTrang.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/vuTrang.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/image1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/image1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/image2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/image2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/image3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/image3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/ReadJSON.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/app.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/MainSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/MainSceneController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/SearchSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/SearchSceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlLeHoi/CrawLeHoiMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlLeHoi/LeHoi_Nguon_01/CrawlLeHoiNguon01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlLeHoi/LeHoi_Nguon_01/LeHoi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlLeHoi/LeHoi_Nguon_02/CrawlLeHoiNguon02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlLeHoi/LeHoi_Nguon_02/LeHoiWol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlLeHoi/LeHoi_Nguon_03/CrawlLeHoiNguon03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlLeHoi/LeHoi_Nguon_03/LeHoiWiki.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlLeHoi/LeHoi_Nguon_03/ThreadNetwork_Nguon_03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlLeHoi/LeHoi_Nguon_04/CrawlLeHoiNguon04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlLeHoi/LeHoi_Nguon_04/ThreadNetwork_Nguon_04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlLeHoi/LeHoi_Nguon_05/CrawlLeHoiNguon05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlLeHoi/LeHoi_Nguon_05/CrawlLeHoiNguon05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlLeHoi/LeHoi_Nguon_05/LeHoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlLeHoi/LeHoi_Nguon_05/LeHoi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlLeHoi/LeHoi_Nguon_05/Thread_X.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlLeHoi/LeHoi_Nguon_05/Thread_X.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/CrawlAnhHung/AnhHung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/CrawlAnhHung/AnhHung.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/CrawlAnhHung/anhHungVuTrang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/CrawlAnhHung/anhHungVuTrang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat_NguoiKeSu/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat_NguoiKeSu/NhanVatLichSu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat_NguoiKeSu/Thread_T.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat_NguoiKeSu/Thread_X.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/trangnguyenbangnhan/src/DanhHieu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/trangnguyenbangnhan/src/DanhHieu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/trangnguyenbangnhan/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/trangnguyenbangnhan/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/vua/src/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/vua/src/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/vua/src/Vua.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/vua/src/Vua.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/TrieuDai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/TrieuDai.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/crawl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/crawl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fxml/MainScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fxml/MainScene.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fxml/SearchScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fxml/SearchScene.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +71,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/build.gradle" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -49,8 +88,10 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowGit.ShowToolbar&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;crawl/Khoa&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/OneDrive - Hanoi University of Science and Technology/Documents/TaiLieuBK/OOP/web_Scrapper/src/main/java/controller&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/OneDrive - Hanoi University of Science and Technology/Documents/TaiLieuBK/OOP/web_Scrapper&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
@@ -58,25 +99,27 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\OneDrive - Hanoi University of Science and Technology\Documents\TaiLieuBK\OOP\web_Scrapper\src\main\java\controller" />
-      <recent name="C:\Users\Admin\OneDrive - Hanoi University of Science and Technology\Documents\TaiLieuBK\OOP\web_Scrapper\src\Images" />
+      <recent name="C:\Users\Admin\OneDrive - Hanoi University of Science and Technology\Documents\TaiLieuBK\OOP\web_Scrapper\src\main\java\controllers\objectforui" />
+      <recent name="C:\Users\Admin\OneDrive - Hanoi University of Science and Technology\Documents\TaiLieuBK\OOP\web_Scrapper\src\main\java\crawldata\CrawlNhanVat\crawlnguoikesu" />
+      <recent name="C:\Users\Admin\OneDrive - Hanoi University of Science and Technology\Documents\TaiLieuBK\OOP\web_Scrapper\src\JSON_Data" />
+      <recent name="C:\Users\Admin\OneDrive - Hanoi University of Science and Technology\Documents\TaiLieuBK\OOP\web_Scrapper\src\main\java\crawldata\CrawlNhanVat" />
+      <recent name="C:\Users\Admin\OneDrive - Hanoi University of Science and Technology\Documents\TaiLieuBK\OOP\web_Scrapper\src\main\java\crawldata\CrawlNhanVat\CrawlAnhHung" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\OneDrive - Hanoi University of Science and Technology\Documents\TaiLieuBK\OOP\web_Scrapper\src\main" />
+      <recent name="C:\Users\Admin\OneDrive - Hanoi University of Science and Technology\Documents\TaiLieuBK\OOP\web_Scrapper\src\main\java\controllers\objectforui" />
       <recent name="C:\Users\Admin\OneDrive - Hanoi University of Science and Technology\Documents\TaiLieuBK\OOP\web_Scrapper\src\main\java" />
+      <recent name="C:\Users\Admin\OneDrive - Hanoi University of Science and Technology\Documents\TaiLieuBK\OOP\web_Scrapper\src\main" />
       <recent name="C:\Users\Admin\OneDrive - Hanoi University of Science and Technology\Documents\TaiLieuBK\OOP\web_Scrapper\src" />
       <recent name="C:\Users\Admin\OneDrive - Hanoi University of Science and Technology\Documents\TaiLieuBK\OOP\web_Scrapper\src\main\java\fxml" />
-      <recent name="C:\Users\Admin\OneDrive - Hanoi University of Science and Technology\Documents\TaiLieuBK\OOP\web_Scrapper\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Application.app">
-    <configuration name="Main123" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="controller.Main123" />
+    <configuration name="Data" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CrawlData.CrawlDiTich.Data" />
       <module name="web_Scrapper.main" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-17.0.7\lib&quot; --add-modules javafx.controls,javafx.fxml " />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Application.*" />
+          <option name="PATTERN" value="CrawlData.CrawlDiTich.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,12 +127,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadJSON" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Application.ReadJSON" />
+    <configuration name="GenerateUIObject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controllers.object_for_ui.GenerateUIObject" />
       <module name="web_Scrapper.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Application.*" />
+          <option name="PATTERN" value="Controllers.object_for_ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main123" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="controller.Main123" />
+      <module name="web_Scrapper.main" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-17.0.7\lib&quot; --add-modules javafx.controls,javafx.fxml " />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controllers.Utils" />
+      <module name="web_Scrapper.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,38 +168,12 @@
       </method>
     </configuration>
     <configuration name="app" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Application.app" />
+      <option name="MAIN_CLASS_NAME" value="application.app" />
       <module name="web_Scrapper.main" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-17.0.7\lib&quot; --add-modules javafx.controls,javafx.fxml " />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Application.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="crawl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CrawlData.CrawlTrieuDai.crawl" />
-      <module name="web_Scrapper.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CrawlData.CrawlTrieuDai.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="controller.main" />
-      <module name="web_Scrapper.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Application.*" />
+          <option name="PATTERN" value="Controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,19 +182,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ReadJSON" />
+      <item itemvalue="Application.GenerateUIObject" />
+      <item itemvalue="Application.Utils" />
+      <item itemvalue="Application.Data" />
       <item itemvalue="Application.app" />
-      <item itemvalue="Application.crawl" />
-      <item itemvalue="Application.main" />
       <item itemvalue="Application.Main123" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ReadJSON" />
+        <item itemvalue="Application.GenerateUIObject" />
         <item itemvalue="Application.app" />
+        <item itemvalue="Application.Data" />
+        <item itemvalue="Application.Utils" />
         <item itemvalue="Application.Main123" />
-        <item itemvalue="Application.main" />
-        <item itemvalue="Application.crawl" />
       </list>
     </recent_temporary>
   </component>
@@ -164,6 +208,17 @@
       <updated>1686507398328</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="UI and controller" />

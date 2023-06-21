@@ -107,12 +107,12 @@ public class CrawlLeHoiNguon05 {
         JSONArray jsonArray = new JSONArray();
         for (LeHoi leHoi : lehoi) {
             JSONObject jsonObject = new JSONObject();
-            jsonObject.put("tên lễ hội", leHoi.getTen());
-            jsonObject.put("địa điểm tổ chức", leHoi.getDiaDiem());
-            jsonObject.put("thời gian tổ chức", leHoi.getThoiGian());
-            jsonObject.put("link ảnh", leHoi.getAnh());
-            jsonObject.put("thông tin lễ hội", leHoi.getThongTinLeHoi());
-            jsonObject.put("link lễ hội", leHoi.getLinkLeHoi());
+            jsonObject.put("ten", leHoi.getTen());
+            jsonObject.put("diaDiem", leHoi.getDiaDiem());
+            jsonObject.put("thoiGian", leHoi.getThoiGian());
+            jsonObject.put("linkAnh", leHoi.getLinkAnh());
+            jsonObject.put("thongTinLeHoi", leHoi.getThongTinLeHoi());
+            jsonObject.put("linkLeHoi", leHoi.getLinkLeHoi());
             jsonArray.put(jsonObject);
         }
 

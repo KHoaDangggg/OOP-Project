@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 
 public class Main {
-    private static ArrayList<DanhHieu> danhHieuArrayList = new ArrayList<>();
+    private static final ArrayList<DanhHieu> danhHieuArrayList = new ArrayList<>();
     private static int count = 0;
     public static void main(String[] args) throws IOException {
         addTrangNguyen();
@@ -27,11 +27,10 @@ public class Main {
         String link = "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Tr%E1%BA%A1ng_nguy%C3%AAn_Vi%E1%BB%87t_Nam";
         Document doc = Jsoup.connect(link).get();
         Elements rows = doc.select("table.wikitable.sortable").select("tbody").select("tr");
-        for(int i=0; i < rows.size(); i++){
-            Element row = rows.get(i);
+        for (Element row : rows) {
             Elements columns = row.select("td");
-            if(columns.size() < 7) continue;
-            if(columns.get(1).text().contains("Nguyễn Giản Thanh")){
+            if (columns.size() < 7) continue;
+            if (columns.get(1).text().contains("Nguyễn Giản Thanh")) {
                 DanhHieu danhHieu1 = new DanhHieu(
                         "Nguyễn Giản Thanh",
                         columns.get(2).text(),
@@ -72,10 +71,9 @@ public class Main {
         String link = "https://vi.wikipedia.org/wiki/B%E1%BA%A3ng_nh%C3%A3n";
         Document doc = Jsoup.connect(link).get();
         Elements rows = doc.select("table.wikitable.sortable").select("tbody").select("tr");
-        for(int i=0; i < rows.size(); i++){
-            Element row = rows.get(i);
+        for (Element row : rows) {
             Elements columns = row.select("td");
-            if(columns.size() < 6) continue;
+            if (columns.size() < 6) continue;
             DanhHieu danhHieu = new DanhHieu(
                     columns.get(0).text(),
                     columns.get(1).text(),
@@ -92,10 +90,9 @@ public class Main {
 
 
     public static void add(Elements rows){
-        for(int i=0; i < rows.size(); i++){
-            Element row = rows.get(i);
+        for (Element row : rows) {
             Elements columns = row.select("td");
-            if(columns.size() < 7) continue;
+            if (columns.size() < 7) continue;
             DanhHieu danhHieu = new DanhHieu(
                     columns.get(1).text(),
                     columns.get(2).text(),

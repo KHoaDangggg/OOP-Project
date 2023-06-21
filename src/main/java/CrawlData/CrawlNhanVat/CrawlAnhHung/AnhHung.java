@@ -3,14 +3,10 @@ package CrawlData.CrawlNhanVat.CrawlAnhHung;
 import CrawlData.CrawlNhanVat.NhanVat;
 
 public class AnhHung extends NhanVat {
-    private String tuLieu;
-    private String tomTat;
-    private String queQuan;
+    private final String tuLieu;
+    private final String tomTat;
+    private final String queQuan;
 
-
-    public String getTen() {
-        return ten;
-    }
 
     public String gettuLieu() {
         return tuLieu;
@@ -26,7 +22,7 @@ public class AnhHung extends NhanVat {
 
 
     public AnhHung(String ten, String tuLieu, String queQuan, String tomTat) {
-        this.ten = ten;
+        super(ten);
         this.tuLieu = tuLieu;
         this.tomTat = tomTat;
         this.queQuan = queQuan;

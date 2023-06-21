@@ -33,6 +33,9 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
+//compileJava {
+//    doNotTrackState()
+//}
 test {
     useJUnitPlatform()
 }

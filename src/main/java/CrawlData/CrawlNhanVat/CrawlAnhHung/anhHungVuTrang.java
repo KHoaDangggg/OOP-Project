@@ -4,15 +4,12 @@ import CrawlData.CrawlNhanVat.NhanVat;
 
 public class anhHungVuTrang extends NhanVat {
 
-    private String namSinhNamMat;
-    private String danToc;
-    private String queQuan;
-    private String namPhong;
-    private String tieuSu;
+    private final String namSinhNamMat;
+    private final String danToc;
+    private final String queQuan;
+    private final String namPhong;
+    private final String tieuSu;
 
-    public String getTen() {
-        return ten;
-    }
 
     public String getNamSinhNamMat() {
         return namSinhNamMat;
@@ -35,7 +32,7 @@ public class anhHungVuTrang extends NhanVat {
     }
 
     public anhHungVuTrang(String ten, String namSinhNamMat, String danToc, String queQuan, String namPhong, String tieuSu) {
-        this.ten = ten;
+        super(ten);
         this.namSinhNamMat = namSinhNamMat;
         this.danToc = danToc;
         this.queQuan = queQuan;

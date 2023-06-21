@@ -108,8 +108,8 @@ public class Main1 {
         JSONArray jsonArray = new JSONArray();
         for (NhanVatLichSu nhanVat : nv) {
             JSONObject jsonObject = new JSONObject();
-            jsonObject.put("tên nhân vật", nhanVat.getTen());
-            jsonObject.put("miêu tả", nhanVat.getMieuTa());
+            jsonObject.put("ten", nhanVat.getTen());
+            jsonObject.put("mieuTa", nhanVat.getMieuTa());
             HashMap<String, String> ttcb = nhanVat.getThongTinCoBan();
             if(ttcb!=null){
                 for(String key: ttcb.keySet()) jsonObject.put(key, nhanVat.getThongTinCoBan().get(key));
@@ -120,7 +120,7 @@ public class Main1 {
         }
 
         try {
-            FileWriter file = new FileWriter("testing/src/NhanVatLichSu.json");
+            FileWriter file = new FileWriter("src/JSON_Data/NhanVatLichSu.json");
             file.write(jsonArray.toString(1));
             file.flush();
             file.close();

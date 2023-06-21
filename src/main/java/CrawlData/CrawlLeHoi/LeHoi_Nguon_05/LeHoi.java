@@ -1,26 +1,34 @@
 package CrawlData.CrawlLeHoi.LeHoi_Nguon_05;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class LeHoi {
     private String ten;
     private String diaDiem;
     private String thoiGian;
-    private ArrayList<String> anh;
+    private ArrayList<String> linkAnh;
     private String thongTinLeHoi;
 
     private final String linkLeHoi;
-
+    private HashMap<String, LeHoi> lienKetLeHoi = new HashMap<>();
     public String getLinkLeHoi() {
         return linkLeHoi;
     }
 
+    public void setLienKetLeHoi(HashMap<String, LeHoi> lienKetLeHoi) {
+        this.lienKetLeHoi = lienKetLeHoi;
+    }
+
+    public HashMap<String, LeHoi> getLienKetLeHoi() {
+        return lienKetLeHoi;
+    }
 
     public LeHoi(String ten, String diaDiem, String thoiGian, ArrayList<String> anh, String thongTinLeHoi, String linkLeHoi) {
         this.ten = ten;
         this.diaDiem = diaDiem;
         this.thoiGian = thoiGian;
-        this.anh = anh;
+        this.linkAnh = anh;
         this.thongTinLeHoi = thongTinLeHoi;
         this.linkLeHoi = linkLeHoi;
     }
@@ -49,12 +57,12 @@ public class LeHoi {
         this.thoiGian = thoiGian;
     }
 
-    public ArrayList<String> getAnh() {
-        return anh;
+    public ArrayList<String> getLinkAnh() {
+        return linkAnh;
     }
 
-    public void setAnh(ArrayList<String> anh) {
-        this.anh = anh;
+    public void setLinkAnh(ArrayList<String> linkAnh) {
+        this.linkAnh = linkAnh;
     }
 
     public String getThongTinLeHoi() {

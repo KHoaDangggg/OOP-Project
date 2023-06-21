@@ -33,7 +33,7 @@ public class crawl {
         Iterator<WebElement> iterator1 = titles.iterator();
         while (iterator1.hasNext()) {
             WebElement element = iterator1.next();
-            Boolean btag = element.getAttribute("innerHTML").contains("<b>");
+            boolean btag = element.getAttribute("innerHTML").contains("<b>");
             if(!btag) {
                 iterator1.remove();
                 continue;
@@ -52,6 +52,7 @@ public class crawl {
                     iterator.remove();
                 }
             } catch (NoSuchElementException e) {
+                e.printStackTrace();
             }
         }
         titles.remove(0);
@@ -78,7 +79,7 @@ public class crawl {
             String ten = text.substring(0, start).trim();
             //Set mota
             WebElement nextElement = title.findElement(By.xpath("following-sibling::p[1]"));
-            StringBuffer result = new StringBuffer();
+            StringBuilder result = new StringBuilder();
             ArrayList<String> kings = new ArrayList<>();
             while(true) {
                 if(titles.contains(nextElement) || nextElement == null) {
@@ -121,22 +122,21 @@ public class crawl {
         writeToJSON();
     }
 
-    static void crawlKinhDo() throws UnsupportedEncodingException {
+    static void crawlKinhDo() {
         WebElement div = crawlHTML("https://quynhluu2.edu.vn/Giao-vien/DANH-SACH-CAC-KINH-DO-THU-DO-CUA-VIET-NAM-765.html", 5, "tbody");
         List<WebElement> rows = div.findElements(By.tagName("tr"));
         rows.remove(0);
-        for(int i=0; i<rows.size(); i++) {
-            List<WebElement> fonts = rows.get(i).findElements(By.cssSelector("font"));
+        for (WebElement row : rows) {
+            List<WebElement> fonts = row.findElements(By.cssSelector("font"));
             String[] trieuDais = fonts.get(1).getAttribute("innerHTML").split("<br>");
             String[] time = fonts.get(2).getAttribute("innerHTML").split("<br>");
-            if(trieuDais.length >= 2 && time.length >=2 ) {
-                for(int j=0; j<trieuDais.length; j++) {
-                    KinhDo newKinhDo = new KinhDo(fonts.get(0).getText(), time[j],trieuDais[j]);
+            if (trieuDais.length >= 2 && time.length >= 2) {
+                for (int j = 0; j < trieuDais.length; j++) {
+                    KinhDo newKinhDo = new KinhDo(fonts.get(0).getText(), time[j], trieuDais[j]);
                     listKinhDo.add(newKinhDo);
                 }
-            }
-            else {
-                KinhDo newKinhDo = new KinhDo(fonts.get(0).getText(),fonts.get(2).getText().replaceAll("<br>", ""), fonts.get(1).getText());
+            } else {
+                KinhDo newKinhDo = new KinhDo(fonts.get(0).getText(), fonts.get(2).getText().replaceAll("<br>", ""), fonts.get(1).getText());
                 listKinhDo.add(newKinhDo);
             }
         }
@@ -210,10 +210,7 @@ public class crawl {
         if(nam[3] < 0 && nam[2] > 0) {
             nam[2] = -nam[2];
         }
-        if(nam[0] > nam[3] || nam[1] < nam[2]) {
-            return false;
-        }
-        return true;
+        return nam[0] <= nam[3] && nam[1] >= nam[2];
     }
 
     static void writeToJSON() {
