@@ -11,7 +11,8 @@ import CrawlData.CrawlNhanVat.trangnguyenbangnhan.src.DanhHieu;
 import CrawlData.CrawlNhanVat.vua.src.Vua;
 import CrawlData.CrawlSuKien.SuKienChienTranh;
 import CrawlData.CrawlTrieuDai.TrieuDai;
-import javafx.beans.value.ChangeListener;
+import CrawlData.Info;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -25,6 +26,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -33,24 +35,37 @@ import java.util.*;
 import static Controllers.Utils.removeVietnameseAccent;
 
 public class SearchSceneController implements Initializable {
+    public Button backBtn;
     @FXML
-    private ChoiceBox choiceBox;
+    private Label title;
     @FXML
     private TextField textField;
     private static ObservableList<SuKienChienTranh> suKienList = FXCollections.observableArrayList();
     private static ObservableList<DiTichLichSu> diTichList = FXCollections.observableArrayList();
     private static ObservableList<LeHoi> leHoiList = FXCollections.observableArrayList();
     private static ObservableList<NhanVat> nhanVatList = FXCollections.observableArrayList();
-    private final ObservableList<String> nameSelectedList = FXCollections.observableArrayList();
+    private final ObservableList<Info> nameSelectedList = FXCollections.observableArrayList();
     private static ObservableList<TrieuDai> trieuDaiList = FXCollections.observableArrayList();
     @FXML
     private Button exitBtn;
     @FXML
-    private ListView listView;
+    private ListView<Info> listView;
     @FXML
     private TextFlow textFlow;
     @FXML
     private ScrollPane imageContainer;
+
+    private Scene lastScene;
+
+    private Stage stage;
+
+    public void setLastScene(Scene lastScene) {
+        this.lastScene = lastScene;
+    }
+
+    public void setStage(Stage stage) {
+        this.stage = stage;
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -64,194 +79,159 @@ public class SearchSceneController implements Initializable {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                String field = (String) choiceBox.getValue();
+                String field = title.getText();
                 if (field.equals("Triều Đại")) {
-                    for (TrieuDai t : trieuDaiList) {
-                        nameSelectedList.add(t.getTen());
-                    }
+                    nameSelectedList.addAll(trieuDaiList);
                 }
                 if (field.equals("Di tích lịch sử")) {
-                    for (DiTichLichSu t : diTichList) {
-                        nameSelectedList.add(t.getTenDiTich());
-                    }
+                    nameSelectedList.addAll(diTichList);
                 }
                 if (field.equals("Lễ Hội")) {
-                    for (LeHoi t : leHoiList) {
-                        nameSelectedList.add(t.getTen());
-                    }
+                    nameSelectedList.addAll(leHoiList);
                 }
                 if (field.equals("Nhân Vật Lịch Sử")) {
-                    for (NhanVat n : nhanVatList) {
-                        nameSelectedList.add(n.getTen());
-                    }
+                    nameSelectedList.addAll(nhanVatList);
                 }
                 if (field.equals("Sự Kiện")) {
-                    for (SuKienChienTranh t : suKienList) {
-                        nameSelectedList.add(t.getTenSuKien());
-                    }
+                    nameSelectedList.addAll(suKienList);
                 }
-                textField.textProperty().addListener((obs, oldText, newText) -> {
-                    handleRenderListView();
+                //listView = new ListView<>(nameSelectedList);
+                listView.setItems(nameSelectedList);
+                //System.out.println(nameSelectedList);
+                listView.setCellFactory(param -> new ListCell<>() {
+                    @Override
+                    protected void updateItem(Info item, boolean empty) {
+                        super.updateItem(item, empty);
+                        if (empty || item == null || item.getTen() == null) {
+                            setText(null);
+                        } else {
+                            setText(item.getTen());
+                        }
+                    }
+
                 });
-                listView.getSelectionModel().selectedItemProperty().addListener((ChangeListener<String>) (observable, oldValue, newValue) -> {
-                    String selectedItem = (String) listView.getSelectionModel().getSelectedItem();
-                    handleRenderTextArea(selectedItem, field, textFlow);
+                textField.textProperty().addListener((obs, oldText, newText) -> handleRenderListView(newText));
+                listView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+                    Info selectedItem = listView.getSelectionModel().getSelectedItem();
+                    if(selectedItem!=null) handleRenderTextArea(selectedItem, field, textFlow, imageContainer);
                 });
             }
-        }, 100);
-    }
-    public void handleRenderListView() {
-        String searchString = textField.getText();
-        boolean found = false;
-        ObservableList<String> nameList = FXCollections.observableArrayList();
-        for(String str: nameSelectedList) {
-            if (removeVietnameseAccent(str).contains(removeVietnameseAccent(searchString))
-                    && !nameList.contains(str)) {
-                nameList.add(str);
-                found = true;
-            }
-        }
-        listView.setItems(null);
-        if (found) {
-            listView.setItems(nameList);
-        }
+        }, 1);
     }
 
-    public void handleRenderTextArea(String selectedItem, String field, TextFlow relative1) {
-        relative1.getChildren().clear();
+    public void handleRenderListView(String text) {
+        //listView.getSelectionModel().selectFirst();
+        Runnable runnable = () -> Platform.runLater(() -> {
+            ObservableList<Info> nameList = FXCollections.observableArrayList();
+            for (Info info : nameSelectedList) {
+                if (removeVietnameseAccent(info.getTen()).contains(removeVietnameseAccent(text)) && !nameList.contains(info.getTen())) {
+                    nameList.add(info);
+                }
+            }
+            if(!nameList.isEmpty()) listView.setItems(nameList);
+            else listView.setItems(null);
+        });
+        Thread thread = new Thread(runnable);
+        thread.start();
+
+    }
+
+    public void handleRenderTextArea(Info selectedItem, String field, TextFlow textFlow, ScrollPane imageContainer) {
+        textFlow.getChildren().clear();
         if (field.equals("Triều Đại")) {
-            handleRenderTrieuDai(selectedItem, relative1);
+            handleRenderTrieuDai(selectedItem, textFlow);
         }
         if (field.equals("Di tích lịch sử")) {
-            handleRenderDiTich(selectedItem, relative1);
+            handleRenderDiTich(selectedItem, textFlow);
         }
         if (field.equals("Lễ Hội")) {
-            handleRenderLeHoi(selectedItem, relative1);
+            handleRenderLeHoi(selectedItem, textFlow, imageContainer);
         }
         if (field.equals("Nhân Vật Lịch Sử")) {
-            handleRenderAnhHung(selectedItem, relative1);
+            handleRenderAnhHung(selectedItem, textFlow);
         }
         if (field.equals("Sự Kiện")) {
-            handleRenderSuKien(selectedItem, relative1);
+            handleRenderSuKien(selectedItem, textFlow);
         }
     }
 
-    public void handleRenderTrieuDai(String tenTrieuDai, TextFlow relative) {
-        TrieuDai selectedTrieuDai = null;
-        if (tenTrieuDai != null) {
-            for (TrieuDai t : trieuDaiList) {
-                if (removeVietnameseAccent(tenTrieuDai).equals(removeVietnameseAccent(t.getTen()))) {
-                    selectedTrieuDai = t;
-                }
-            }
-            StringBuffer vua = new StringBuffer();
-            ArrayList<String> vuas = selectedTrieuDai.getKings();
-            if (vuas.size() >= 0) {
-                for (int i = 0; i < vuas.size(); i++) {
-                    vua.append(vuas.get(i) + "\n");
-                }
-            }
-            relative.getChildren().add(new Text("Tên: " + selectedTrieuDai.getTen() + "\n" +
-                    "Năm bắt đầu - kết thúc: " + selectedTrieuDai.getNamBatDau() + " - " + selectedTrieuDai.getNamKetThuc() + "\n" +
-                    "Quốc hiệu: : " + selectedTrieuDai.getKinhDo() + "\n" +
-                    "Kinh đô: " + selectedTrieuDai.getKinhDo() + "\n" +
-                    "Vua: " + vua + "\n" +
-                    "Mô tả: : " + selectedTrieuDai.getMoTa() + "\n"));
-            relative.getChildren().add(new Text("Sự kiện liên quan: "));
-            for (String sk : selectedTrieuDai.getLienKetSuKien().keySet()) {
-                Hyperlink link = new Hyperlink(sk);
-                // Add the Text and Hyperlink nodes to the TextFlow node
-                relative.getChildren().addAll(link, new Text(", "));
-                link.setOnAction(e -> {
-                    handleLabel("Sự Kiện", sk, link);
-                });
-            }
-            relative.getChildren().add(new Text("\nVua liên quan: "));
-            for (String sk : selectedTrieuDai.getLienKetVua().keySet()) {
-                Hyperlink link = new Hyperlink(sk);
-                // Add the Text and Hyperlink nodes to the TextFlow node
-                relative.getChildren().addAll(link, new Text(", "));
-                link.setOnAction(e -> {
-                    handleLabel("Nhân Vật Lịch Sử", sk, link);
-                });
+    public void handleRenderTrieuDai(Info tenTrieuDai, TextFlow relative) {
+        TrieuDai selectedTrieuDai = (TrieuDai) tenTrieuDai;
+        StringBuilder vua = new StringBuilder();
+        ArrayList<String> vuas = selectedTrieuDai.getKings();
+        for (String s : vuas) {
+            vua.append(s).append("\n");
+        }
+        relative.getChildren().add(new Text("Tên: " + selectedTrieuDai.getTen() + "\n" +
+                "Năm bắt đầu - kết thúc: " + selectedTrieuDai.getNamBatDau() + " - " + selectedTrieuDai.getNamKetThuc() + "\n" +
+                "Quốc hiệu: : " + selectedTrieuDai.getKinhDo() + "\n" +
+                "Kinh đô: " + selectedTrieuDai.getKinhDo() + "\n" +
+                "Vua: " + vua + "\n" +
+                "Mô tả: : " + selectedTrieuDai.getMoTa() + "\n"));
+        relative.getChildren().add(new Text("Sự kiện liên quan: "));
+        for (String sk : selectedTrieuDai.getLienKetSuKien().keySet()) {
+            Hyperlink link = new Hyperlink(sk);
+            // Add the Text and Hyperlink nodes to the TextFlow node
+            relative.getChildren().addAll(link, new Text(", "));
+            link.setOnAction(e -> handleLabel("Sự Kiện", selectedTrieuDai.getLienKetSuKien().get(sk), sk, link, relative.getScene()));
+        }
+        relative.getChildren().add(new Text("\nVua liên quan: "));
+        for (String sk : selectedTrieuDai.getLienKetVua().keySet()) {
+            Hyperlink link = new Hyperlink(sk);
+            // Add the Text and Hyperlink nodes to the TextFlow node
+            relative.getChildren().addAll(link, new Text(", "));
+            link.setOnAction(e -> handleLabel("Nhân Vật Lịch Sử", selectedTrieuDai.getLienKetVua().get(sk), sk, link, relative.getScene()));
 
-            }
         }
     }
 
-    public void handleRenderSuKien(String tenSuKien, TextFlow relative1) {
-        SuKienChienTranh selectedSuKien = null;
-        if (tenSuKien != null) {
-            for (SuKienChienTranh t : suKienList) {
-                if (tenSuKien.equals(t.getTenSuKien())) {
-                    selectedSuKien = t;
-                }
-            }
-            relative1.getChildren().add(new Text("Tên sự kiện: " + selectedSuKien.getTenSuKien() + "\n" +
-                    "Thời gian: " + selectedSuKien.getThoiGian() + "\n" +
-                    "Địa điểm: " + selectedSuKien.getDiaDiem() + "\n" +
-                    "Nguyên nhân: " + selectedSuKien.getNguyenNhan() + "\n" +
-                    "Chỉ huy phe địch: " + selectedSuKien.getChiHuyPheDich() + "\n" +
-                    "Lực lượng phe địch: " + selectedSuKien.getLucLuongPheDich() + "\n" +
-                    "Phe địch: " + selectedSuKien.getPheDich() + "\n" +
-                    "Chỉ huy phe ta: " + selectedSuKien.getChiHuyPheTa() + "\n" +
-                    "Lực lượng phe ta: " + selectedSuKien.getLucLuongPheTa() + "\n" +
-                    "Phe ta: " + selectedSuKien.getPheTa() + "\n" +
-                    "Kết quả: " + selectedSuKien.getKetQua() + "\n" +
+    public void handleRenderSuKien(Info tenSuKien, TextFlow relative1) {
+        SuKienChienTranh selectedSuKien = (SuKienChienTranh) tenSuKien;
+        relative1.getChildren().add(new Text("Tên sự kiện: " + selectedSuKien.getTen() + "\n" +
+                "Thời gian: " + selectedSuKien.getThoiGian() + "\n" +
+                "Địa điểm: " + selectedSuKien.getDiaDiem() + "\n" +
+                "Nguyên nhân: " + selectedSuKien.getNguyenNhan() + "\n" +
+                "Chỉ huy phe địch: " + selectedSuKien.getChiHuyPheDich() + "\n" +
+                "Lực lượng phe địch: " + selectedSuKien.getLucLuongPheDich() + "\n" +
+                "Phe địch: " + selectedSuKien.getPheDich() + "\n" +
+                "Chỉ huy phe ta: " + selectedSuKien.getChiHuyPheTa() + "\n" +
+                "Lực lượng phe ta: " + selectedSuKien.getLucLuongPheTa() + "\n" +
+                "Phe ta: " + selectedSuKien.getPheTa() + "\n" +
+                "Kết quả: " + selectedSuKien.getKetQua() + "\n" +
                     "Tổn thất địch: " + selectedSuKien.getTonThatDich() + "\n" +
                     "Tổn thất ta: " + selectedSuKien.getTonThatTa()));
             relative1.getChildren().add(new Text("\nNhân vật liên quan: "));
             for (String nv : selectedSuKien.getLienKetNhanVat().keySet()) {
                 Hyperlink link = new Hyperlink(nv);
                 relative1.getChildren().addAll(link, new Text(", "));
-                link.setOnAction(e -> {
-                    handleLabel("Nhân Vật Lịch Sử", nv, link);
-                });
+                link.setOnAction(e -> handleLabel("Nhân Vật Lịch Sử", selectedSuKien.getLienKetNhanVat().get(nv), nv, link, relative1.getScene()));
             }
-            relative1.getChildren().add(new Text("\nTriều đại liên quan: "));
-            for (String td : selectedSuKien.getLienKetTrieuDai().keySet()) {
-                Hyperlink link = new Hyperlink(td);
-                link.setOnAction(e -> {
-                    handleLabel("Triều Đại", td, link);
-                });
-                relative1.getChildren().addAll(link, new Text(", "));
-            }
+        relative1.getChildren().add(new Text("\nTriều đại liên quan: "));
+        for (String td : selectedSuKien.getLienKetTrieuDai().keySet()) {
+            Hyperlink link = new Hyperlink(td);
+            link.setOnAction(e -> handleLabel("Triều Đại", selectedSuKien.getLienKetTrieuDai().get(td), td, link, relative1.getScene()));
+            relative1.getChildren().addAll(link, new Text(", "));
         }
     }
 
-    public void handleRenderDiTich(String tenDiTich, TextFlow relative) {
-        DiTichLichSu selectedDiTich = null;
-        if (tenDiTich != null) {
-            for (DiTichLichSu t : diTichList) {
-                if (tenDiTich.equals(t.getTenDiTich())) {
-                    selectedDiTich = t;
-                }
-            }
-        }
-        relative.getChildren().add(new Text("Tên di tích: " + selectedDiTich.getTenDiTich() + "\n" +
+    public void handleRenderDiTich(Info tenDiTich, TextFlow relative) {
+        DiTichLichSu selectedDiTich = (DiTichLichSu) tenDiTich;
+        relative.getChildren().add(new Text("Tên di tích: " + selectedDiTich.getTen() + "\n" +
                 "Loại di tích: " + selectedDiTich.getLoaiDiTich() + "\n" +
                 "Năm công nhận: " + selectedDiTich.getNamCongNhan() + "\n" +
                 "Địa điểm : " + selectedDiTich.getDiaDiem() + "\n" +
                 "Mô tả di tích: " + selectedDiTich.getMoTa() + "\n"));
     }
 
-    public void handleRenderLeHoi(String tenLeHoi, TextFlow relative) {
-        LeHoi selectedLeHoi = null;
-        if (tenLeHoi != null){
-            for(LeHoi l: leHoiList){
-                if(tenLeHoi.equals(l.getTen())) selectedLeHoi = l;
-            }
-        }
-            relative.getChildren().add(new Text("Lễ hội liên quan: "));
+    public void handleRenderLeHoi(Info tenLeHoi, TextFlow relative, ScrollPane imageContainer) {
+        LeHoi selectedLeHoi = (LeHoi) tenLeHoi;
+        relative.getChildren().add(new Text("Lễ hội liên quan: "));
         for (String sk : selectedLeHoi.getLienKetLeHoi().keySet()) {
             Hyperlink link = new Hyperlink(sk);
             // Add the Text and Hyperlink nodes to the TextFlow node
             relative.getChildren().addAll(link, new Text(", "));
-            link.setOnAction(e -> {
-                handleLabel("Lễ Hội", sk, link);
-            });
+            link.setOnAction(e -> handleLabel("Lễ Hội", selectedLeHoi.getLienKetLeHoi().get(sk), sk, link, relative.getScene()));
         }
-        if (selectedLeHoi == null) return;
         relative.getChildren().add(new Text("Tên lễ hội: " + selectedLeHoi.getTen() + "\n" +
                 "Địa điểm: " + selectedLeHoi.getDiaDiem() + "\n" +
                 "Thời gian: " + selectedLeHoi.getThoiGian() + "\n" +
@@ -260,28 +240,22 @@ public class SearchSceneController implements Initializable {
         imageBox.setSpacing(10);
 
         // Create a new ImageView object for each image and add it to the VBox
-        for (String link : selectedLeHoi.getLinkAnh()) {
-            ImageView imageView = new ImageView();
-            imageView.setImage(new Image(link));
-            imageView.setFitWidth(200);
-            imageView.setFitHeight(200);
-            imageView.setPreserveRatio(true);
-            imageBox.getChildren().add(imageView);
-        }
-
-        // Set the content of the ScrollPane to the VBox
-        imageContainer.setContent(imageBox);
+        Platform.runLater(() -> {
+            for (String link : selectedLeHoi.getLinkAnh()) {
+                ImageView imageView = new ImageView();
+                imageView.setImage(new Image(link));
+                imageView.setFitWidth(200);
+                imageView.setFitHeight(200);
+                imageView.setPreserveRatio(true);
+                imageBox.getChildren().add(imageView);
+            }
+            // Set the content of the ScrollPane to the VBox
+            imageContainer.setContent(imageBox);
+        });
     }
 
-    public void handleRenderAnhHung(String tenNhanVat, TextFlow relative) {
-        NhanVat selectedNhanVat = null;
-        if (tenNhanVat != null) {
-            for (NhanVat t : nhanVatList) {
-                if (tenNhanVat.equals(t.getTen())) {
-                    selectedNhanVat = t;
-                }
-            }
-        }
+    public void handleRenderAnhHung(Info tenNhanVat, TextFlow relative) {
+        NhanVat selectedNhanVat = (NhanVat) tenNhanVat;
         if (selectedNhanVat instanceof Vua) {
             relative.getChildren().add(new Text("Tên: " + selectedNhanVat.getTen() + "\n" +
                     "Tên húy: " + ((Vua) selectedNhanVat).getTen_huy() + "\n" +
@@ -316,15 +290,15 @@ public class SearchSceneController implements Initializable {
         if (selectedNhanVat instanceof NhanVatLichSu) {
             HashMap<String, String> thongTin = ((NhanVatLichSu) selectedNhanVat).getThongTin();
             HashMap<String, String> thongTinCoBan = ((NhanVatLichSu) selectedNhanVat).getThongTinCoBan();
-            StringBuffer t = new StringBuffer();
+            StringBuilder t = new StringBuilder();
             if (thongTin != null) {
                 for (Map.Entry<String, String> entry : thongTin.entrySet()) {
-                    t.append(entry.getKey() + ": " + entry.getValue() + "\n");
+                    t.append(entry.getKey()).append(": ").append(entry.getValue()).append("\n");
                 }
             }
             if (thongTinCoBan != null) {
                 for (Map.Entry<String, String> entry : thongTinCoBan.entrySet()) {
-                    t.append(entry.getKey() + ": " + entry.getValue() + "\n");
+                    t.append(entry.getKey()).append(": ").append(entry.getValue()).append("\n");
                 }
             }
             relative.getChildren().add(new Text("Tên: " + selectedNhanVat.getTen() + "\n" +
@@ -335,9 +309,7 @@ public class SearchSceneController implements Initializable {
                 Hyperlink link = new Hyperlink(sk);
                 // Add the Text and Hyperlink nodes to the TextFlow node
                 relative.getChildren().addAll(link, new Text(", "));
-                link.setOnAction(e -> {
-                    handleLabel("Sự Kiện", sk, link);
-                });
+                link.setOnAction(e -> handleLabel("Sự Kiện", selectedNhanVat.getLienKetSuKien().get(sk), sk, link, relative.getScene()));
 
             }
             relative.getChildren().add(new Text("Triều đại liên quan: "));
@@ -345,80 +317,69 @@ public class SearchSceneController implements Initializable {
                 Hyperlink link = new Hyperlink(sk);
                 // Add the Text and Hyperlink nodes to the TextFlow node
                 relative.getChildren().addAll(link, new Text(", "));
-                link.setOnAction(e -> {
-                    handleLabel("Triều Đại", sk, link);
-                });
+                link.setOnAction(e -> handleLabel("Triều Đại", selectedNhanVat.getLienKetTrieuDai().get(sk), sk, link, relative.getScene()));
 
             }
         }
     }
 
-    public void handleLabel(String field, String text, Hyperlink prelink) {
+    public void handleLabel(String field, Info info, String text, Hyperlink prelink, Scene currentScene) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/SearchScene.fxml"));
             Parent root = loader.load();
-            ChoiceBox<String> choiceBox1 = (ChoiceBox<String>) root.lookup("#choiceBox");
-            choiceBox1.setValue(field);
+            SearchSceneController controller = loader.getController();
+            controller.setStage(stage);
+            Label label = (Label) root.lookup("#title");
+            label.setText(field);
             TextField textField1 = (TextField) root.lookup("#textField");
             textField1.setText(text);
             Map<String, Object> namespace = loader.getNamespace();
             TextFlow textFlow1 = (TextFlow) namespace.get("textFlow");
-            handleRenderTextArea(text, field, textFlow1);
-            Button returnBtn = (Button) root.lookup("#backBtn");
-            returnBtn.setOnAction(event -> {
+            ScrollPane pane = (ScrollPane) namespace.get("imageContainer");
+            handleRenderTextArea(info, field, textFlow1, pane);
+            Button backBtn = (Button) root.lookup("#backBtn");
+            backBtn.setOnAction(event -> {
                 try {
-                    handleBackButton(returnBtn, (String) listView.getSelectionModel().getSelectedItem(), (String) choiceBox.getValue());
+                    handlePreviousButton(currentScene);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
             });
-            Scene currentScene = prelink.getScene();
-            currentScene.setRoot(root);
-            SearchSceneController controller = loader.getController();
-            controller.initialize(getClass().getResource("../fxml/SearchScene.fxml"), null);
+            Button returnBtn = (Button) root.lookup("#previous");
+            Scene scene = prelink.getScene();
+            returnBtn.setOnAction(event -> {
+                try {
+                    handlePreviousButton(scene);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            });
             Button exitBtn = (Button) root.lookup("#exitBtn");
             exitBtn.setOnAction(event -> {
                 try {
-                    handleExitButton(currentScene);
+                    handleExitButton();
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
             });
+            stage.setScene(new Scene(root));
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    private void handleBackButton(Button btn, String text, String field) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/SearchScene.fxml"));
-        Parent root = loader.load();
-        ChoiceBox<String> choiceBox = (ChoiceBox<String>) root.lookup("#choiceBox");
-        choiceBox.setValue(field);
-        TextField textField1 = (TextField) root.lookup(("#textField"));
-        textField1.setText(text);
-        Map<String, Object> namespace = loader.getNamespace();
-        TextFlow textFlow1 = (TextFlow) namespace.get("textFlow");
-        handleRenderTextArea(text, field, textFlow1);
-        Scene currentScene = btn.getScene();
-        currentScene.setRoot(root);
-        SearchSceneController controller = loader.getController();
-        controller.initialize(getClass().getResource("../fxml/SearchScene.fxml"), null);
+/*    private void handleBackButton(){
+        Info selectedItem = listView.getSelectionModel().getSelectedItem();
+        //title.setText(title.getText());
+        textField.setText(selectedItem.getTen());
+        handleRenderTextArea(selectedItem, title.getText(), textFlow, null);
+    }*/
 
-        Button exitBtn = (Button) root.lookup("#exitBtn");
-        exitBtn.setOnAction(event -> {
-            try {
-                handleExitButton(currentScene);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        });
+    private void handlePreviousButton(Scene baseScene) throws IOException {
+        stage.setScene(baseScene);
     }
 
-    public void handleExitButton(Scene currentScene) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/MainScene.fxml"));
-        Parent root = loader.load();
-        currentScene.setRoot(root);
-        MainSceneController controller = loader.getController();
-        controller.initialize(getClass().getResource("../fxml/MainScene.fxml"), null);
+    public void handleExitButton() throws IOException {
+        stage.setScene(lastScene);
     }
 }

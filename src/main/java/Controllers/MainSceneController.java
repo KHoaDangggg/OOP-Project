@@ -1,13 +1,15 @@
 package Controllers;
 
 import javafx.event.ActionEvent;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
+
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -35,21 +37,24 @@ public class MainSceneController implements Initializable {
     private Button btnExit;
 
     @FXML
+    private Button onlineSearchBtn;
+
+    @FXML
     private void handleButtonAction(ActionEvent event) {
         if (event.getSource() == btnDynasty) {
-            renderNewScence("Triều Đại");
+            renderNewScence1("Triều Đại");
         }
         if (event.getSource() == btnRelic) {
-            renderNewScence("Di tích lịch sử");
+            renderNewScence1("Di tích lịch sử");
         }
         if (event.getSource() == btnFestival) {
-            renderNewScence("Lễ Hội");
+            renderNewScence1("Lễ Hội");
         }
         if (event.getSource() == btnEvent) {
-            renderNewScence("Sự Kiện");
+            renderNewScence1("Sự Kiện");
         }
         if (event.getSource() == btnFigures) {
-            renderNewScence("Nhân Vật Lịch Sử");
+            renderNewScence1("Nhân Vật Lịch Sử");
         }
         if (event.getSource() == btnExit) {
             Stage stage = (Stage) btnExit.getScene().getWindow();
@@ -60,8 +65,8 @@ public class MainSceneController implements Initializable {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/SearchScene.fxml"));
             Parent root = loader.load();
-            ChoiceBox<String> choiceBox = (ChoiceBox<String>) root.lookup("#choiceBox");
-            choiceBox.setValue(buttonName);
+            Label label = (Label) root.lookup("#title");
+            label.setText(buttonName);
             Scene currentScene = btnDynasty.getScene();
             Button btn = (Button) root.lookup("#exitBtn");
             currentScene.setRoot(root);
@@ -83,6 +88,25 @@ public class MainSceneController implements Initializable {
         }
     }
 
+    private void renderNewScence1(String btnName){
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/SearchScene.fxml"));
+        Parent root;
+        try {
+            root = loader.load();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        Label label = (Label) root.lookup("#title");
+        label.setText(btnName);
+        Stage stage = (Stage) btnDynasty.getScene().getWindow();
+        SearchSceneController controller = loader.getController();
+        controller.setLastScene(btnDynasty.getScene());
+        controller.setStage(stage);
+        Button btn = (Button) root.lookup("#exitBtn");
+        btn.setOnAction(event -> stage.setScene(btnDynasty.getScene()));
+        stage.setScene(new Scene(root));
+    }
+
 //    private void renderNewScence(String buttonName) {
 //        try {
 //            FXMLLoader newLoader = new FXMLLoader(getClass().getResource("../fxml/SearchScene.fxml"));
@@ -100,9 +124,21 @@ public class MainSceneController implements Initializable {
 //        }
 //    }
 
-
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-
+    @FXML
+    private void onlineSearch(){
+        Stage stage = (Stage) btnDynasty.getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/Webview.fxml"));
+        WebViewController controller = new WebViewController();
+        controller.setLastScene(btnDynasty.getScene());
+        loader.setController(controller);
+        Parent root;
+        try {
+            root = loader.load();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        stage.setScene(new Scene(root));
     }
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {}
 }

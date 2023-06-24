@@ -1,7 +1,6 @@
 package Application;
 
 import Controllers.object_for_ui.GenerateUIObject;
-import Controllers.object_for_ui.JsonToObj;
 import CrawlData.CrawlDiTich.DiTichLichSu;
 import CrawlData.CrawlLeHoi.LeHoi_Nguon_05.LeHoi;
 import CrawlData.CrawlNhanVat.NhanVat;

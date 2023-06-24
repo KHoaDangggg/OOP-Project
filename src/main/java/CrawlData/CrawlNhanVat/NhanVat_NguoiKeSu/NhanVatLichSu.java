@@ -39,14 +39,8 @@ public class NhanVatLichSu extends NhanVat {
     public void setThongTin(HashMap<String, String> thongTin) {
         this.thongTin = thongTin;
     }
-
-    public NhanVatLichSu(String ten, HashMap<String, String> thongTinCoBan, String mieuTa, HashMap<String, String> thongTin) {
+    public NhanVatLichSu(String ten){
         super(ten);
-        this.thongTinCoBan = thongTinCoBan;
-        this.mieuTa = mieuTa;
-        this.thongTin = thongTin;
-    }
-    public NhanVatLichSu(){
 
     }
 }

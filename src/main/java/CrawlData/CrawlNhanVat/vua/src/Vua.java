@@ -4,7 +4,6 @@ import CrawlData.CrawlNhanVat.NhanVat;
 
 public class Vua extends NhanVat {
     private final String img;
-
     private final String mieu_hieu;
     private final String thuy_hieu;
     private final String nien_hieu;
@@ -32,9 +31,7 @@ public class Vua extends NhanVat {
 //    }
 
     public Vua(String img, String name, String mieu_hieu, String thuyhieu, String nienhieu, String tenhuy, String thethu, String start, String end) {
-        super();
-        String tenVua = clear(name);
-        super.ten = tenVua;
+        super(name);
         this.img = clearImg(img);
         this.mieu_hieu = clear(mieu_hieu);
         this.thuy_hieu = clear(thuyhieu);
@@ -100,10 +97,6 @@ public class Vua extends NhanVat {
 //    public void clearImg(String img){
 //
 //    }
-
-    public String getTen() {
-        return ten;
-    }
 
     public String getMieu_hieu() {
         return mieu_hieu;

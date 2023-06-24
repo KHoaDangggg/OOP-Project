@@ -1,16 +1,17 @@
 package CrawlData.CrawlTrieuDai;
 import CrawlData.CrawlNhanVat.vua.src.Vua;
 import CrawlData.CrawlSuKien.SuKienChienTranh;
+import CrawlData.Info;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 
-public class TrieuDai {
+public class TrieuDai extends Info {
+
     String moTa;
     String kinhDo;
     String quocHieu;
-    String ten;
     String namBatDau;
     String namKetThuc;
 
@@ -28,7 +29,7 @@ public class TrieuDai {
     }
 
     public TrieuDai(String ten, String batDau, String ketThuc, String moTa, ArrayList<String> kings) {
-        this.ten = ten;
+        super(ten);
         this.namBatDau = batDau;
         this.namKetThuc = ketThuc;
         this.moTa = moTa;
@@ -39,9 +40,6 @@ public class TrieuDai {
         return quocHieu;
     }
 
-    public String getTen() {
-        return ten;
-    }
 
     public String getKinhDo() {
         return kinhDo;

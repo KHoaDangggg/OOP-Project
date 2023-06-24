@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 
+@SuppressWarnings("ALL")
 public class crawlChienTranh {
     public static void main(String[] args) throws IOException {
         //Get links in the first page
@@ -77,11 +78,11 @@ public class crawlChienTranh {
                     }
                 }
             }
-            SuKienChienTranh obj = new SuKienChienTranh();
+            SuKienChienTranh obj = new SuKienChienTranh(null);
             obj.createObject();
             for (int j = 0; j < data.size(); j++) {
                 if (j == 0) {
-                    obj.setTenSuKien(data.get(j));
+                    obj.setTen(data.get(j));
                 }
                 if (data.get(j).equals("Thời gian")) {
                     obj.setThoiGian(data.get(j + 1));
@@ -114,7 +115,7 @@ public class crawlChienTranh {
                 obj.setNameRelativePerson(nhanVatLienQuan);
                 obj.setNameRelativeDinasty(trieuDaiLienQuan);
             }
-            if (obj.getTenSuKien() != null) {
+            if (obj.getTen() != null) {
                 list_events.add(obj);
             }
         }
@@ -129,7 +130,7 @@ public class crawlChienTranh {
        JSONArray jsonArray = new JSONArray();
         for(SuKienChienTranh event: list_events){
             JSONObject eventJson = new JSONObject();
-            eventJson.put("tenSuKien",event.getTenSuKien());
+            eventJson.put("tenSuKien",event.getTen());
             eventJson.put("thoiGian",event.getThoiGian());
             eventJson.put("diaDiem",event.getDiaDiem());
             eventJson.put("nguyenNhan",event.getNguyenNhan());

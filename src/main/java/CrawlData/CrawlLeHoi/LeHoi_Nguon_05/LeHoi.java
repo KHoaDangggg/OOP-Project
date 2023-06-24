@@ -1,12 +1,18 @@
 package CrawlData.CrawlLeHoi.LeHoi_Nguon_05;
 
+import CrawlData.Info;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class LeHoi {
-    private String ten;
+public class LeHoi extends Info {
     private String diaDiem;
     private String thoiGian;
+
+    @Override
+    public void setTen(String tenSuKien) {
+        this.ten = tenSuKien;
+    }
     private ArrayList<String> linkAnh;
     private String thongTinLeHoi;
 
@@ -25,20 +31,12 @@ public class LeHoi {
     }
 
     public LeHoi(String ten, String diaDiem, String thoiGian, ArrayList<String> anh, String thongTinLeHoi, String linkLeHoi) {
-        this.ten = ten;
+        super(ten);
         this.diaDiem = diaDiem;
         this.thoiGian = thoiGian;
         this.linkAnh = anh;
         this.thongTinLeHoi = thongTinLeHoi;
         this.linkLeHoi = linkLeHoi;
-    }
-
-    public String getTen() {
-        return ten;
-    }
-
-    public void setTen(String ten) {
-        this.ten = ten;
     }
 
     public String getDiaDiem() {

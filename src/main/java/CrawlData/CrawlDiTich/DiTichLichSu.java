@@ -1,14 +1,27 @@
 package CrawlData.CrawlDiTich;
 
-public class DiTichLichSu {
-    private  String tenDiTich;
+import CrawlData.Info;
+
+public class DiTichLichSu extends Info {
     private  String loaiDiTich;
     private  String diaDiem;
     private  String namCongNhan;
     private  String moTa;
 
-    public void setTenDiTich(String tenDiTich) {
-        this.tenDiTich = tenDiTich;
+    private String ten;
+
+    @Override
+    public String getTen() {
+        return ten;
+    }
+
+    @Override
+    public void setTen(String tenSuKien) {
+        this.ten = tenSuKien;
+    }
+
+    public DiTichLichSu(String ten) {
+        super(ten);
     }
 
     public void setLoaiDiTich(String loaiDiTich) {
@@ -25,10 +38,6 @@ public class DiTichLichSu {
 
     public void setMoTa(String moTa) {
         this.moTa = moTa;
-    }
-
-    public String getTenDiTich() {
-        return tenDiTich;
     }
 
     public String getLoaiDiTich() {

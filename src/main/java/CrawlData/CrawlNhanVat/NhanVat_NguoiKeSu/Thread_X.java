@@ -30,7 +30,7 @@ public class Thread_X implements Runnable{
             throw new RuntimeException(e);
         }
         //Create a nhanVatLichSu object
-        NhanVatLichSu nv = new NhanVatLichSu();
+        NhanVatLichSu nv = new NhanVatLichSu(null);
 
         Element content = doc.getElementsByClass("com-content-article__body").first();
         Element infoBox = content != null ? content.getElementsByClass("infobox").first() : null;

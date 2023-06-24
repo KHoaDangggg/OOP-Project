@@ -61,7 +61,7 @@ public class LinkingObject implements LinkInterface {
             int i = 0;
             while (i < listSuKien.size()) {
                 if (listSuKien.get(i).getNameRelativePerson().contains(nhanVat.getTen())) {
-                    lienKetSuKien.putIfAbsent(listSuKien.get(i).getTenSuKien(), listSuKien.get(i));
+                    lienKetSuKien.putIfAbsent(listSuKien.get(i).getTen(), listSuKien.get(i));
                 }
                 i++;
             }
@@ -133,7 +133,7 @@ public class LinkingObject implements LinkInterface {
             while (i < listSuKien.size()) {
                 for (String str : listSuKien.get(i).getNameRelativeDinasty()) {
                     if (trieuDai.getTen().equalsIgnoreCase(str.toLowerCase()) || trieuDai.getTen().toLowerCase().contains(str.toLowerCase()) || str.toLowerCase().contains(trieuDai.getTen().toLowerCase())) {
-                        lienKetSuKien.putIfAbsent(listSuKien.get(i).getTenSuKien(), listSuKien.get(i));
+                        lienKetSuKien.putIfAbsent(listSuKien.get(i).getTen(), listSuKien.get(i));
                     }
                 }
                 i++;

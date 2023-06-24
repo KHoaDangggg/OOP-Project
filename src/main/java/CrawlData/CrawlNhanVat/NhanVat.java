@@ -2,26 +2,13 @@ package CrawlData.CrawlNhanVat;
 
 import CrawlData.CrawlSuKien.SuKienChienTranh;
 import CrawlData.CrawlTrieuDai.TrieuDai;
+import CrawlData.Info;
 
 import java.util.HashMap;
 
-public abstract class NhanVat {
-    protected String ten;
-
-    public String getTen() {
-        return ten;
-    }
-
-    public void setTen(String ten) {
-        this.ten = ten;
-    }
-
-    public NhanVat(){
-
-    }
-
+public abstract class NhanVat extends Info {
     public NhanVat(String ten) {
-        this.ten = ten;
+        super(ten);
     }
 
     public HashMap<String, SuKienChienTranh> lienKetSuKien = new HashMap<>();

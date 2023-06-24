@@ -1,6 +1,5 @@
 package CrawlData.CrawlLeHoi.LeHoi_Nguon_05;
 
-import CrawlData.CrawlLeHoi.LeHoi_Nguon_05.CrawlLeHoiNguon05;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;

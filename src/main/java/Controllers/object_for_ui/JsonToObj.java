@@ -25,6 +25,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+@SuppressWarnings("ALL")
 public class JsonToObj {
 
     public static ArrayList<SuKienChienTranh> listSuKien = new ArrayList<>();
@@ -40,37 +41,44 @@ public class JsonToObj {
 
     public void generate() {
         //Get su kien
-        JsonToObj1("src/JSON_Data/ChienTranh.json", listSuKien);
+        JsonToObj1(listSuKien);
         //Get trieu dai
-        JsonToObj2("src/JSON_Data/trieuDai.json", listTrieuDai);
+        JsonToObj2(listTrieuDai);
         //Get Vua
-        JsonToObj3("src/JSON_Data/Vua.json", listVua);
+        JsonToObj3(listVua);
         //Get nhan vat lich su
-        JsonToObj5("src/JSON_Data/NhanVatLichSu.json", listNhanVat);
+        JsonToObj5(listNhanVat);
         //Get Le hoi
-        JsonToObj4("src/JSON_Data/LeHoi_Nguon_05.json", listLeHoi);
+        JsonToObj4(listLeHoi);
 
         //Get Di tich lich su
         //JsonToObj6("src/JSON_Data/DiTichLichSu.json", listDiTich);
 
         //Get danh nhan, trang nguyen, anh hung vu trang
-        JsonToObj7("src/JSON_Data/danhNhanThoiDinh.json",
-                "src/JSON_Data/TrangNguyen&BangNhan.json",
-                "src/JSON_Data/vuTrang.json");
+        JsonToObj7(
+        );
         //Clean and merge nhanvatlichsu
         cleanNhanVat();
+
+        //Clean all
+        listNhanVat = removeDuplicates(listNhanVat);
+        listLeHoi = removeDuplicates(listLeHoi);
+        listDiTich = removeDuplicates(listDiTich);
+        listSuKien = removeDuplicates(listSuKien);
+        listTrieuDai = removeDuplicates(listTrieuDai);
+        System.out.println("Clean all list successfully");
     }
 
-    public void cleanNhanVat(){
+    private void cleanNhanVat() {
         ArrayList<NhanVat> nhanVats = new ArrayList<>();
         nhanVats.addAll(listDanhNhan);
         nhanVats.addAll(listTrangNguyenBangNhan);
         nhanVats.addAll(listAnhHungVuTrang);
 
         ArrayList<NhanVat> temp = new ArrayList<>();
-        for(NhanVat nv: nhanVats){
-            for(NhanVat n: listNhanVat){
-                if(!nv.getTen().equals(n.getTen())){
+        for (NhanVat nv : nhanVats) {
+            for (NhanVat n : listNhanVat) {
+                if (!nv.getTen().equals(n.getTen())) {
                     temp.add(nv);
                     //System.out.println(n.getTen());
                 }
@@ -80,8 +88,23 @@ public class JsonToObj {
         System.out.println("Clean successfully");
     }
 
+    private static <T> ArrayList<T> removeDuplicates(ArrayList<T> list) {
+        // Create a new ArrayList
+        ArrayList<T> newList = new ArrayList<T>();
+        // Traverse through the first list
+        for (T element : list) {
+            // If this element is not present in newList
+            // then add it
+            if (!newList.contains(element)) {
+                newList.add(element);
+            }
+        }
+        // return the new list
+        return newList;
+    }
 
-    public FileReader reader(String path) {
+
+    private FileReader reader(String path) {
         FileReader fileReader;
         try {
             fileReader = new FileReader(path);
@@ -102,9 +125,9 @@ public class JsonToObj {
         System.out.println("Convert to obj successful!");
     }*/
 
-    public void JsonToObj1(String path, ArrayList<SuKienChienTranh> list) {
+    private void JsonToObj1(ArrayList<SuKienChienTranh> list) {
         Gson gson = new Gson();
-        FileReader fileReader = reader(path);
+        FileReader fileReader = reader("src/JSON_Data/ChienTranh.json");
         Type objectType = new TypeToken<ArrayList<SuKienChienTranh>>() {
         }.getType();
         ArrayList<SuKienChienTranh> convertedList = gson.fromJson(fileReader, objectType);
@@ -112,9 +135,9 @@ public class JsonToObj {
         System.out.println("Convert to obj successful!");
     }
 
-    public void JsonToObj2(String path, ArrayList<TrieuDai> list) {
+    private void JsonToObj2(ArrayList<TrieuDai> list) {
         Gson gson = new Gson();
-        FileReader fileReader = reader(path);
+        FileReader fileReader = reader("src/JSON_Data/trieuDai.json");
         Type objectType = new TypeToken<ArrayList<TrieuDai>>() {
         }.getType();
         ArrayList<TrieuDai> convertedList = gson.fromJson(fileReader, objectType);
@@ -122,9 +145,9 @@ public class JsonToObj {
         System.out.println("Convert to obj successful!");
     }
 
-    public void JsonToObj3(String path, ArrayList<Vua> list) {
+    private void JsonToObj3(ArrayList<Vua> list) {
         Gson gson = new Gson();
-        FileReader fileReader = reader(path);
+        FileReader fileReader = reader("src/JSON_Data/Vua.json");
         Type objectType = new TypeToken<ArrayList<Vua>>() {
         }.getType();
         ArrayList<Vua> convertedList = gson.fromJson(fileReader, objectType);
@@ -132,9 +155,9 @@ public class JsonToObj {
         System.out.println("Convert to obj successful!");
     }
 
-    public void JsonToObj4(String path, ArrayList<LeHoi> list) {
+    private void JsonToObj4(ArrayList<LeHoi> list) {
         Gson gson = new Gson();
-        FileReader fileReader = reader(path);
+        FileReader fileReader = reader("src/JSON_Data/LeHoi_Nguon_05.json");
         Type objectType = new TypeToken<ArrayList<LeHoi>>() {
         }.getType();
         ArrayList<LeHoi> convertedList = gson.fromJson(fileReader, objectType);
@@ -142,16 +165,16 @@ public class JsonToObj {
         System.out.println("Convert to obj successful!");
     }
 
-    public void JsonToObj5(String path, ArrayList<NhanVat> list) {
+    private void JsonToObj5(ArrayList<NhanVat> list) {
         String input;
         try {
-            input = Files.readString(Path.of(path), StandardCharsets.UTF_8);
+            input = Files.readString(Path.of("src/JSON_Data/NhanVatLichSu.json"), StandardCharsets.UTF_8);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
         ArrayList<JSONObject> objects = new ArrayList<>();
         JSONArray array = new JSONArray(input);
-        for(int i = 0; i<array.length(); i++) objects.add(array.getJSONObject(i));
+        for (int i = 0; i < array.length(); i++) objects.add(array.getJSONObject(i));
 
         for (JSONObject obj : objects) {
             HashMap<String, String> thongTin = new HashMap<>();
@@ -165,7 +188,7 @@ public class JsonToObj {
         }
     }
 
-    public void JsonToObj6(String path, ArrayList<DiTichLichSu> list) {
+    private void JsonToObj6(String path, ArrayList<DiTichLichSu> list) {
         Gson gson = new Gson();
         FileReader fileReader = reader(path);
         Type objectType = new TypeToken<ArrayList<DiTichLichSu>>() {
@@ -175,21 +198,21 @@ public class JsonToObj {
         System.out.println("Convert to obj successful!");
     }
 
-    public void JsonToObj7(String pathDanhNhan, String pathTNBN, String pathAHVT){
+    private void JsonToObj7() {
         Gson gson = new Gson();
-        FileReader fileReader = reader(pathDanhNhan);
+        FileReader fileReader = reader("src/JSON_Data/danhNhanThoiDinh.json");
         Type objectType = new TypeToken<ArrayList<DanhNhan>>() {
         }.getType();
         ArrayList<DanhNhan> convertedList = gson.fromJson(fileReader, objectType);
         listDanhNhan.addAll(convertedList);
 
-        fileReader = reader(pathTNBN);
+        fileReader = reader("src/JSON_Data/TrangNguyen&BangNhan.json");
         objectType = new TypeToken<ArrayList<DanhHieu>>() {
         }.getType();
         ArrayList<DanhHieu> convertedList1 = gson.fromJson(fileReader, objectType);
         listTrangNguyenBangNhan.addAll(convertedList1);
 
-        fileReader = reader(pathAHVT);
+        fileReader = reader("src/JSON_Data/vuTrang.json");
         objectType = new TypeToken<ArrayList<anhHungVuTrang>>() {
         }.getType();
         ArrayList<anhHungVuTrang> convertedList2 = gson.fromJson(fileReader, objectType);

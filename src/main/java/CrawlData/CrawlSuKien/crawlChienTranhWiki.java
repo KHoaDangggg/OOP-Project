@@ -13,6 +13,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 
+@SuppressWarnings("ALL")
 public class crawlChienTranhWiki {
     public static void main(String[] args) throws IOException {
 
@@ -56,10 +57,10 @@ public class crawlChienTranhWiki {
 
         ArrayList<SuKienChienTranh> chienTranhVN =new ArrayList<>();
         for(int i=0;i < events.size();i++){
-            SuKienChienTranh chienTranh = new SuKienChienTranh();
+            SuKienChienTranh chienTranh = new SuKienChienTranh(null);
             chienTranh.createObject();
             String time = thoiGianDienRa(events.get(i).get(0));
-            chienTranh.setTenSuKien(events.get(i).get(0));
+            chienTranh.setTen(events.get(i).get(0));
             chienTranh.setThoiGian(time);
             chienTranh.setPheTa(events.get(i).get(1).replaceAll("\"",""));
             chienTranh.setPheDich(events.get(i).get(2));
@@ -73,7 +74,7 @@ public class crawlChienTranhWiki {
         JSONArray jsonArray = new JSONArray();
         for(SuKienChienTranh event: chienTranhVN){
             JSONObject eventJson = new JSONObject();
-            eventJson.put("tenSuKien",event.getTenSuKien());
+            eventJson.put("tenSuKien",event.getTen());
             eventJson.put("thoiGian",event.getThoiGian());
             eventJson.put("diaDiem",event.getDiaDiem());
             eventJson.put("nguyenNhan",event.getNguyenNhan());

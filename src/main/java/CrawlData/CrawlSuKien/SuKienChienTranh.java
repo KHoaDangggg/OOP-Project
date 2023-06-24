@@ -2,12 +2,24 @@ package CrawlData.CrawlSuKien;
 
 import CrawlData.CrawlNhanVat.NhanVat;
 import CrawlData.CrawlTrieuDai.TrieuDai;
+import CrawlData.Info;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
 
-public class SuKienChienTranh {
+public class SuKienChienTranh extends Info {
     private String tenSuKien;
+    @Override
+    public String getTen() {
+        return tenSuKien;
+    }
+
+    @Override
+    public void setTen(String tenSuKien) {
+        this.tenSuKien = tenSuKien;
+        this.ten = tenSuKien;
+    }
     private String thoiGian;
     private String diaDiem;
     private String ketQua;
@@ -24,8 +36,9 @@ public class SuKienChienTranh {
     private ArrayList<String> nameRelativeDinasty = new ArrayList<>();
     private HashMap<String, NhanVat> lienKetNhanVat = new HashMap<>();
     private HashMap<String, TrieuDai>lienKetTrieuDai = new HashMap<>();
-    public void setTenSuKien(String tenSuKien) {
-        this.tenSuKien = tenSuKien;
+
+    public SuKienChienTranh(String ten) {
+        super(ten);
     }
 
     public void setDiaDiem(String diaDiem) {
@@ -90,10 +103,6 @@ public class SuKienChienTranh {
 
     public void setLienKetTrieuDai(HashMap<String, TrieuDai> lienKetTrieuDai) {
         this.lienKetTrieuDai = lienKetTrieuDai;
-    }
-
-    public String getTenSuKien() {
-        return tenSuKien;
     }
 
     public String getThoiGian() {
@@ -168,7 +177,7 @@ public class SuKienChienTranh {
 
 
     public String toString(){
-        return "\n{\"tenSuKien\": "+"\""+tenSuKien+"\",\n"+
+        return "\n{\"tenSuKien\": "+"\""+ tenSuKien +"\",\n"+
                 "\"thoiGian\": "+"\""+thoiGian+"\",\n"+
                 "\"diaDiem\": "+"\""+diaDiem+"\",\n"+
                 "\"nguyenNhan\": "+"\""+nguyenNhan+"\",\n"+
