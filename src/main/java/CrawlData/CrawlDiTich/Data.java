@@ -22,7 +22,7 @@ public class Data {
             Elements tables = document.select("table.wikitable");
             ArrayList<String[]> heritageList = new ArrayList<>();
 
-            int i = 0;
+            //int i = 0;
             for (Element table : tables) {
                 // Extract the rows from the table
                 Elements rows = table.select("tr");
@@ -65,7 +65,7 @@ public class Data {
                         heritage[3] = year;
                         heritage[4] = description;
                         heritageList.add(heritage);
-                        i++;
+                        //i++;
                     }
                 }
             }
@@ -88,7 +88,7 @@ public class Data {
                 JSONArray jsonArray = new JSONArray();
                 for (String[] heritage : heritageList) {
                     JSONObject jsonObject = new JSONObject();
-                    jsonObject.put("tenDiTich", heritage[0]);
+                    jsonObject.put("ten", heritage[0]);
                     jsonObject.put("diaDiem", heritage[1]);
                     jsonObject.put("loaiDiTich", heritage[2]);
                     jsonObject.put("namCongNhan", heritage[3]);

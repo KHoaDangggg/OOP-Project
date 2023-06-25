@@ -1,19 +1,15 @@
 package Controllers.object_for_ui;
 
 
-import CrawlData.CrawlSuKien.SuKienChienTranh;
-import CrawlData.CrawlTrieuDai.TrieuDai;
+import CrawlData.CrawlDiTich.DiTichLichSu;
 
 public class test {
     public static void main(String[] args) {
         GenerateUIObject.gen();
-       for(TrieuDai t: GenerateUIObject.listTrieuDai){
-            System.out.println(t.getLienKetVua().keySet());
-            System.out.println(t.getLienKetVua().size());
+       for(DiTichLichSu t: GenerateUIObject.listDiTich){
+            System.out.println(t.getTen());
+            System.out.println(t.getDiaDiem());
         }
-       for(SuKienChienTranh suKienChienTranh: GenerateUIObject.listSuKien){
-           System.out.println(suKienChienTranh.getLienKetNhanVat());
-           System.out.println(suKienChienTranh.getLienKetNhanVat().size());
-       }
+        System.out.println(GenerateUIObject.listDiTich.size());
     }
 }

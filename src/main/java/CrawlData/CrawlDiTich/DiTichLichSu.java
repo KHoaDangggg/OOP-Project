@@ -8,18 +8,6 @@ public class DiTichLichSu extends Info {
     private  String namCongNhan;
     private  String moTa;
 
-    private String ten;
-
-    @Override
-    public String getTen() {
-        return ten;
-    }
-
-    @Override
-    public void setTen(String tenSuKien) {
-        this.ten = tenSuKien;
-    }
-
     public DiTichLichSu(String ten) {
         super(ten);
     }

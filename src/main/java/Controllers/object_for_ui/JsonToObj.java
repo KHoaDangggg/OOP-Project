@@ -52,7 +52,7 @@ public class JsonToObj {
         JsonToObj4(listLeHoi);
 
         //Get Di tich lich su
-        //JsonToObj6("src/JSON_Data/DiTichLichSu.json", listDiTich);
+        JsonToObj6("src/JSON_Data/DiTichLichSu.json", listDiTich);
 
         //Get danh nhan, trang nguyen, anh hung vu trang
         JsonToObj7(
@@ -194,7 +194,7 @@ public class JsonToObj {
         Type objectType = new TypeToken<ArrayList<DiTichLichSu>>() {
         }.getType();
         ArrayList<DiTichLichSu> convertedList = gson.fromJson(fileReader, objectType);
-        list.addAll(convertedList);
+        listDiTich.addAll(convertedList);
         System.out.println("Convert to obj successful!");
     }
 
