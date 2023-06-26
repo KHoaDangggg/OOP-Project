@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9dfc3bd-df16-4e9c-b19f-4053ba0395e1" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/src/JSON_Data/ChienTranh.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_06_2023_9_01_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_06_2023_9_01_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON_Data/DiTichLichSu.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/DiTichLichSu.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON_Data/vuTrang.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/vuTrang.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Application/ReadJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/ReadJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/GenerateUIObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/GenerateUIObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/JsonToObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/JsonToObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/LinkInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/LinkInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/LinkingObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/LinkingObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlDiTich/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlDiTich/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/CrawlAnhHung/AnhHung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/CrawlAnhHung/DanhNhan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/CrawlAnhHung/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/CrawlAnhHung/Main1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat_NguoiKeSu/NhanVatLichSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat_NguoiKeSu/NhanVatLichSu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlSuKien/SuKienChienTranh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlSuKien/SuKienChienTranh.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +26,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="web_Scrapper" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -53,24 +46,42 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2RYOEE9OkZ5mWjRBZEgH2tz6fBR" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "last_opened_file_path": "C:/Users/D/Documents/GitHub/OOP-Project/src/JSON_Data",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/OOP-Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\D\Documents\GitHub\OOP-Project\src\JSON_Data" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager">
     <configuration name="Data" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CrawlData.CrawlDiTich.Data" />
       <module name="web_Scrapper.main" />
@@ -103,17 +114,35 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
         <item itemvalue="Application.Data" />
+        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9dfc3bd-df16-4e9c-b19f-4053ba0395e1" name="Changes" comment="Update" />
+      <created>1687423434494</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687423434494</updated>
+    </task>
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update" />
     <option name="LAST_COMMIT_MESSAGE" value="Update" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/web_Scrapper$Main.ic" NAME="Main Coverage Results" MODIFIED="1683567461175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

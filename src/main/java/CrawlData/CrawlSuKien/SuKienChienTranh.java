@@ -180,6 +180,6 @@ public class SuKienChienTranh {
                 "\"tonThatPheDich\": "+"\""+tonThatDich+"\",\n"+
                 "\"ketQua\": "+"\""+ketQua+"\",\n"+
                 "\"nhanVatLienQuan\": "+"\""+nameRelativePerson+"\",\n"+
-                "\"diaDiemLienQuan\": "+"\""+nameRelativeDinasty+"\"\n}";
+                "\"trieuDaiLienQuan\": "+"\""+nameRelativeDinasty+"\"\n}";
     }
 }
