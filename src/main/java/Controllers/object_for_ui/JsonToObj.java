@@ -36,7 +36,7 @@ public class JsonToObj {
     public static ArrayList<DanhNhan> listDanhNhan = new ArrayList<>();
     public static ArrayList<DanhHieu> listTrangNguyenBangNhan = new ArrayList<>();
     public static ArrayList<anhHungVuTrang> listAnhHungVuTrang = new ArrayList<>();
-
+    public static ArrayList<SuKienChienTranh> listEvents = new ArrayList<>();
 
     public void generate() {
         //Get su kien
@@ -59,6 +59,8 @@ public class JsonToObj {
                 "src/JSON_Data/vuTrang.json");
         //Clean and merge nhanvatlichsu
         cleanNhanVat();
+        JsonToObj8("src/JSON_Data/SuKien.json",listEvents);
+        cleanSuKien();
     }
 
     public void cleanNhanVat(){
@@ -78,6 +80,23 @@ public class JsonToObj {
         }
         listNhanVat.addAll(temp);
         System.out.println("Clean successfully");
+    }
+
+    public void cleanSuKien(){
+        ArrayList<SuKienChienTranh> tongHopSuKien = new ArrayList<>();
+
+        ArrayList<SuKienChienTranh> temp = new ArrayList<>();
+        for(SuKienChienTranh suKien: listEvents){
+            int count = 0;
+            for(SuKienChienTranh sk: listSuKien){
+                if(suKien.getTenSuKien().equalsIgnoreCase(sk.getTenSuKien())||sk.getTenSuKien().contains(suKien.getTenSuKien())){
+                    count ++;
+                }
+            }
+            if(count == 0) temp.add(suKien);
+        }
+        listSuKien.addAll(temp);
+        System.out.println("Clean succcessfully");
     }
 
 
@@ -196,6 +215,14 @@ public class JsonToObj {
         listAnhHungVuTrang.addAll(convertedList2);
         System.out.println("Convert to obj successful!");
     }
+    public void JsonToObj8(String path, ArrayList<SuKienChienTranh>list){
+        Gson  gson = new Gson();
+        FileReader fileReader = reader(path);
+        Type objectType = new TypeToken<ArrayList<SuKienChienTranh>>(){}.getType();
+        ArrayList<SuKienChienTranh> convertList = gson.fromJson(fileReader,objectType);
+        list.addAll(convertList);
+        System.out.println("Convert to obj successfull");
 
+    }
 
 }
