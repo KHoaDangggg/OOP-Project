@@ -59,6 +59,7 @@ public class MainSceneController implements Initializable {
         if (event.getSource() == btnExit) {
             Stage stage = (Stage) btnExit.getScene().getWindow();
             stage.close();
+
         }
     }
     private void renderNewScence(String buttonName) {

@@ -4,6 +4,7 @@ import CrawlData.CrawlDiTich.DiTichLichSu;
 import CrawlData.CrawlLeHoi.LeHoi_Nguon_05.LeHoi;
 import CrawlData.CrawlNhanVat.CrawlAnhHung.DanhNhan;
 import CrawlData.CrawlNhanVat.CrawlAnhHung.anhHungVuTrang;
+import CrawlData.CrawlNhanVat.NhaVat_VanSu.NhanVatVanSu;
 import CrawlData.CrawlNhanVat.NhanVat;
 import CrawlData.CrawlNhanVat.NhanVat_NguoiKeSu.NhanVatLichSu;
 import CrawlData.CrawlNhanVat.trangnguyenbangnhan.src.DanhHieu;
@@ -24,6 +25,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 @SuppressWarnings("ALL")
 public class JsonToObj {
@@ -32,6 +34,7 @@ public class JsonToObj {
     public static ArrayList<TrieuDai> listTrieuDai = new ArrayList<>();
     public static ArrayList<Vua> listVua = new ArrayList<>();
     public static ArrayList<NhanVat> listNhanVat = new ArrayList<>();
+    public static ArrayList<NhanVatVanSu> listNhanVatVanSu = new ArrayList<>();
     public static ArrayList<LeHoi> listLeHoi = new ArrayList<>();
     public static ArrayList<DiTichLichSu> listDiTich = new ArrayList<>();
     public static ArrayList<DanhNhan> listDanhNhan = new ArrayList<>();
@@ -50,13 +53,12 @@ public class JsonToObj {
         JsonToObj5(listNhanVat);
         //Get Le hoi
         JsonToObj4(listLeHoi);
-
         //Get Di tich lich su
         JsonToObj6("src/JSON_Data/DiTichLichSu.json", listDiTich);
-
         //Get danh nhan, trang nguyen, anh hung vu trang
-        JsonToObj7(
-        );
+        JsonToObj7();
+        //Get nhan vat from Van Su
+        JsonToObj8();
         //Clean and merge nhanvatlichsu
         cleanNhanVat();
 
@@ -74,11 +76,12 @@ public class JsonToObj {
         nhanVats.addAll(listDanhNhan);
         nhanVats.addAll(listTrangNguyenBangNhan);
         nhanVats.addAll(listAnhHungVuTrang);
+        nhanVats.addAll(listNhanVatVanSu);
 
         ArrayList<NhanVat> temp = new ArrayList<>();
         for (NhanVat nv : nhanVats) {
             for (NhanVat n : listNhanVat) {
-                if (!nv.getTen().equals(n.getTen())) {
+                if (!nv.getTen().equals(n.getTen()) && !temp.contains(nv)) {
                     temp.add(nv);
                     //System.out.println(n.getTen());
                 }
@@ -220,5 +223,25 @@ public class JsonToObj {
         System.out.println("Convert to obj successful!");
     }
 
+    private void JsonToObj8() {
+        String input;
+        try {
+            input = Files.readString(Path.of("src/JSON_Data/NhanVatLichSu_VanSu.json"), StandardCharsets.UTF_8);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        ArrayList<JSONObject> objects = new ArrayList<>();
+        JSONArray array = new JSONArray(input);
+        for (int i = 0; i < array.length(); i++) objects.add(array.getJSONObject(i));
 
+        for (JSONObject obj : objects) {
+            LinkedHashMap<String, String> thongTin = new LinkedHashMap<>();
+            String ten = obj.getString("ten");
+            for (String key : obj.keySet()) {
+                if (!key.equals("ten"))
+                    thongTin.put(key, obj.getString(key));
+            }
+            listNhanVatVanSu.add(new NhanVatVanSu(ten, thongTin));
+        }
+    }
 }

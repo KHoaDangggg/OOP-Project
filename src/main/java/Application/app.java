@@ -10,6 +10,7 @@ import CrawlData.CrawlSuKien.SuKienChienTranh;
 import CrawlData.CrawlTrieuDai.TrieuDai;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -37,6 +38,7 @@ public class app extends Application {
 
         //Main scene
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../fxml/MainScene.fxml"));
+        Parent root = fxmlLoader.load();
         Scene scene = new Scene(fxmlLoader.load());
         primaryStage.setTitle("Lịch sử Việt Nam");
 

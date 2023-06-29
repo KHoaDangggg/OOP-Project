@@ -5,6 +5,7 @@ import CrawlData.CrawlDiTich.DiTichLichSu;
 import CrawlData.CrawlLeHoi.LeHoi_Nguon_05.LeHoi;
 import CrawlData.CrawlNhanVat.CrawlAnhHung.DanhNhan;
 import CrawlData.CrawlNhanVat.CrawlAnhHung.anhHungVuTrang;
+import CrawlData.CrawlNhanVat.NhaVat_VanSu.NhanVatVanSu;
 import CrawlData.CrawlNhanVat.NhanVat;
 import CrawlData.CrawlNhanVat.NhanVat_NguoiKeSu.NhanVatLichSu;
 import CrawlData.CrawlNhanVat.trangnguyenbangnhan.src.DanhHieu;
@@ -312,6 +313,7 @@ public class SearchSceneController implements Initializable {
                 link.setOnAction(e -> handleLabel("Sự Kiện", selectedNhanVat.getLienKetSuKien().get(sk), sk, link, relative.getScene()));
 
             }
+            relative.getChildren().add(new Text("\n"));
             relative.getChildren().add(new Text("Triều đại liên quan: "));
             for (String sk : selectedNhanVat.getLienKetTrieuDai().keySet()) {
                 Hyperlink link = new Hyperlink(sk);
@@ -320,6 +322,35 @@ public class SearchSceneController implements Initializable {
                 link.setOnAction(e -> handleLabel("Triều Đại", selectedNhanVat.getLienKetTrieuDai().get(sk), sk, link, relative.getScene()));
 
             }
+            relative.getChildren().add(new Text("\n"));
+        }
+
+        if (selectedNhanVat instanceof NhanVatVanSu) {
+            HashMap<String, String> thongTin = ((NhanVatVanSu) selectedNhanVat).getAtt();
+            StringBuilder t = new StringBuilder();
+            if (thongTin != null) {
+                for (Map.Entry<String, String> entry : thongTin.entrySet()) {
+                    t.append(entry.getKey()).append(": ").append(entry.getValue()).append("\n");
+                }
+            }
+            relative.getChildren().add(new Text("Tên: " + selectedNhanVat.getTen() + "\n" + t));
+            relative.getChildren().add(new Text("Sự kiện liên quan: "));
+            for (String sk : selectedNhanVat.getLienKetSuKien().keySet()) {
+                Hyperlink link = new Hyperlink(sk);
+                // Add the Text and Hyperlink nodes to the TextFlow node
+                relative.getChildren().addAll(link, new Text(", "));
+                link.setOnAction(e -> handleLabel("Sự Kiện", selectedNhanVat.getLienKetSuKien().get(sk), sk, link, relative.getScene()));
+
+            }
+            relative.getChildren().add(new Text("\n"));
+            relative.getChildren().add(new Text("Triều đại liên quan: "));
+            for (String sk : selectedNhanVat.getLienKetTrieuDai().keySet()) {
+                Hyperlink link = new Hyperlink(sk);
+                // Add the Text and Hyperlink nodes to the TextFlow node
+                relative.getChildren().addAll(link, new Text(", "));
+                link.setOnAction(e -> handleLabel("Triều Đại", selectedNhanVat.getLienKetTrieuDai().get(sk), sk, link, relative.getScene()));
+            }
+            relative.getChildren().add(new Text("\n"));
         }
     }
 
@@ -329,6 +360,7 @@ public class SearchSceneController implements Initializable {
             Parent root = loader.load();
             SearchSceneController controller = loader.getController();
             controller.setStage(stage);
+            controller.setLastScene(lastScene);
             Label label = (Label) root.lookup("#title");
             label.setText(field);
             TextField textField1 = (TextField) root.lookup("#textField");
