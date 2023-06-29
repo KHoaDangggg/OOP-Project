@@ -13,14 +13,14 @@
                 <Button fx:id="exitBtn" layoutX="563.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="62.0" text="Thoát" />
                 <ListView fx:id="listView" layoutX="14.0" layoutY="65.0" prefHeight="327.0" prefWidth="150.0" />
                 <ScrollPane layoutX="171.0" layoutY="65.0" prefHeight="327.0" prefWidth="283.0">
-                    <TextFlow fx:id="textFlow" prefHeight="492.0" prefWidth="269.0"/>
+                    <TextFlow fx:id="textFlow" prefHeight="492.0" prefWidth="269.0" />
                 </ScrollPane>
                 <ScrollPane fx:id="imageContainer" layoutX="465.0" layoutY="65.0" prefHeight="327.0" prefWidth="165.0">
 
 
                 </ScrollPane>
             <Label id="title" fx:id="title" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: white;" text="Label" textAlignment="CENTER" />
-            <Button id="previous" mnemonicParsing="false" text="Trước" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="205.0" />
+            <Button id="save" fx:id="saveBtn" mnemonicParsing="false" onAction="#saveInfo" text="Lưu" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="205.0" />
             </children>
         </AnchorPane>
     </children>

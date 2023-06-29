@@ -41,6 +41,7 @@ public class JsonToObj {
     public static ArrayList<DanhHieu> listTrangNguyenBangNhan = new ArrayList<>();
     public static ArrayList<anhHungVuTrang> listAnhHungVuTrang = new ArrayList<>();
 
+    public static ArrayList<SuKienChienTranh> listEvents = new ArrayList<>();
 
     public void generate() {
         //Get su kien
@@ -59,6 +60,9 @@ public class JsonToObj {
         JsonToObj7();
         //Get nhan vat from Van Su
         JsonToObj8();
+
+        JsonToObj9("src/JSON_Data/SuKien.json",listEvents);
+        cleanSuKien();
         //Clean and merge nhanvatlichsu
         cleanNhanVat();
 
@@ -89,6 +93,23 @@ public class JsonToObj {
         }
         listNhanVat.addAll(temp);
         System.out.println("Clean successfully");
+    }
+
+    public void cleanSuKien(){
+        ArrayList<SuKienChienTranh> tongHopSuKien = new ArrayList<>();
+
+        ArrayList<SuKienChienTranh> temp = new ArrayList<>();
+        for(SuKienChienTranh suKien: listEvents){
+            int count = 0;
+            for(SuKienChienTranh sk: listSuKien){
+                if(suKien.getTen().equalsIgnoreCase(sk.getTen())||sk.getTen().contains(suKien.getTen())){
+                    count ++;
+                }
+            }
+            if(count == 0) temp.add(suKien);
+        }
+        listSuKien.addAll(temp);
+        System.out.println("Clean succcessfully");
     }
 
     private static <T> ArrayList<T> removeDuplicates(ArrayList<T> list) {
@@ -243,5 +264,15 @@ public class JsonToObj {
             }
             listNhanVatVanSu.add(new NhanVatVanSu(ten, thongTin));
         }
+    }
+
+    public void JsonToObj9(String path, ArrayList<SuKienChienTranh>list){
+        Gson  gson = new Gson();
+        FileReader fileReader = reader(path);
+        Type objectType = new TypeToken<ArrayList<SuKienChienTranh>>(){}.getType();
+        ArrayList<SuKienChienTranh> convertList = gson.fromJson(fileReader,objectType);
+        list.addAll(convertList);
+        System.out.println("Convert to obj successfull");
+
     }
 }

@@ -1,5 +1,6 @@
 package Controllers;
 
+import CrawlData.Info;
 import javafx.event.ActionEvent;
 
 import javafx.fxml.FXML;
@@ -14,9 +15,12 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class MainSceneController implements Initializable {
+
+    public static ArrayList<Info> saveData = new ArrayList<>();
 
     @FXML
     private Button btnDynasty;
@@ -142,4 +146,19 @@ public class MainSceneController implements Initializable {
     }
     @Override
     public void initialize(URL location, ResourceBundle resources) {}
+
+    @FXML
+    private void openSaveScene(){
+        Stage stage = (Stage) btnDynasty.getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/FavoriteInfo.fxml"));
+        FavoriteInfo controller = new FavoriteInfo(btnDynasty.getScene());
+        loader.setController(controller);
+        Parent root;
+        try {
+            root = loader.load();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        stage.setScene(new Scene(root));
+    }
 }

@@ -30,6 +30,7 @@
                     </image>
                 </ImageView>
             <Button fx:id="onlineSearchBtn" layoutX="29.0" layoutY="236.0" mnemonicParsing="false" onAction="#onlineSearch" prefHeight="26.0" prefWidth="119.0" text="Tìm kiếm online" />
+            <Button fx:id="FavorBtn" layoutX="29.0" layoutY="262.0" mnemonicParsing="false" onAction="#openSaveScene" prefHeight="26.0" prefWidth="119.0" text="Thông tin lưu" />
             </children>
         </AnchorPane>
     </children>
