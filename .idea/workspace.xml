@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9dfc3bd-df16-4e9c-b19f-4053ba0395e1" name="Changes" comment="Update Su Kien and Add Save to Favorite UI function">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_06_2023_9_01_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_06_2023_9_01_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON_Data/danhNhanThoiDinh.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/danhNhanThoiDinh.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON_Data/vuTrang.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/vuTrang.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/CrawlAnhHung/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/CrawlAnhHung/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/CrawlAnhHung/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/CrawlAnhHung/Main1.java" afterDir="false" />
     </list>

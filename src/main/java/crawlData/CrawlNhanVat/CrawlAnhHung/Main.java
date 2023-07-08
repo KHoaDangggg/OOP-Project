@@ -22,10 +22,10 @@ public class Main {
     public static void main(String[] args) {
 
         crawlNhanVat();
-        print();
-        savetoJson();
+        printList();
+        saveToJson();
     }
-    static void print(){
+    static void printList(){
         for (AnhHungVuTrang anhHung : dsAnhHung)
         {
             System.out.println(anhHung.getTen());
@@ -92,7 +92,7 @@ public class Main {
         }
 
     }
-    static void savetoJson(){
+    static void saveToJson(){
         try {
             ObjectMapper objectMapper = new ObjectMapper();
             objectMapper.enable(SerializationFeature.INDENT_OUTPUT);

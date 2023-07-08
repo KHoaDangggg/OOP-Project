@@ -15,8 +15,7 @@ public class Main1 {
     static List<DanhNhan> dsAnhHung = new ArrayList<>();
     public static void main(String[] args) {
         crawlAnhHung();
-        crawl();
-        savetoJson();
+        saveToJson();
 
     }
 
@@ -26,10 +25,6 @@ public class Main1 {
                 Document doc = Jsoup.connect(url).timeout(5000).get();
                 Elements tables = doc.select("table.wikitable.sortable");
                 System.out.println(tables.size());
-
-
-
-    //            List<CrawlData.CrawlTuongThoiDinh.AnhHung> dsAnhHung = new ArrayList<CrawlData.CrawlTuongThoiDinh.AnhHung>();
 
                 for (Element table : tables)
                 {
@@ -60,8 +55,6 @@ public class Main1 {
                     }
                 }
 
-
-
                 int count = 0;
                 for (DanhNhan anhhung : dsAnhHung)
                 {
@@ -74,22 +67,15 @@ public class Main1 {
                     count++;
                 }
                 System.out.println(count);
-
-    //            ObjectMapper objectMapper = new ObjectMapper();
-    //            objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-    //            objectMapper.writeValue(new File("danhNhanThoiDinh.json"), dsAnhHung);
-
             }
-
 
             catch (IOException e){
                 e.printStackTrace();
             }
         }
-        static void crawl() {
-        }
 
-        static void savetoJson(){
+
+        static void saveToJson(){
             try {
                 ObjectMapper objectMapper = new ObjectMapper();
                 objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
