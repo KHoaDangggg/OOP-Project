@@ -15,75 +15,73 @@ public class Main1 {
     static List<DanhNhan> dsAnhHung = new ArrayList<>();
     public static void main(String[] args) {
         crawlAnhHung();
-        crawl();
-        savetoJson();
+        saveToJson();
 
     }
 
-   static void crawlAnhHung() {
-            try{
-                String url = "https://vi.wikipedia.org/wiki/Danh_nh%C3%A2n_th%E1%BB%9Di_%C4%90inh?fbclid=IwAR0oYcxArES-fdtY_YiGvo3mc52Xanze0a3DO3Ye0H97KQYr62-PZoflUYc#V%C3%B5_t%C6%B0%E1%BB%9Bng_th%E1%BB%9Di_%C4%90inh";
-                Document doc = Jsoup.connect(url).timeout(5000).get();
-                Elements tables = doc.select("table.wikitable.sortable");
-                System.out.println(tables.size());
+    static void crawlAnhHung() {
+        try{
+            String url = "https://vi.wikipedia.org/wiki/Danh_nh%C3%A2n_th%E1%BB%9Di_%C4%90inh?fbclid=IwAR0oYcxArES-fdtY_YiGvo3mc52Xanze0a3DO3Ye0H97KQYr62-PZoflUYc#V%C3%B5_t%C6%B0%E1%BB%9Bng_th%E1%BB%9Di_%C4%90inh";
+            Document doc = Jsoup.connect(url).timeout(5000).get();
+            Elements tables = doc.select("table.wikitable.sortable");
+            System.out.println(tables.size());
 
-
-
-    //            List<CrawlData.CrawlTuongThoiDinh.AnhHung> dsAnhHung = new ArrayList<CrawlData.CrawlTuongThoiDinh.AnhHung>();
-
-                for (Element table : tables)
+            for (Element table : tables)
+            {
+                Elements tbody = table.select("tbody");
+                Elements rows = tbody.select("tr");
+                rows.remove(0);
+                for (Element row : rows)
                 {
-                    Elements tbody = table.select("tbody");
-                    Elements rows = tbody.select("tr");
-                    rows.remove(0);
-                    for (Element row : rows)
+                    Elements cells = row.select("td");
+                    String hoVaTen = cells.get(0).text();
+                    String tuLieu = cells.get(1).text();
+                    String queQuan = cells.get(2).text();
+                    String tomTat = cells.get(3).text();
+
+                    if (hoVaTen.isBlank() || hoVaTen.isEmpty())
                     {
-                        Elements cells = row.select("td");
-                        String hoVaTen = cells.get(0).text();
-                        String tuLieu = cells.get(1).text();
-                        String queQuan = cells.get(2).text();
-                        String tomTat = cells.get(3).text();
-                        DanhNhan anhhung = new DanhNhan(hoVaTen, tuLieu, queQuan, tomTat);
-                        dsAnhHung.add(anhhung);
+                        hoVaTen = "Không rõ";
+                    } else if (tuLieu.isBlank() || tuLieu.isEmpty()) {
+                        tuLieu = "Không rõ";
+                    } else if (queQuan.isBlank() || queQuan.isEmpty()) {
+                        queQuan = "Không rõ";
+                    } else if (tomTat.isEmpty() || tomTat.isBlank()) {
+                        tomTat = "Không rõ";
                     }
+
+                    DanhNhan anhhung = new DanhNhan(hoVaTen, tuLieu, queQuan, tomTat);
+                    dsAnhHung.add(anhhung);
                 }
-
-
-
-                int count = 0;
-                for (DanhNhan anhhung : dsAnhHung)
-                {
-                    System.out.println(anhhung.getTen() );
-                    System.out.println(anhhung.gettuLieu() );
-                    System.out.println(anhhung.getQueQuan() );
-                    System.out.println(anhhung.gettomTat() );
-
-                    System.out.println("\n");
-                    count++;
-                }
-                System.out.println(count);
-
-    //            ObjectMapper objectMapper = new ObjectMapper();
-    //            objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-    //            objectMapper.writeValue(new File("danhNhanThoiDinh.json"), dsAnhHung);
-
             }
 
+            int count = 0;
+            for (DanhNhan anhhung : dsAnhHung)
+            {
+                System.out.println(anhhung.getTen() );
+                System.out.println(anhhung.gettuLieu() );
+                System.out.println(anhhung.getQueQuan() );
+                System.out.println(anhhung.gettomTat() );
 
-            catch (IOException e){
-                e.printStackTrace();
+                System.out.println("\n");
+                count++;
             }
-        }
-        static void crawl() {
+            System.out.println(count);
         }
 
-        static void savetoJson(){
-            try {
-                ObjectMapper objectMapper = new ObjectMapper();
-                objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-                objectMapper.writeValue(new File("src/JSON_Data/danhNhanThoiDinh.json"), dsAnhHung);
-            } catch (IOException e){
-                e.printStackTrace();
-            }
+        catch (IOException e){
+            e.printStackTrace();
         }
+    }
+
+
+    static void saveToJson(){
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
+            objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
+            objectMapper.writeValue(new File("src/JSON_Data/danhNhanThoiDinh.json"), dsAnhHung);
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+    }
 }

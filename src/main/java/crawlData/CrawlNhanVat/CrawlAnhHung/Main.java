@@ -22,10 +22,10 @@ public class Main {
     public static void main(String[] args) {
 
         crawlNhanVat();
-        print();
-        savetoJson();
+        printList();
+        saveToJson();
     }
-    static void print(){
+    static void printList(){
         for (anhHungVuTrang anhHung : dsAnhHung)
         {
             System.out.println(anhHung.getTen());
@@ -70,13 +70,29 @@ public class Main {
                 String queQuan = cells.get(3).getText();
                 String namPhong =cells.get(4).getText();
                 String tieuSu = cells.get(5).getText();
+
+                if (ten.isBlank() ||ten.isEmpty())
+                {
+                    ten = "Không rõ";
+                } else if (namSinhNamMat.isBlank() || namSinhNamMat.isEmpty()) {
+                    namSinhNamMat = "Không rõ";
+                } else if (danToc.isBlank() || danToc.isEmpty()) {
+                    danToc = "Không rõ";
+                } else if (queQuan.isBlank() || queQuan.isEmpty()) {
+                    queQuan = "Không rõ";
+                } else if (namPhong.isBlank() || namPhong.isEmpty()) {
+                    namPhong = "Không rõ";
+                } else if (tieuSu.isEmpty() || tieuSu.isBlank()) {
+                    tieuSu = "Không rõ";
+                }
+
                 anhHungVuTrang anhHung = new anhHungVuTrang(ten, namSinhNamMat, danToc, queQuan, namPhong, tieuSu);
                 dsAnhHung.add(anhHung);
             }
         }
 
     }
-    static void savetoJson(){
+    static void saveToJson(){
         try {
             ObjectMapper objectMapper = new ObjectMapper();
             objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
