@@ -1,6 +1,6 @@
 package application;
 
-import controllers.objectforui.GenerateUIObject;
+import objectforui.GenerateUIObject;
 import crawlData.CrawlDiTich.DiTichLichSu;
 import crawlData.CrawlLeHoi.LeHoi_Nguon_05.LeHoi;
 import crawlData.CrawlNhanVat.NhanVat;
@@ -35,7 +35,7 @@ public class app extends Application {
         listNhanVat = GenerateUIObject.listNhanVat;
         listSuKien = GenerateUIObject.listSuKien;
         listTrieuDai = GenerateUIObject.listTrieuDai;
-
+        System.out.println(listNhanVat.size());
         //Main scene
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../fxml/MainScene.fxml"));
         //Parent root = fxmlLoader.load();

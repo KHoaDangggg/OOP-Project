@@ -1,4 +1,4 @@
-package controllers.objectforui;
+package objectforui;
 
 
 import crawlData.CrawlDiTich.DiTichLichSu;

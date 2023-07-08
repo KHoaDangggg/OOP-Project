@@ -41,9 +41,6 @@ public class mainSceneController implements Initializable {
     private Button btnExit;
 
     @FXML
-    private Button onlineSearchBtn;
-
-    @FXML
     private void handleButtonAction(ActionEvent event) {
         if (event.getSource() == btnDynasty) {
             renderNewScence1("Triều Đại");
@@ -63,33 +60,6 @@ public class mainSceneController implements Initializable {
         if (event.getSource() == btnExit) {
             Stage stage = (Stage) btnExit.getScene().getWindow();
             stage.close();
-
-        }
-    }
-    private void renderNewScence(String buttonName) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/SearchScene.fxml"));
-            Parent root = loader.load();
-            Label label = (Label) root.lookup("#title");
-            label.setText(buttonName);
-            Scene currentScene = btnDynasty.getScene();
-            Button btn = (Button) root.lookup("#exitBtn");
-            currentScene.setRoot(root);
-            searchSceneController controller = loader.getController();
-            controller.initialize(getClass().getResource("../fxml/SearchScene.fxml"), null);
-            btn.setOnAction(event -> {
-                try {
-                    FXMLLoader loader1 = new FXMLLoader(getClass().getResource("../fxml/MainScene.fxml"));
-                    Parent root1 = loader1.load();
-                    currentScene.setRoot(root1);
-                    mainSceneController controller1 = loader1.getController();
-                    controller1.initialize(getClass().getResource("../fxml/MainScene.fxml"), null);
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
-            });
-        } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 
