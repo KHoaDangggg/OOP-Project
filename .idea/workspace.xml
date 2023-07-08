@@ -6,17 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a9dfc3bd-df16-4e9c-b19f-4053ba0395e1" name="Changes" comment="Update Su Kien and Add Save to Favorite UI function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/app.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/readJSON.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/mainSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/mainSceneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/objectforui/GenerateUIObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectforui/GenerateUIObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/objectforui/JsonToObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectforui/JsonToObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/objectforui/LinkInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectforui/LinkInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/objectforui/LinkingObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectforui/LinkingObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/objectforui/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectforui/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/searchSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/searchSceneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/utils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fxml/SearchScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fxml/SearchScene.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/danhNhanThoiDinh.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/danhNhanThoiDinh.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/vuTrang.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/vuTrang.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/CrawlAnhHung/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/CrawlAnhHung/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/CrawlAnhHung/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/CrawlAnhHung/Main1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/CrawlAnhHung/anhHungVuTrang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/CrawlAnhHung/anhHungVuTrang.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
