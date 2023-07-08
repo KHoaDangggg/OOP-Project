@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainSceneController">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+            <children>
+                <Button fx:id="btnDynasty" layoutX="29.0" layoutY="93.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: BE1B32;" text="Triều đại lịch sử" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Button>
+                <Button fx:id="btnEvent" layoutX="29.0" layoutY="122.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: BE1B32;" text="Sự kiện lịch sử" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Button>
+                <Button fx:id="btnFigures" layoutX="29.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: BE1B32;" text="Nhân vật lịch sử" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Button>
+                <Button fx:id="btnRelic" layoutX="29.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: BE1B32;" text="Di tích lịch sử" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Button>
+                <Button fx:id="btnFestival" layoutX="29.0" layoutY="209.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: BE1B32;" text="Lễ hội văn hóa" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Button>
+                <ImageView id="Illustration" fx:id="background" fitHeight="371.0" fitWidth="495.0" layoutX="225.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Background-01.png" />
+               </image>
+                </ImageView>
+                <ImageView id="Logo" fx:id="logo" fitHeight="55.0" fitWidth="161.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@OOP/Logo.jpg" />
+                    </image>
+                </ImageView>
+                <Button fx:id="btnExit" layoutX="29.0" layoutY="383.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: AA261B;" text="Kết thúc" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow radius="4.75" width="0.0" />
+               </effect></Button>
+                <ImageView id="Title" fx:id="title" fitHeight="46.0" fitWidth="462.0" layoutX="242.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@OOP/Title.jpg" />
+                    </image>
+                </ImageView>
+            <Button fx:id="onlineSearchBtn" layoutX="29.0" layoutY="291.0" mnemonicParsing="false" onAction="#onlineSearch" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: BE1B32;" text="Tìm kiếm online" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="FavorBtn" layoutX="29.0" layoutY="320.0" mnemonicParsing="false" onAction="#openSaveScene" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: BE1B32;" text="Thông tin lưu" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Button>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
