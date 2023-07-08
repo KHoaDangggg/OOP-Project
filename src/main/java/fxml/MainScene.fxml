@@ -1,36 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainSceneController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.mainSceneController">
     <children>
-        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" styleClass="bg" stylesheets="@backgroung.css" VBox.vgrow="ALWAYS">
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
             <children>
-                <Button fx:id="btnDynasty" layoutX="29.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="119.0" text="Triều đại lịch sử" />
-                <Button fx:id="btnEvent" layoutX="29.0" layoutY="126.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="119.0" text="Sự kiện lịch sử" />
-                <Button fx:id="btnFigures" layoutX="29.0" layoutY="152.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="119.0" text="Nhân vật lịch sử" />
-                <Button fx:id="btnRelic" layoutX="29.0" layoutY="177.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="119.0" text="Di tích lịch sử" />
-                <Button fx:id="btnFestival" layoutX="29.0" layoutY="204.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="119.0" text="Lễ hội văn hóa" />
-                <ImageView id="Illustration" fitHeight="289.0" fitWidth="447.0" layoutX="179.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+                <Button fx:id="btnDynasty" layoutX="29.0" layoutY="93.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: BE1B32;" text="Triều đại lịch sử" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="12.0" />
+                    </font></Button>
+                <Button fx:id="btnEvent" layoutX="29.0" layoutY="122.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: BE1B32;" text="Sự kiện lịch sử" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="12.0" />
+                    </font></Button>
+                <Button fx:id="btnFigures" layoutX="29.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: BE1B32;" text="Nhân vật lịch sử" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="12.0" />
+                    </font></Button>
+                <Button fx:id="btnRelic" layoutX="29.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: BE1B32;" text="Di tích lịch sử" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="12.0" />
+                    </font></Button>
+                <Button fx:id="btnFestival" layoutX="29.0" layoutY="209.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: BE1B32;" text="Lễ hội văn hóa" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="12.0" />
+                    </font></Button>
+                <ImageView id="Illustration" fx:id="background" fitHeight="371.0" fitWidth="495.0" layoutX="225.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../image3.png" />
+                        <Image url="@mainScene.png" />
                     </image>
                 </ImageView>
-                <ImageView id="Logo" fitHeight="55.0" fitWidth="161.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView id="Logo" fx:id="logo" fitHeight="55.0" fitWidth="161.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../image1.png" />
+                        <Image url="@Logo.png" />
                     </image>
                 </ImageView>
-                <Button fx:id="btnExit" layoutX="29.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="119.0" text="Kết thúc" />
-                <ImageView id="Title" fitHeight="46.0" fitWidth="462.0" layoutX="166.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                <Button fx:id="btnExit" layoutX="29.0" layoutY="383.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: AA261B;" text="Kết thúc" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="12.0" />
+                    </font>
+                    <effect>
+                        <DropShadow radius="4.75" width="0.0" />
+                    </effect></Button>
+                <ImageView id="Title" fx:id="title" fitHeight="46.0" fitWidth="462.0" layoutX="242.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../image2.png" />
+                        <Image url="@Title.png" />
                     </image>
                 </ImageView>
-            <Button fx:id="onlineSearchBtn" layoutX="29.0" layoutY="236.0" mnemonicParsing="false" onAction="#onlineSearch" prefHeight="26.0" prefWidth="119.0" text="Tìm kiếm online" />
-            <Button fx:id="FavorBtn" layoutX="29.0" layoutY="262.0" mnemonicParsing="false" onAction="#openSaveScene" prefHeight="26.0" prefWidth="119.0" text="Thông tin lưu" />
+                <Button fx:id="onlineSearchBtn" layoutX="29.0" layoutY="291.0" mnemonicParsing="false" onAction="#onlineSearch" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: BE1B32;" text="Tìm kiếm online" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="12.0" />
+                    </font></Button>
+                <Button fx:id="FavorBtn" layoutX="29.0" layoutY="320.0" mnemonicParsing="false" onAction="#openSaveScene" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: BE1B32;" text="Thông tin lưu" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="12.0" />
+                    </font></Button>
             </children>
         </AnchorPane>
     </children>
