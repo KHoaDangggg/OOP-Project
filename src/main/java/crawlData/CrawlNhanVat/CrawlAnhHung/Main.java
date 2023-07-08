@@ -18,7 +18,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
 public class Main {
-    static List<anhHungVuTrang> dsAnhHung = new ArrayList<>();
+    static List<AnhHungVuTrang> dsAnhHung = new ArrayList<>();
     public static void main(String[] args) {
 
         crawlNhanVat();
@@ -26,7 +26,7 @@ public class Main {
         savetoJson();
     }
     static void print(){
-        for (anhHungVuTrang anhHung : dsAnhHung)
+        for (AnhHungVuTrang anhHung : dsAnhHung)
         {
             System.out.println(anhHung.getTen());
             System.out.println(anhHung.getNamSinhNamMat());
@@ -70,7 +70,23 @@ public class Main {
                 String queQuan = cells.get(3).getText();
                 String namPhong =cells.get(4).getText();
                 String tieuSu = cells.get(5).getText();
-                anhHungVuTrang anhHung = new anhHungVuTrang(ten, namSinhNamMat, danToc, queQuan, namPhong, tieuSu);
+
+                if (ten.isBlank() ||ten.isEmpty())
+                {
+                    ten = "Không rõ";
+                } else if (namSinhNamMat.isBlank() || namSinhNamMat.isEmpty()) {
+                    namSinhNamMat = "Không rõ";
+                } else if (danToc.isBlank() || danToc.isEmpty()) {
+                    danToc = "Không rõ";
+                } else if (queQuan.isBlank() || queQuan.isEmpty()) {
+                    queQuan = "Không rõ";
+                } else if (namPhong.isBlank() || namPhong.isEmpty()) {
+                    namPhong = "Không rõ";
+                } else if (tieuSu.isEmpty() || tieuSu.isBlank()) {
+                    tieuSu = "Không rõ";
+                }
+
+                AnhHungVuTrang anhHung = new AnhHungVuTrang(ten, namSinhNamMat, danToc, queQuan, namPhong, tieuSu);
                 dsAnhHung.add(anhHung);
             }
         }

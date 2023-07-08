@@ -43,6 +43,18 @@ public class Main1 {
                         String tuLieu = cells.get(1).text();
                         String queQuan = cells.get(2).text();
                         String tomTat = cells.get(3).text();
+
+                        if (hoVaTen.isBlank() || hoVaTen.isEmpty())
+                        {
+                            hoVaTen = "Không rõ";
+                        } else if (tuLieu.isBlank() || tuLieu.isEmpty()) {
+                            tuLieu = "Không rõ";
+                        } else if (queQuan.isBlank() || queQuan.isEmpty()) {
+                            queQuan = "Không rõ";
+                        } else if (tomTat.isEmpty() || tomTat.isBlank()) {
+                            tomTat = "Không rõ";
+                        }
+
                         DanhNhan anhhung = new DanhNhan(hoVaTen, tuLieu, queQuan, tomTat);
                         dsAnhHung.add(anhhung);
                     }

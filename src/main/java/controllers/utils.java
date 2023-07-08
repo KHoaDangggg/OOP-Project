@@ -3,7 +3,7 @@ package controllers;
 import crawlData.CrawlDiTich.DiTichLichSu;
 import crawlData.CrawlLeHoi.LeHoi_Nguon_05.LeHoi;
 import crawlData.CrawlNhanVat.CrawlAnhHung.DanhNhan;
-import crawlData.CrawlNhanVat.CrawlAnhHung.anhHungVuTrang;
+import crawlData.CrawlNhanVat.CrawlAnhHung.AnhHungVuTrang;
 import crawlData.CrawlNhanVat.NhanVat;
 import crawlData.CrawlNhanVat.NhanVat_NguoiKeSu.NhanVatLichSu;
 import crawlData.CrawlNhanVat.trangnguyenbangnhan.src.DanhHieu;
@@ -43,7 +43,7 @@ public class utils {
             e.printStackTrace();
         }
         try (BufferedReader reader = new BufferedReader(new FileReader("src/JSON_Data/vuTrang.json"))) {
-            anhHungVuTrang[] objects = gson.fromJson(reader, anhHungVuTrang[].class);
+            AnhHungVuTrang[] objects = gson.fromJson(reader, AnhHungVuTrang[].class);
             nhanVatList.addAll(objects);
         } catch (IOException e) {
             e.printStackTrace();

@@ -2,7 +2,7 @@ package crawlData.CrawlNhanVat.CrawlAnhHung;
 
 import crawlData.CrawlNhanVat.NhanVat;
 
-public class anhHungVuTrang extends NhanVat {
+public class AnhHungVuTrang extends NhanVat {
 
     private final String namSinhNamMat;
     private final String danToc;
@@ -31,7 +31,7 @@ public class anhHungVuTrang extends NhanVat {
         return tieuSu;
     }
 
-    public anhHungVuTrang(String ten, String namSinhNamMat, String danToc, String queQuan, String namPhong, String tieuSu) {
+    public AnhHungVuTrang(String ten, String namSinhNamMat, String danToc, String queQuan, String namPhong, String tieuSu) {
         super(ten);
         this.namSinhNamMat = namSinhNamMat;
         this.danToc = danToc;

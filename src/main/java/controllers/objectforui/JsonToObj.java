@@ -3,7 +3,7 @@ package controllers.objectforui;
 import crawlData.CrawlDiTich.DiTichLichSu;
 import crawlData.CrawlLeHoi.LeHoi_Nguon_05.LeHoi;
 import crawlData.CrawlNhanVat.CrawlAnhHung.DanhNhan;
-import crawlData.CrawlNhanVat.CrawlAnhHung.anhHungVuTrang;
+import crawlData.CrawlNhanVat.CrawlAnhHung.AnhHungVuTrang;
 import crawlData.CrawlNhanVat.NhaVat_VanSu.NhanVatVanSu;
 import crawlData.CrawlNhanVat.NhanVat;
 import crawlData.CrawlNhanVat.NhanVat_NguoiKeSu.NhanVatLichSu;
@@ -39,7 +39,7 @@ public class JsonToObj {
     public static ArrayList<DiTichLichSu> listDiTich = new ArrayList<>();
     public static ArrayList<DanhNhan> listDanhNhan = new ArrayList<>();
     public static ArrayList<DanhHieu> listTrangNguyenBangNhan = new ArrayList<>();
-    public static ArrayList<anhHungVuTrang> listAnhHungVuTrang = new ArrayList<>();
+    public static ArrayList<AnhHungVuTrang> listAnhHungVuTrang = new ArrayList<>();
 
     public static ArrayList<SuKienChienTranh> listEvents = new ArrayList<>();
 
@@ -237,9 +237,9 @@ public class JsonToObj {
         listTrangNguyenBangNhan.addAll(convertedList1);
 
         fileReader = reader("src/JSON_Data/vuTrang.json");
-        objectType = new TypeToken<ArrayList<anhHungVuTrang>>() {
+        objectType = new TypeToken<ArrayList<AnhHungVuTrang>>() {
         }.getType();
-        ArrayList<anhHungVuTrang> convertedList2 = gson.fromJson(fileReader, objectType);
+        ArrayList<AnhHungVuTrang> convertedList2 = gson.fromJson(fileReader, objectType);
         listAnhHungVuTrang.addAll(convertedList2);
         System.out.println("Convert to obj successful!");
     }

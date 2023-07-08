@@ -3,7 +3,7 @@ package controllers;
 import crawlData.CrawlDiTich.DiTichLichSu;
 import crawlData.CrawlLeHoi.LeHoi_Nguon_05.LeHoi;
 import crawlData.CrawlNhanVat.CrawlAnhHung.DanhNhan;
-import crawlData.CrawlNhanVat.CrawlAnhHung.anhHungVuTrang;
+import crawlData.CrawlNhanVat.CrawlAnhHung.AnhHungVuTrang;
 import crawlData.CrawlNhanVat.NhaVat_VanSu.NhanVatVanSu;
 import crawlData.CrawlNhanVat.NhanVat;
 import crawlData.CrawlNhanVat.NhanVat_NguoiKeSu.NhanVatLichSu;
@@ -220,13 +220,13 @@ public class favoriteInfo implements Initializable {
                     "Thế thứ: " + ((Vua) selectedNhanVat).getThe_thu() + "\n" +
                     "Năm trị vì: " + ((Vua) selectedNhanVat).getNam_bat_dau_tri_vi() + " - " + ((Vua) selectedNhanVat).getNam_ket_thuc_tri_vi() + "\n"));
         }
-        if (selectedNhanVat instanceof anhHungVuTrang) {
+        if (selectedNhanVat instanceof AnhHungVuTrang) {
             relative.getChildren().add(new Text("Tên: " + selectedNhanVat.getTen() + "\n" +
-                    "Quê quán: " + ((anhHungVuTrang) selectedNhanVat).getQueQuan() + "\n" +
-                    "Dân tộc: " + ((anhHungVuTrang) selectedNhanVat).getDanToc() + "\n" +
-                    "Năm sinh - năm mất: " + ((anhHungVuTrang) selectedNhanVat).getNamSinhNamMat() + "\n" +
-                    "Năm phong: " + ((anhHungVuTrang) selectedNhanVat).getNamPhong() + "\n" +
-                    "Tiểu sử: " + ((anhHungVuTrang) selectedNhanVat).getTieuSu() + "\n"));
+                    "Quê quán: " + ((AnhHungVuTrang) selectedNhanVat).getQueQuan() + "\n" +
+                    "Dân tộc: " + ((AnhHungVuTrang) selectedNhanVat).getDanToc() + "\n" +
+                    "Năm sinh - năm mất: " + ((AnhHungVuTrang) selectedNhanVat).getNamSinhNamMat() + "\n" +
+                    "Năm phong: " + ((AnhHungVuTrang) selectedNhanVat).getNamPhong() + "\n" +
+                    "Tiểu sử: " + ((AnhHungVuTrang) selectedNhanVat).getTieuSu() + "\n"));
         }
         if (selectedNhanVat instanceof DanhNhan) {
             relative.getChildren().add(new Text("Tên: " + selectedNhanVat.getTen() + "\n" +
