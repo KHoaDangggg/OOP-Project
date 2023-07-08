@@ -25,15 +25,15 @@ public class crawlThuVienLichSu {
             }
         }
         //System.out.println(link_events);
-        ArrayList<SuKienChienTranh> listSuKien = new ArrayList<>(); //Khai báo danh sách sự kiện
+        ArrayList<SuKienLichSu> listSuKien = new ArrayList<>(); //Khai báo danh sách sự kiện
         for (String link_event : link_events) {
-            SuKienChienTranh suKien = new SuKienChienTranh(null);
+            SuKienLichSu suKien = new SuKienLichSu(null);
             suKien.createObject();
             Document doc_event = Jsoup.connect("https://thuvienlichsu.vn"+link_event).get();
             Elements cards = doc_event.select("div[class=card mb-3]");//Tìm các thẻ thông tin
             Elements headers = cards.get(0).select("h3[class=header-edge]");//Thẻ tên sụ kiện, lấy tên sụ kiện (header) từ thẻ
             suKien.setTen(headers.get(0).text());
-            suKien.setThoiGian(thoiGian(headers.get(0).text()));
+            suKien.setThoiGian(thoiGian(headers.get(0).text()).trim());
 
             ArrayList<String> listTrieuDai = new ArrayList<>();
             int nam = namDienra(suKien.getThoiGian());
@@ -80,18 +80,11 @@ public class crawlThuVienLichSu {
         }
         //System.out.println(listSuKien);
         JSONArray jsonArray = new JSONArray();
-        for(SuKienChienTranh event: listSuKien){
+        for(SuKienLichSu event: listSuKien){
             JSONObject eventJson = new JSONObject();
             eventJson.put("tenSuKien",event.getTen());
             eventJson.put("thoiGian",event.getThoiGian());
             eventJson.put("diaDiem",event.getDiaDiem());
-            eventJson.put("nguyenNhan",event.getNguyenNhan());
-            eventJson.put("pheTa",event.getPheTa());
-            eventJson.put("pheDich",event.getPheDich());
-            eventJson.put("chiHuyPheTa",event.getChiHuyPheTa());
-            eventJson.put("chiHuyPheDich",event.getChiHuyPheDich());
-            eventJson.put("tonThatTa",event.getTonThatTa());
-            eventJson.put("tonThatDich",event.getTonThatDich());
             eventJson.put("ketQua",event.getKetQua());
             eventJson.put("nameRelativePerson",event.getNameRelativePerson());
             eventJson.put("nameRelativeDinasty",event.getNameRelativeDinasty());

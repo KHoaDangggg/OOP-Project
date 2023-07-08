@@ -6,7 +6,7 @@ import CrawlData.CrawlLeHoi.LeHoi_Nguon_05.LeHoi;
 import CrawlData.CrawlNhanVat.NhanVat;
 import CrawlData.CrawlNhanVat.NhanVat_NguoiKeSu.NhanVatLichSu;
 import CrawlData.CrawlNhanVat.vua.src.Vua;
-import CrawlData.CrawlSuKien.SuKienChienTranh;
+import CrawlData.CrawlSuKien.SuKienLichSu;
 import CrawlData.CrawlTrieuDai.TrieuDai;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 @SuppressWarnings("unused")
 public class app extends Application {
-    public static ArrayList<SuKienChienTranh> listSuKien = null; //List cac su kien
+    public static ArrayList<SuKienLichSu> listSuKien = null; //List cac su kien
     public static ArrayList<TrieuDai> listTrieuDai =null; //List cac trieu dai
     public static ArrayList<Vua> listVua = null; //List cac vi vua
     public static ArrayList<NhanVatLichSu> listNhanVatLichSu = null; //List cac nhan vat

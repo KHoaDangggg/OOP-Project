@@ -6,6 +6,7 @@ import CrawlData.CrawlNhanVat.NhanVat;
 
 import CrawlData.CrawlNhanVat.vua.src.Vua;
 import CrawlData.CrawlSuKien.SuKienChienTranh;
+import CrawlData.CrawlSuKien.SuKienLichSu;
 import CrawlData.CrawlTrieuDai.TrieuDai;
 
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ import java.util.ArrayList;
 public class GenerateUIObject {
 
     //Mang cac obj da duoc lien ket
-    public static ArrayList<SuKienChienTranh> listSuKien; //List cac su kien
+    public static ArrayList<SuKienLichSu> listSuKien; //List cac su kien
     public static ArrayList<TrieuDai> listTrieuDai; //List cac trieu dai
     public static ArrayList<Vua> listVua; //List cac vi vua
     public static ArrayList<NhanVat> listNhanVat; //List cac nhan vat

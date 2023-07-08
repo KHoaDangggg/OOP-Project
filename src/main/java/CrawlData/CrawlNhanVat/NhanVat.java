@@ -1,6 +1,6 @@
 package CrawlData.CrawlNhanVat;
 
-import CrawlData.CrawlSuKien.SuKienChienTranh;
+import CrawlData.CrawlSuKien.SuKienLichSu;
 import CrawlData.CrawlTrieuDai.TrieuDai;
 import CrawlData.Info;
 
@@ -11,10 +11,10 @@ public abstract class NhanVat extends Info {
         super(ten);
     }
 
-    public HashMap<String, SuKienChienTranh> lienKetSuKien = new HashMap<>();
+    public HashMap<String, SuKienLichSu> lienKetSuKien = new HashMap<>();
     public HashMap<String, TrieuDai> lienKetTrieuDai = new HashMap<>();
 
-    public void setLienKetSuKien(HashMap<String, SuKienChienTranh> lienKetSuKien) {
+    public void setLienKetSuKien(HashMap<String, SuKienLichSu> lienKetSuKien) {
         this.lienKetSuKien = lienKetSuKien;
     }
 
@@ -22,7 +22,7 @@ public abstract class NhanVat extends Info {
         this.lienKetTrieuDai = lienKetTrieuDai;
     }
 
-    public HashMap<String, SuKienChienTranh> getLienKetSuKien() {
+    public HashMap<String, SuKienLichSu> getLienKetSuKien() {
         return lienKetSuKien;
     }
 

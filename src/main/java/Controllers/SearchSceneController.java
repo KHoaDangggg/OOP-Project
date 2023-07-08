@@ -11,6 +11,7 @@ import CrawlData.CrawlNhanVat.NhanVat_NguoiKeSu.NhanVatLichSu;
 import CrawlData.CrawlNhanVat.trangnguyenbangnhan.src.DanhHieu;
 import CrawlData.CrawlNhanVat.vua.src.Vua;
 import CrawlData.CrawlSuKien.SuKienChienTranh;
+import CrawlData.CrawlSuKien.SuKienLichSu;
 import CrawlData.CrawlTrieuDai.TrieuDai;
 import CrawlData.Info;
 import javafx.application.Platform;
@@ -41,7 +42,7 @@ public class SearchSceneController implements Initializable {
     private Label title;
     @FXML
     private TextField textField;
-    private static ObservableList<SuKienChienTranh> suKienList = FXCollections.observableArrayList();
+    private static ObservableList<SuKienLichSu> suKienList = FXCollections.observableArrayList();
     private static ObservableList<DiTichLichSu> diTichList = FXCollections.observableArrayList();
     private static ObservableList<LeHoi> leHoiList = FXCollections.observableArrayList();
     private static ObservableList<NhanVat> nhanVatList = FXCollections.observableArrayList();
@@ -188,34 +189,53 @@ public class SearchSceneController implements Initializable {
     }
 
     public void handleRenderSuKien(Info tenSuKien, TextFlow relative1) {
-        SuKienChienTranh selectedSuKien = (SuKienChienTranh) tenSuKien;
-        relative1.getChildren().add(new Text("Tên sự kiện: " + selectedSuKien.getTen() + "\n" +
-                "Thời gian: " + selectedSuKien.getThoiGian() + "\n" +
-                "Địa điểm: " + selectedSuKien.getDiaDiem() + "\n" +
-                "Nguyên nhân: " + selectedSuKien.getNguyenNhan() + "\n" +
-                "Chỉ huy phe địch: " + selectedSuKien.getChiHuyPheDich() + "\n" +
-                "Lực lượng phe địch: " + selectedSuKien.getLucLuongPheDich() + "\n" +
-                "Phe địch: " + selectedSuKien.getPheDich() + "\n" +
-                "Chỉ huy phe ta: " + selectedSuKien.getChiHuyPheTa() + "\n" +
-                "Lực lượng phe ta: " + selectedSuKien.getLucLuongPheTa() + "\n" +
-                "Phe ta: " + selectedSuKien.getPheTa() + "\n" +
-                "Kết quả: " + selectedSuKien.getKetQua() + "\n" +
-                    "Tổn thất địch: " + selectedSuKien.getTonThatDich() + "\n" +
-                    "Tổn thất ta: " + selectedSuKien.getTonThatTa()));
+        SuKienLichSu selectedSuKien = (SuKienLichSu) tenSuKien;
+            if(selectedSuKien instanceof SuKienChienTranh){
+            relative1.getChildren().add(new Text("Tên sự kiện: " + selectedSuKien.getTen() + "\n" +
+                    "Thời gian: " + selectedSuKien.getThoiGian() + "\n" +
+                    "Địa điểm: " + selectedSuKien.getDiaDiem() + "\n" +
+                    "Nguyên nhân: " + ((SuKienChienTranh) selectedSuKien).getNguyenNhan() + "\n" +
+                    "Chỉ huy phe địch: " + ((SuKienChienTranh) selectedSuKien).getChiHuyPheDich() + "\n" +
+                    "Lực lượng phe địch: " + ((SuKienChienTranh) selectedSuKien).getLucLuongPheDich() + "\n" +
+                    "Phe địch: " + ((SuKienChienTranh) selectedSuKien).getPheDich() + "\n" +
+                    "Chỉ huy phe ta: " + ((SuKienChienTranh) selectedSuKien).getChiHuyPheTa() + "\n" +
+                    "Lực lượng phe ta: " + ((SuKienChienTranh) selectedSuKien).getLucLuongPheTa() + "\n" +
+                    "Phe ta: " + ((SuKienChienTranh) selectedSuKien).getPheTa() + "\n" +
+                    "Kết quả: " + selectedSuKien.getKetQua() + "\n" +
+                    "Tổn thất địch: " + ((SuKienChienTranh) selectedSuKien).getTonThatDich() + "\n" +
+                    "Tổn thất ta: " + ((SuKienChienTranh) selectedSuKien).getTonThatTa()));
             relative1.getChildren().add(new Text("\nNhân vật liên quan: "));
             for (String nv : selectedSuKien.getLienKetNhanVat().keySet()) {
                 Hyperlink link = new Hyperlink(nv);
                 relative1.getChildren().addAll(link, new Text(", "));
                 link.setOnAction(e -> handleLabel("Nhân Vật Lịch Sử", selectedSuKien.getLienKetNhanVat().get(nv), nv, link, relative1.getScene()));
             }
-        relative1.getChildren().add(new Text("\nTriều đại liên quan: "));
-        for (String td : selectedSuKien.getLienKetTrieuDai().keySet()) {
-            Hyperlink link = new Hyperlink(td);
-            link.setOnAction(e -> handleLabel("Triều Đại", selectedSuKien.getLienKetTrieuDai().get(td), td, link, relative1.getScene()));
-            relative1.getChildren().addAll(link, new Text(", "));
+            relative1.getChildren().add(new Text("\nTriều đại liên quan: "));
+            for (String td : selectedSuKien.getLienKetTrieuDai().keySet()) {
+                Hyperlink link = new Hyperlink(td);
+                link.setOnAction(e -> handleLabel("Triều Đại", selectedSuKien.getLienKetTrieuDai().get(td), td, link, relative1.getScene()));
+                relative1.getChildren().addAll(link, new Text(", "));
+            }
+        }
+            else{
+                relative1.getChildren().add(new Text("Tên sự kiện: " + selectedSuKien.getTen() + "\n" +
+                        "Thời gian: " + selectedSuKien.getThoiGian() + "\n" +
+                        "Địa điểm: " + selectedSuKien.getDiaDiem() + "\n" +
+                        "Kết quả: " + selectedSuKien.getKetQua() + "\n"));
+                relative1.getChildren().add(new Text("\nNhân vật liên quan: "));
+                for (String nv : selectedSuKien.getLienKetNhanVat().keySet()) {
+                    Hyperlink link = new Hyperlink(nv);
+                    relative1.getChildren().addAll(link, new Text(", "));
+                    link.setOnAction(e -> handleLabel("Nhân Vật Lịch Sử", selectedSuKien.getLienKetNhanVat().get(nv), nv, link, relative1.getScene()));
+                }
+                relative1.getChildren().add(new Text("\nTriều đại liên quan: "));
+                for (String td : selectedSuKien.getLienKetTrieuDai().keySet()) {
+                    Hyperlink link = new Hyperlink(td);
+                    link.setOnAction(e -> handleLabel("Triều Đại", selectedSuKien.getLienKetTrieuDai().get(td), td, link, relative1.getScene()));
+                    relative1.getChildren().addAll(link, new Text(", "));
+            }
         }
     }
-
     public void handleRenderDiTich(Info tenDiTich, TextFlow relative) {
         DiTichLichSu selectedDiTich = (DiTichLichSu) tenDiTich;
         relative.getChildren().add(new Text("Tên di tích: " + selectedDiTich.getTen() + "\n" +

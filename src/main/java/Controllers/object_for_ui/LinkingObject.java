@@ -4,19 +4,20 @@ import CrawlData.CrawlLeHoi.LeHoi_Nguon_05.LeHoi;
 import CrawlData.CrawlNhanVat.NhanVat;
 import CrawlData.CrawlNhanVat.vua.src.Vua;
 import CrawlData.CrawlSuKien.SuKienChienTranh;
+import CrawlData.CrawlSuKien.SuKienLichSu;
 import CrawlData.CrawlTrieuDai.TrieuDai;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class LinkingObject implements LinkInterface {
-    public ArrayList<SuKienChienTranh> listSuKien;
+    public ArrayList<SuKienLichSu> listSuKien;
     public ArrayList<TrieuDai> listTrieuDai;
     public ArrayList<Vua> listVua;
     public ArrayList<NhanVat> listNhanVat;
     public ArrayList<LeHoi> listLeHoi;
 
-    public LinkingObject(ArrayList<SuKienChienTranh> listSuKien, ArrayList<TrieuDai> listTrieuDai, ArrayList<Vua> listVua, ArrayList<NhanVat> listNhanVat, ArrayList<LeHoi> listLeHoi) {
+    public LinkingObject(ArrayList<SuKienLichSu> listSuKien, ArrayList<TrieuDai> listTrieuDai, ArrayList<Vua> listVua, ArrayList<NhanVat> listNhanVat, ArrayList<LeHoi> listLeHoi) {
         this.listSuKien = listSuKien;
         this.listTrieuDai = listTrieuDai;
         this.listVua = listVua;
@@ -55,9 +56,9 @@ public class LinkingObject implements LinkInterface {
     public void linkNhanVat(ArrayList<NhanVat> nhanVatLichSu) {
 
         //Link Nhan Vat voi Su Kien
-        ArrayList<SuKienChienTranh> listSuKien = this.listSuKien;
+        ArrayList<SuKienLichSu> listSuKien = this.listSuKien;
         for (NhanVat nhanVat : nhanVatLichSu) {
-            HashMap<String, SuKienChienTranh> lienKetSuKien = new HashMap<>();
+            HashMap<String, SuKienLichSu> lienKetSuKien = new HashMap<>();
             int i = 0;
             while (i < listSuKien.size()) {
                 if (listSuKien.get(i).getNameRelativePerson().contains(nhanVat.getTen())) {
@@ -85,12 +86,12 @@ public class LinkingObject implements LinkInterface {
     }
 
     @Override
-    public void linkSuKien(ArrayList<SuKienChienTranh> suKienChienTranh) {
+    public void linkSuKien(ArrayList<SuKienLichSu> suKienChienTranh) {
 
         //Link Su Kien voi Trieu Dai
 
         ArrayList<TrieuDai> listTrieuDai = this.listTrieuDai;
-        for (SuKienChienTranh event : suKienChienTranh) {
+        for (SuKienLichSu event : suKienChienTranh) {
             HashMap<String, TrieuDai> lienKetTrieuDai = new HashMap<>();
             for (String str : event.getNameRelativeDinasty()) {
                 int i = 0;
@@ -106,7 +107,7 @@ public class LinkingObject implements LinkInterface {
 
         //Link Su Kien voi Nhan Vat
         ArrayList<NhanVat> listNhanVat = this.listNhanVat;
-        for (SuKienChienTranh event : suKienChienTranh) {
+        for (SuKienLichSu event : suKienChienTranh) {
             HashMap<String, NhanVat> lienKetNhanVat = new HashMap<>();
             for (String str : event.getNameRelativePerson()) {
                 int i = 0;
@@ -126,9 +127,9 @@ public class LinkingObject implements LinkInterface {
     public void linkTrieuDai(ArrayList<TrieuDai> arrTrieuDai) {
 
         //Link Trieu Dai voi Su Kien
-        ArrayList<SuKienChienTranh> listSuKien = this.listSuKien;
+        ArrayList<SuKienLichSu> listSuKien = this.listSuKien;
         for (TrieuDai trieuDai : arrTrieuDai) {
-            HashMap<String, SuKienChienTranh> lienKetSuKien = new HashMap<>();
+            HashMap<String, SuKienLichSu> lienKetSuKien = new HashMap<>();
             int i = 0;
             while (i < listSuKien.size()) {
                 for (String str : listSuKien.get(i).getNameRelativeDinasty()) {

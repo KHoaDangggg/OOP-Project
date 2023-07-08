@@ -5,17 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9dfc3bd-df16-4e9c-b19f-4053ba0395e1" name="Changes" comment="Update Su Kien and Add Save to Favorite UI function">
-      <change afterPath="$PROJECT_DIR$/src/JSON_Data/SuKien.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/FavoriteInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlSuKien/crawlThuVienLichSu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fxml/FavoriteInfo.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_06_2023_9_01_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_06_2023_9_01_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/SuKien.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/SuKien.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Application/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/app.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/MainSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/MainSceneController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/SearchSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/SearchSceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/GenerateUIObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/GenerateUIObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/JsonToObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/JsonToObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fxml/MainScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fxml/MainScene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fxml/SearchScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fxml/SearchScene.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/LinkInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/LinkInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/LinkingObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/LinkingObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlSuKien/SuKienChienTranh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlSuKien/SuKienChienTranh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlSuKien/crawlThuVienLichSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlSuKien/crawlThuVienLichSu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/TrieuDai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/TrieuDai.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +73,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/D/Documents/GitHub/OOP-Project/src/main/java/CrawlData/CrawlNhanVat/NhaVat_VanSu&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/New folder/OOP-Project&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.545977&quot;,
@@ -116,7 +119,7 @@
     <configuration name="app" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Application.app" />
       <module name="web_Scrapper.main" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\D\Downloads\javafx-sdk-20.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml,javafx.web,javafx.base " />
+      <option name="VM_PARAMETERS" value="--module-path &quot;D:\javafx-sdk-20.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml,javafx.web,javafx.base " />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Application.*" />
@@ -153,8 +156,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testgen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controllers.object_for_ui.testgen" />
+      <module name="web_Scrapper.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controllers.object_for_ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.app" />
+      <item itemvalue="Application.testgen" />
       <item itemvalue="Application.crawlThuVienLichSu" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Data" />
@@ -162,6 +179,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.testgen" />
         <item itemvalue="Application.crawlThuVienLichSu" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.test" />

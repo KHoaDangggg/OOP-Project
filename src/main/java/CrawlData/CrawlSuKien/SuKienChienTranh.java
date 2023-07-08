@@ -8,21 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 
-public class SuKienChienTranh extends Info {
-    private String tenSuKien;
-    @Override
-    public String getTen() {
-        return tenSuKien;
-    }
-
-    @Override
-    public void setTen(String tenSuKien) {
-        this.tenSuKien = tenSuKien;
-        this.ten = tenSuKien;
-    }
-    private String thoiGian;
-    private String diaDiem;
-    private String ketQua;
+public class SuKienChienTranh extends SuKienLichSu {
     private String pheTa;
     private String pheDich;
     private String chiHuyPheTa;
@@ -32,25 +18,9 @@ public class SuKienChienTranh extends Info {
     private String tonThatTa;
     private String tonThatDich;
     private String nguyenNhan;
-    private ArrayList<String> nameRelativePerson = new ArrayList<>();
-    private ArrayList<String> nameRelativeDinasty = new ArrayList<>();
-    private HashMap<String, NhanVat> lienKetNhanVat = new HashMap<>();
-    private HashMap<String, TrieuDai>lienKetTrieuDai = new HashMap<>();
 
     public SuKienChienTranh(String ten) {
         super(ten);
-    }
-
-    public void setDiaDiem(String diaDiem) {
-        this.diaDiem = diaDiem;
-    }
-
-    public void setThoiGian(String thoiGian) {
-        this.thoiGian = thoiGian;
-    }
-
-    public void setKetQua(String ketQua) {
-        this.ketQua = ketQua;
     }
 
     public void setPheTa(String pheTa) {
@@ -88,35 +58,6 @@ public class SuKienChienTranh extends Info {
     public void setNguyenNhan(String nguyenNhan) {
         this.nguyenNhan = nguyenNhan;
     }
-
-    public void setNameRelativePerson(ArrayList<String> nameRelativePerson) {
-        this.nameRelativePerson = nameRelativePerson;
-    }
-
-    public void setNameRelativeDinasty(ArrayList<String> nameRelativeDinasty) {
-        this.nameRelativeDinasty = nameRelativeDinasty;
-    }
-
-    public void setLienKetNhanVat(HashMap<String, NhanVat> lienKetNhanVat) {
-        this.lienKetNhanVat = lienKetNhanVat;
-    }
-
-    public void setLienKetTrieuDai(HashMap<String, TrieuDai> lienKetTrieuDai) {
-        this.lienKetTrieuDai = lienKetTrieuDai;
-    }
-
-    public String getThoiGian() {
-        return thoiGian;
-    }
-
-    public String getDiaDiem() {
-        return diaDiem;
-    }
-
-    public String getKetQua() {
-        return ketQua;
-    }
-
     public String getPheTa() {
         return pheTa;
     }
@@ -152,21 +93,6 @@ public class SuKienChienTranh extends Info {
         return nguyenNhan;
     }
 
-    public ArrayList<String> getNameRelativePerson() {
-        return nameRelativePerson;
-    }
-
-    public ArrayList<String> getNameRelativeDinasty() {
-        return nameRelativeDinasty;
-    }
-    public HashMap<String, NhanVat> getLienKetNhanVat() {
-        return lienKetNhanVat;
-    }
-    public HashMap<String, TrieuDai> getLienKetTrieuDai() {
-
-        return lienKetTrieuDai;
-    }
-
     public void createObject(){
         setThoiGian("Không rõ"); setDiaDiem("Không rõ"); setNguyenNhan("Không rõ");
         setPheTa("Không rõ"); setPheDich("Không rõ"); setChiHuyPheDich("Không rõ");
@@ -177,9 +103,9 @@ public class SuKienChienTranh extends Info {
 
 
     public String toString(){
-        return "\n{\"tenSuKien\": "+"\""+ tenSuKien +"\",\n"+
-                "\"thoiGian\": "+"\""+thoiGian+"\",\n"+
-                "\"diaDiem\": "+"\""+diaDiem+"\",\n"+
+        return "\n{\"tenSuKien\": "+"\""+ this.getTen() +"\",\n"+
+                "\"thoiGian\": "+"\""+this.getThoiGian()+"\",\n"+
+                "\"diaDiem\": "+"\""+this.getDiaDiem()+"\",\n"+
                 "\"nguyenNhan\": "+"\""+nguyenNhan+"\",\n"+
                 "\"pheTa\": "+"\""+pheTa+"\",\n"+
                 "\"pheDich\": "+"\""+pheDich+"\",\n"+
@@ -187,8 +113,8 @@ public class SuKienChienTranh extends Info {
                 "\"chiHuyPheDich\": "+"\""+chiHuyPheDich+"\",\n"+
                 "\"tonThatPheTa\": "+"\""+tonThatTa+"\",\n"+
                 "\"tonThatPheDich\": "+"\""+tonThatDich+"\",\n"+
-                "\"ketQua\": "+"\""+ketQua+"\",\n"+
-                "\"nhanVatLienQuan\": "+"\""+nameRelativePerson+"\",\n"+
-                "\"diaDiemLienQuan\": "+"\""+nameRelativeDinasty+"\"\n}";
+                "\"ketQua\": "+"\""+this.getKetQua()+"\",\n"+
+                "\"nhanVatLienQuan\": "+"\""+this.getNameRelativePerson()+"\",\n"+
+                "\"diaDiemLienQuan\": "+"\""+this.getNameRelativeDinasty()+"\"\n}";
     }
 }
