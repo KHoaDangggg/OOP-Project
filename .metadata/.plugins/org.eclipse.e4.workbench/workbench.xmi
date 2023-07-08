@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_YZSzQAUDEe61BoxwcAXVGw" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_YZSzQQUDEe61BoxwcAXVGw" bindingContexts="_YZTaUgUDEe61BoxwcAXVGw">
+<application:application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_YZSzQAUDEe61BoxwcAXVGw" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_YZSzQQUDEe61BoxwcAXVGw" bindingContexts="_YZTaUgUDEe61BoxwcAXVGw">
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList/>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_YZSzQQUDEe61BoxwcAXVGw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_dIBMMgUDEe61BoxwcAXVGw" label="%trimmedwindow.label.eclipseSDK" x="64" y="64" width="1024" height="768">
@@ -1743,7 +1743,7 @@
   <commands xmi:id="_Yb2_GQUDEe61BoxwcAXVGw" elementId="org.eclipse.ui.project.buildProject" commandName="Build Project" description="Build the selected project" category="_YbzUzwUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb2_GgUDEe61BoxwcAXVGw" elementId="org.eclipse.compare.switchLeftAndRight" commandName="Swap Left and Right View" description="Switch the left and right sides in the compare editor" category="_YbzUygUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb2_GwUDEe61BoxwcAXVGw" elementId="org.eclipse.ui.edit.text.goto.textStart" commandName="Text Start" description="Go to the beginning of the text" category="_YbytowUDEe61BoxwcAXVGw"/>
-  <commands xmi:id="_Yb2_HAUDEe61BoxwcAXVGw" elementId="org.eclipse.eclemma.ui.localJavaShortcut.coverage" commandName="Coverage Java Application" description="Coverage Java Application" category="_YbzUtgUDEe61BoxwcAXVGw"/>
+  <commands xmi:id="_Yb2_HAUDEe61BoxwcAXVGw" elementId="org.eclipse.eclemma.ui.localJavaShortcut.coverage" commandName="Coverage Java application" description="Coverage Java application" category="_YbzUtgUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb2_HQUDEe61BoxwcAXVGw" elementId="org.eclipse.ui.edit.paste" commandName="Paste" description="Paste from the clipboard" category="_YbytoAUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb2_HgUDEe61BoxwcAXVGw" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.search.declarations.in.working.set" commandName="Declaration in Working Set" description="Search for declarations of the selected element in a working set" category="_YbzU0QUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb2_HwUDEe61BoxwcAXVGw" elementId="org.eclipse.oomph.setup.editor.refreshCache" commandName="Refresh Remote Cache" category="_YbzUxQUDEe61BoxwcAXVGw"/>
@@ -1751,7 +1751,7 @@
   <commands xmi:id="_Yb2_IQUDEe61BoxwcAXVGw" elementId="org.eclipse.jdt.debug.ui.javaAppletShortcut.run" commandName="Run Java Applet" description="Run Java Applet" category="_YbzUtgUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb2_IgUDEe61BoxwcAXVGw" elementId="org.eclipse.eclemma.ui.exportSession" commandName="Export Session..." category="_YbzUsAUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb2_IwUDEe61BoxwcAXVGw" elementId="org.eclipse.ui.navigate.previous" commandName="Previous" description="Navigate to the previous item" category="_YbzUxwUDEe61BoxwcAXVGw"/>
-  <commands xmi:id="_Yb2_JAUDEe61BoxwcAXVGw" elementId="org.eclipse.eclemma.ui.scalaShortcut.coverage" commandName="Coverage Scala Application" description="Coverage Scala Application" category="_YbzUtgUDEe61BoxwcAXVGw"/>
+  <commands xmi:id="_Yb2_JAUDEe61BoxwcAXVGw" elementId="org.eclipse.eclemma.ui.scalaShortcut.coverage" commandName="Coverage Scala application" description="Coverage Scala application" category="_YbzUtgUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb2_JQUDEe61BoxwcAXVGw" elementId="org.eclipse.egit.ui.team.clean" commandName="Clean..." category="_YbzU0gUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb2_JgUDEe61BoxwcAXVGw" elementId="org.eclipse.ui.edit.rename" commandName="Rename" description="Rename the selected item" category="_YbzUsQUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb2_JwUDEe61BoxwcAXVGw" elementId="org.eclipse.ui.project.buildAll" commandName="Build All" description="Build all projects" category="_YbzUzwUDEe61BoxwcAXVGw"/>
@@ -1787,7 +1787,7 @@
   <commands xmi:id="_Yb3mNgUDEe61BoxwcAXVGw" elementId="org.eclipse.ui.edit.text.shiftRight" commandName="Shift Right" description="Shift a block of text to the right" category="_YbytoAUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb3mNwUDEe61BoxwcAXVGw" elementId="org.eclipse.ui.navigate.backwardHistory" commandName="Backward History" description="Move backward in the editor navigation history" category="_YbzUxwUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb3mOAUDEe61BoxwcAXVGw" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.search.implementors.in.working.set" commandName="Implementors in Working Set" description="Search for implementors of the selected interface in a working set" category="_YbzU0QUDEe61BoxwcAXVGw"/>
-  <commands xmi:id="_Yb3mOQUDEe61BoxwcAXVGw" elementId="org.eclipse.eclemma.ui.workbenchShortcut.coverage" commandName="Coverage Eclipse Application" description="Coverage Eclipse Application" category="_YbzUtgUDEe61BoxwcAXVGw"/>
+  <commands xmi:id="_Yb3mOQUDEe61BoxwcAXVGw" elementId="org.eclipse.eclemma.ui.workbenchShortcut.coverage" commandName="Coverage Eclipse application" description="Coverage Eclipse application" category="_YbzUtgUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb3mOgUDEe61BoxwcAXVGw" elementId="org.eclipse.ui.edit.text.removeTrailingWhitespace" commandName="Remove Trailing Whitespace" description="Removes the trailing whitespace of each line" category="_YbzUsQUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb3mOwUDEe61BoxwcAXVGw" elementId="org.eclipse.ui.edit.findIncremental" commandName="Incremental Find" description="Incremental find" category="_YbytoAUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb3mPAUDEe61BoxwcAXVGw" elementId="org.eclipse.wst.jsdt.ui.correction.inlineLocal.assist" commandName="Quick Assist - Inline local variable" description="Invokes quick assist and selects 'Inline local variable'" category="_YbytpAUDEe61BoxwcAXVGw"/>
@@ -2332,7 +2332,7 @@
   <commands xmi:id="_Yb-65QUDEe61BoxwcAXVGw" elementId="org.eclipse.ui.project.closeUnrelatedProjects" commandName="Close Unrelated Projects" description="Close unrelated projects" category="_YbzUzwUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb-65gUDEe61BoxwcAXVGw" elementId="org.eclipse.jdt.ui.edit.text.java.self.encapsulate.field" commandName="Encapsulate Field" description="Create getting and setting methods for the field and use only those to access the field" category="_YbzUzAUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb-65wUDEe61BoxwcAXVGw" elementId="org.eclipse.ui.ide.markers.copyMarkerResourceQualifiedName" commandName="Copy Resource Qualified Name To Clipboard" description="Copies markers resource qualified name to the clipboard" category="_YbytoAUDEe61BoxwcAXVGw"/>
-  <commands xmi:id="_Yb-66AUDEe61BoxwcAXVGw" elementId="org.eclipse.pde.ui.runtimeWorkbenchShortcut.run" commandName="Run Eclipse Application" description="Run Eclipse Application" category="_YbzUtgUDEe61BoxwcAXVGw"/>
+  <commands xmi:id="_Yb-66AUDEe61BoxwcAXVGw" elementId="org.eclipse.pde.ui.runtimeWorkbenchShortcut.run" commandName="Run Eclipse application" description="Run Eclipse application" category="_YbzUtgUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb-66QUDEe61BoxwcAXVGw" elementId="org.eclipse.search.ui.performTextSearchWorkspace" commandName="Find Text in Workspace" description="Searches the files in the workspace for specific text." category="_YbzU0QUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb-66gUDEe61BoxwcAXVGw" elementId="org.eclipse.wst.sse.ui.remove.block.comment" commandName="Remove Block Comment" description="Remove Block Comment" category="_YbytoAUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb-66wUDEe61BoxwcAXVGw" elementId="org.eclipse.pde.runtime.spy.commands.menuSpyCommand" commandName="Plug-in Menu Spy" description="Show the Plug-in Spy" category="_YbzU2QUDEe61BoxwcAXVGw"/>
@@ -2369,7 +2369,7 @@
   <commands xmi:id="_Yb-7BwUDEe61BoxwcAXVGw" elementId="org.eclipse.ui.navigate.nextSubTab" commandName="Next Sub-Tab" description="Switch to the next sub-tab" category="_YbzUxwUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb-7CAUDEe61BoxwcAXVGw" elementId="org.eclipse.jdt.ui.edit.text.java.introduce.parameter" commandName="Introduce Parameter" description="Introduce a new method parameter based on the selected expression" category="_YbzUzAUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb-7CQUDEe61BoxwcAXVGw" elementId="org.eclipse.eclemma.ui.removeAllSessions" commandName="Remove All Sessions" category="_YbzUsAUDEe61BoxwcAXVGw"/>
-  <commands xmi:id="_Yb-7CgUDEe61BoxwcAXVGw" elementId="org.eclipse.jdt.debug.ui.localJavaShortcut.run" commandName="Run Java Application" description="Run Java Application" category="_YbzUtgUDEe61BoxwcAXVGw"/>
+  <commands xmi:id="_Yb-7CgUDEe61BoxwcAXVGw" elementId="org.eclipse.jdt.debug.ui.localJavaShortcut.run" commandName="Run Java application" description="Run Java application" category="_YbzUtgUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb-7CwUDEe61BoxwcAXVGw" elementId="org.eclipse.ui.edit.addTask" commandName="Add Task..." description="Add a task" category="_YbytoAUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb-7DAUDEe61BoxwcAXVGw" elementId="org.eclipse.pde.updateUnitVersions" commandName="Update IU Versions from Repositories" description="Update to latest IU versions" category="_YbzUvAUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_Yb-7DQUDEe61BoxwcAXVGw" elementId="org.eclipse.wst.sse.ui.structure.select.enclosing" commandName="Select Enclosing Element" description="Expand selection to include enclosing element" category="_YbytoAUDEe61BoxwcAXVGw"/>
@@ -2411,7 +2411,7 @@
   <commands xmi:id="_YcAJBQUDEe61BoxwcAXVGw" elementId="org.eclipse.jdt.ui.edit.text.java.clean.up" commandName="Clean Up" description="Solve problems and improve code style on selected resources" category="_YbzU2AUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_YcAJBgUDEe61BoxwcAXVGw" elementId="org.eclipse.datatools.sqltools.sqleditor.GotoMatchingTokenAction" commandName="Goto Matching Token" category="_YbzU0wUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_YcAJBwUDEe61BoxwcAXVGw" elementId="org.eclipse.pde.api.tools.ui.setup.projects" commandName="API &amp;Tools Setup..." description="Configure projects for API usage and compatibility checks" category="_YbzUvgUDEe61BoxwcAXVGw"/>
-  <commands xmi:id="_YcAJCAUDEe61BoxwcAXVGw" elementId="org.eclipse.jdt.debug.ui.localJavaShortcut.debug" commandName="Debug Java Application" description="Debug Java Application" category="_YbzUtgUDEe61BoxwcAXVGw"/>
+  <commands xmi:id="_YcAJCAUDEe61BoxwcAXVGw" elementId="org.eclipse.jdt.debug.ui.localJavaShortcut.debug" commandName="Debug Java application" description="Debug Java application" category="_YbzUtgUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_YcAJCQUDEe61BoxwcAXVGw" elementId="org.eclipse.ui.navigate.forward" commandName="Forward" description="Navigate forward" category="_YbzUxwUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_YcAJCgUDEe61BoxwcAXVGw" elementId="org.eclipse.egit.ui.team.CherryPick" commandName="Cherry Pick" category="_YbzU0gUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_YcAJCwUDEe61BoxwcAXVGw" elementId="org.eclipse.buildship.ui.commands.openbuildscript" commandName="Open Gradle Build Script" description="Opens the Gradle build script for the selected Gradle project" category="_YbzUxwUDEe61BoxwcAXVGw"/>
@@ -2682,7 +2682,7 @@
     <parameters xmi:id="_YcB-UAUDEe61BoxwcAXVGw" elementId="org.eclipse.equinox.p2.ui.discovery.commands.TagsParameter" name="Tags"/>
   </commands>
   <commands xmi:id="_YcB-UQUDEe61BoxwcAXVGw" elementId="org.eclipse.jdt.ui.edit.text.java.gotoBreadcrumb" commandName="Show In Breadcrumb" description="Shows the Java editor breadcrumb and sets the keyboard focus into it" category="_YbzUxwUDEe61BoxwcAXVGw"/>
-  <commands xmi:id="_YcB-UgUDEe61BoxwcAXVGw" elementId="org.eclipse.pde.ui.runtimeWorkbenchShortcut.debug" commandName="Debug Eclipse Application" description="Debug Eclipse Application" category="_YbzUtgUDEe61BoxwcAXVGw"/>
+  <commands xmi:id="_YcB-UgUDEe61BoxwcAXVGw" elementId="org.eclipse.pde.ui.runtimeWorkbenchShortcut.debug" commandName="Debug Eclipse application" description="Debug Eclipse application" category="_YbzUtgUDEe61BoxwcAXVGw"/>
   <commands xmi:id="_YcB-UwUDEe61BoxwcAXVGw" elementId="org.eclipse.userstorage.ui.showPullDown" commandName="Show Pull Down Menu" category="_YbzUzgUDEe61BoxwcAXVGw">
     <parameters xmi:id="_YcB-VAUDEe61BoxwcAXVGw" elementId="intoolbar" name="In Tool Bar" optional="false"/>
   </commands>
@@ -2899,4 +2899,4 @@
   <categories xmi:id="_YbzU1wUDEe61BoxwcAXVGw" elementId="org.eclipse.lsp4e.commandCategory" name="Command"/>
   <categories xmi:id="_YbzU2AUDEe61BoxwcAXVGw" elementId="org.eclipse.jdt.ui.category.source" name="Source" description="Java Source Actions"/>
   <categories xmi:id="_YbzU2QUDEe61BoxwcAXVGw" elementId="org.eclipse.pde.runtime.spy.commands.category" name="Spy"/>
-</application:Application>
+</application:application>
