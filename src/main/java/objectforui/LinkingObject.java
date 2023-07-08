@@ -1,4 +1,4 @@
-package controllers.objectforui;
+package objectforui;
 
 import crawlData.CrawlLeHoi.LeHoi_Nguon_05.LeHoi;
 import crawlData.CrawlNhanVat.NhanVat;
