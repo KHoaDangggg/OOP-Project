@@ -3,18 +3,18 @@ package controllers;
 import model.DuLieuLichSu;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
-import model.di_tich.DiTichLichSu;
-import model.di_tich.DiTich_VN;
-import model.le_hoi.LeHoi;
-import model.nhan_vat.DanhNhan;
-import model.nhan_vat.AnhHungVuTrang;
-import model.nhan_vat.NhanVatVanSu;
-import model.nhan_vat.NhanVat;
-import model.nhan_vat.NhanVatLichSu;
-import model.nhan_vat.DanhHieu;
-import model.nhan_vat.Vua;
-import model.su_kien.SuKienChienTranh;
-import model.trieu_dai.TrieuDai;
+import model.ditich.DiTichLichSu;
+import model.ditich.DiTichVN;
+import model.lehoi.LeHoi;
+import model.nhanvat.DanhNhan;
+import model.nhanvat.AnhHungVuTrang;
+import model.nhanvat.NhanVatVanSu;
+import model.nhanvat.NhanVat;
+import model.nhanvat.NhanVatLichSu;
+import model.nhanvat.DanhHieu;
+import model.nhanvat.Vua;
+import model.sukien.SuKienChienTranh;
+import model.trieudai.TrieuDai;
 import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
@@ -172,8 +172,8 @@ public class FavoriteInfo implements Initializable {
         if (tenDiTich instanceof DiTichLichSu) {
             DiTichLichSu selectedDiTich = (DiTichLichSu) tenDiTich;
             relative.getChildren().add(new Text(Utils.textDiTich(selectedDiTich)));
-        } else if (tenDiTich instanceof DiTich_VN) {
-            DiTich_VN selectedDiTich = (DiTich_VN) tenDiTich;
+        } else if (tenDiTich instanceof DiTichVN) {
+            DiTichVN selectedDiTich = (DiTichVN) tenDiTich;
             StringBuilder builder = new StringBuilder();
             LinkedHashMap<String, String> tt = selectedDiTich.getThongTin();
             for (String key : tt.keySet()) {

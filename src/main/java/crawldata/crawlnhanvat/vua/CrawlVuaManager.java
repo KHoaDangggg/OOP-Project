@@ -2,7 +2,7 @@ package crawldata.crawlnhanvat.vua;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import model.nhan_vat.Vua;
+import model.nhanvat.Vua;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 

@@ -1,6 +1,6 @@
 package crawldata.crawlnhanvat.nhanvatvansu;
 
-public class CrawlNhanVat_VanSu {
+public class CrawlNhanVatVanSu {
 
     public static void main(String[] args) {
 /*        String url = "https://vansu.vn/viet-nam/viet-nam-nhan-vat/58/bui-duong-lich";

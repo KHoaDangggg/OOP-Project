@@ -1,19 +1,19 @@
 package objectforui;
 
-import model.di_tich.DiTich;
-import model.di_tich.DiTichLichSu;
-import model.di_tich.DiTich_VN;
-import model.le_hoi.LeHoi;
-import model.nhan_vat.DanhNhan;
-import model.nhan_vat.AnhHungVuTrang;
-import model.nhan_vat.NhanVatVanSu;
-import model.nhan_vat.NhanVat;
-import model.nhan_vat.NhanVatLichSu;
-import model.nhan_vat.DanhHieu;
-import model.nhan_vat.Vua;
-import model.su_kien.SuKienChienTranh;
-import model.su_kien.SuKienLichSu;
-import model.trieu_dai.TrieuDai;
+import model.ditich.DiTich;
+import model.ditich.DiTichLichSu;
+import model.ditich.DiTichVN;
+import model.lehoi.LeHoi;
+import model.nhanvat.DanhNhan;
+import model.nhanvat.AnhHungVuTrang;
+import model.nhanvat.NhanVatVanSu;
+import model.nhanvat.NhanVat;
+import model.nhanvat.NhanVatLichSu;
+import model.nhanvat.DanhHieu;
+import model.nhanvat.Vua;
+import model.sukien.SuKienChienTranh;
+import model.sukien.SuKienLichSu;
+import model.trieudai.TrieuDai;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 import org.json.JSONArray;
@@ -44,7 +44,7 @@ public class JsonToObj {
     public static ArrayList<DanhNhan> listDanhNhan = new ArrayList<>();
     public static ArrayList<DanhHieu> listTrangNguyenBangNhan = new ArrayList<>();
     public static ArrayList<AnhHungVuTrang> listAnhHungVuTrang = new ArrayList<>();
-    public static ArrayList<DiTich_VN> listDiTichVN = new ArrayList<>();
+    public static ArrayList<DiTichVN> listDiTichVN = new ArrayList<>();
     public static ArrayList<SuKienChienTranh> listChienTranh = new ArrayList<>();
 
 
@@ -60,7 +60,7 @@ public class JsonToObj {
         //Get Le hoi
         JsonToObj4(listLeHoi);
         //Get Di tich lich su
-        JsonToObj6("src/JSON_Data/DiTichLichSu.json", listDiTichLichSu);
+        JsonToObj6("src/jsondata/DiTichLichSu.json", listDiTichLichSu);
         JsonToObj10();
         cleanDiTich();
         //Get danh nhan, trang nguyen, anh hung vu trang
@@ -68,7 +68,7 @@ public class JsonToObj {
         //Get nhan vat from Van Su
         JsonToObj8();
         //Get Su Kien
-        JsonToObj9("src/JSON_Data/SuKien.json", listSuKien);
+        JsonToObj9("src/jsondata/SuKien.json", listSuKien);
         cleanSuKien();
         //Clean and merge nhanvatlichsu
         cleanNhanVat();
@@ -173,7 +173,7 @@ public class JsonToObj {
 
     private void JsonToObj1(ArrayList<SuKienChienTranh> list) {
         Gson gson = new Gson();
-        FileReader fileReader = reader("src/JSON_Data/ChienTranh.json");
+        FileReader fileReader = reader("src/jsondata/ChienTranh.json");
         Type objectType = new TypeToken<ArrayList<SuKienChienTranh>>() {
         }.getType();
         ArrayList<SuKienChienTranh> convertedList = gson.fromJson(fileReader, objectType);
@@ -183,7 +183,7 @@ public class JsonToObj {
 
     private void JsonToObj2(ArrayList<TrieuDai> list) {
         Gson gson = new Gson();
-        FileReader fileReader = reader("src/JSON_Data/trieuDai.json");
+        FileReader fileReader = reader("src/jsondata/trieuDai.json");
         Type objectType = new TypeToken<ArrayList<TrieuDai>>() {
         }.getType();
         ArrayList<TrieuDai> convertedList = gson.fromJson(fileReader, objectType);
@@ -193,7 +193,7 @@ public class JsonToObj {
 
     private void JsonToObj3(ArrayList<Vua> list) {
         Gson gson = new Gson();
-        FileReader fileReader = reader("src/JSON_Data/Vua.json");
+        FileReader fileReader = reader("src/jsondata/Vua.json");
         Type objectType = new TypeToken<ArrayList<Vua>>() {
         }.getType();
         ArrayList<Vua> convertedList = gson.fromJson(fileReader, objectType);
@@ -203,7 +203,7 @@ public class JsonToObj {
 
     private void JsonToObj4(ArrayList<LeHoi> list) {
         Gson gson = new Gson();
-        FileReader fileReader = reader("src/JSON_Data/LeHoi_Nguon_05.json");
+        FileReader fileReader = reader("src/jsondata/LeHoi_Nguon_05.json");
         Type objectType = new TypeToken<ArrayList<LeHoi>>() {
         }.getType();
         ArrayList<LeHoi> convertedList = gson.fromJson(fileReader, objectType);
@@ -214,7 +214,7 @@ public class JsonToObj {
     private void JsonToObj5(ArrayList<NhanVat> list) {
         String input;
         try {
-            input = Files.readString(Path.of("src/JSON_Data/NhanVatLichSu.json"), StandardCharsets.UTF_8);
+            input = Files.readString(Path.of("src/jsondata/NhanVatLichSu.json"), StandardCharsets.UTF_8);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -247,19 +247,19 @@ public class JsonToObj {
 
     private void JsonToObj7() {
         Gson gson = new Gson();
-        FileReader fileReader = reader("src/JSON_Data/danhNhanThoiDinh.json");
+        FileReader fileReader = reader("src/jsondata/danhNhanThoiDinh.json");
         Type objectType = new TypeToken<ArrayList<DanhNhan>>() {
         }.getType();
         ArrayList<DanhNhan> convertedList = gson.fromJson(fileReader, objectType);
         listDanhNhan.addAll(convertedList);
 
-        fileReader = reader("src/JSON_Data/TrangNguyen&BangNhan.json");
+        fileReader = reader("src/jsondata/TrangNguyen&BangNhan.json");
         objectType = new TypeToken<ArrayList<DanhHieu>>() {
         }.getType();
         ArrayList<DanhHieu> convertedList1 = gson.fromJson(fileReader, objectType);
         listTrangNguyenBangNhan.addAll(convertedList1);
 
-        fileReader = reader("src/JSON_Data/vuTrang.json");
+        fileReader = reader("src/jsondata/vuTrang.json");
         objectType = new TypeToken<ArrayList<AnhHungVuTrang>>() {
         }.getType();
         ArrayList<AnhHungVuTrang> convertedList2 = gson.fromJson(fileReader, objectType);
@@ -270,7 +270,7 @@ public class JsonToObj {
     private void JsonToObj8() {
         String input;
         try {
-            input = Files.readString(Path.of("src/JSON_Data/NhanVatLichSu_VanSu.json"), StandardCharsets.UTF_8);
+            input = Files.readString(Path.of("src/jsondata/NhanVatLichSu_VanSu.json"), StandardCharsets.UTF_8);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -302,7 +302,7 @@ public class JsonToObj {
     private void JsonToObj10() {
         String input;
         try {
-            input = Files.readString(Path.of("src/JSON_Data/DiTichVN.json"));
+            input = Files.readString(Path.of("src/jsondata/DiTichVN.json"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -334,7 +334,7 @@ public class JsonToObj {
             keySets.remove("loaiDiTich");
             keySets.remove("diaDiem");
             for (String key : keySets) thongTin.put(key, obj.getString(key));
-            listDiTichVN.add(new DiTich_VN(ten, loaiDiTich, diaDiem, thongTin, img));
+            listDiTichVN.add(new DiTichVN(ten, loaiDiTich, diaDiem, thongTin, img));
         }
         System.out.println("Convert to obj successfull");
     }

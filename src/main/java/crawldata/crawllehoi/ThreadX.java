@@ -1,6 +1,6 @@
 package crawldata.crawllehoi;
 
-import model.le_hoi.LeHoi;
+import model.lehoi.LeHoi;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -9,10 +9,10 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Thread_X implements Runnable {
+public class ThreadX implements Runnable {
     private final String url;
 
-    public Thread_X(String url) {
+    public ThreadX(String url) {
         this.url = url;
     }
 

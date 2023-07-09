@@ -1,4 +1,4 @@
-package model.le_hoi;
+package model.lehoi;
 
 import model.DuLieuLichSu;
 

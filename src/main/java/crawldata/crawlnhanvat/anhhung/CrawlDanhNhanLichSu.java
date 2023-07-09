@@ -2,7 +2,7 @@ package crawldata.crawlnhanvat.anhhung;
 
 import java.io.IOException;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import model.nhan_vat.DanhNhan;
+import model.nhanvat.DanhNhan;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;

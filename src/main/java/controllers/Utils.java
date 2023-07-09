@@ -1,15 +1,15 @@
 package controllers;
 
-import model.di_tich.DiTichLichSu;
-import model.le_hoi.LeHoi;
-import model.nhan_vat.DanhNhan;
-import model.nhan_vat.AnhHungVuTrang;
-import model.nhan_vat.NhanVat;
-import model.nhan_vat.DanhHieu;
-import model.nhan_vat.Vua;
-import model.su_kien.SuKienChienTranh;
-import model.su_kien.SuKienLichSu;
-import model.trieu_dai.TrieuDai;
+import model.ditich.DiTichLichSu;
+import model.lehoi.LeHoi;
+import model.nhanvat.DanhNhan;
+import model.nhanvat.AnhHungVuTrang;
+import model.nhanvat.NhanVat;
+import model.nhanvat.DanhHieu;
+import model.nhanvat.Vua;
+import model.sukien.SuKienChienTranh;
+import model.sukien.SuKienLichSu;
+import model.trieudai.TrieuDai;
 
 import java.text.Normalizer;
 import java.util.ArrayList;

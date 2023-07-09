@@ -1,4 +1,4 @@
-package model.trieu_dai;
+package model.trieudai;
 
 
 public class KinhDo {

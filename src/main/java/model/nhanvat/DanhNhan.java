@@ -1,4 +1,4 @@
-package model.nhan_vat;
+package model.nhanvat;
 
 public class DanhNhan extends NhanVat {
     private final String tuLieu;

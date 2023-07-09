@@ -2,11 +2,11 @@ package controllers;
 
 import application.App;
 import model.DuLieuLichSu;
-import model.di_tich.DiTich;
-import model.le_hoi.LeHoi;
-import model.nhan_vat.NhanVat;
-import model.su_kien.SuKienLichSu;
-import model.trieu_dai.TrieuDai;
+import model.ditich.DiTich;
+import model.lehoi.LeHoi;
+import model.nhanvat.NhanVat;
+import model.sukien.SuKienLichSu;
+import model.trieudai.TrieuDai;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

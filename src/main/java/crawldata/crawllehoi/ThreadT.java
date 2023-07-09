@@ -8,10 +8,10 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 
 
-public class Thread_T implements Runnable{
+public class ThreadT implements Runnable{
     private String url;
 
-    public Thread_T(String url) {
+    public ThreadT(String url) {
         this.url = url;
     }
 

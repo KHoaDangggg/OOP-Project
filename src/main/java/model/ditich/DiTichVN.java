@@ -1,11 +1,11 @@
-package model.di_tich;
+package model.ditich;
 
 import java.util.LinkedHashMap;
 
-public class DiTich_VN extends DiTich{
+public class DiTichVN extends DiTich{
     private final String img;
     private final LinkedHashMap<String, String> thongTin;
-    public DiTich_VN(String ten, String loaiDiTich, String diaDiem, LinkedHashMap<String, String> thongTin, String img) {
+    public DiTichVN(String ten, String loaiDiTich, String diaDiem, LinkedHashMap<String, String> thongTin, String img) {
         super(ten, loaiDiTich, diaDiem);
         this.thongTin = thongTin;
         this.img = img;

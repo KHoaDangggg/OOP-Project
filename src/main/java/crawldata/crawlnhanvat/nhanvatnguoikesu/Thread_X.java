@@ -1,6 +1,6 @@
 package crawldata.crawlnhanvat.nhanvatnguoikesu;
 
-import model.nhan_vat.NhanVatLichSu;
+import model.nhanvat.NhanVatLichSu;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;

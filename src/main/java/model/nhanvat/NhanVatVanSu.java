@@ -1,4 +1,4 @@
-package model.nhan_vat;
+package model.nhanvat;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
