@@ -4,18 +4,73 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9dfc3bd-df16-4e9c-b19f-4053ba0395e1" name="Changes" comment="Final commit 1:&#10;1. Checking convention and remove most code warnings&#10;2. Update image loader using thread asynchronously to UI&#10;3. Update and optimize linking operation, add cleaning method for crawled data&#10;4. Update fxml UI&#10;5. Update controller for UI&#10;&#10;#Some problems:&#10;1. Favorite fxml still need to check error case&#10;2. Checking convention (continue)&#10;3. Optimizing code (continue)">
+    <list default="true" id="a9dfc3bd-df16-4e9c-b19f-4053ba0395e1" name="Changes" comment="Final commit 2:&#10;Update convention and model">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/ChienTranh.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsondata/ChienTranh.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/DiTichLichSu.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsondata/DiTichLichSu.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/DiTichVN.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsondata/DiTichVN.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/LeHoi_Nguon_05.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsondata/LeHoi_Nguon_05.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/NhanVatLichSu.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsondata/NhanVatLichSu.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/NhanVatLichSu_VanSu.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsondata/NhanVatLichSu_VanSu.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/SuKien.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsondata/SuKien.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/TrangNguyen&amp;BangNhan.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsondata/TrangNguyen&amp;BangNhan.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/Vua.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsondata/Vua.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/danhNhanThoiDinh.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsondata/danhNhanThoiDinh.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/trieuDai.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsondata/trieuDai.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSON_Data/vuTrang.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsondata/vuTrang.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/ButtonsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/ButtonsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/FavoriteInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/FavoriteInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/MainSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/MainSceneController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/SearchSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/SearchSceneController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/TextAreaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/TextAreaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/DuLieuLichSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/DuLieuLichSu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/di_tich/DiTich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/di_tich/DiTich.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/le_hoi/LeHoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/le_hoi/LeHoi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/nhan_vat/NhanVat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/nhan_vat/NhanVat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/su_kien/SuKienLichSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/su_kien/SuKienLichSu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/trieu_dai/TrieuDai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/trieu_dai/TrieuDai.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_di_tich/crawl_di_tich_ditichvn/CrawlDiTich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawlditich/crawlditichvn/CrawlDiTich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_di_tich/crawl_di_tich_ditichvn/CrawlFromDiTichVN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawlditich/crawlditichvn/CrawlFromDiTichVN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_di_tich/crawl_di_tich_wiki/CrawlDiTichWiki.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawlditich/crawlditichwiki/CrawlDiTichWiki.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_le_hoi/CrawLeHoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawllehoi/CrawLeHoi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_le_hoi/CrawlLeHoiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawllehoi/CrawlLeHoiManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_le_hoi/Thread_T.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawllehoi/Thread_T.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_le_hoi/Thread_X.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawllehoi/Thread_X.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/anh_hung/CrawlAnhHungVuTrang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawlnhanvat/anhhung/CrawlAnhHungVuTrang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/anh_hung/CrawlDanhNhanLichSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawlnhanvat/anhhung/CrawlDanhNhanLichSu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/nhan_vat_nguoikesu/CrawlNhanVat_NguoiKeSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawlnhanvat/nhanvatnguoikesu/CrawlNhanVat_NguoiKeSu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/nhan_vat_nguoikesu/Thread_T.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawlnhanvat/nhanvatnguoikesu/Thread_T.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/nhan_vat_nguoikesu/Thread_X.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawlnhanvat/nhanvatnguoikesu/Thread_X.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/nhan_vat_vansu/CrawlNhanVat_VanSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawlnhanvat/nhanvatvansu/CrawlNhanVat_VanSu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/nhan_vat_vansu/CrawlVanSuManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawlnhanvat/nhanvatvansu/CrawlVanSuManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/trang_nguyen_bang_nhan/CrawlTrangNguyenBangNhan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawlnhanvat/trangnguyenbangnhan/CrawlTrangNguyenBangNhan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/vua/src/CrawlVuaManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawlnhanvat/vua/CrawlVuaManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/vua/src/CrawlVuaVietNam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawlnhanvat/vua/CrawlVuaVietNam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_su_kien/CrawlChienTranh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawlsukien/CrawlChienTranh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_su_kien/CrawlChienTranhWiki.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawlsukien/CrawlChienTranhWiki.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_su_kien/CrawlThuVienLichSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawlsukien/CrawlThuVienLichSu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_trieu_dai/CrawlTrieuDai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawldata/crawltrieudai/CrawlTrieuDai.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/DuLieuLichSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/DuLieuLichSu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/di_tich/DiTich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/di_tich/DiTich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/di_tich/DiTichLichSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/di_tich/DiTichLichSu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/di_tich/DiTich_VN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/di_tich/DiTich_VN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/le_hoi/LeHoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/le_hoi/LeHoi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/nhan_vat/AnhHungVuTrang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/nhan_vat/AnhHungVuTrang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/nhan_vat/DanhHieu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/nhan_vat/DanhHieu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/nhan_vat/DanhNhan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/nhan_vat/DanhNhan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/nhan_vat/NhanVat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/nhan_vat/NhanVat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/nhan_vat/NhanVatLichSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/nhan_vat/NhanVatLichSu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/nhan_vat/NhanVatVanSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/nhan_vat/NhanVatVanSu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/nhan_vat/Vua.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/nhan_vat/Vua.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/su_kien/SuKienChienTranh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/su_kien/SuKienChienTranh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/su_kien/SuKienLichSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/su_kien/SuKienLichSu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/trieu_dai/KinhDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/trieu_dai/KinhDo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/trieu_dai/QuocHieu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/trieu_dai/QuocHieu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/trieu_dai/TrieuDai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/trieu_dai/TrieuDai.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object_for_ui/GenerateUIObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectforui/GenerateUIObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object_for_ui/JsonToObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectforui/JsonToObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object_for_ui/LinkInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectforui/LinkInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object_for_ui/LinkingObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectforui/LinkingObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object_for_ui/test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,19 +126,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "check__khoa",
-    "last_opened_file_path": "C:/Users/D/Documents/OOP-Project/src/main/java/crawl_data/crawl_su_kien",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.545977",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;check__khoa&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/D/Documents/OOP-Project/src/main/java/crawl_data/crawl_su_kien&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.545977&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\D\Documents\OOP-Project\src\main\java\crawl_data\crawl_su_kien" />
@@ -109,11 +164,11 @@
       </method>
     </configuration>
     <configuration name="CrawlDiTich" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="crawl_data.crawl_di_tich.crawl_di_tich_ditichvn.CrawlDiTich" />
+      <option name="MAIN_CLASS_NAME" value="crawldata.crawlditich.crawlditichvn.CrawlDiTich" />
       <module name="web_Scrapper.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="crawl_data.crawl_di_tich.crawl_di_tich_ditichvn.*" />
+          <option name="PATTERN" value="crawldata.crawlditich.crawlditichvn.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,11 +177,11 @@
       </method>
     </configuration>
     <configuration name="CrawlDiTichWiki" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="crawl_data.crawl_di_tich.crawl_di_tich_wiki.CrawlDiTichWiki" />
+      <option name="MAIN_CLASS_NAME" value="crawldata.crawlditich.crawlditichwiki.CrawlDiTichWiki" />
       <module name="web_Scrapper.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="crawl_data.crawl_di_tich.crawl_di_tich_wiki.*" />
+          <option name="PATTERN" value="crawldata.crawlditich.crawlditichwiki.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,11 +190,11 @@
       </method>
     </configuration>
     <configuration name="CrawlNhanVat_VanSu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="crawl_data.crawl_nhan_vat.nhan_vat_vansu.CrawlNhanVat_VanSu" />
+      <option name="MAIN_CLASS_NAME" value="crawldata.crawlnhanvat.nhanvatvansu.CrawlNhanVat_VanSu" />
       <module name="web_Scrapper.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="crawl_data.model.nhan_vat.*" />
+          <option name="PATTERN" value="model.nhan_vat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,11 +203,11 @@
       </method>
     </configuration>
     <configuration name="CrawlThuVienLichSu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="crawl_data.crawl_su_kien.CrawlThuVienLichSu" />
+      <option name="MAIN_CLASS_NAME" value="crawldata.crawlsukien.CrawlThuVienLichSu" />
       <module name="web_Scrapper.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="crawl_data.model.su_kien.*" />
+          <option name="PATTERN" value="model.su_kien.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,7 +216,7 @@
       </method>
     </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="object_for_ui.test" />
+      <option name="MAIN_CLASS_NAME" value="objectforui.test" />
       <module name="web_Scrapper.main" />
       <extension name="coverage">
         <pattern>
@@ -175,16 +230,15 @@
     </configuration>
     <list>
       <item itemvalue="Application.App" />
+      <item itemvalue="Application.CrawlDiTich" />
       <item itemvalue="Application.CrawlDiTichWiki" />
       <item itemvalue="Application.CrawlNhanVat_VanSu" />
       <item itemvalue="Application.CrawlThuVienLichSu" />
-      <item itemvalue="Application.CrawlDiTichVN" />
       <item itemvalue="Application.test" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.CrawlThuVienLichSu" />
-        <item itemvalue="Application.CrawlDiTichVN" />
         <item itemvalue="Application.CrawlNhanVat_VanSu" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.CrawlDiTichWiki" />
@@ -230,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688885199940</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Final commit 1:&#10;1. Checking convention and remove most code warnings&#10;2. Update image loader using thread asynchronously to UI&#10;3. Update and optimize linking operation, add cleaning method for crawled data&#10;4. Update fxml UI&#10;5. Update controller for UI&#10;&#10;#Some problems:&#10;1. Favorite fxml still need to check error case&#10;2. Checking convention (continue)&#10;3. Optimizing code (continue)">
+      <option name="closed" value="true" />
+      <created>1688887528946</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688887528946</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -239,7 +301,8 @@
     <MESSAGE value="Update UI fon Di tich" />
     <MESSAGE value="Update Su Kien and Add Save to Favorite UI function" />
     <MESSAGE value="Final commit 1:&#10;1. Checking convention and remove most code warnings&#10;2. Update image loader using thread asynchronously to UI&#10;3. Update and optimize linking operation, add cleaning method for crawled data&#10;4. Update fxml UI&#10;5. Update controller for UI&#10;&#10;#Some problems:&#10;1. Favorite fxml still need to check error case&#10;2. Checking convention (continue)&#10;3. Optimizing code (continue)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final commit 1:&#10;1. Checking convention and remove most code warnings&#10;2. Update image loader using thread asynchronously to UI&#10;3. Update and optimize linking operation, add cleaning method for crawled data&#10;4. Update fxml UI&#10;5. Update controller for UI&#10;&#10;#Some problems:&#10;1. Favorite fxml still need to check error case&#10;2. Checking convention (continue)&#10;3. Optimizing code (continue)" />
+    <MESSAGE value="Final commit 2:&#10;Update convention and model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final commit 2:&#10;Update convention and model" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/web_Scrapper$Main.ic" NAME="Main Coverage Results" MODIFIED="1683567461175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

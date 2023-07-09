@@ -1,12 +1,12 @@
 package controllers;
 
 import application.App;
-import crawl_data.model.DuLieuLichSu;
-import crawl_data.model.di_tich.DiTich;
-import crawl_data.model.le_hoi.LeHoi;
-import crawl_data.model.nhan_vat.NhanVat;
-import crawl_data.model.su_kien.SuKienLichSu;
-import crawl_data.model.trieu_dai.TrieuDai;
+import model.DuLieuLichSu;
+import model.di_tich.DiTich;
+import model.le_hoi.LeHoi;
+import model.nhan_vat.NhanVat;
+import model.su_kien.SuKienLichSu;
+import model.trieu_dai.TrieuDai;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

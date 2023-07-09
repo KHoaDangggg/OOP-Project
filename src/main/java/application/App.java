@@ -1,13 +1,13 @@
 package application;
 
-import crawl_data.model.di_tich.DiTich;
-import crawl_data.model.su_kien.SuKienLichSu;
-import object_for_ui.GenerateUIObject;
-import crawl_data.model.le_hoi.LeHoi;
-import crawl_data.model.nhan_vat.NhanVat;
-import crawl_data.model.nhan_vat.NhanVatLichSu;
-import crawl_data.model.nhan_vat.Vua;
-import crawl_data.model.trieu_dai.TrieuDai;
+import model.di_tich.DiTich;
+import model.su_kien.SuKienLichSu;
+import objectforui.GenerateUIObject;
+import model.le_hoi.LeHoi;
+import model.nhan_vat.NhanVat;
+import model.nhan_vat.NhanVatLichSu;
+import model.nhan_vat.Vua;
+import model.trieu_dai.TrieuDai;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 

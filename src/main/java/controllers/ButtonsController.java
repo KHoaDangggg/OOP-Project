@@ -1,6 +1,6 @@
 package controllers;
 
-import crawl_data.model.DuLieuLichSu;
+import model.DuLieuLichSu;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
