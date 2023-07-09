@@ -75,9 +75,16 @@ public class LinkingObject implements LinkInterface {
             HashMap<String, TrieuDai> lienKetTrieuDai = new HashMap<>();
             int i = 0;
             while (i < listTrieuDai.size()) {
-                if (listTrieuDai.get(i).getKings().contains(nhanVat.getTen())) {
+                /*if (listTrieuDai.get(i).getKings().contains(nhanVat.getTen())) {
                     lienKetTrieuDai.putIfAbsent(listTrieuDai.get(i).getTen(), listTrieuDai.get(i));
                     break;
+                }*/
+                for(String vua: listTrieuDai.get(i).getKings()){
+                    String str1 = vua.toLowerCase();
+                    String str2 = nhanVat.getTen().toLowerCase();
+                    if(str1.equalsIgnoreCase(str2)||str1.contains(str2)||str2.contains(str1)){
+                        lienKetTrieuDai.put(listTrieuDai.get(i).getTen(), listTrieuDai.get(i));
+                    }
                 }
                 i++;
             }

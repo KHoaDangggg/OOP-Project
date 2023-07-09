@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9dfc3bd-df16-4e9c-b19f-4053ba0395e1" name="Changes" comment="Update Su Kien and Add Save to Favorite UI function">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_06_2023_9_01_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_06_2023_9_01_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON_Data/SuKien.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/SuKien.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Application/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/app.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/SearchSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/SearchSceneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/GenerateUIObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/GenerateUIObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/JsonToObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/JsonToObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/LinkInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/LinkInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/LinkingObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/object_for_ui/LinkingObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlNhanVat/NhanVat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlSuKien/SuKienChienTranh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlSuKien/SuKienChienTranh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlSuKien/crawlThuVienLichSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlSuKien/crawlThuVienLichSu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/TrieuDai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrawlData/CrawlTrieuDai/TrieuDai.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +77,7 @@
       <recent name="C:\Users\D\Documents\GitHub\OOP-Project\src\JSON_Data" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.app">
+  <component name="RunManager" selected="Application.testgen">
     <configuration name="Data" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CrawlData.CrawlDiTich.Data" />
       <module name="web_Scrapper.main" />
@@ -218,7 +206,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687661528258</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update Su Kien and Add Save to Favorite UI function">
+      <created>1688837818266</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688837818266</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update Su Kien and Add Save to Favorite UI function">
+      <created>1688837933298</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688837933298</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
