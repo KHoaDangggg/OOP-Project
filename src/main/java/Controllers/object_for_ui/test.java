@@ -2,7 +2,6 @@ package Controllers.object_for_ui;
 
 
 import CrawlData.CrawlDiTich.DiTich;
-import CrawlData.CrawlDiTich.DiTichLichSu;
 
 public class test {
     public static void main(String[] args) {

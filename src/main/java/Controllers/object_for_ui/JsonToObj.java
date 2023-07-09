@@ -13,7 +13,7 @@ import CrawlData.CrawlNhanVat.trangnguyenbangnhan.src.DanhHieu;
 import CrawlData.CrawlNhanVat.vua.src.Vua;
 import CrawlData.CrawlSuKien.SuKienChienTranh;
 import CrawlData.CrawlTrieuDai.TrieuDai;
-import CrawlData.Info;
+
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 import org.json.JSONArray;

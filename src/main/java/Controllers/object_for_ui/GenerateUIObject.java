@@ -1,10 +1,8 @@
 package Controllers.object_for_ui;
 
 import CrawlData.CrawlDiTich.DiTich;
-import CrawlData.CrawlDiTich.DiTichLichSu;
 import CrawlData.CrawlLeHoi.LeHoi_Nguon_05.LeHoi;
 import CrawlData.CrawlNhanVat.NhanVat;
-
 import CrawlData.CrawlNhanVat.vua.src.Vua;
 import CrawlData.CrawlSuKien.SuKienChienTranh;
 import CrawlData.CrawlTrieuDai.TrieuDai;

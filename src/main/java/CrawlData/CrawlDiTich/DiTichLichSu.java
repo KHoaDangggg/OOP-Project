@@ -1,6 +1,5 @@
 package CrawlData.CrawlDiTich;
 
-import CrawlData.Info;
 
 public class DiTichLichSu extends DiTich {
     private  String namCongNhan;

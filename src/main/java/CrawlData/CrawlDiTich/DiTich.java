@@ -20,9 +20,6 @@ public class DiTich extends Info {
         return loaiDiTich;
     }
 
-    public void setLoaiDiTich(String loaiDiTich) {
-        this.loaiDiTich = loaiDiTich;
-    }
 
     public String getDiaDiem() {
         return diaDiem;

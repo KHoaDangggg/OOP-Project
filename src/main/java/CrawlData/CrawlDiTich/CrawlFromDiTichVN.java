@@ -97,11 +97,6 @@ public class CrawlFromDiTichVN {
         }
 
         //Shutdown executor
-        try {
-            executor.awaitTermination(10, TimeUnit.SECONDS);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
         executor.shutdown();
     }
 
