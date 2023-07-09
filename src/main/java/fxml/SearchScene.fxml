@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.Blend?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<VBox prefHeight="450.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.searchSceneController">
+<VBox prefHeight="450.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SearchSceneController">
     <children>
         <AnchorPane prefHeight="450.0" prefWidth="775.0" styleClass="bg" stylesheets="@backgroung.css" VBox.vgrow="ALWAYS">
             <children>
@@ -33,7 +26,7 @@
                             <Blend />
                         </effect></TextFlow>
                 </ScrollPane>
-                <ScrollPane fx:id="imageContainer" layoutX="581.0" layoutY="90.0" prefHeight="312.0" prefWidth="179.0" style="-fx-background-color: transparent;">
+                <ScrollPane id="imageCon" fx:id="imageContainer" layoutX="581.0" layoutY="90.0" prefHeight="312.0" prefWidth="179.0" style="-fx-background-color: transparent;">
                     <effect>
                         <Blend />
                     </effect></ScrollPane>
@@ -41,7 +34,7 @@
                     <font>
                         <Font name="Arial Bold" size="36.0" />
                     </font></Label>
-                <Button id="save" fx:id="saveBtn" layoutX="208.20000000000005" layoutY="413.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"  prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: BE1B32;" text="Lưu" textFill="WHITE" AnchorPane.bottomAnchor="11.799999999999955" AnchorPane.rightAnchor="467.0">
+                <Button id="save" fx:id="saveBtn" layoutX="208.20000000000005" layoutY="413.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: BE1B32;" text="Lưu" textFill="WHITE" AnchorPane.bottomAnchor="11.799999999999955" AnchorPane.rightAnchor="467.0">
                     <font>
                         <Font name="Arial Bold" size="12.0" />
                     </font>
