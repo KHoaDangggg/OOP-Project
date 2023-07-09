@@ -1,7 +1,9 @@
 package Controllers;
 
 import Application.app;
+import CrawlData.CrawlDiTich.DiTich;
 import CrawlData.CrawlDiTich.DiTichLichSu;
+import CrawlData.CrawlDiTich.DiTich_VN;
 import CrawlData.CrawlLeHoi.LeHoi_Nguon_05.LeHoi;
 import CrawlData.CrawlNhanVat.CrawlAnhHung.DanhNhan;
 import CrawlData.CrawlNhanVat.CrawlAnhHung.anhHungVuTrang;
@@ -16,6 +18,7 @@ import CrawlData.Info;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -42,7 +45,7 @@ public class SearchSceneController implements Initializable {
     @FXML
     private TextField textField;
     private static ObservableList<SuKienChienTranh> suKienList = FXCollections.observableArrayList();
-    private static ObservableList<DiTichLichSu> diTichList = FXCollections.observableArrayList();
+    private static ObservableList<DiTich> diTichList = FXCollections.observableArrayList();
     private static ObservableList<LeHoi> leHoiList = FXCollections.observableArrayList();
     private static ObservableList<NhanVat> nhanVatList = FXCollections.observableArrayList();
     private final ObservableList<Info> nameSelectedList = FXCollections.observableArrayList();
@@ -175,14 +178,14 @@ public class SearchSceneController implements Initializable {
             Hyperlink link = new Hyperlink(sk);
             // Add the Text and Hyperlink nodes to the TextFlow node
             relative.getChildren().addAll(link, new Text(", "));
-            link.setOnAction(e -> handleLabel("Sự Kiện", selectedTrieuDai.getLienKetSuKien().get(sk), sk, link, relative.getScene()));
+            link.setOnAction(e -> handleLabel("Sự Kiện", selectedTrieuDai.getLienKetSuKien().get(sk), sk, relative.getScene()));
         }
         relative.getChildren().add(new Text("\nVua liên quan: "));
         for (String sk : selectedTrieuDai.getLienKetVua().keySet()) {
             Hyperlink link = new Hyperlink(sk);
             // Add the Text and Hyperlink nodes to the TextFlow node
             relative.getChildren().addAll(link, new Text(", "));
-            link.setOnAction(e -> handleLabel("Nhân Vật Lịch Sử", selectedTrieuDai.getLienKetVua().get(sk), sk, link, relative.getScene()));
+            link.setOnAction(e -> handleLabel("Nhân Vật Lịch Sử", selectedTrieuDai.getLienKetVua().get(sk), sk, relative.getScene()));
 
         }
     }
@@ -206,23 +209,43 @@ public class SearchSceneController implements Initializable {
             for (String nv : selectedSuKien.getLienKetNhanVat().keySet()) {
                 Hyperlink link = new Hyperlink(nv);
                 relative1.getChildren().addAll(link, new Text(", "));
-                link.setOnAction(e -> handleLabel("Nhân Vật Lịch Sử", selectedSuKien.getLienKetNhanVat().get(nv), nv, link, relative1.getScene()));
+                link.setOnAction(e -> handleLabel("Nhân Vật Lịch Sử", selectedSuKien.getLienKetNhanVat().get(nv), nv, relative1.getScene()));
             }
         relative1.getChildren().add(new Text("\nTriều đại liên quan: "));
         for (String td : selectedSuKien.getLienKetTrieuDai().keySet()) {
             Hyperlink link = new Hyperlink(td);
-            link.setOnAction(e -> handleLabel("Triều Đại", selectedSuKien.getLienKetTrieuDai().get(td), td, link, relative1.getScene()));
+            link.setOnAction(e -> handleLabel("Triều Đại", selectedSuKien.getLienKetTrieuDai().get(td), td, relative1.getScene()));
             relative1.getChildren().addAll(link, new Text(", "));
         }
     }
 
     public void handleRenderDiTich(Info tenDiTich, TextFlow relative) {
-        DiTichLichSu selectedDiTich = (DiTichLichSu) tenDiTich;
-        relative.getChildren().add(new Text("Tên di tích: " + selectedDiTich.getTen() + "\n" +
-                "Loại di tích: " + selectedDiTich.getLoaiDiTich() + "\n" +
-                "Năm công nhận: " + selectedDiTich.getNamCongNhan() + "\n" +
-                "Địa điểm : " + selectedDiTich.getDiaDiem() + "\n" +
-                "Mô tả di tích: " + selectedDiTich.getMoTa() + "\n"));
+        if (tenDiTich instanceof DiTichLichSu) {
+            DiTichLichSu selectedDiTich = (DiTichLichSu) tenDiTich;
+            relative.getChildren().add(new Text("Tên di tích: " + selectedDiTich.getTen() + "\n" +
+                    "Loại di tích: " + selectedDiTich.getLoaiDiTich() + "\n" +
+                    "Năm công nhận: " + selectedDiTich.getNamCongNhan() + "\n" +
+                    "Địa điểm : " + selectedDiTich.getDiaDiem() + "\n" +
+                    "Mô tả di tích: " + selectedDiTich.getMoTa() + "\n"));
+        } else if (tenDiTich instanceof DiTich_VN) {
+            DiTich_VN selectedDiTich = (DiTich_VN) tenDiTich;
+            StringBuilder builder = new StringBuilder();
+            LinkedHashMap<String, String> tt = selectedDiTich.getThongTin();
+            for (String key : tt.keySet()) {
+                builder.append(key).append(": ").append(tt.get(key)).append("\n");
+            }
+            String info = builder.toString();
+            relative.getChildren().add(new Text("Tên di tích: " + selectedDiTich.getTen() + "\n" +
+                    "Loại di tích: " + selectedDiTich.getLoaiDiTich() + "\n" +
+                    "Địa điểm : " + selectedDiTich.getDiaDiem() + "\n" +
+                    info));
+
+
+            // Create a new ImageView object for each image and add it to the VBox
+                String link = selectedDiTich.getImg();
+                loadImage(link);
+
+        }
     }
 
     public void handleRenderLeHoi(Info tenLeHoi, TextFlow relative, ScrollPane imageContainer) {
@@ -232,7 +255,7 @@ public class SearchSceneController implements Initializable {
             Hyperlink link = new Hyperlink(sk);
             // Add the Text and Hyperlink nodes to the TextFlow node
             relative.getChildren().addAll(link, new Text(", "));
-            link.setOnAction(e -> handleLabel("Lễ Hội", selectedLeHoi.getLienKetLeHoi().get(sk), sk, link, relative.getScene()));
+            link.setOnAction(e -> handleLabel("Lễ Hội", selectedLeHoi.getLienKetLeHoi().get(sk), sk, relative.getScene()));
         }
         relative.getChildren().add(new Text("Tên lễ hội: " + selectedLeHoi.getTen() + "\n" +
                 "Địa điểm: " + selectedLeHoi.getDiaDiem() + "\n" +
@@ -311,7 +334,7 @@ public class SearchSceneController implements Initializable {
                 Hyperlink link = new Hyperlink(sk);
                 // Add the Text and Hyperlink nodes to the TextFlow node
                 relative.getChildren().addAll(link, new Text(", "));
-                link.setOnAction(e -> handleLabel("Sự Kiện", selectedNhanVat.getLienKetSuKien().get(sk), sk, link, relative.getScene()));
+                link.setOnAction(e -> handleLabel("Sự Kiện", selectedNhanVat.getLienKetSuKien().get(sk), sk, relative.getScene()));
 
             }
             relative.getChildren().add(new Text("\n"));
@@ -320,7 +343,7 @@ public class SearchSceneController implements Initializable {
                 Hyperlink link = new Hyperlink(sk);
                 // Add the Text and Hyperlink nodes to the TextFlow node
                 relative.getChildren().addAll(link, new Text(", "));
-                link.setOnAction(e -> handleLabel("Triều Đại", selectedNhanVat.getLienKetTrieuDai().get(sk), sk, link, relative.getScene()));
+                link.setOnAction(e -> handleLabel("Triều Đại", selectedNhanVat.getLienKetTrieuDai().get(sk), sk, relative.getScene()));
 
             }
             relative.getChildren().add(new Text("\n"));
@@ -340,7 +363,7 @@ public class SearchSceneController implements Initializable {
                 Hyperlink link = new Hyperlink(sk);
                 // Add the Text and Hyperlink nodes to the TextFlow node
                 relative.getChildren().addAll(link, new Text(", "));
-                link.setOnAction(e -> handleLabel("Sự Kiện", selectedNhanVat.getLienKetSuKien().get(sk), sk, link, relative.getScene()));
+                link.setOnAction(e -> handleLabel("Sự Kiện", selectedNhanVat.getLienKetSuKien().get(sk), sk, relative.getScene()));
 
             }
             relative.getChildren().add(new Text("\n"));
@@ -349,13 +372,13 @@ public class SearchSceneController implements Initializable {
                 Hyperlink link = new Hyperlink(sk);
                 // Add the Text and Hyperlink nodes to the TextFlow node
                 relative.getChildren().addAll(link, new Text(", "));
-                link.setOnAction(e -> handleLabel("Triều Đại", selectedNhanVat.getLienKetTrieuDai().get(sk), sk, link, relative.getScene()));
+                link.setOnAction(e -> handleLabel("Triều Đại", selectedNhanVat.getLienKetTrieuDai().get(sk), sk, relative.getScene()));
             }
             relative.getChildren().add(new Text("\n"));
         }
     }
 
-    public void handleLabel(String field, Info info, String text, Hyperlink prelink, Scene currentScene) {
+    public void handleLabel(String field, Info info, String text, Scene currentScene) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/SearchScene.fxml"));
             Parent root = loader.load();
@@ -424,4 +447,42 @@ public class SearchSceneController implements Initializable {
         } else if (MainSceneController.saveData.contains(selectedItem) && selectedItem != null)
             System.out.println("Already save " + selectedItem.getTen() + " to favorite");
     }
-}
+
+    private void loadImage(String url){
+        System.out.println("Run task");
+        Task<Image> imageLoadingTask = new Task<>() {
+            @Override
+            protected Image call() {
+                return new Image(url);
+            }
+        };
+
+        // Set the image once it's loaded
+        imageLoadingTask.setOnSucceeded(event -> {
+            Image loadedImage = imageLoadingTask.getValue();
+            System.out.println(loadedImage.getUrl());
+            VBox imageBox = new VBox();
+            imageBox.setSpacing(10);
+            ImageView imageView = new ImageView();
+            imageView.setImage(loadedImage);
+            imageView.setFitWidth(200);
+            imageView.setFitHeight(200);
+            imageView.setPreserveRatio(true);
+            imageBox.getChildren().add(imageView);
+            // Set the content of the ScrollPane to the VBox
+            Platform.runLater(() -> imageContainer.setContent(imageBox));
+            imageContainer.setContent(imageBox);
+            System.out.println("Load image successfully!");
+        });
+
+        // Show an error message if the image loading fails
+        imageLoadingTask.setOnFailed(event -> {
+            Throwable exception = imageLoadingTask.getException();
+            System.err.println("Failed to load image: " + exception.getMessage());
+        });
+
+        // Start the image loading task in a separate thread
+        Thread thread = new Thread(imageLoadingTask);
+        thread.start();
+    }
+    }

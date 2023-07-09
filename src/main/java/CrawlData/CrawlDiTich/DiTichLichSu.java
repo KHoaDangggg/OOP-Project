@@ -2,9 +2,7 @@ package CrawlData.CrawlDiTich;
 
 import CrawlData.Info;
 
-public class DiTichLichSu extends Info {
-    private  String loaiDiTich;
-    private  String diaDiem;
+public class DiTichLichSu extends DiTich {
     private  String namCongNhan;
     private  String moTa;
 
@@ -12,12 +10,10 @@ public class DiTichLichSu extends Info {
         super(ten);
     }
 
-    public void setLoaiDiTich(String loaiDiTich) {
-        this.loaiDiTich = loaiDiTich;
-    }
-
-    public void setDiaDiem(String diaDiem) {
-        this.diaDiem = diaDiem;
+    public DiTichLichSu(String ten, String loaiDiTich, String diaDiem, String namCongNhan, String moTa) {
+        super(ten, loaiDiTich, diaDiem);
+        this.namCongNhan = namCongNhan;
+        this.moTa = moTa;
     }
 
     public void setNamCongNhan(String namCongNhan) {
@@ -28,13 +24,6 @@ public class DiTichLichSu extends Info {
         this.moTa = moTa;
     }
 
-    public String getLoaiDiTich() {
-        return loaiDiTich;
-    }
-
-    public String getDiaDiem() {
-        return diaDiem;
-    }
 
     public String getNamCongNhan() {
         return namCongNhan;

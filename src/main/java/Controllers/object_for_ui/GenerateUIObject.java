@@ -1,5 +1,6 @@
 package Controllers.object_for_ui;
 
+import CrawlData.CrawlDiTich.DiTich;
 import CrawlData.CrawlDiTich.DiTichLichSu;
 import CrawlData.CrawlLeHoi.LeHoi_Nguon_05.LeHoi;
 import CrawlData.CrawlNhanVat.NhanVat;
@@ -18,7 +19,7 @@ public class GenerateUIObject {
     public static ArrayList<Vua> listVua; //List cac vi vua
     public static ArrayList<NhanVat> listNhanVat; //List cac nhan vat
     public static ArrayList<LeHoi> listLeHoi; //List cac le hoi
-    public static ArrayList<DiTichLichSu> listDiTich; //List cac di tich lich su
+    public static ArrayList<DiTich> listDiTich; //List cac di tich lich su
 
     public static void gen(){
         //Json to obj converter
@@ -30,7 +31,7 @@ public class GenerateUIObject {
         listVua = JsonToObj.listVua;
         listNhanVat = JsonToObj.listNhanVat;
         listLeHoi = JsonToObj.listLeHoi;
-        listDiTich = JsonToObj.listDiTich;
+        listDiTich = JsonToObj.listDiTichLichSu;
 
         System.out.println(listNhanVat.size());
 

@@ -185,7 +185,7 @@ public class FavoriteInfo implements Initializable {
             Hyperlink link = new Hyperlink(sk);
             // Add the Text and Hyperlink nodes to the TextFlow node
             relative.getChildren().addAll(link, new Text(", "));
-            //link.setOnAction(e -> handleLabel("Lễ Hội", selectedLeHoi.getLienKetLeHoi().get(sk), sk, link, relative.getScene()));
+            //link.setOnAction(e -> handleLabel("Lễ Hội", selectedLeHoi.getLienKetLeHoi().get(sk), sk, relative.getScene()));
         }
         relative.getChildren().add(new Text("Tên lễ hội: " + selectedLeHoi.getTen() + "\n" +
                 "Địa điểm: " + selectedLeHoi.getDiaDiem() + "\n" +

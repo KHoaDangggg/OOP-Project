@@ -1,6 +1,8 @@
 package Controllers.object_for_ui;
 
+import CrawlData.CrawlDiTich.DiTich;
 import CrawlData.CrawlDiTich.DiTichLichSu;
+import CrawlData.CrawlDiTich.DiTich_VN;
 import CrawlData.CrawlLeHoi.LeHoi_Nguon_05.LeHoi;
 import CrawlData.CrawlNhanVat.CrawlAnhHung.DanhNhan;
 import CrawlData.CrawlNhanVat.CrawlAnhHung.anhHungVuTrang;
@@ -11,6 +13,7 @@ import CrawlData.CrawlNhanVat.trangnguyenbangnhan.src.DanhHieu;
 import CrawlData.CrawlNhanVat.vua.src.Vua;
 import CrawlData.CrawlSuKien.SuKienChienTranh;
 import CrawlData.CrawlTrieuDai.TrieuDai;
+import CrawlData.Info;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 import org.json.JSONArray;
@@ -24,6 +27,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
@@ -36,10 +40,11 @@ public class JsonToObj {
     public static ArrayList<NhanVat> listNhanVat = new ArrayList<>();
     public static ArrayList<NhanVatVanSu> listNhanVatVanSu = new ArrayList<>();
     public static ArrayList<LeHoi> listLeHoi = new ArrayList<>();
-    public static ArrayList<DiTichLichSu> listDiTich = new ArrayList<>();
+    public static ArrayList<DiTich> listDiTichLichSu = new ArrayList<>();
     public static ArrayList<DanhNhan> listDanhNhan = new ArrayList<>();
     public static ArrayList<DanhHieu> listTrangNguyenBangNhan = new ArrayList<>();
     public static ArrayList<anhHungVuTrang> listAnhHungVuTrang = new ArrayList<>();
+    public static ArrayList<DiTich_VN> listDiTichVN = new ArrayList<>();
 
     public static ArrayList<SuKienChienTranh> listEvents = new ArrayList<>();
 
@@ -55,12 +60,14 @@ public class JsonToObj {
         //Get Le hoi
         JsonToObj4(listLeHoi);
         //Get Di tich lich su
-        JsonToObj6("src/JSON_Data/DiTichLichSu.json", listDiTich);
+        JsonToObj6("src/JSON_Data/DiTichLichSu.json", listDiTichLichSu);
+        JsonToObj10();
+        cleanDiTich();
         //Get danh nhan, trang nguyen, anh hung vu trang
         JsonToObj7();
         //Get nhan vat from Van Su
         JsonToObj8();
-
+        //Get Su Kien
         JsonToObj9("src/JSON_Data/SuKien.json",listEvents);
         cleanSuKien();
         //Clean and merge nhanvatlichsu
@@ -69,10 +76,26 @@ public class JsonToObj {
         //Clean all
         listNhanVat = removeDuplicates(listNhanVat);
         listLeHoi = removeDuplicates(listLeHoi);
-        listDiTich = removeDuplicates(listDiTich);
+        listDiTichLichSu = removeDuplicates(listDiTichLichSu);
         listSuKien = removeDuplicates(listSuKien);
         listTrieuDai = removeDuplicates(listTrieuDai);
         System.out.println("Clean all list successfully");
+    }
+
+    private void cleanDiTich() {
+        listDiTichLichSu.addAll(listDiTichVN);
+        listDiTichLichSu.sort(new Comparator<DiTich>() {
+            @Override
+            public int compare(DiTich o1, DiTich o2) {
+                return o1.getTen().compareToIgnoreCase(o2.getTen());
+            }
+        });
+        ArrayList<DiTich> count = new ArrayList<>();
+        for(int i = 0; i<listDiTichLichSu.size()-1; i++){
+            if(listDiTichLichSu.get(i).getTen().equalsIgnoreCase(listDiTichLichSu.get(i+1).getTen())) count.add(listDiTichLichSu.get(i));
+        }
+        listDiTichLichSu.removeAll(count);
+        System.out.println("Clean successfully");
     }
 
     private void cleanNhanVat() {
@@ -210,15 +233,16 @@ public class JsonToObj {
             }
             list.add(new NhanVatLichSu(ten, mieuta, thongTin));
         }
+        System.out.println("Convert to obj successful!");
     }
 
-    private void JsonToObj6(String path, ArrayList<DiTichLichSu> list) {
+    private void JsonToObj6(String path, ArrayList<DiTich> list) {
         Gson gson = new Gson();
         FileReader fileReader = reader(path);
         Type objectType = new TypeToken<ArrayList<DiTichLichSu>>() {
         }.getType();
         ArrayList<DiTichLichSu> convertedList = gson.fromJson(fileReader, objectType);
-        listDiTich.addAll(convertedList);
+        listDiTichLichSu.addAll(convertedList);
         System.out.println("Convert to obj successful!");
     }
 
@@ -264,6 +288,7 @@ public class JsonToObj {
             }
             listNhanVatVanSu.add(new NhanVatVanSu(ten, thongTin));
         }
+        System.out.println("Convert to obj successful!");
     }
 
     public void JsonToObj9(String path, ArrayList<SuKienChienTranh>list){
@@ -273,6 +298,45 @@ public class JsonToObj {
         ArrayList<SuKienChienTranh> convertList = gson.fromJson(fileReader,objectType);
         list.addAll(convertList);
         System.out.println("Convert to obj successfull");
+    }
 
+    private void JsonToObj10() {
+        String input;
+        try {
+            input = Files.readString(Path.of("src/JSON_Data/DiTichVN.json"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        ArrayList<JSONObject> objects = new ArrayList<>();
+        JSONArray array = new JSONArray(input);
+        for (int i = 0; i < array.length(); i++) objects.add(array.getJSONObject(i));
+
+        for (JSONObject obj : objects) {
+            LinkedHashMap<String, String> thongTin = new LinkedHashMap<>();
+            ArrayList<String> keySets = new ArrayList<>();
+            keySets.addAll(obj.keySet());
+            String ten = null;
+            String img= null;
+            String loaiDiTich = null;
+            String diaDiem = null;
+            try{
+                ten = obj.getString("ten");
+                String s = obj.getString("img");
+                String s1 = s.replaceAll("\\\\", "/");
+                img = "http://ditich.vn" + s1;
+                System.out.println(img);
+                loaiDiTich = obj.getString("loaiDiTich");
+                //diaDiem = obj.getString("diaDiem");
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+            keySets.remove("ten");
+            keySets.remove("img");
+            keySets.remove("loaiDiTich");
+            keySets.remove("diaDiem");
+            for (String key : keySets) thongTin.put(key, obj.getString(key));
+            listDiTichVN.add(new DiTich_VN(ten, loaiDiTich, diaDiem, thongTin, img));
+        }
+        System.out.println("Convert to obj successfull");
     }
 }

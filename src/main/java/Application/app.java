@@ -1,7 +1,7 @@
 package Application;
 
 import Controllers.object_for_ui.GenerateUIObject;
-import CrawlData.CrawlDiTich.DiTichLichSu;
+import CrawlData.CrawlDiTich.DiTich;
 import CrawlData.CrawlLeHoi.LeHoi_Nguon_05.LeHoi;
 import CrawlData.CrawlNhanVat.NhanVat;
 import CrawlData.CrawlNhanVat.NhanVat_NguoiKeSu.NhanVatLichSu;
@@ -24,7 +24,7 @@ public class app extends Application {
     public static ArrayList<Vua> listVua = null; //List cac vi vua
     public static ArrayList<NhanVatLichSu> listNhanVatLichSu = null; //List cac nhan vat
     public static ArrayList<LeHoi> listLeHoi = null; //List cac le hoi
-    public static ArrayList<DiTichLichSu> listDiTich = null; //List cac di tich lich su
+    public static ArrayList<DiTich> listDiTich = null; //List cac di tich lich su
     public static ArrayList<NhanVat> listNhanVat = null;
     @SuppressWarnings("exports")
     @Override
