@@ -1,6 +1,6 @@
 package controllers;
 
-import crawl_data.DuLieuLichSu;
+import crawl_data.model.DuLieuLichSu;
 import crawl_data.model.di_tich.DiTichLichSu;
 import crawl_data.model.di_tich.DiTich_VN;
 import crawl_data.model.le_hoi.LeHoi;

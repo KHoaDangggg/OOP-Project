@@ -1,6 +1,6 @@
 package controllers;
 
-import crawl_data.DuLieuLichSu;
+import crawl_data.model.DuLieuLichSu;
 import javafx.event.ActionEvent;
 
 import javafx.fxml.FXML;

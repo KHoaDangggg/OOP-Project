@@ -2,7 +2,7 @@ package crawl_data.model.nhan_vat;
 
 import crawl_data.model.su_kien.SuKienLichSu;
 import crawl_data.model.trieu_dai.TrieuDai;
-import crawl_data.DuLieuLichSu;
+import crawl_data.model.DuLieuLichSu;
 
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package crawl_data;
+package crawl_data.model;
 
 public class DuLieuLichSu {
     protected String ten;

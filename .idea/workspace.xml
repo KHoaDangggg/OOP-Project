@@ -4,66 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9dfc3bd-df16-4e9c-b19f-4053ba0395e1" name="Changes" comment="Update Su Kien and Add Save to Favorite UI function">
-      <change afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/di_tich/DiTichLichSu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/nhan_vat/NhanVat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/object_for_ui/GenerateUIObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/object_for_ui/LinkInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_06_2023_9_01_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_06_2023_9_01_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON_Data/SuKien.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSON_Data/SuKien.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/buttonsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/ButtonsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/favoriteInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/FavoriteInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/mainSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/MainSceneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/searchSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/SearchSceneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/textAreaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/TextAreaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/webViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/WebViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlDiTich/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_di_tich/crawl_di_tich_wiki/CrawlDiTichWiki.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlDiTich/DiTichLichSu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlLeHoi/CrawLeHoiMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_le_hoi/CrawLeHoi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlLeHoi/LeHoi_Nguon_05/CrawlLeHoiNguon05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_le_hoi/CrawlLeHoiManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlLeHoi/LeHoi_Nguon_05/LeHoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/le_hoi/LeHoi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlLeHoi/LeHoi_Nguon_05/Thread_T.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_le_hoi/Thread_T.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlLeHoi/LeHoi_Nguon_05/Thread_X.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_le_hoi/Thread_X.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/CrawlAnhHung/DanhNhan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/nhan_vat/DanhNhan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/CrawlAnhHung/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/anh_hung/CrawlAnhHungVuTrang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/CrawlAnhHung/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/anh_hung/CrawlDanhNhanLichSu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/CrawlAnhHung/anhHungVuTrang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/nhan_vat/AnhHungVuTrang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/NhaVat_VanSu/CrawlFromVanSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/nhan_vat_vansu/CrawlVanSuManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/NhaVat_VanSu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/nhan_vat_vansu/CrawlNhanVat_VanSu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/NhaVat_VanSu/NhanVatVanSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/nhan_vat/NhanVatVanSu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/NhanVat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/NhanVat_NguoiKeSu/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/nhan_vat_nguoikesu/CrawlNhanVat_NguoiKeSu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/NhanVat_NguoiKeSu/NhanVatLichSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/nhan_vat/NhanVatLichSu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/NhanVat_NguoiKeSu/Thread_T.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/nhan_vat_nguoikesu/Thread_T.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/NhanVat_NguoiKeSu/Thread_X.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/nhan_vat_nguoikesu/Thread_X.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/trangnguyenbangnhan/src/DanhHieu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/nhan_vat/DanhHieu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/trangnguyenbangnhan/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/trang_nguyen_bang_nhan/CrawlTrangNguyenBangNhan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/vua/src/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/vua/src/CrawlVuaManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/vua/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_nhan_vat/vua/src/CrawlVuaVietNam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlNhanVat/vua/src/Vua.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/nhan_vat/Vua.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlSuKien/SuKienChienTranh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/su_kien/SuKienChienTranh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlSuKien/crawlChienTranh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_su_kien/CrawlChienTranh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlSuKien/crawlChienTranhWiki.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_su_kien/CrawlChienTranhWiki.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/CrawlSuKien/crawlThuVienLichSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_su_kien/CrawlThuVienLichSu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/crawltrieudai/crawl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/crawl_trieu_dai/CrawlTrieuDai.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/crawltrieudai/kinhDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/trieu_dai/KinhDo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/crawltrieudai/quocHieu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/trieu_dai/QuocHieu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/crawltrieudai/trieuDai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/trieu_dai/TrieuDai.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawlData/info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/DuLieuLichSu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fxml/MainScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fxml/MainScene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fxml/SearchScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fxml/SearchScene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objectforui/GenerateUIObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objectforui/JsonToObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object_for_ui/JsonToObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objectforui/LinkInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objectforui/LinkingObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object_for_ui/LinkingObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objectforui/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object_for_ui/test.java" afterDir="false" />
+    <list default="true" id="a9dfc3bd-df16-4e9c-b19f-4053ba0395e1" name="Changes" comment="Final commit 1:&#10;1. Checking convention and remove most code warnings&#10;2. Update image loader using thread asynchronously to UI&#10;3. Update and optimize linking operation, add cleaning method for crawled data&#10;4. Update fxml UI&#10;5. Update controller for UI&#10;&#10;#Some problems:&#10;1. Favorite fxml still need to check error case&#10;2. Checking convention (continue)&#10;3. Optimizing code (continue)">
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/ButtonsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/ButtonsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/FavoriteInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/FavoriteInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/MainSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/MainSceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/SearchSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/SearchSceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/TextAreaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/TextAreaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/DuLieuLichSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/DuLieuLichSu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/di_tich/DiTich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/di_tich/DiTich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/le_hoi/LeHoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/le_hoi/LeHoi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/nhan_vat/NhanVat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/nhan_vat/NhanVat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/su_kien/SuKienLichSu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/su_kien/SuKienLichSu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_data/model/trieu_dai/TrieuDai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl_data/model/trieu_dai/TrieuDai.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687661528258</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Final commit 1:&#10;1. Checking convention and remove most code warnings&#10;2. Update image loader using thread asynchronously to UI&#10;3. Update and optimize linking operation, add cleaning method for crawled data&#10;4. Update fxml UI&#10;5. Update controller for UI&#10;&#10;#Some problems:&#10;1. Favorite fxml still need to check error case&#10;2. Checking convention (continue)&#10;3. Optimizing code (continue)">
+      <option name="closed" value="true" />
+      <created>1688885199940</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688885199940</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -278,7 +238,8 @@
     <MESSAGE value="Update UI" />
     <MESSAGE value="Update UI fon Di tich" />
     <MESSAGE value="Update Su Kien and Add Save to Favorite UI function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Su Kien and Add Save to Favorite UI function" />
+    <MESSAGE value="Final commit 1:&#10;1. Checking convention and remove most code warnings&#10;2. Update image loader using thread asynchronously to UI&#10;3. Update and optimize linking operation, add cleaning method for crawled data&#10;4. Update fxml UI&#10;5. Update controller for UI&#10;&#10;#Some problems:&#10;1. Favorite fxml still need to check error case&#10;2. Checking convention (continue)&#10;3. Optimizing code (continue)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final commit 1:&#10;1. Checking convention and remove most code warnings&#10;2. Update image loader using thread asynchronously to UI&#10;3. Update and optimize linking operation, add cleaning method for crawled data&#10;4. Update fxml UI&#10;5. Update controller for UI&#10;&#10;#Some problems:&#10;1. Favorite fxml still need to check error case&#10;2. Checking convention (continue)&#10;3. Optimizing code (continue)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/web_Scrapper$Main.ic" NAME="Main Coverage Results" MODIFIED="1683567461175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

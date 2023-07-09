@@ -1,6 +1,6 @@
 package crawl_data.model.su_kien;
 
-import crawl_data.DuLieuLichSu;
+import crawl_data.model.DuLieuLichSu;
 import crawl_data.model.nhan_vat.NhanVat;
 import crawl_data.model.trieu_dai.TrieuDai;
 

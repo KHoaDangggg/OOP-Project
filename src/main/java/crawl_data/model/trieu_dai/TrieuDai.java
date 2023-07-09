@@ -1,6 +1,6 @@
 package crawl_data.model.trieu_dai;
 import crawl_data.model.nhan_vat.Vua;
-import crawl_data.DuLieuLichSu;
+import crawl_data.model.DuLieuLichSu;
 import crawl_data.model.su_kien.SuKienLichSu;
 
 import java.util.ArrayList;

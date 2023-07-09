@@ -1,6 +1,6 @@
 package controllers;
 
-import crawl_data.DuLieuLichSu;
+import crawl_data.model.DuLieuLichSu;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import crawl_data.model.di_tich.DiTichLichSu;

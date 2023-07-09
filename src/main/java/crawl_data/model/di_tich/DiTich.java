@@ -1,6 +1,6 @@
 package crawl_data.model.di_tich;
 
-import crawl_data.DuLieuLichSu;
+import crawl_data.model.DuLieuLichSu;
 
 public class DiTich extends DuLieuLichSu {
     private  String loaiDiTich;

@@ -1,6 +1,6 @@
 package crawl_data.model.le_hoi;
 
-import crawl_data.DuLieuLichSu;
+import crawl_data.model.DuLieuLichSu;
 
 import java.util.ArrayList;
 import java.util.HashMap;
