@@ -2,39 +2,39 @@ package model.nhan_vat;
 
 public class DanhHieu extends NhanVat {
 
-    private final String nam_sinh;
-    private final String nam_mat;
-    private final String que_quan;
-    private final String nam_do;
-    private String danh_hieu;
-    private final String doi_vua;
-    private final String ghi_chu;
+    private final String namSinh;
+    private final String namMat;
+    private final String queQuan;
+    private final String namDo;
+    private String danhHieu;
+    private final String doiVua;
+    private final String ghiChu;
 
 
-    public void setDanh_hieu(String danh_hieu){
-        this.danh_hieu = danh_hieu;
+    public void setDanhHieu(String danhHieu){
+        this.danhHieu = danhHieu;
     }
 
-    public DanhHieu(String ten, String sinhmat, String que_quan, String nam_do, String doi_vua, String ghi_chu) {
+    public DanhHieu(String ten, String sinhmat, String queQuan, String namDo, String doi_vua, String ghi_chu) {
         super(ten);
 
         if(sinhmat.isBlank()) {
-            this.nam_sinh = "không rõ";
-            this.nam_mat = "không rõ";
+            this.namSinh = "không rõ";
+            this.namMat = "không rõ";
         }
         else{
             String[] s = sinhmat.split("-", -1);
-            if(s[0].contains("?")) this.nam_sinh = "không rõ";
-            else this.nam_sinh = s[0];
+            if(s[0].contains("?")) this.namSinh = "không rõ";
+            else this.namSinh = s[0];
 
-            if(s[1].contains("?")) this.nam_mat = "không rõ";
-            else this.nam_mat = s[1];
+            if(s[1].contains("?")) this.namMat = "không rõ";
+            else this.namMat = s[1];
         }
 
-        this.que_quan = que_quan;
-        this.nam_do = nam_do;
-        this.doi_vua = doi_vua;
-        this.ghi_chu = clearGhichu(ghi_chu);
+        this.queQuan = queQuan;
+        this.namDo = namDo;
+        this.doiVua = doi_vua;
+        this.ghiChu = clearGhichu(ghi_chu);
     }
 
     public String clearGhichu(String ghichu){
@@ -51,31 +51,31 @@ public class DanhHieu extends NhanVat {
         return ghichu;
     }
 
-    public String getNam_sinh() {
-        return nam_sinh;
+    public String getNamSinh() {
+        return namSinh;
     }
 
-    public String getNam_mat() {
-        return nam_mat;
+    public String getNamMat() {
+        return namMat;
     }
 
-    public String getQue_quan() {
-        return que_quan;
+    public String getQueQuan() {
+        return queQuan;
     }
 
-    public String getNam_do() {
-        return nam_do;
+    public String getNamDo() {
+        return namDo;
     }
 
-    public String getDanh_hieu() {
-        return danh_hieu;
+    public String getDanhHieu() {
+        return danhHieu;
     }
 
-    public String getDoi_vua() {
-        return doi_vua;
+    public String getDoiVua() {
+        return doiVua;
     }
 
-    public String getGhi_chu() {
-        return ghi_chu;
+    public String getGhiChu() {
+        return ghiChu;
     }
 }

@@ -36,7 +36,10 @@ public class Thread_X implements Runnable{
         Element content = doc.getElementsByClass("com-content-article__body").first();
         Element infoBox = content != null ? content.getElementsByClass("infobox").first() : null;
 
-        String ten = doc.getElementsByAttributeValue("itemprop", "headline").text();
+        Element pageHeader = doc.getElementsByClass("page-header").get(1);
+        String ten = null;
+        if(pageHeader!=null)
+            ten = pageHeader.text();
         nv.setTen(ten);
         //Handle infobox info
         if (infoBox != null) {
@@ -96,6 +99,6 @@ public class Thread_X implements Runnable{
         thongTin.remove(null);
         nv.setThongTin(thongTin);
         CrawlNhanVat_NguoiKeSu.nhanVat.add(nv);
-        //System.out.println(nv.getTen());
+        System.out.println(nv.getTen());
     }
 }

@@ -22,15 +22,12 @@ public class CrawlNhanVat_NguoiKeSu {
 
     public static void main(String[] args) {
 
-        //long startTime = System.currentTimeMillis();
-
         // TODO: get all the links of characters into "listlink"
         linkArraylist.add("https://nguoikesu.com/nhan-vat?start");
         for (int i = 1; i <= 218; i++) { //218
             String link = "https://nguoikesu.com/nhan-vat?start=" + i * 5;
             linkArraylist.add(link);
         }
-
         int maxThreads = 10;
         ExecutorService executor = Executors.newFixedThreadPool(maxThreads);
         List<Future<?>> futures = new ArrayList<>();
@@ -51,10 +48,8 @@ public class CrawlNhanVat_NguoiKeSu {
         for (Future<?> future : futures) {
             allDone &= future.isDone(); // check if future is done
         }
-
         //Shutdown executor
         executor.shutdown();
-
         if (allDone) {
             System.out.println("This is the array of urls: " + listlink);
             System.out.println("Number of urls: " + listlink.size());
@@ -86,7 +81,7 @@ public class CrawlNhanVat_NguoiKeSu {
             allDone &= future.isDone(); // check if future is done
         }
         if (allDone) {
-            System.out.println(nhanVat);
+            System.out.println(nhanVat.size());
             writeToJSON(nhanVat);
         }
 

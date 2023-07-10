@@ -3,13 +3,6 @@ package crawldata.crawlnhanvat.nhanvatvansu;
 public class CrawlNhanVat_VanSu {
 
     public static void main(String[] args) {
-/*        String url = "https://vansu.vn/viet-nam/viet-nam-nhan-vat/58/bui-duong-lich";
-        getInfo1(url);
-        NhanVatVanSu nv = listNhanVat.get(0);
-        System.out.println(nv.getTen());
-        for(String k: nv.getAtt().keySet()){
-            System.out.println(k+": "+nv.getAtt().get(k));
-        }*/
         CrawlVanSuManager crawl = new CrawlVanSuManager();
         crawl.crawl();
     }

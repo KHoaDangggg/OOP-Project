@@ -2,6 +2,7 @@ package crawldata.crawlnhanvat.nhanvatnguoikesu;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
@@ -19,11 +20,11 @@ public class Thread_T implements Runnable{
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        Elements names = doc.select("h2[itemprop=name]").select("a");
-        for (org.jsoup.nodes.Element name : names) {
+        Elements names = doc.select("h2").select("a");
+        for (Element name : names) {
             String url = name.attr("href");
             url = "https://nguoikesu.com" + url;
-            //System.out.println(url);
+            System.out.println(url);
             CrawlNhanVat_NguoiKeSu.listlink.add(url);
         }
     }

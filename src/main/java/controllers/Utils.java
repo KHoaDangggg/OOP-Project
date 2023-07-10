@@ -95,11 +95,11 @@ public class Utils {
         }
         if (selectedNhanVat instanceof DanhHieu) {
             return "Tên: " + selectedNhanVat.getTen() + "\n" +
-                    "Năm sinh - năm mất: " + ((DanhHieu) selectedNhanVat).getNam_sinh() + " - " + ((DanhHieu) selectedNhanVat).getNam_mat() + "\n" +
-                    "Quê quán: " + ((DanhHieu) selectedNhanVat).getQue_quan() + "\n" +
-                    "Danh hiệu: " + ((DanhHieu) selectedNhanVat).getDanh_hieu() + "\n" +
-                    "Năm đỗ: " + ((DanhHieu) selectedNhanVat).getNam_do() + "\n" +
-                    "Đời vua:" + ((DanhHieu) selectedNhanVat).getDoi_vua() + "\n";
+                    "Năm sinh - năm mất: " + ((DanhHieu) selectedNhanVat).getNamSinh() + " - " + ((DanhHieu) selectedNhanVat).getNamMat() + "\n" +
+                    "Quê quán: " + ((DanhHieu) selectedNhanVat).getQueQuan() + "\n" +
+                    "Danh hiệu: " + ((DanhHieu) selectedNhanVat).getDanhHieu() + "\n" +
+                    "Năm đỗ: " + ((DanhHieu) selectedNhanVat).getNamDo() + "\n" +
+                    "Đời vua:" + ((DanhHieu) selectedNhanVat).getDoiVua() + "\n";
         }
         return "";
     }

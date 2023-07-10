@@ -39,7 +39,7 @@ public class CrawlTrangNguyenBangNhan {
                         columns.get(4).text(),
                         columns.get(5).text(),
                         "Trạng Me");
-                danhHieu1.setDanh_hieu("Trạng nguyên");
+                danhHieu1.setDanhHieu("Trạng nguyên");
                 danhHieuArrayList.add(danhHieu1);
                 count++;
 
@@ -50,7 +50,7 @@ public class CrawlTrangNguyenBangNhan {
                         columns.get(4).text(),
                         columns.get(5).text(),
                         "Trạng Ngọt");
-                danhHieu2.setDanh_hieu("Trạng nguyên");
+                danhHieu2.setDanhHieu("Trạng nguyên");
                 danhHieuArrayList.add(danhHieu2);
                 count++;
                 continue;
@@ -62,7 +62,7 @@ public class CrawlTrangNguyenBangNhan {
                     columns.get(4).text(),
                     columns.get(5).text(),
                     columns.get(6).text());
-            danhHieu.setDanh_hieu("Trạng nguyên");
+            danhHieu.setDanhHieu("Trạng nguyên");
             danhHieuArrayList.add(danhHieu);
             count++;
         }
@@ -82,7 +82,7 @@ public class CrawlTrangNguyenBangNhan {
                     columns.get(3).text(),
                     columns.get(4).text(),
                     columns.get(5).text());
-            danhHieu.setDanh_hieu("Bảng nhãn");
+            danhHieu.setDanhHieu("Bảng nhãn");
             danhHieuArrayList.add(danhHieu);
             count++;
         }
@@ -101,7 +101,7 @@ public class CrawlTrangNguyenBangNhan {
                     columns.get(4).text(),
                     columns.get(5).text(),
                     columns.get(6).text());
-            danhHieu.setDanh_hieu("Trạng nguyên");
+            danhHieu.setDanhHieu("Trạng nguyên");
             danhHieuArrayList.add(danhHieu);
         }
     }
