@@ -1,6 +1,6 @@
 package crawldata.crawlnhanvat.nhanvatnguoikesu;
 
-import model.nhan_vat.NhanVatLichSu;
+import model.nhanvat.NhanVatLichSu;
 import org.json.JSONArray;
 import org.json.JSONObject;
 

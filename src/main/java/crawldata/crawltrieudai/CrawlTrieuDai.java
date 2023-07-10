@@ -1,8 +1,8 @@
 package crawldata.crawltrieudai;
 
-import model.trieu_dai.KinhDo;
-import model.trieu_dai.QuocHieu;
-import model.trieu_dai.TrieuDai;
+import model.trieudai.KinhDo;
+import model.trieudai.QuocHieu;
+import model.trieudai.TrieuDai;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;

@@ -1,4 +1,4 @@
-package model.di_tich;
+package model.ditich;
 
 import model.DuLieuLichSu;
 

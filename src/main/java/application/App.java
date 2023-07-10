@@ -1,13 +1,13 @@
 package application;
 
-import model.di_tich.DiTich;
-import model.su_kien.SuKienLichSu;
+import model.ditich.DiTich;
+import model.sukien.SuKienLichSu;
 import objectforui.GenerateUIObject;
-import model.le_hoi.LeHoi;
-import model.nhan_vat.NhanVat;
-import model.nhan_vat.NhanVatLichSu;
-import model.nhan_vat.Vua;
-import model.trieu_dai.TrieuDai;
+import model.lehoi.LeHoi;
+import model.nhanvat.NhanVat;
+import model.nhanvat.NhanVatLichSu;
+import model.nhanvat.Vua;
+import model.trieudai.TrieuDai;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 
@@ -35,7 +35,6 @@ public class App extends Application {
         listNhanVat = GenerateUIObject.listNhanVat;
         listSuKien = GenerateUIObject.listSuKien;
         listTrieuDai = GenerateUIObject.listTrieuDai;
-        //System.out.println(listNhanVat.size());
         //Main scene
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../fxml/MainScene.fxml"));
         //Parent root = fxmlLoader.load();

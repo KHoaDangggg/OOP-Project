@@ -1,6 +1,6 @@
 package crawldata.crawlditich.crawlditichvn;
 
-import model.di_tich.DiTich_VN;
+import model.ditich.DiTichVN;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
@@ -25,7 +25,7 @@ public class CrawlFromDiTichVN {
     private final ArrayList<String> pages = new ArrayList<>();
     private final ArrayList<String> urls = new ArrayList<>();
     private final String BASE_URL = "http://ditich.vn";
-    private final ArrayList<DiTich_VN> listDiTich = new ArrayList<>();
+    private final ArrayList<DiTichVN> listDiTich = new ArrayList<>();
 
 
     public void crawl(){
@@ -156,7 +156,7 @@ public class CrawlFromDiTichVN {
                         if (text[0].equalsIgnoreCase("Loại hình di tích")) loaiDiTich = text[1];
                         else thongTin.put(text[0], text[1]);
                     }
-                    DiTich_VN diTichVn = new DiTich_VN(ten, loaiDiTich, diaDiem, thongTin, img);
+                    DiTichVN diTichVn = new DiTichVN(ten, loaiDiTich, diaDiem, thongTin, img);
                     listDiTich.add(diTichVn);
                     //Check di tich crawled
                     System.out.println(diTichVn.getTen());
@@ -166,9 +166,9 @@ public class CrawlFromDiTichVN {
         return new Thread(runnable);
     }
 
-    private static void writeToJSON(ArrayList<DiTich_VN> diTichVns) {
+    private static void writeToJSON(ArrayList<DiTichVN> diTichVns) {
         JSONArray jsonArray = new JSONArray();
-        for (DiTich_VN diTich : diTichVns) {
+        for (DiTichVN diTich : diTichVns) {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("ten", diTich.getTen());
             jsonObject.put("loaiDiTich", diTich.getLoaiDiTich());

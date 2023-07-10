@@ -1,9 +1,9 @@
 package objectforui;
 
-import model.le_hoi.LeHoi;
-import model.nhan_vat.NhanVat;
-import model.su_kien.SuKienLichSu;
-import model.trieu_dai.TrieuDai;
+import model.lehoi.LeHoi;
+import model.nhanvat.NhanVat;
+import model.sukien.SuKienLichSu;
+import model.trieudai.TrieuDai;
 
 import java.util.ArrayList;
 

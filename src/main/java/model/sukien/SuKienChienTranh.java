@@ -1,4 +1,4 @@
-package model.su_kien;
+package model.sukien;
 
 public class SuKienChienTranh extends SuKienLichSu {
     private String pheTa;

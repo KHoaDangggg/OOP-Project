@@ -1,6 +1,6 @@
 package crawldata.crawlnhanvat.nhanvatvansu;
 
-public class CrawlNhanVat_VanSu {
+public class CrawlNhanVatVanSu {
 
     public static void main(String[] args) {
         CrawlVanSuManager crawl = new CrawlVanSuManager();

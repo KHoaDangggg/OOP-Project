@@ -1,4 +1,4 @@
-package model.di_tich;
+package model.ditich;
 
 
 public class DiTichLichSu extends DiTich {

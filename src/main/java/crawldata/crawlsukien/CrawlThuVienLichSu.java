@@ -1,6 +1,6 @@
 package crawldata.crawlsukien;
 
-import model.su_kien.SuKienLichSu;
+import model.sukien.SuKienLichSu;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;

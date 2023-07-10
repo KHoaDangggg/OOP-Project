@@ -1,14 +1,14 @@
 package controllers;
 
 import model.DuLieuLichSu;
-import model.di_tich.DiTichLichSu;
-import model.di_tich.DiTich_VN;
-import model.le_hoi.LeHoi;
-import model.nhan_vat.NhanVat;
-import model.nhan_vat.NhanVatLichSu;
-import model.nhan_vat.NhanVatVanSu;
-import model.su_kien.SuKienLichSu;
-import model.trieu_dai.TrieuDai;
+import model.ditich.DiTichLichSu;
+import model.ditich.DiTichVN;
+import model.lehoi.LeHoi;
+import model.nhanvat.NhanVat;
+import model.nhanvat.NhanVatLichSu;
+import model.nhanvat.NhanVatVanSu;
+import model.sukien.SuKienLichSu;
+import model.trieudai.TrieuDai;
 import javafx.application.Platform;
 import javafx.concurrent.Task;
 import javafx.scene.control.Hyperlink;
@@ -102,8 +102,8 @@ public class TextAreaController {
         if (tenDiTich instanceof DiTichLichSu) {
             DiTichLichSu selectedDiTich = (DiTichLichSu) tenDiTich;
             relative.getChildren().add(new Text(Utils.textDiTich(selectedDiTich)));
-        } else if (tenDiTich instanceof DiTich_VN) {
-            DiTich_VN selectedDiTich = (DiTich_VN) tenDiTich;
+        } else if (tenDiTich instanceof DiTichVN) {
+            DiTichVN selectedDiTich = (DiTichVN) tenDiTich;
             StringBuilder builder = new StringBuilder();
             LinkedHashMap<String, String> tt = selectedDiTich.getThongTin();
             for (String key : tt.keySet()) {

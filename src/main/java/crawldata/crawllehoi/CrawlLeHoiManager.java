@@ -1,6 +1,6 @@
 package crawldata.crawllehoi;
 
-import model.le_hoi.LeHoi;
+import model.lehoi.LeHoi;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -95,12 +95,12 @@ public class CrawlLeHoiManager {
     }
 
     private Thread genThread_T(String url) {
-        Thread_T t = new Thread_T(url);
+        ThreadT t = new ThreadT(url);
         return new Thread(t);
     }
 
     private Thread genThread_X(String url) {
-        Thread_X x = new Thread_X(url);
+        ThreadX x = new ThreadX(url);
         return new Thread(x);
     }
 

@@ -2,7 +2,7 @@ package crawldata.crawlnhanvat.trangnguyenbangnhan;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import model.nhan_vat.DanhHieu;
+import model.nhanvat.DanhHieu;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;

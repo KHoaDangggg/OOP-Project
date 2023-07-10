@@ -1,8 +1,8 @@
-package model.su_kien;
+package model.sukien;
 
 import model.DuLieuLichSu;
-import model.nhan_vat.NhanVat;
-import model.trieu_dai.TrieuDai;
+import model.nhanvat.NhanVat;
+import model.trieudai.TrieuDai;
 
 import java.util.ArrayList;
 import java.util.HashMap;
