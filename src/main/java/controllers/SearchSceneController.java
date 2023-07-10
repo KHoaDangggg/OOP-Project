@@ -42,7 +42,7 @@ public class SearchSceneController implements Initializable {
     @FXML
     private ScrollPane imageContainer;
     @FXML
-    public Button saveBtn;
+    private Button saveBtn;
     static Scene lastScene;
     static Stage stage;
 
@@ -101,7 +101,7 @@ public class SearchSceneController implements Initializable {
                     DuLieuLichSu selectedItem = listView.getSelectionModel().getSelectedItem();
                     if (selectedItem != null) handleRenderTextArea(selectedItem, field, textFlow, imageContainer);
                 });
-                saveBtn.setOnAction(e -> saveInfo());
+                //saveBtn.setOnAction(e -> saveInfo());
             }
         }, 1);
     }
@@ -125,7 +125,8 @@ public class SearchSceneController implements Initializable {
         thread.start();
     }
 
-    void saveInfo() {
+    @FXML
+    private void saveInfo() {
         DuLieuLichSu selectedItem = listView.getSelectionModel().getSelectedItem();
         if (!MainSceneController.saveData.contains(selectedItem) && selectedItem != null) {
             MainSceneController.saveData.add(selectedItem);

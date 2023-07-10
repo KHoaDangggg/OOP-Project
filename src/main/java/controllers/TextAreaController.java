@@ -1,5 +1,10 @@
 package controllers;
 
+import javafx.application.Platform;
+import javafx.scene.control.Hyperlink;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextFlow;
 import model.DuLieuLichSu;
 import model.ditich.DiTichLichSu;
 import model.ditich.DiTichVN;
@@ -9,15 +14,6 @@ import model.nhanvat.NhanVatLichSu;
 import model.nhanvat.NhanVatVanSu;
 import model.sukien.SuKienLichSu;
 import model.trieudai.TrieuDai;
-import javafx.application.Platform;
-import javafx.concurrent.Task;
-import javafx.scene.control.Hyperlink;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.VBox;
-import javafx.scene.text.Text;
-import javafx.scene.text.TextFlow;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,10 +21,9 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 import static controllers.ButtonsController.handleLabel;
+import static controllers.Utils.loadImage;
 
 public class TextAreaController {
-
-    private static final ArrayList<Thread> threadManager = new ArrayList<>();
 
     public static void handleRenderTextArea(DuLieuLichSu selectedItem, String field, TextFlow textFlow, ScrollPane imageContainer) {
         textFlow.getChildren().clear();
@@ -71,7 +66,6 @@ public class TextAreaController {
             // Add the Text and Hyperlink nodes to the TextFlow node
             relative.getChildren().addAll(link, new Text(", "));
             link.setOnAction(e -> handleLabel("Nhân Vật Lịch Sử", selectedTrieuDai.getLienKetVua().get(sk), sk, relative.getScene()));
-
         }
     }
 
@@ -233,54 +227,5 @@ public class TextAreaController {
         }
     }
 
-    private static void loadImage(ScrollPane imageContainer, ArrayList<String> url) {
-        System.out.println("Run task");
-        if (!threadManager.isEmpty()) {
-            for (Thread thread : threadManager) thread.interrupt();
-            threadManager.clear();
-        }
-        Task<ArrayList<Image>> imageLoadingTask = new Task<>() {
-            @Override
-            protected ArrayList<Image> call() {
-                ArrayList<Image> images = new ArrayList<>();
-                for(String u: url){
-                    images.add(new Image(u));
-                    System.out.println(u);
-                }
-                return images;
-            }
-        };
-
-        // Set the image once it's loaded
-        imageLoadingTask.setOnSucceeded(event -> {
-            ArrayList<Image> loadedImage = imageLoadingTask.getValue();
-            //System.out.println(loadedImage.getUrl());
-            VBox imageBox = new VBox();
-            imageBox.setSpacing(10);
-            for(Image image: loadedImage) {
-                ImageView imageView = new ImageView();
-                imageView.setImage(image);
-                imageView.setFitWidth(200);
-                imageView.setFitHeight(200);
-                imageView.setPreserveRatio(true);
-                imageBox.getChildren().add(imageView);
-            }
-            // Set the content of the ScrollPane to the VBox
-            //imageContainer.setContent(imageBox);
-            Platform.runLater(() -> imageContainer.setContent(imageBox));
-            System.out.println("Load image successfully!");
-        });
-
-        // Show an error message if the image loading fails
-        imageLoadingTask.setOnFailed(event -> {
-            Throwable exception = imageLoadingTask.getException();
-            System.err.println("Failed to load image: " + exception.getMessage());
-        });
-
-        // Start the image loading task in a separate thread
-        Thread thread = new Thread(imageLoadingTask);
-        thread.start();
-        threadManager.add(thread);
-    }
 
 }

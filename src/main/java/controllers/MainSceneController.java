@@ -103,8 +103,8 @@ public class MainSceneController implements Initializable {
     @FXML
     private void openSaveScene(){
         Stage stage = (Stage) btnDynasty.getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/FavoriteInfo.fxml"));
-        FavoriteInfo controller = new FavoriteInfo(btnDynasty.getScene());
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/FavoriteScene.fxml"));
+        FavoriteSceneController controller = new FavoriteSceneController(btnDynasty.getScene());
         loader.setController(controller);
         Parent root;
         try {

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="450.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane prefHeight="450.0" prefWidth="775.0" styleClass="bg" stylesheets="@backgroung.css" VBox.vgrow="ALWAYS">
+            <children>
+                <Button fx:id="backBtn" layoutX="443.0" layoutY="413.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backScene" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: BE1B32;" text="Thoát" textFill="WHITE" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="50.0">
+                    <font>
+                        <Font name="Arial Bold" size="12.0" />
+                    </font></Button>
+                <ListView fx:id="listView" layoutX="14.0" layoutY="127.0" prefHeight="275.0" prefWidth="200.0" style="-fx-background-color: transparent;" />
+                <ScrollPane layoutX="227.0" layoutY="89.0" prefHeight="312.0" prefWidth="335.0" style="-fx-background-color: transparent;">
+                    <TextFlow fx:id="textFlow" prefHeight="490.0" prefWidth="335.0" style="-fx-background-color: transparent;">
+                        <effect>
+                            <Blend />
+                        </effect></TextFlow>
+                </ScrollPane>
+                <ScrollPane id="imageCon" fx:id="imageContainer" layoutX="581.0" layoutY="90.0" prefHeight="312.0" prefWidth="179.0" style="-fx-background-color: transparent;">
+                    <effect>
+                        <Blend />
+                    </effect></ScrollPane>
+                <Label id="title" fx:id="title" alignment="CENTER" contentDisplay="CENTER" layoutX="217.0" layoutY="24.0" prefHeight="42.0" prefWidth="540.0" style="-fx-background-color: none;" text="Label" textAlignment="CENTER" textFill="#be1b32">
+                    <font>
+                        <Font name="Arial Bold" size="36.0" />
+                    </font></Label>
+                <ImageView fitHeight="62.0" fitWidth="179.0" layoutX="38.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Logo.png" />
+                    </image>
+                </ImageView>
+                <TextField fx:id="textField" layoutX="14.0" layoutY="90.0" prefHeight="26.0" prefWidth="200.0">
+                    <effect>
+                        <Blend />
+                    </effect>
+                </TextField>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
