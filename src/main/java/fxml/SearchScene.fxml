@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
@@ -24,7 +25,10 @@
                     <TextFlow fx:id="textFlow" prefHeight="490.0" prefWidth="335.0" style="-fx-background-color: transparent;">
                         <effect>
                             <Blend />
-                        </effect></TextFlow>
+                        </effect>
+                  <padding>
+                     <Insets bottom="10.0" left="5.0" right="15.0" />
+                  </padding></TextFlow>
                 </ScrollPane>
                 <ScrollPane id="imageCon" fx:id="imageContainer" layoutX="581.0" layoutY="90.0" prefHeight="312.0" prefWidth="179.0" style="-fx-background-color: transparent;">
                     <effect>

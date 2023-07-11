@@ -29,81 +29,81 @@ public class Utils {
             vua.append(s).append("\n");
         }
         text.append("Tên: ")
-                .append(selectedTrieuDai.getTen()).append("\n")
-                .append("Năm bắt đầu - kết thúc: ").append(selectedTrieuDai.getNamBatDau()).append(" - ").append(selectedTrieuDai.getNamKetThuc()).append("\n")
-                .append("Quốc hiệu: : ").append(selectedTrieuDai.getKinhDo()).append("\n")
-                .append("Kinh đô: ").append(selectedTrieuDai.getKinhDo()).append("\n")
-                .append("Vua: ").append(vua).append("\n")
+                .append(selectedTrieuDai.getTen()).append("\n\n")
+                .append("Năm bắt đầu - kết thúc: ").append(selectedTrieuDai.getNamBatDau()).append(" - ").append(selectedTrieuDai.getNamKetThuc()).append("\n\n")
+                .append("Quốc hiệu: : ").append(selectedTrieuDai.getKinhDo()).append("\n\n")
+                .append("Kinh đô: ").append(selectedTrieuDai.getKinhDo()).append("\n\n")
+                .append("Vua: ").append(vua).append("\n\n")
                 .append("Mô tả: : ").append(selectedTrieuDai.getMoTa()).append("\n");
         return text.toString();
     }
 
     public static String textSuKien(SuKienLichSu selectedSuKien) {
         if (selectedSuKien instanceof SuKienChienTranh)
-            return "Tên sự kiện: " + selectedSuKien.getTen() + "\n" +
-                    "Thời gian: " + selectedSuKien.getThoiGian() + "\n" +
-                    "Địa điểm: " + selectedSuKien.getDiaDiem() + "\n" +
-                    "Nguyên nhân: " + ((SuKienChienTranh) selectedSuKien).getNguyenNhan() + "\n" +
-                    "Chỉ huy phe địch: " + ((SuKienChienTranh) selectedSuKien).getChiHuyPheDich() + "\n" +
-                    "Lực lượng phe địch: " + ((SuKienChienTranh) selectedSuKien).getLucLuongPheDich() + "\n" +
-                    "Phe địch: " + ((SuKienChienTranh) selectedSuKien).getPheDich() + "\n" +
-                    "Chỉ huy phe ta: " + ((SuKienChienTranh) selectedSuKien).getChiHuyPheTa() + "\n" +
-                    "Lực lượng phe ta: " + ((SuKienChienTranh) selectedSuKien).getLucLuongPheTa() + "\n" +
-                    "Phe ta: " + ((SuKienChienTranh) selectedSuKien).getPheTa() + "\n" +
-                    "Kết quả: " + selectedSuKien.getKetQua() + "\n" +
+            return "Tên sự kiện: " + selectedSuKien.getTen() + "\n\n" +
+                    "Thời gian: " + selectedSuKien.getThoiGian() + "\n\n" +
+                    "Địa điểm: " + selectedSuKien.getDiaDiem() + "\n\n" +
+                    "Nguyên nhân: " + ((SuKienChienTranh) selectedSuKien).getNguyenNhan() + "\n\n" +
+                    "Chỉ huy phe địch: " + ((SuKienChienTranh) selectedSuKien).getChiHuyPheDich() + "\n\n" +
+                    "Lực lượng phe địch: " + ((SuKienChienTranh) selectedSuKien).getLucLuongPheDich() + "\n\n" +
+                    "Phe địch: " + ((SuKienChienTranh) selectedSuKien).getPheDich() + "\n\n" +
+                    "Chỉ huy phe ta: " + ((SuKienChienTranh) selectedSuKien).getChiHuyPheTa() + "\n\n" +
+                    "Lực lượng phe ta: " + ((SuKienChienTranh) selectedSuKien).getLucLuongPheTa() + "\n\n" +
+                    "Phe ta: " + ((SuKienChienTranh) selectedSuKien).getPheTa() + "\n\n" +
+                    "Kết quả: " + selectedSuKien.getKetQua() + "\n\n" +
                     "Tổn thất địch: " + ((SuKienChienTranh) selectedSuKien).getTonThatDich() + "\n" +
                     "Tổn thất ta: " + ((SuKienChienTranh) selectedSuKien).getTonThatTa();
-        else return "Tên sự kiện: " + selectedSuKien.getTen() + "\n" +
-                "Thời gian: " + selectedSuKien.getThoiGian() + "\n" +
-                "Địa điểm: " + selectedSuKien.getDiaDiem() + "\n" +
+        else return "Tên sự kiện: " + selectedSuKien.getTen() + "\n\n" +
+                "Thời gian: " + selectedSuKien.getThoiGian() + "\n\n" +
+                "Địa điểm: " + selectedSuKien.getDiaDiem() + "\n\n" +
                 "Kết quả: " + selectedSuKien.getKetQua() + "\n";
     }
 
     public static String textDiTich(DiTichLichSu selectedDiTich) {
-        return "Tên di tích: " + selectedDiTich.getTen() + "\n" +
-                "Loại di tích: " + selectedDiTich.getLoaiDiTich() + "\n" +
-                "Năm công nhận: " + selectedDiTich.getNamCongNhan() + "\n" +
-                "Địa điểm : " + selectedDiTich.getDiaDiem() + "\n" +
+        return "Tên di tích: " + selectedDiTich.getTen() + "\n\n" +
+                "Loại di tích: " + selectedDiTich.getLoaiDiTich() + "\n\n" +
+                "Năm công nhận: " + selectedDiTich.getNamCongNhan() + "\n\n" +
+                "Địa điểm : " + selectedDiTich.getDiaDiem() + "\n\n" +
                 "Mô tả di tích: " + selectedDiTich.getMoTa() + "\n";
     }
 
     public static String textLeHoi(LeHoi selectedLeHoi) {
-        return "Tên lễ hội: " + selectedLeHoi.getTen() + "\n" +
-                "Địa điểm: " + selectedLeHoi.getDiaDiem() + "\n" +
-                "Thời gian: " + selectedLeHoi.getThoiGian() + "\n" +
+        return "Tên lễ hội: " + selectedLeHoi.getTen() + "\n\n" +
+                "Địa điểm: " + selectedLeHoi.getDiaDiem() + "\n\n" +
+                "Thời gian: " + selectedLeHoi.getThoiGian() + "\n\n" +
                 "Thông tin: " + selectedLeHoi.getThongTinLeHoi() + "\n";
     }
 
     public static String textNhanVat(NhanVat selectedNhanVat) {
         if (selectedNhanVat instanceof Vua) {
-            return "Tên: " + selectedNhanVat.getTen() + "\n" +
-                    "Tên húy: " + ((Vua) selectedNhanVat).getTenHuy() + "\n" +
-                    "Miếu hiệu: " + ((Vua) selectedNhanVat).getMieuHieu() + "\n" +
-                    "Niên hiệu: " + ((Vua) selectedNhanVat).getNienHieu() + "\n" +
-                    "Thúy hiệu: " + ((Vua) selectedNhanVat).getThuyHieu() + "\n" +
-                    "Thế thứ: " + ((Vua) selectedNhanVat).getTheThu() + "\n" +
+            return "Tên: " + selectedNhanVat.getTen() + "\n\n" +
+                    "Tên húy: " + ((Vua) selectedNhanVat).getTenHuy() + "\n\n" +
+                    "Miếu hiệu: " + ((Vua) selectedNhanVat).getMieuHieu() + "\n\n" +
+                    "Niên hiệu: " + ((Vua) selectedNhanVat).getNienHieu() + "\n\n" +
+                    "Thúy hiệu: " + ((Vua) selectedNhanVat).getThuyHieu() + "\n\n" +
+                    "Thế thứ: " + ((Vua) selectedNhanVat).getTheThu() + "\n\n" +
                     "Năm trị vì: " + ((Vua) selectedNhanVat).getNamBatDauTriVi() + " - " + ((Vua) selectedNhanVat).getNamKetThucTriVi() + "\n";
         }
         if (selectedNhanVat instanceof AnhHungVuTrang) {
-            return "Tên: " + selectedNhanVat.getTen() + "\n" +
-                    "Quê quán: " + ((AnhHungVuTrang) selectedNhanVat).getQueQuan() + "\n" +
-                    "Dân tộc: " + ((AnhHungVuTrang) selectedNhanVat).getDanToc() + "\n" +
-                    "Năm sinh - năm mất: " + ((AnhHungVuTrang) selectedNhanVat).getNamSinhNamMat() + "\n" +
-                    "Năm phong: " + ((AnhHungVuTrang) selectedNhanVat).getNamPhong() + "\n" +
+            return "Tên: " + selectedNhanVat.getTen() + "\n\n" +
+                    "Quê quán: " + ((AnhHungVuTrang) selectedNhanVat).getQueQuan() + "\n\n" +
+                    "Dân tộc: " + ((AnhHungVuTrang) selectedNhanVat).getDanToc() + "\n\n" +
+                    "Năm sinh - năm mất: " + ((AnhHungVuTrang) selectedNhanVat).getNamSinhNamMat() + "\n\n" +
+                    "Năm phong: " + ((AnhHungVuTrang) selectedNhanVat).getNamPhong() + "\n\n" +
                     "Tiểu sử: " + ((AnhHungVuTrang) selectedNhanVat).getTieuSu() + "\n";
         }
         if (selectedNhanVat instanceof DanhNhan) {
-            return "Tên: " + selectedNhanVat.getTen() + "\n" +
-                    "Quê quán: " + ((DanhNhan) selectedNhanVat).getQueQuan() + "\n" +
-                    "Tư liệu: " + ((DanhNhan) selectedNhanVat).gettuLieu() + "\n" +
+            return "Tên: " + selectedNhanVat.getTen() + "\n\n" +
+                    "Quê quán: " + ((DanhNhan) selectedNhanVat).getQueQuan() + "\n\n" +
+                    "Tư liệu: " + ((DanhNhan) selectedNhanVat).gettuLieu() + "\n\n" +
                     "Tóm tắt: " + ((DanhNhan) selectedNhanVat).gettomTat() + "\n";
         }
         if (selectedNhanVat instanceof DanhHieu) {
-            return "Tên: " + selectedNhanVat.getTen() + "\n" +
-                    "Năm sinh - năm mất: " + ((DanhHieu) selectedNhanVat).getNamSinh() + " - " + ((DanhHieu) selectedNhanVat).getNamMat() + "\n" +
-                    "Quê quán: " + ((DanhHieu) selectedNhanVat).getQueQuan() + "\n" +
-                    "Danh hiệu: " + ((DanhHieu) selectedNhanVat).getDanhHieu() + "\n" +
-                    "Năm đỗ: " + ((DanhHieu) selectedNhanVat).getNamDo() + "\n" +
+            return "Tên: " + selectedNhanVat.getTen() + "\n\n" +
+                    "Năm sinh - năm mất: " + ((DanhHieu) selectedNhanVat).getNamSinh() + " - " + ((DanhHieu) selectedNhanVat).getNamMat() + "\n\n" +
+                    "Quê quán: " + ((DanhHieu) selectedNhanVat).getQueQuan() + "\n\n" +
+                    "Danh hiệu: " + ((DanhHieu) selectedNhanVat).getDanhHieu() + "\n\n" +
+                    "Năm đỗ: " + ((DanhHieu) selectedNhanVat).getNamDo() + "\n\n" +
                     "Đời vua:" + ((DanhHieu) selectedNhanVat).getDoiVua() + "\n";
         }
         return "";

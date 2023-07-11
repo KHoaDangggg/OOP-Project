@@ -37,7 +37,7 @@ public class TextAreaController {
             handleRenderLeHoi(selectedItem, textFlow, imageContainer);
         }
         if (field.equals("Nhân Vật Lịch Sử")) {
-            handleRenderAnhHung(selectedItem, textFlow);
+            handleRenderNhanVat(selectedItem, textFlow);
         }
         if (field.equals("Sự Kiện")) {
             handleRenderSuKien(selectedItem, textFlow);
@@ -101,12 +101,12 @@ public class TextAreaController {
             StringBuilder builder = new StringBuilder();
             LinkedHashMap<String, String> tt = selectedDiTich.getThongTin();
             for (String key : tt.keySet()) {
-                builder.append(key).append(": ").append(tt.get(key)).append("\n");
+                builder.append(key).append(": ").append(tt.get(key)).append("\n\n");
             }
             String info = builder.toString();
-            relative.getChildren().add(new Text("Tên di tích: " + selectedDiTich.getTen() + "\n" +
-                    "Loại di tích: " + selectedDiTich.getLoaiDiTich() + "\n" +
-                    "Địa điểm : " + selectedDiTich.getDiaDiem() + "\n" +
+            relative.getChildren().add(new Text("Tên di tích: " + selectedDiTich.getTen() + "\n\n" +
+                    "Loại di tích: " + selectedDiTich.getLoaiDiTich() + "\n\n" +
+                    "Địa điểm : " + selectedDiTich.getDiaDiem() + "\n\n" +
                     info));
 
 
@@ -121,7 +121,7 @@ public class TextAreaController {
     public static void handleRenderLeHoi(DuLieuLichSu tenLeHoi, TextFlow relative, ScrollPane imageContainer) {
         LeHoi selectedLeHoi = (LeHoi) tenLeHoi;
         relative.getChildren().add(new Text(Utils.textLeHoi(selectedLeHoi)));
-        relative.getChildren().add(new Text("Lễ hội liên quan: "));
+        relative.getChildren().add(new Text("\nLễ hội liên quan: "));
         for (String sk : selectedLeHoi.getLienKetLeHoi().keySet()) {
             Hyperlink link = new Hyperlink(sk);
             // Add the Text and Hyperlink nodes to the TextFlow node
@@ -131,7 +131,7 @@ public class TextAreaController {
         loadImage(imageContainer, selectedLeHoi.getLinkAnh());
     }
 
-    public static void handleRenderAnhHung(DuLieuLichSu tenNhanVat, TextFlow relative) {
+    public static void handleRenderNhanVat(DuLieuLichSu tenNhanVat, TextFlow relative) {
         NhanVat selectedNhanVat = (NhanVat) tenNhanVat;
         if (selectedNhanVat instanceof NhanVatLichSu) {
             HashMap<String, String> thongTin = ((NhanVatLichSu) selectedNhanVat).getThongTin();
@@ -139,16 +139,16 @@ public class TextAreaController {
             StringBuilder t = new StringBuilder();
             if (thongTin != null) {
                 for (Map.Entry<String, String> entry : thongTin.entrySet()) {
-                    t.append(entry.getKey()).append(": ").append(entry.getValue()).append("\n");
+                    t.append(entry.getKey()).append(": ").append(entry.getValue()).append("\n\n");
                 }
             }
             if (thongTinCoBan != null) {
                 for (Map.Entry<String, String> entry : thongTinCoBan.entrySet()) {
-                    t.append(entry.getKey()).append(": ").append(entry.getValue()).append("\n");
+                    t.append(entry.getKey()).append(": ").append(entry.getValue()).append("\n\n");
                 }
             }
-            relative.getChildren().add(new Text("Tên: " + selectedNhanVat.getTen() + "\n" +
-                    "Miêu tả: " + ((NhanVatLichSu) selectedNhanVat).getMieuTa() + "\n" +
+            relative.getChildren().add(new Text("Tên: " + selectedNhanVat.getTen() + "\n\n" +
+                    "Miêu tả: " + ((NhanVatLichSu) selectedNhanVat).getMieuTa() + "\n\n" +
                     t));
             relative.getChildren().add(new Text("Sự kiện liên quan: "));
             if (selectedNhanVat.getLienKetSuKien().keySet().size() == 0) {
@@ -179,10 +179,10 @@ public class TextAreaController {
             StringBuilder t = new StringBuilder();
             if (thongTin != null) {
                 for (Map.Entry<String, String> entry : thongTin.entrySet()) {
-                    t.append(entry.getKey()).append(": ").append(entry.getValue()).append("\n");
+                    t.append(entry.getKey()).append(": ").append(entry.getValue()).append("\n\n");
                 }
             }
-            relative.getChildren().add(new Text("Tên: " + selectedNhanVat.getTen() + "\n" + t));
+            relative.getChildren().add(new Text("Tên: " + selectedNhanVat.getTen() + "\n\n" + t));
             relative.getChildren().add(new Text("Sự kiện liên quan: "));
             if (selectedNhanVat.getLienKetSuKien().keySet().size() == 0) {
                 relative.getChildren().add(new Text("Không rõ"));
