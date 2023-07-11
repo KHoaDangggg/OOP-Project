@@ -7,7 +7,8 @@ import java.util.HashMap;
 
 public class LeHoi extends DuLieuLichSu {
     private String diaDiem;
-    private final String thoiGian;
+
+    private String thoiGian;
     private final ArrayList<String> linkAnh;
     private final String thongTinLeHoi;
     private final String linkLeHoi;
@@ -45,7 +46,9 @@ public class LeHoi extends DuLieuLichSu {
     public String getThoiGian() {
         return thoiGian;
     }
-
+    public void setThoiGian(String thoiGian) {
+        this.thoiGian = thoiGian;
+    }
     public ArrayList<String> getLinkAnh() {
         return linkAnh;
     }

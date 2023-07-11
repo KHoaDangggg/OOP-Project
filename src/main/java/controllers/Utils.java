@@ -68,6 +68,7 @@ public class Utils {
     }
 
     public static String textLeHoi(LeHoi selectedLeHoi) {
+        if(selectedLeHoi.getThoiGian()==null) selectedLeHoi.setThoiGian("Không rõ");
         return "Tên lễ hội: " + selectedLeHoi.getTen() + "\n\n" +
                 "Địa điểm: " + selectedLeHoi.getDiaDiem() + "\n\n" +
                 "Thời gian: " + selectedLeHoi.getThoiGian() + "\n\n" +

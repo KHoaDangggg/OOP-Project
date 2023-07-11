@@ -54,7 +54,7 @@ public class TextAreaController {
         for (String sk : selectedTrieuDai.getLienKetSuKien().keySet()) {
             Hyperlink link = new Hyperlink(sk);
             // Add the Text and Hyperlink nodes to the TextFlow node
-            relative.getChildren().addAll(link, new Text(", "));
+            relative.getChildren().addAll(link, new Text("\n"));
             link.setOnAction(e -> handleLabel("Sự Kiện", selectedTrieuDai.getLienKetSuKien().get(sk), sk, relative.getScene()));
         }
         relative.getChildren().add(new Text("\nVua liên quan: "));
@@ -64,7 +64,7 @@ public class TextAreaController {
         for (String sk : selectedTrieuDai.getLienKetVua().keySet()) {
             Hyperlink link = new Hyperlink(sk);
             // Add the Text and Hyperlink nodes to the TextFlow node
-            relative.getChildren().addAll(link, new Text(", "));
+            relative.getChildren().addAll(link, new Text("\n"));
             link.setOnAction(e -> handleLabel("Nhân Vật Lịch Sử", selectedTrieuDai.getLienKetVua().get(sk), sk, relative.getScene()));
         }
     }
@@ -78,7 +78,7 @@ public class TextAreaController {
         }
         for (String nv : selectedSuKien.getLienKetNhanVat().keySet()) {
             Hyperlink link = new Hyperlink(nv);
-            relative1.getChildren().addAll(link, new Text(", "));
+            relative1.getChildren().addAll(link, new Text("\n"));
             link.setOnAction(e -> handleLabel("Nhân Vật Lịch Sử", selectedSuKien.getLienKetNhanVat().get(nv), nv, relative1.getScene()));
         }
         relative1.getChildren().add(new Text("\nTriều đại liên quan: "));
@@ -88,7 +88,7 @@ public class TextAreaController {
         for (String td : selectedSuKien.getLienKetTrieuDai().keySet()) {
             Hyperlink link = new Hyperlink(td);
             link.setOnAction(e -> handleLabel("Triều Đại", selectedSuKien.getLienKetTrieuDai().get(td), td, relative1.getScene()));
-            relative1.getChildren().addAll(link, new Text(", "));
+            relative1.getChildren().addAll(link, new Text("\n"));
         }
     }
 
@@ -125,7 +125,7 @@ public class TextAreaController {
         for (String sk : selectedLeHoi.getLienKetLeHoi().keySet()) {
             Hyperlink link = new Hyperlink(sk);
             // Add the Text and Hyperlink nodes to the TextFlow node
-            relative.getChildren().addAll(link, new Text(", "));
+            relative.getChildren().addAll(link, new Text("\n"));
             link.setOnAction(e -> handleLabel("Lễ Hội", selectedLeHoi.getLienKetLeHoi().get(sk), sk, relative.getScene()));
         }
         loadImage(imageContainer, selectedLeHoi.getLinkAnh());
@@ -157,7 +157,7 @@ public class TextAreaController {
             for (String sk : selectedNhanVat.getLienKetSuKien().keySet()) {
                 Hyperlink link = new Hyperlink(sk);
                 // Add the Text and Hyperlink nodes to the TextFlow node
-                relative.getChildren().addAll(link, new Text(", "));
+                relative.getChildren().addAll(link, new Text("\n"));
                 link.setOnAction(e -> handleLabel("Sự Kiện", selectedNhanVat.getLienKetSuKien().get(sk), sk, relative.getScene()));
 
             }
@@ -169,7 +169,7 @@ public class TextAreaController {
             for (String sk : selectedNhanVat.getLienKetTrieuDai().keySet()) {
                 Hyperlink link = new Hyperlink(sk);
                 // Add the Text and Hyperlink nodes to the TextFlow node
-                relative.getChildren().addAll(link, new Text(", "));
+                relative.getChildren().addAll(link, new Text("\n"));
                 link.setOnAction(e -> handleLabel("Triều Đại", selectedNhanVat.getLienKetTrieuDai().get(sk), sk, relative.getScene()));
 
             }
@@ -190,7 +190,7 @@ public class TextAreaController {
             for (String sk : selectedNhanVat.getLienKetSuKien().keySet()) {
                 Hyperlink link = new Hyperlink(sk);
                 // Add the Text and Hyperlink nodes to the TextFlow node
-                relative.getChildren().addAll(link, new Text(", "));
+                relative.getChildren().addAll(link, new Text("\n"));
                 link.setOnAction(e -> handleLabel("Sự Kiện", selectedNhanVat.getLienKetSuKien().get(sk), sk, relative.getScene()));
 
             }
@@ -202,7 +202,7 @@ public class TextAreaController {
             for (String sk : selectedNhanVat.getLienKetTrieuDai().keySet()) {
                 Hyperlink link = new Hyperlink(sk);
                 // Add the Text and Hyperlink nodes to the TextFlow node
-                relative.getChildren().addAll(link, new Text(", "));
+                relative.getChildren().addAll(link, new Text("\n"));
                 link.setOnAction(e -> handleLabel("Triều Đại", selectedNhanVat.getLienKetTrieuDai().get(sk), sk, relative.getScene()));
             }
             relative.getChildren().add(new Text("\n"));
