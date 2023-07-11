@@ -54,7 +54,7 @@
                         <Image url="@Title.png" />
                     </image>
                 </ImageView>
-                <Button fx:id="onlineSearchBtn" layoutX="29.0" layoutY="291.0" mnemonicParsing="false" onAction="#onlineSearch" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: BE1B32;" text="Tìm kiếm online" textFill="WHITE">
+                <Button fx:id="onlineSearchBtn" layoutX="29.0" layoutY="291.0" mnemonicParsing="false" onAction="#openOnlineSearchScene" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: BE1B32;" text="Tìm kiếm online" textFill="WHITE">
                     <font>
                         <Font name="Arial Bold" size="12.0" />
                     </font></Button>

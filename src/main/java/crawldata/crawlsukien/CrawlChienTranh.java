@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 @SuppressWarnings("ALL")
 public class CrawlChienTranh {
-    public static void main(String[] args) throws IOException {
+    public void crawl() throws IOException {
         //Get links in the first page
         String link = "https://nguoikesu.com/tu-lieu/quan-su?filter_tag[0]=";
         Document doc_first = Jsoup.connect(link).get();
@@ -26,11 +26,11 @@ public class CrawlChienTranh {
         }
 
         //Get link in the other page
-        for(int i=5;i<=70;i+=5){
-            String links = link + "&start="+i;
+        for (int i = 5; i <= 70; i += 5) {
+            String links = link + "&start=" + i;
             Document docs = Jsoup.connect(links).get();
             Elements a_tagss = docs.select("a[itemprop=url]");
-            for(Element a: a_tagss){
+            for (Element a : a_tagss) {
                 list_href.add(a.attr("href"));
             }
         }
@@ -128,29 +128,29 @@ public class CrawlChienTranh {
         file.flush();
         file.close();
         */
-       JSONArray jsonArray = new JSONArray();
-        for(SuKienChienTranh event: list_events){
+        JSONArray jsonArray = new JSONArray();
+        for (SuKienChienTranh event : list_events) {
             JSONObject eventJson = new JSONObject();
-            eventJson.put("tenSuKien",event.getTen());
-            eventJson.put("thoiGian",event.getThoiGian());
-            eventJson.put("diaDiem",event.getDiaDiem());
-            eventJson.put("nguyenNhan",event.getNguyenNhan());
-            eventJson.put("pheTa",event.getPheTa());
-            eventJson.put("pheDich",event.getPheDich());
-            eventJson.put("chiHuyPheTa",event.getChiHuyPheTa());
-            eventJson.put("chiHuyPheDich",event.getChiHuyPheDich());
-            eventJson.put("tonThatTa",event.getTonThatTa());
-            eventJson.put("tonThatDich",event.getTonThatDich());
-            eventJson.put("ketQua",event.getKetQua());
-            eventJson.put("nameRelativePerson",event.getNameRelativePerson());
-            eventJson.put("nameRelativeDinasty",event.getNameRelativeDinasty());
+            eventJson.put("tenSuKien", event.getTen());
+            eventJson.put("thoiGian", event.getThoiGian());
+            eventJson.put("diaDiem", event.getDiaDiem());
+            eventJson.put("nguyenNhan", event.getNguyenNhan());
+            eventJson.put("pheTa", event.getPheTa());
+            eventJson.put("pheDich", event.getPheDich());
+            eventJson.put("chiHuyPheTa", event.getChiHuyPheTa());
+            eventJson.put("chiHuyPheDich", event.getChiHuyPheDich());
+            eventJson.put("tonThatTa", event.getTonThatTa());
+            eventJson.put("tonThatDich", event.getTonThatDich());
+            eventJson.put("ketQua", event.getKetQua());
+            eventJson.put("nameRelativePerson", event.getNameRelativePerson());
+            eventJson.put("nameRelativeDinasty", event.getNameRelativeDinasty());
             jsonArray.put(eventJson);
         }
-        try{
+        try {
             FileWriter fileWriter = new FileWriter("src/JSON_Data/ChienTranh.json");
             fileWriter.write(jsonArray.toString());
             fileWriter.flush();
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

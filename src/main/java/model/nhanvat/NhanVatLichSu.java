@@ -4,7 +4,6 @@ package model.nhanvat;
 import java.util.HashMap;
 
 public class NhanVatLichSu extends NhanVat {
-
     private HashMap<String, String> thongTinCoBan;
     private String mieuTa;
     private HashMap<String, String> thongTin;
@@ -18,6 +17,7 @@ public class NhanVatLichSu extends NhanVat {
     public HashMap<String, String> getThongTinCoBan() {
         return thongTinCoBan;
     }
+
     public void setThongTinCoBan(HashMap<String, String> thongTinCoBan) {
         this.thongTinCoBan = thongTinCoBan;
     }
@@ -37,7 +37,8 @@ public class NhanVatLichSu extends NhanVat {
     public void setThongTin(HashMap<String, String> thongTin) {
         this.thongTin = thongTin;
     }
-    public NhanVatLichSu(String ten){
+
+    public NhanVatLichSu(String ten) {
         super(ten);
 
     }

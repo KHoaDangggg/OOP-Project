@@ -91,8 +91,9 @@ public class JsonToObj {
             }
         });
         ArrayList<DiTich> count = new ArrayList<>();
-        for(int i = 0; i<listDiTichLichSu.size()-1; i++){
-            if(listDiTichLichSu.get(i).getTen().equalsIgnoreCase(listDiTichLichSu.get(i+1).getTen())) count.add(listDiTichLichSu.get(i));
+        for (int i = 0; i < listDiTichLichSu.size() - 1; i++) {
+            if (listDiTichLichSu.get(i).getTen().equalsIgnoreCase(listDiTichLichSu.get(i + 1).getTen()))
+                count.add(listDiTichLichSu.get(i));
         }
         listDiTichLichSu.removeAll(count);
         System.out.println("Clean successfully");
@@ -118,18 +119,18 @@ public class JsonToObj {
         System.out.println("Clean successfully");
     }
 
-    public void cleanSuKien(){
+    public void cleanSuKien() {
         ArrayList<SuKienChienTranh> temp = new ArrayList<>();
-        for(SuKienChienTranh chienTranh:listChienTranh){
+        for (SuKienChienTranh chienTranh : listChienTranh) {
             int count = 0;
-            for(SuKienLichSu suKien: listSuKien) {
+            for (SuKienLichSu suKien : listSuKien) {
                 String str1 = chienTranh.getTen();
                 String str2 = suKien.getTen();
                 if (str1.equalsIgnoreCase(str2) || (str1.toLowerCase()).contains(str2.toLowerCase()) || (str2.toLowerCase()).contains(str1.toLowerCase())) {
                     count++;
                 }
             }
-            if(count == 0) temp.add(chienTranh);
+            if (count == 0) temp.add(chienTranh);
         }
         listSuKien.addAll(temp);
     }
@@ -285,11 +286,12 @@ public class JsonToObj {
         System.out.println("Convert to obj successful!");
     }
 
-    public void JsonToObj9(String path, ArrayList<SuKienLichSu>list){
-        Gson  gson = new Gson();
+    public void JsonToObj9(String path, ArrayList<SuKienLichSu> list) {
+        Gson gson = new Gson();
         FileReader fileReader = reader(path);
-        Type objectType = new TypeToken<ArrayList<SuKienLichSu>>(){}.getType();
-        ArrayList<SuKienLichSu> convertList = gson.fromJson(fileReader,objectType);
+        Type objectType = new TypeToken<ArrayList<SuKienLichSu>>() {
+        }.getType();
+        ArrayList<SuKienLichSu> convertList = gson.fromJson(fileReader, objectType);
         list.addAll(convertList);
         System.out.println("Convert to obj successfull");
     }
@@ -310,10 +312,10 @@ public class JsonToObj {
             ArrayList<String> keySets = new ArrayList<>();
             keySets.addAll(obj.keySet());
             String ten = null;
-            String img= null;
+            String img = null;
             String loaiDiTich = null;
             String diaDiem = null;
-            try{
+            try {
                 ten = obj.getString("ten");
                 String s = obj.getString("img");
                 String s1 = s.replaceAll("\\\\", "/");
@@ -321,8 +323,8 @@ public class JsonToObj {
                 //System.out.println(img);
                 loaiDiTich = obj.getString("loaiDiTich");
                 diaDiem = obj.getString("diaDiem");
-            }catch (Exception e){
-                e.printStackTrace();
+            } catch (Exception e) {
+                //e.printStackTrace();
             }
             keySets.remove("ten");
             keySets.remove("img");

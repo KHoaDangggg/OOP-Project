@@ -10,7 +10,6 @@ public abstract class NhanVat extends DuLieuLichSu {
     public NhanVat(String ten) {
         super(ten);
     }
-
     public HashMap<String, SuKienLichSu> lienKetSuKien = new HashMap<>();
     public HashMap<String, TrieuDai> lienKetTrieuDai = new HashMap<>();
 

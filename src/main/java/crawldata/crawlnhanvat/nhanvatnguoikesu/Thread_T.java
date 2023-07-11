@@ -7,7 +7,7 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 
-public class Thread_T implements Runnable{
+public class Thread_T implements Runnable {
 
     private String url;
 
@@ -25,7 +25,7 @@ public class Thread_T implements Runnable{
             String url = name.attr("href");
             url = "https://nguoikesu.com" + url;
             System.out.println(url);
-            CrawlNhanVat_NguoiKeSu.listlink.add(url);
+            CrawlNhanVat_NguoiKeSuManager.listlink.add(url);
         }
     }
 

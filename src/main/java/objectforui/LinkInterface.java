@@ -9,6 +9,7 @@ import java.util.ArrayList;
 
 public interface LinkInterface {
     void linkLeHoi(ArrayList<LeHoi> leHoi);
+
     void linkNhanVat(ArrayList<NhanVat> nhanVatLichSu);
 
     void linkSuKien(ArrayList<SuKienLichSu> suKienChienTranh);

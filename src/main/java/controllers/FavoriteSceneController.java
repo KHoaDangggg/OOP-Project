@@ -10,7 +10,7 @@ import javafx.scene.control.*;
 import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 import model.DuLieuLichSu;
-import model.ditich.DiTichLichSu;
+import model.ditich.DiTich;
 import model.lehoi.LeHoi;
 import model.nhanvat.NhanVat;
 import model.sukien.SuKienLichSu;
@@ -22,6 +22,7 @@ import java.util.ResourceBundle;
 
 import static controllers.Utils.removeVietnameseAccent;
 
+//Controller for the Favorite Save Scene
 public class FavoriteSceneController implements Initializable {
     private ArrayList<DuLieuLichSu> duLieuLichSus = new ArrayList<>();
     @FXML
@@ -72,7 +73,7 @@ public class FavoriteSceneController implements Initializable {
             if (selectedItem instanceof TrieuDai) {
                 field = "Triều Đại";
             }
-            if (selectedItem instanceof DiTichLichSu) {
+            if (selectedItem instanceof DiTich) {
                 field = "Di tích lịch sử";
             }
             if (selectedItem instanceof LeHoi) {

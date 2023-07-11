@@ -8,11 +8,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 import model.ditich.DiTichLichSu;
 import model.lehoi.LeHoi;
-import model.nhanvat.DanhNhan;
-import model.nhanvat.AnhHungVuTrang;
-import model.nhanvat.NhanVat;
-import model.nhanvat.DanhHieu;
-import model.nhanvat.Vua;
+import model.nhanvat.*;
 import model.sukien.SuKienChienTranh;
 import model.sukien.SuKienLichSu;
 import model.trieudai.TrieuDai;
@@ -28,7 +24,6 @@ public class Utils {
     public static String textTrieuDai(TrieuDai selectedTrieuDai) {
         StringBuilder text = new StringBuilder();
         StringBuilder vua = new StringBuilder();
-
         ArrayList<String> vuas = selectedTrieuDai.getKings();
         for (String s : vuas) {
             vua.append(s).append("\n");
@@ -42,26 +37,28 @@ public class Utils {
                 .append("Mô tả: : ").append(selectedTrieuDai.getMoTa()).append("\n");
         return text.toString();
     }
+
     public static String textSuKien(SuKienLichSu selectedSuKien) {
-        if(selectedSuKien instanceof SuKienChienTranh)
-         return "Tên sự kiện: " + selectedSuKien.getTen() + "\n" +
-                "Thời gian: " + selectedSuKien.getThoiGian() + "\n" +
-                "Địa điểm: " + selectedSuKien.getDiaDiem() + "\n" +
-                "Nguyên nhân: " + ((SuKienChienTranh) selectedSuKien).getNguyenNhan() + "\n" +
-                "Chỉ huy phe địch: " + ((SuKienChienTranh) selectedSuKien).getChiHuyPheDich() + "\n" +
-                "Lực lượng phe địch: " + ((SuKienChienTranh) selectedSuKien).getLucLuongPheDich() + "\n" +
-                "Phe địch: " + ((SuKienChienTranh) selectedSuKien).getPheDich() + "\n" +
-                "Chỉ huy phe ta: " + ((SuKienChienTranh) selectedSuKien).getChiHuyPheTa() + "\n" +
-                "Lực lượng phe ta: " + ((SuKienChienTranh) selectedSuKien).getLucLuongPheTa() + "\n" +
-                "Phe ta: " + ((SuKienChienTranh) selectedSuKien).getPheTa() + "\n" +
-                "Kết quả: " + selectedSuKien.getKetQua() + "\n" +
-                "Tổn thất địch: " + ((SuKienChienTranh) selectedSuKien).getTonThatDich() + "\n" +
-                "Tổn thất ta: " + ((SuKienChienTranh) selectedSuKien).getTonThatTa();
+        if (selectedSuKien instanceof SuKienChienTranh)
+            return "Tên sự kiện: " + selectedSuKien.getTen() + "\n" +
+                    "Thời gian: " + selectedSuKien.getThoiGian() + "\n" +
+                    "Địa điểm: " + selectedSuKien.getDiaDiem() + "\n" +
+                    "Nguyên nhân: " + ((SuKienChienTranh) selectedSuKien).getNguyenNhan() + "\n" +
+                    "Chỉ huy phe địch: " + ((SuKienChienTranh) selectedSuKien).getChiHuyPheDich() + "\n" +
+                    "Lực lượng phe địch: " + ((SuKienChienTranh) selectedSuKien).getLucLuongPheDich() + "\n" +
+                    "Phe địch: " + ((SuKienChienTranh) selectedSuKien).getPheDich() + "\n" +
+                    "Chỉ huy phe ta: " + ((SuKienChienTranh) selectedSuKien).getChiHuyPheTa() + "\n" +
+                    "Lực lượng phe ta: " + ((SuKienChienTranh) selectedSuKien).getLucLuongPheTa() + "\n" +
+                    "Phe ta: " + ((SuKienChienTranh) selectedSuKien).getPheTa() + "\n" +
+                    "Kết quả: " + selectedSuKien.getKetQua() + "\n" +
+                    "Tổn thất địch: " + ((SuKienChienTranh) selectedSuKien).getTonThatDich() + "\n" +
+                    "Tổn thất ta: " + ((SuKienChienTranh) selectedSuKien).getTonThatTa();
         else return "Tên sự kiện: " + selectedSuKien.getTen() + "\n" +
                 "Thời gian: " + selectedSuKien.getThoiGian() + "\n" +
                 "Địa điểm: " + selectedSuKien.getDiaDiem() + "\n" +
                 "Kết quả: " + selectedSuKien.getKetQua() + "\n";
     }
+
     public static String textDiTich(DiTichLichSu selectedDiTich) {
         return "Tên di tích: " + selectedDiTich.getTen() + "\n" +
                 "Loại di tích: " + selectedDiTich.getLoaiDiTich() + "\n" +
@@ -80,12 +77,12 @@ public class Utils {
     public static String textNhanVat(NhanVat selectedNhanVat) {
         if (selectedNhanVat instanceof Vua) {
             return "Tên: " + selectedNhanVat.getTen() + "\n" +
-                    "Tên húy: " + ((Vua) selectedNhanVat).getTen_huy() + "\n" +
-                    "Miếu hiệu: " + ((Vua) selectedNhanVat).getMieu_hieu() + "\n" +
-                    "Niên hiệu: " + ((Vua) selectedNhanVat).getNien_hieu() + "\n" +
-                    "Thúy hiệu: " + ((Vua) selectedNhanVat).getThuy_hieu() + "\n" +
-                    "Thế thứ: " + ((Vua) selectedNhanVat).getThe_thu() + "\n" +
-                    "Năm trị vì: " + ((Vua) selectedNhanVat).getNam_bat_dau_tri_vi() + " - " + ((Vua) selectedNhanVat).getNam_ket_thuc_tri_vi() + "\n";
+                    "Tên húy: " + ((Vua) selectedNhanVat).getTenHuy() + "\n" +
+                    "Miếu hiệu: " + ((Vua) selectedNhanVat).getMieuHieu() + "\n" +
+                    "Niên hiệu: " + ((Vua) selectedNhanVat).getNienHieu() + "\n" +
+                    "Thúy hiệu: " + ((Vua) selectedNhanVat).getThuyHieu() + "\n" +
+                    "Thế thứ: " + ((Vua) selectedNhanVat).getTheThu() + "\n" +
+                    "Năm trị vì: " + ((Vua) selectedNhanVat).getNamBatDauTriVi() + " - " + ((Vua) selectedNhanVat).getNamKetThucTriVi() + "\n";
         }
         if (selectedNhanVat instanceof AnhHungVuTrang) {
             return "Tên: " + selectedNhanVat.getTen() + "\n" +
@@ -128,8 +125,8 @@ public class Utils {
         return noAccent.toLowerCase().strip();
     }
 
+    //Loading image in background
     public static void loadImage(ScrollPane imageContainer, ArrayList<String> url) {
-        System.out.println("Run task");
         if (!threadManager.isEmpty()) {
             for (Thread thread : threadManager) thread.interrupt();
             threadManager.clear();
@@ -138,9 +135,8 @@ public class Utils {
             @Override
             protected ArrayList<Image> call() {
                 ArrayList<Image> images = new ArrayList<>();
-                for(String u: url){
+                for (String u : url) {
                     images.add(new Image(u));
-                    System.out.println(u);
                 }
                 return images;
             }
@@ -152,7 +148,7 @@ public class Utils {
             //System.out.println(loadedImage.getUrl());
             VBox imageBox = new VBox();
             imageBox.setSpacing(10);
-            for(Image image: loadedImage) {
+            for (Image image : loadedImage) {
                 ImageView imageView = new ImageView();
                 imageView.setImage(image);
                 imageView.setFitWidth(200);
@@ -161,7 +157,6 @@ public class Utils {
                 imageBox.getChildren().add(imageView);
             }
             // Set the content of the ScrollPane to the VBox
-            //imageContainer.setContent(imageBox);
             Platform.runLater(() -> imageContainer.setContent(imageBox));
             System.out.println("Load image successfully!");
         });

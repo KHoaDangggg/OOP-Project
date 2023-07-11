@@ -1,4 +1,4 @@
-package crawldata.crawlditich.crawlditichwiki;
+package crawldata.crawlditich;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class CrawlDiTichWiki {
-    public static void main(String[] args) {
+    public void crawl() {
         String url = "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Di_t%C3%ADch_qu%E1%BB%91c_gia_Vi%E1%BB%87t_Nam";
 
         try {
@@ -23,7 +23,6 @@ public class CrawlDiTichWiki {
             Elements tables = document.select("table.wikitable");
             ArrayList<String[]> heritageList = new ArrayList<>();
 
-            //int i = 0;
             for (Element table : tables) {
                 // Extract the rows from the table
                 Elements rows = table.select("tr");
@@ -48,7 +47,7 @@ public class CrawlDiTichWiki {
                         //Extract the Description
                         String description;
                         Element linkref = columns.get(0).selectFirst("a");
-                        if(linkref != null){
+                        if (linkref != null) {
                             String link = linkref.absUrl("href");
                             Document doc = Jsoup.connect(link).get();
                             Element descriptionElement = doc.selectFirst("div.mw-parser-output > p:first-of-type");
@@ -66,23 +65,10 @@ public class CrawlDiTichWiki {
                         heritage[3] = year;
                         heritage[4] = description;
                         heritageList.add(heritage);
-                        //i++;
                     }
                 }
             }
 
-           /* try (FileWriter file = new FileWriter("heritage2.json")) {
-                JSONArray jsonArray = new JSONArray();
-                for (String[] heritage : heritageList) {
-                    JSONObject jsonObject = new JSONObject();
-                    jsonObject.put("Tên", heritage[0]);
-                    jsonObject.put("Địa điểm", heritage[1]);
-                    jsonObject.put("Loại di tích", heritage[2]);
-                    jsonArray.add(jsonObject);
-                }
-                file.write(jsonArray.toJSONString());
-                file.flush();
-            } */
 
             //Writing Json file
             try (FileWriter file = new FileWriter("src/JSON_Data/DiTichLichSu.json")) {

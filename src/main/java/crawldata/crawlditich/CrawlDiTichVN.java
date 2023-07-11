@@ -1,4 +1,4 @@
-package crawldata.crawlditich.crawlditichvn;
+package crawldata.crawlditich;
 
 import model.ditich.DiTichVN;
 import org.json.JSONArray;
@@ -19,29 +19,28 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-// http://ditich.vn/FrontEnd/DiTich?cpage=2&rpage=64&tpage=2
-
-public class CrawlFromDiTichVN {
+public class CrawlDiTichVN {
     private final ArrayList<String> pages = new ArrayList<>();
     private final ArrayList<String> urls = new ArrayList<>();
     private final String BASE_URL = "http://ditich.vn";
     private final ArrayList<DiTichVN> listDiTich = new ArrayList<>();
 
 
-    public void crawl(){
+    public void crawl() {
         getPageLinks();
         getLinkInPages();
         getHistoricalSitesInLink();
         writeToJSON(listDiTich);
     }
-    private void getPageLinks(){
-        for(int i = 1; i<=63; i++){
-            pages.add(BASE_URL+"/FrontEnd/DiTich"+"?cpage="+i+"&rpage=64&tpage="+i);
-            System.out.println(pages.get(i-1));
+
+    private void getPageLinks() {
+        for (int i = 1; i <= 63; i++) {
+            pages.add(BASE_URL + "/FrontEnd/DiTich" + "?cpage=" + i + "&rpage=64&tpage=" + i);
+            System.out.println(pages.get(i - 1));
         }
     }
 
-    private void getLinkInPages(){
+    private void getLinkInPages() {
         int maxThreads = 8;
         ExecutorService executor = Executors.newFixedThreadPool(maxThreads);
         List<Future<?>> futures = new ArrayList<>();
@@ -74,7 +73,7 @@ public class CrawlFromDiTichVN {
         executor.shutdown();
     }
 
-    private void getHistoricalSitesInLink(){
+    private void getHistoricalSitesInLink() {
         int maxThreads = 8;
         ExecutorService executor = Executors.newFixedThreadPool(maxThreads);
         List<Future<?>> futures = new ArrayList<>();
@@ -107,7 +106,7 @@ public class CrawlFromDiTichVN {
         executor.shutdown();
     }
 
-    private Thread getLinkThread(String url){
+    private Thread getLinkThread(String url) {
         Runnable runnable = () -> {
             Document doc = null;
             try {
@@ -128,7 +127,7 @@ public class CrawlFromDiTichVN {
         return new Thread(runnable);
     }
 
-    private Thread getDataThread(String url){
+    private Thread getDataThread(String url) {
         Runnable runnable = () -> {
             LinkedHashMap<String, String> thongTin = new LinkedHashMap<>();
             Document doc = null;
@@ -138,7 +137,7 @@ public class CrawlFromDiTichVN {
                 e.printStackTrace();
             }
             String ten = null;
-            if(doc!=null) {
+            if (doc != null) {
                 Element tenElement = doc.body().getElementsByClass("hl__comp-heading hl__comp_heading_custom").first();
                 if (tenElement != null) ten = tenElement.text();
                 String img = doc.body().getElementsByClass("sp-large").attr("src");
@@ -175,8 +174,8 @@ public class CrawlFromDiTichVN {
             jsonObject.put("diaDiem", diTich.getDiaDiem());
             jsonObject.put("img", diTich.getImg());
             HashMap<String, String> thongTin = diTich.getThongTin();
-            if(thongTin!=null){
-                for(String key: thongTin.keySet()) jsonObject.put(key, thongTin.get(key));
+            if (thongTin != null) {
+                for (String key : thongTin.keySet()) jsonObject.put(key, thongTin.get(key));
             }
             jsonArray.put(jsonObject);
         }

@@ -2,43 +2,29 @@ package model.nhanvat;
 
 public class Vua extends NhanVat {
     private final String img;
-    private final String mieu_hieu;
-    private final String thuy_hieu;
-    private final String nien_hieu;
-    private final String ten_huy;
-    private final String the_thu;
-    private final String nam_bat_dau_tri_vi;
+    private final String mieuHieu;
+    private final String thuyHieu;
+    private final String nienHieu;
+    private final String tenHuy;
+    private final String theThu;
+    private final String namBatDauTriVi;
     //private String middle;
-    private final String nam_ket_thuc_tri_vi;
+    private final String namKetThucTriVi;
 
-    private String nam_sinh;
-    private String nam_mat;
-
-//    public Vua(String img, String name, String mieu_hieu, String thuyhieu, String nienhieu, String tenhuy, String thethu, String start, String middle, String end) {
-//        img =
-//                this.img = img;
-//        this.ten = clear(name);
-//        this.mieu_hieu = mieu_hieu;
-//        this.thuy_hieu = thuyhieu;
-//        this.nien_hieu = nienhieu;
-//        this.ten_huy = tenhuy;
-//        this.the_thu = thethu;
-//        this.nam_bat_dau_tri_vi = start;
-//        this.middle = middle;
-//        this.nam_ket_thuc_tri_vi = end;
-//    }
+    private String namSinh;
+    private String namMat;
 
     public Vua(String img, String name, String mieu_hieu, String thuyhieu, String nienhieu, String tenhuy, String thethu, String start, String end) {
         super(name);
         this.img = clearImg(img);
-        this.mieu_hieu = clear(mieu_hieu);
-        this.thuy_hieu = clear(thuyhieu);
-        this.nien_hieu = clear(nienhieu);
-        this.ten_huy = clear(tenhuy);
-        this.the_thu = clear(thethu);
-        this.nam_bat_dau_tri_vi = clear(start);
+        this.mieuHieu = clear(mieu_hieu);
+        this.thuyHieu = clear(thuyhieu);
+        this.nienHieu = clear(nienhieu);
+        this.tenHuy = clear(tenhuy);
+        this.theThu = clear(thethu);
+        this.namBatDauTriVi = clear(start);
         //this.middle = clear(middle);
-        this.nam_ket_thuc_tri_vi = clear(end);
+        this.namKetThucTriVi = clear(end);
     }
 
     public String clearImg(String img) {
@@ -71,64 +57,35 @@ public class Vua extends NhanVat {
         return str;
     }
 
-//    public String clearName(String name){
-//        int index = name.indexOf("[");
-//        if(index < 0) return name;
-//        else return name.substring(0, index);
-//    }
-
-//    public String clear(String str){
-//        while(1){
-//            int
-//        }
-//    }
-
-//    public void clearImg(String img){
-//
-//    }
-//    public void clearImg(String img){
-//
-//    }
-//    public void clearImg(String img){
-//
-//    }
-//    public void clearImg(String img){
-//
-//    }
-
-    public String getMieu_hieu() {
-        return mieu_hieu;
+    public String getMieuHieu() {
+        return mieuHieu;
     }
 
     public String getImg() {
         return img;
     }
 
-    public String getThuy_hieu() {
-        return thuy_hieu;
+    public String getThuyHieu() {
+        return thuyHieu;
     }
 
-    public String getNien_hieu() {
-        return nien_hieu;
+    public String getNienHieu() {
+        return nienHieu;
     }
 
-    public String getTen_huy() {
-        return ten_huy;
+    public String getTenHuy() {
+        return tenHuy;
     }
 
-    public String getThe_thu() {
-        return the_thu;
+    public String getTheThu() {
+        return theThu;
     }
 
-    public String getNam_bat_dau_tri_vi() {
-        return nam_bat_dau_tri_vi;
+    public String getNamBatDauTriVi() {
+        return namBatDauTriVi;
     }
 
-//    public String getMiddle() {
-//        return middle;
-//    }
-
-    public String getNam_ket_thuc_tri_vi() {
-        return nam_ket_thuc_tri_vi;
+    public String getNamKetThucTriVi() {
+        return namKetThucTriVi;
     }
 }

@@ -8,12 +8,19 @@ import java.util.HashMap;
 public class LeHoi extends DuLieuLichSu {
     private String diaDiem;
     private final String thoiGian;
-
     private final ArrayList<String> linkAnh;
     private final String thongTinLeHoi;
-
     private final String linkLeHoi;
     private HashMap<String, LeHoi> lienKetLeHoi = new HashMap<>();
+
+    public LeHoi(String ten, String diaDiem, String thoiGian, ArrayList<String> anh, String thongTinLeHoi, String linkLeHoi) {
+        super(ten);
+        this.diaDiem = diaDiem;
+        this.thoiGian = thoiGian;
+        this.linkAnh = anh;
+        this.thongTinLeHoi = thongTinLeHoi;
+        this.linkLeHoi = linkLeHoi;
+    }
 
     public String getLinkLeHoi() {
         return linkLeHoi;
@@ -25,15 +32,6 @@ public class LeHoi extends DuLieuLichSu {
 
     public HashMap<String, LeHoi> getLienKetLeHoi() {
         return lienKetLeHoi;
-    }
-
-    public LeHoi(String ten, String diaDiem, String thoiGian, ArrayList<String> anh, String thongTinLeHoi, String linkLeHoi) {
-        super(ten);
-        this.diaDiem = diaDiem;
-        this.thoiGian = thoiGian;
-        this.linkAnh = anh;
-        this.thongTinLeHoi = thongTinLeHoi;
-        this.linkLeHoi = linkLeHoi;
     }
 
     public String getDiaDiem() {

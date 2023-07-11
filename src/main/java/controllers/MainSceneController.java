@@ -1,61 +1,53 @@
 package controllers;
 
-import model.DuLieuLichSu;
 import javafx.event.ActionEvent;
-
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import model.DuLieuLichSu;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+//Controller for the main scene
 public class MainSceneController implements Initializable {
-
     public static ArrayList<DuLieuLichSu> saveData = new ArrayList<>();
-
     @FXML
     private Button btnDynasty;
-
     @FXML
     private Button btnRelic;
-
     @FXML
     private Button btnFestival;
-
     @FXML
     private Button btnEvent;
-
     @FXML
     private Button btnFigures;
-
     @FXML
     private Button btnExit;
 
     @FXML
     private void handleButtonAction(ActionEvent event) {
         if (event.getSource() == btnDynasty) {
-            renderNewScence1("Triều Đại");
+            openSearchScene("Triều Đại");
         }
         if (event.getSource() == btnRelic) {
-            renderNewScence1("Di tích lịch sử");
+            openSearchScene("Di tích lịch sử");
         }
         if (event.getSource() == btnFestival) {
-            renderNewScence1("Lễ Hội");
+            openSearchScene("Lễ Hội");
         }
         if (event.getSource() == btnEvent) {
-            renderNewScence1("Sự Kiện");
+            openSearchScene("Sự Kiện");
         }
         if (event.getSource() == btnFigures) {
-            renderNewScence1("Nhân Vật Lịch Sử");
+            openSearchScene("Nhân Vật Lịch Sử");
         }
         if (event.getSource() == btnExit) {
             Stage stage = (Stage) btnExit.getScene().getWindow();
@@ -63,7 +55,8 @@ public class MainSceneController implements Initializable {
         }
     }
 
-    private void renderNewScence1(String btnName){
+    //Open search scene using local database
+    private void openSearchScene(String btnName) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/SearchScene.fxml"));
         Parent root;
         try {
@@ -82,8 +75,9 @@ public class MainSceneController implements Initializable {
         stage.setScene(new Scene(root));
     }
 
+    //Open search online scene
     @FXML
-    private void onlineSearch(){
+    private void openOnlineSearchScene() {
         Stage stage = (Stage) btnDynasty.getScene().getWindow();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/Webview.fxml"));
         WebViewController controller = new WebViewController();
@@ -97,11 +91,14 @@ public class MainSceneController implements Initializable {
         }
         stage.setScene(new Scene(root));
     }
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {}
 
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+    }
+
+    //Open favorite scene
     @FXML
-    private void openSaveScene(){
+    private void openSaveScene() {
         Stage stage = (Stage) btnDynasty.getScene().getWindow();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/FavoriteScene.fxml"));
         FavoriteSceneController controller = new FavoriteSceneController(btnDynasty.getScene());

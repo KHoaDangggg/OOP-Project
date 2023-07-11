@@ -78,18 +78,18 @@ public class LinkingObject implements LinkInterface {
                     lienKetTrieuDai.putIfAbsent(listTrieuDai.get(i).getTen(), listTrieuDai.get(i));
                     break;
                 }*/
-                for(String vua: listTrieuDai.get(i).getKings()){
+                for (String vua : listTrieuDai.get(i).getKings()) {
                     String str1 = vua.toLowerCase();
                     String str2 = nhanVat.getTen().toLowerCase();
-                    if(str1.equalsIgnoreCase(str2)||str1.contains(str2)||str2.contains(str1)){
+                    if (str1.equalsIgnoreCase(str2) || str1.contains(str2) || str2.contains(str1)) {
                         lienKetTrieuDai.put(listTrieuDai.get(i).getTen(), listTrieuDai.get(i));
                     }
                 }
                 i++;
             }
-                nhanVat.setLienKetTrieuDai(lienKetTrieuDai);
-            }
+            nhanVat.setLienKetTrieuDai(lienKetTrieuDai);
         }
+    }
 
     @Override
     public void linkSuKien(ArrayList<SuKienLichSu> suKienChienTranh) {

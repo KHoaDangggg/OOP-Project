@@ -3,8 +3,8 @@ package model.ditich;
 import model.DuLieuLichSu;
 
 public class DiTich extends DuLieuLichSu {
-    private  String loaiDiTich;
-    private  String diaDiem;
+    private String loaiDiTich;
+    private String diaDiem;
 
     public DiTich(String ten) {
         super(ten);
@@ -19,7 +19,6 @@ public class DiTich extends DuLieuLichSu {
     public String getLoaiDiTich() {
         return loaiDiTich;
     }
-
 
     public String getDiaDiem() {
         return diaDiem;

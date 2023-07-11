@@ -23,19 +23,20 @@ public class CrawlVanSuManager {
     private final ArrayList<NhanVatVanSu> listNhanVat = new ArrayList<>();
 
 
-    public void crawl(){
+    public void crawl() {
         getPageLinks();
         getLinkInPages();
         getCharacterInLink();
         writeToJSON(listNhanVat);
     }
-    private void getPageLinks(){
-        for(int i = 0; i<119; i++){
-            pages.add(BASE_URL+"/viet-nam/viet-nam-nhan-vat?page="+i);
+
+    private void getPageLinks() {
+        for (int i = 0; i < 119; i++) {
+            pages.add(BASE_URL + "/viet-nam/viet-nam-nhan-vat?page=" + i);
         }
     }
 
-    private void getLinkInPages(){
+    private void getLinkInPages() {
         int maxThreads = 10;
         ExecutorService executor = Executors.newFixedThreadPool(maxThreads);
         List<Future<?>> futures = new ArrayList<>();
@@ -68,7 +69,7 @@ public class CrawlVanSuManager {
         executor.shutdown();
     }
 
-    private void getCharacterInLink(){
+    private void getCharacterInLink() {
         int maxThreads = 10;
         ExecutorService executor = Executors.newFixedThreadPool(maxThreads);
         List<Future<?>> futures = new ArrayList<>();
@@ -102,7 +103,7 @@ public class CrawlVanSuManager {
         executor.shutdown();
     }
 
-    private Thread getLinkThread(String url){
+    private Thread getLinkThread(String url) {
         Runnable runnable = () -> {
             Document doc;
             try {
@@ -113,16 +114,16 @@ public class CrawlVanSuManager {
             Elements rows = doc.body().select("tbody").select("tr");
             for (Element row : rows) {
                 Elements td = row.children();
-                if(td.get(0) != null){
+                if (td.get(0) != null) {
                     String s = td.get(0).select("a").attr("href");
-                    urls.add(BASE_URL+s);
+                    urls.add(BASE_URL + s);
                 }
             }
         };
         return new Thread(runnable);
     }
 
-    private Thread getDataThread(String url){
+    private Thread getDataThread(String url) {
         Runnable runnable = () -> {
             LinkedHashMap<String, String> attr = new LinkedHashMap<>();
             Document doc;
@@ -140,7 +141,7 @@ public class CrawlVanSuManager {
                 }
             }
             Element tt = rows.last();
-            if(tt!=null) attr.put("Thông tin", tt.text());
+            if (tt != null) attr.put("Thông tin", tt.text());
 
             NhanVatVanSu nv = new NhanVatVanSu(ten, attr);
             System.out.println(ten);
@@ -149,14 +150,14 @@ public class CrawlVanSuManager {
         return new Thread(runnable);
     }
 
-    private static void writeToJSON(ArrayList<NhanVatVanSu> nv) {
+    private void writeToJSON(ArrayList<NhanVatVanSu> nv) {
         JSONArray jsonArray = new JSONArray();
         for (NhanVatVanSu nhanVat : nv) {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("ten", nhanVat.getTen());
             HashMap<String, String> ttcb = nhanVat.getAtt();
-            if(ttcb!=null){
-                for(String key: ttcb.keySet()) jsonObject.put(key, nhanVat.getAtt().get(key));
+            if (ttcb != null) {
+                for (String key : ttcb.keySet()) jsonObject.put(key, nhanVat.getAtt().get(key));
             }
             jsonArray.put(jsonObject);
         }

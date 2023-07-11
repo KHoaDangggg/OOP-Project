@@ -20,7 +20,7 @@ public class CrawlLeHoiManager {
     public static List<LeHoi> listCacLeHoi = new ArrayList<>();
 
 
-    public void crawlLeHoiInfo(){
+    public void crawlLeHoiInfo() {
         for (int i = 1; i < 64; i++) pages.add(BASE_URL + "/viet-nam/page" + i);
         System.out.println(pages);
         getArticle();
@@ -118,7 +118,7 @@ public class CrawlLeHoiManager {
         }
 
         try {
-            FileWriter file = new FileWriter("src/JSON_DATA/LeHoi_Nguon_05.json");
+            FileWriter file = new FileWriter("src/JSON_Data/LeHoi_Nguon_05.json");
             file.write(jsonArray.toString(1));
             file.flush();
             file.close();

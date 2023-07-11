@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 public class CrawlVuaManager {
     ArrayList<Vua> vuaArrayList = new ArrayList<>();
+
     public void add(Elements tableRows) {
 
         for (int i = 1; i < tableRows.size(); i++) {
@@ -23,20 +24,6 @@ public class CrawlVuaManager {
                 //System.out.println(row.text());
                 continue;
             }
-
-
-//            if (name.contains("An Dương Vương")) {
-////                Vua vua1 = new Vua(columns.get(0).select("img").attr("src"),
-////                        "An Dương Vương",
-////                        columns.get(2).text(),
-////                        columns.get(3).text(),
-////                        columns.get(4).text(),
-////                        columns.get(5).text(),
-////                        columns.get(6).text(),
-////                        "257 TCN", "208 TCN");
-////                vuaArrayList.add(vua1);
-//                continue;
-//            }
 
             if (columns.get(1).text().contains("Trần Cảo")) {
                 Vua vua2 = new Vua(columns.get(0).select("img").attr("src"),
@@ -57,7 +44,6 @@ public class CrawlVuaManager {
             }
 
             String name = columns.get(1).text();
-
 
             String img = columns.get(0).select("img").attr("src");
             //String name = columns.get(1).text();
@@ -85,22 +71,22 @@ public class CrawlVuaManager {
         vuaArrayList.add(vua1);
     }
 
-    public void printlist(){
-        int i=0;
+    public void printlist() {
+        int i = 0;
         for (Vua vua : vuaArrayList) {
             i++;
             System.out.println("Người thứ " + i);
             System.out.println("Ảnh: " + vua.getImg());
             System.out.println("Tên: " + vua.getTen());
-            System.out.println("Miếu hiệu: " + vua.getMieu_hieu());
+            System.out.println("Miếu hiệu: " + vua.getMieuHieu());
             // Print other fields as needed
-            System.out.println("Thụy hiệu: " + vua.getThuy_hieu());
-            System.out.println("Niên hiệu: " + vua.getNien_hieu());
-            System.out.println("Tên húy: " + vua.getTen_huy());
-            System.out.println("Thế thứ: " + vua.getThe_thu());
-            System.out.println("Năm lên ngôi: " + vua.getNam_bat_dau_tri_vi());
+            System.out.println("Thụy hiệu: " + vua.getThuyHieu());
+            System.out.println("Niên hiệu: " + vua.getNienHieu());
+            System.out.println("Tên húy: " + vua.getTenHuy());
+            System.out.println("Thế thứ: " + vua.getTheThu());
+            System.out.println("Năm lên ngôi: " + vua.getNamBatDauTriVi());
             //System.out.println("Middle: " + vua.getMiddle());
-            System.out.println("Năm thoái vị: " + vua.getNam_ket_thuc_tri_vi());
+            System.out.println("Năm thoái vị: " + vua.getNamKetThucTriVi());
             System.out.println();
         }
     }

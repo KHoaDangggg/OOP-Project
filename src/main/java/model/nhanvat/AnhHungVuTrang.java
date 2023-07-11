@@ -1,13 +1,11 @@
 package model.nhanvat;
 
 public class AnhHungVuTrang extends NhanVat {
-
     private final String namSinhNamMat;
     private final String danToc;
     private final String queQuan;
     private final String namPhong;
     private final String tieuSu;
-
 
     public String getNamSinhNamMat() {
         return namSinhNamMat;

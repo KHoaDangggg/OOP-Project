@@ -8,7 +8,7 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 
 
-public class ThreadT implements Runnable{
+public class ThreadT implements Runnable {
     private String url;
 
     public ThreadT(String url) {
@@ -21,10 +21,10 @@ public class ThreadT implements Runnable{
 
     @Override
     public void run() {
-         getLinkFromPage(url);
+        getLinkFromPage(url);
     }
 
-    private void getLinkFromPage(String url){
+    private void getLinkFromPage(String url) {
         Document doc;
         try {
             doc = Jsoup.connect(url).get();
@@ -34,7 +34,7 @@ public class ThreadT implements Runnable{
         Element e = doc.getElementsByClass("listview").first();
         if (e != null) {
             Elements linkContainers = e.getElementsByClass("title");
-            for(Element l: linkContainers){
+            for (Element l : linkContainers) {
                 String link = l.attr("href");
                 String BASE_URL = "http://lehoi.info";
                 link = BASE_URL + link;

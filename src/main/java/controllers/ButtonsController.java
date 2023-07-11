@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.text.TextFlow;
+
 import java.io.IOException;
 import java.util.Map;
 
@@ -13,6 +14,7 @@ import static controllers.SearchSceneController.*;
 import static controllers.TextAreaController.handleRenderTextArea;
 
 public class ButtonsController {
+
     static void handlePreviousButton(Scene baseScene) throws IOException {
         stage.setScene(baseScene);
     }
@@ -21,6 +23,7 @@ public class ButtonsController {
         stage.setScene(lastScene);
     }
 
+    //Handle hyperlink on click action
     static void handleLabel(String field, DuLieuLichSu duLieuLichSu, String text, Scene currentScene) {
         try {
             FXMLLoader loader = new FXMLLoader(SearchSceneController.class.getResource("../fxml/SearchScene.fxml"));

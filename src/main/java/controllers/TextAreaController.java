@@ -58,7 +58,7 @@ public class TextAreaController {
             link.setOnAction(e -> handleLabel("Sự Kiện", selectedTrieuDai.getLienKetSuKien().get(sk), sk, relative.getScene()));
         }
         relative.getChildren().add(new Text("\nVua liên quan: "));
-        if(selectedTrieuDai.getLienKetVua().keySet().size() == 0) {
+        if (selectedTrieuDai.getLienKetVua().keySet().size() == 0) {
             relative.getChildren().add(new Text("Không rõ"));
         }
         for (String sk : selectedTrieuDai.getLienKetVua().keySet()) {
@@ -128,21 +128,6 @@ public class TextAreaController {
             relative.getChildren().addAll(link, new Text(", "));
             link.setOnAction(e -> handleLabel("Lễ Hội", selectedLeHoi.getLienKetLeHoi().get(sk), sk, relative.getScene()));
         }
-/*        VBox imageBox = new VBox();
-        imageBox.setSpacing(10);
-        // Create a new ImageView object for each image and add it to the VBox
-        Platform.runLater(() -> {
-            for (String link : selectedLeHoi.getLinkAnh()) {
-                ImageView imageView = new ImageView();
-                imageView.setImage(new Image(link));
-                imageView.setFitWidth(200);
-                imageView.setFitHeight(200);
-                imageView.setPreserveRatio(true);
-                imageBox.getChildren().add(imageView);
-            }
-            // Set the content of the ScrollPane to the VBox
-            imageContainer.setContent(imageBox);
-        });*/
         loadImage(imageContainer, selectedLeHoi.getLinkAnh());
     }
 
@@ -166,7 +151,7 @@ public class TextAreaController {
                     "Miêu tả: " + ((NhanVatLichSu) selectedNhanVat).getMieuTa() + "\n" +
                     t));
             relative.getChildren().add(new Text("Sự kiện liên quan: "));
-            if(selectedNhanVat.getLienKetSuKien().keySet().size() == 0) {
+            if (selectedNhanVat.getLienKetSuKien().keySet().size() == 0) {
                 relative.getChildren().add(new Text("Không rõ"));
             }
             for (String sk : selectedNhanVat.getLienKetSuKien().keySet()) {
@@ -178,7 +163,7 @@ public class TextAreaController {
             }
             relative.getChildren().add(new Text("\n"));
             relative.getChildren().add(new Text("Triều đại liên quan: "));
-            if(selectedNhanVat.getLienKetTrieuDai().keySet().size() == 0) {
+            if (selectedNhanVat.getLienKetTrieuDai().keySet().size() == 0) {
                 relative.getChildren().add(new Text("Không rõ"));
             }
             for (String sk : selectedNhanVat.getLienKetTrieuDai().keySet()) {
@@ -189,8 +174,7 @@ public class TextAreaController {
 
             }
             relative.getChildren().add(new Text("\n"));
-        }
-        else if (selectedNhanVat instanceof NhanVatVanSu) {
+        } else if (selectedNhanVat instanceof NhanVatVanSu) {
             HashMap<String, String> thongTin = ((NhanVatVanSu) selectedNhanVat).getAtt();
             StringBuilder t = new StringBuilder();
             if (thongTin != null) {
@@ -200,7 +184,7 @@ public class TextAreaController {
             }
             relative.getChildren().add(new Text("Tên: " + selectedNhanVat.getTen() + "\n" + t));
             relative.getChildren().add(new Text("Sự kiện liên quan: "));
-            if(selectedNhanVat.getLienKetSuKien().keySet().size() == 0) {
+            if (selectedNhanVat.getLienKetSuKien().keySet().size() == 0) {
                 relative.getChildren().add(new Text("Không rõ"));
             }
             for (String sk : selectedNhanVat.getLienKetSuKien().keySet()) {
@@ -212,7 +196,7 @@ public class TextAreaController {
             }
             relative.getChildren().add(new Text("\n"));
             relative.getChildren().add(new Text("Triều đại liên quan: "));
-            if(selectedNhanVat.getLienKetTrieuDai().keySet().size() == 0) {
+            if (selectedNhanVat.getLienKetTrieuDai().keySet().size() == 0) {
                 relative.getChildren().add(new Text("Không rõ"));
             }
             for (String sk : selectedNhanVat.getLienKetTrieuDai().keySet()) {
@@ -226,6 +210,4 @@ public class TextAreaController {
             relative.getChildren().add(new Text(Utils.textNhanVat(selectedNhanVat)));
         }
     }
-
-
 }

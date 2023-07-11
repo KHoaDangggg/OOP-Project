@@ -19,7 +19,7 @@ public class GenerateUIObject {
     public static ArrayList<LeHoi> listLeHoi; //List cac le hoi
     public static ArrayList<DiTich> listDiTich; //List cac di tich lich su
 
-    public static void gen(){
+    public static void gen() {
         //Json to obj converter
         JsonToObj gen = new JsonToObj();
         gen.generate();

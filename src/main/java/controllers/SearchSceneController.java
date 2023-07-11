@@ -16,6 +16,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
+
 import java.net.URL;
 import java.util.*;
 
@@ -23,6 +24,7 @@ import java.util.*;
 import static controllers.TextAreaController.handleRenderTextArea;
 import static controllers.Utils.removeVietnameseAccent;
 
+//Controller for search scene
 public class SearchSceneController implements Initializable {
     public Button backBtn;
     @FXML
@@ -95,13 +97,11 @@ public class SearchSceneController implements Initializable {
                     }
 
                 });
-                //imageContainer = (ScrollPane) imageContainer.getScene().getRoot().lookup("#imageCon");
                 textField.textProperty().addListener((obs, oldText, newText) -> handleRenderListView(newText));
                 listView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
                     DuLieuLichSu selectedItem = listView.getSelectionModel().getSelectedItem();
                     if (selectedItem != null) handleRenderTextArea(selectedItem, field, textFlow, imageContainer);
                 });
-                //saveBtn.setOnAction(e -> saveInfo());
             }
         }, 1);
     }
@@ -116,8 +116,7 @@ public class SearchSceneController implements Initializable {
             }
             if (!nameList.isEmpty()) {
                 listView.setItems(nameList);
-            }
-            else {
+            } else {
                 listView.setItems(null);
             }
         });

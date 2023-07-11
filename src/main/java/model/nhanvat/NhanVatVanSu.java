@@ -5,6 +5,7 @@ import java.util.LinkedHashMap;
 
 public class NhanVatVanSu extends NhanVat {
     private final LinkedHashMap<String, String> att;
+
     public NhanVatVanSu(String ten, LinkedHashMap<String, String> att) {
         super(ten);
         this.att = att;

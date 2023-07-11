@@ -11,25 +11,25 @@ import javafx.stage.Stage;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+//Controller for online search scene
 public class WebViewController implements Initializable {
     @FXML
     public WebView webView;
     @FXML
     public Button backBtn;
-
     private Scene lastScene;
 
     public void setLastScene(Scene lastScene) {
         this.lastScene = lastScene;
     }
 
-    public void openWebPane(){
+    public void openWebPane() {
         WebEngine engine = webView.getEngine();
         engine.load("https://www.google.com/");
     }
 
     @FXML
-    public void back(){
+    public void back() {
         Scene scene = backBtn.getScene();
         Stage stage = (Stage) scene.getWindow();
         stage.setScene(lastScene);
@@ -37,6 +37,6 @@ public class WebViewController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-            openWebPane();
+        openWebPane();
     }
 }

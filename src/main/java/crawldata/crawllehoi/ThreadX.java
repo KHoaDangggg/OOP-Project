@@ -30,8 +30,8 @@ public class ThreadX implements Runnable {
         }
         String ten = null;
         Element h1 = doc.select("h1").first();
-        if(h1!=null)
-         ten = h1.text();
+        if (h1 != null)
+            ten = h1.text();
         Element e = doc.getElementsByClass("breadcrumbs info-detail").first();
         String diaDiem = null;
         if (e != null && e.childrenSize() > 1) diaDiem = e.child(1).text();
@@ -51,10 +51,11 @@ public class ThreadX implements Runnable {
             }
             Elements info = content.select("div");
             Elements paragraph = content.select("p");
-            for(Element in: info){
-                if(in.select("ins").first()==null && in.select("img").first()==null) builder.append(in.text()).append(" ");
+            for (Element in : info) {
+                if (in.select("ins").first() == null && in.select("img").first() == null)
+                    builder.append(in.text()).append(" ");
             }
-            for(Element p: paragraph){
+            for (Element p : paragraph) {
                 builder.append(p.text()).append(" ");
             }
             thongTinLeHoi = builder.toString();

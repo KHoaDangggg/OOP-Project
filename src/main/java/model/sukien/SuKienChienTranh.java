@@ -50,6 +50,7 @@ public class SuKienChienTranh extends SuKienLichSu {
     public void setNguyenNhan(String nguyenNhan) {
         this.nguyenNhan = nguyenNhan;
     }
+
     public String getPheTa() {
         return pheTa;
     }
@@ -81,32 +82,41 @@ public class SuKienChienTranh extends SuKienLichSu {
     public String getTonThatTa() {
         return tonThatTa;
     }
+
     public String getNguyenNhan() {
         return nguyenNhan;
     }
 
-    public void createObject(){
-        setThoiGian("Không rõ"); setDiaDiem("Không rõ"); setNguyenNhan("Không rõ");
-        setPheTa("Không rõ"); setPheDich("Không rõ"); setChiHuyPheDich("Không rõ");
-        setChiHuyPheTa("Không rõ"); setTonThatTa("Không rõ"); setTonThatDich("Không rõ");
-        setKetQua("Không rõ");setLucLuongPheTa("Không rõ"); setLucLuongPheDich("Không rõ");
+    public void createObject() {
+        setThoiGian("Không rõ");
+        setDiaDiem("Không rõ");
+        setNguyenNhan("Không rõ");
+        setPheTa("Không rõ");
+        setPheDich("Không rõ");
+        setChiHuyPheDich("Không rõ");
+        setChiHuyPheTa("Không rõ");
+        setTonThatTa("Không rõ");
+        setTonThatDich("Không rõ");
+        setKetQua("Không rõ");
+        setLucLuongPheTa("Không rõ");
+        setLucLuongPheDich("Không rõ");
 
     }
 
 
-    public String toString(){
-        return "\n{\"tenSuKien\": "+"\""+ this.getTen() +"\",\n"+
-                "\"thoiGian\": "+"\""+this.getThoiGian()+"\",\n"+
-                "\"diaDiem\": "+"\""+this.getDiaDiem()+"\",\n"+
-                "\"nguyenNhan\": "+"\""+nguyenNhan+"\",\n"+
-                "\"pheTa\": "+"\""+pheTa+"\",\n"+
-                "\"pheDich\": "+"\""+pheDich+"\",\n"+
-                "\"chiHuyPheTa\": "+"\""+chiHuyPheTa+"\",\n"+
-                "\"chiHuyPheDich\": "+"\""+chiHuyPheDich+"\",\n"+
-                "\"tonThatPheTa\": "+"\""+tonThatTa+"\",\n"+
-                "\"tonThatPheDich\": "+"\""+tonThatDich+"\",\n"+
-                "\"ketQua\": "+"\""+this.getKetQua()+"\",\n"+
-                "\"nhanVatLienQuan\": "+"\""+this.getNameRelativePerson()+"\",\n"+
-                "\"diaDiemLienQuan\": "+"\""+this.getNameRelativeDinasty()+"\"\n}";
+    public String toString() {
+        return "\n{\"tenSuKien\": " + "\"" + this.getTen() + "\",\n" +
+                "\"thoiGian\": " + "\"" + this.getThoiGian() + "\",\n" +
+                "\"diaDiem\": " + "\"" + this.getDiaDiem() + "\",\n" +
+                "\"nguyenNhan\": " + "\"" + nguyenNhan + "\",\n" +
+                "\"pheTa\": " + "\"" + pheTa + "\",\n" +
+                "\"pheDich\": " + "\"" + pheDich + "\",\n" +
+                "\"chiHuyPheTa\": " + "\"" + chiHuyPheTa + "\",\n" +
+                "\"chiHuyPheDich\": " + "\"" + chiHuyPheDich + "\",\n" +
+                "\"tonThatPheTa\": " + "\"" + tonThatTa + "\",\n" +
+                "\"tonThatPheDich\": " + "\"" + tonThatDich + "\",\n" +
+                "\"ketQua\": " + "\"" + this.getKetQua() + "\",\n" +
+                "\"nhanVatLienQuan\": " + "\"" + this.getNameRelativePerson() + "\",\n" +
+                "\"diaDiemLienQuan\": " + "\"" + this.getNameRelativeDinasty() + "\"\n}";
     }
 }

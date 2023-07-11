@@ -9,7 +9,7 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.util.HashMap;
 
-public class Thread_X implements Runnable{
+public class Thread_X implements Runnable {
 
     private String url;
 
@@ -22,7 +22,7 @@ public class Thread_X implements Runnable{
         getDuLieuNhanVatObj(url);
     }
 
-    private void getDuLieuNhanVatObj(String url){
+    private void getDuLieuNhanVatObj(String url) {
         Document doc;
         try {
             doc = Jsoup.connect(url)
@@ -38,7 +38,7 @@ public class Thread_X implements Runnable{
 
         Element pageHeader = doc.getElementsByClass("page-header").get(1);
         String ten = null;
-        if(pageHeader!=null)
+        if (pageHeader != null)
             ten = pageHeader.text();
         nv.setTen(ten);
         //Handle infobox info
@@ -58,15 +58,15 @@ public class Thread_X implements Runnable{
                 }
                 nv.setThongTinCoBan(ttcb);
             }
-        }else nv.setThongTinCoBan(null);
+        } else nv.setThongTinCoBan(null);
         //System.out.println(infoBox);
 
         //Get main info
         HashMap<String, String> thongTin = new HashMap<>();
         int i = 0;
         StringBuilder builder = new StringBuilder();
-        while (content!=null && !content.child(i).is("h2") && !content.child(i).is("p")) i++;
-        if ((content!=null && content.childrenSize() > 1)) {
+        while (content != null && !content.child(i).is("h2") && !content.child(i).is("p")) i++;
+        if ((content != null && content.childrenSize() > 1)) {
             while (!content.child(i).is("h2") && content.child(i).is("p")) {
                 builder.append(content.child(i).text());
                 i++;
@@ -98,7 +98,7 @@ public class Thread_X implements Runnable{
         thongTin.remove("Nguồn tham khảo");
         thongTin.remove(null);
         nv.setThongTin(thongTin);
-        CrawlNhanVat_NguoiKeSu.nhanVat.add(nv);
+        CrawlNhanVat_NguoiKeSuManager.nhanVat.add(nv);
         System.out.println(nv.getTen());
     }
 }
